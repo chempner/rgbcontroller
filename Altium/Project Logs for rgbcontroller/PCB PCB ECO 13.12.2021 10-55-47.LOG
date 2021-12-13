@@ -1,0 +1,86 @@
+Added Component: Designator=C1(CAP CER 0805 H)
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES 0805 H)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=U1(SOIC20_SO_MCH-M)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2021 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number_1"; Value = "150-PIC18F16Q40-I/SO-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PIC18F16Q40-I/SO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=X1(Phoenix 3Pos Header)
+Added Component: Designator=X2(Phoenix 3Pos Header)
+Added Component: Designator=X3(5Pin_Header)
+Added Component: Designator=X4(Phoenix 3Pos Header)
+Added Component: Designator=X5(Phoenix 3Pos Header)
+Added Component: Designator=X6(Phoenix 3Pos Header)
+Added Component: Designator=X7(Phoenix 3Pos Header)
+Added Component: Designator=X8(Phoenix 3Pos Header)
+Added Component: Designator=X?(Phoenix 2Pos Header)
+Added Component: Designator=X?(Phoenix 2Pos Header)
+Added Component: Designator=X?(Phoenix 2Pos Header)
+Added Pin To Net: NetName=+5 Pin=C1-2
+Added Pin To Net: NetName=+5 Pin=U1-1
+Added Pin To Net: NetName=+5 Pin=X1-1
+Added Pin To Net: NetName=+5 Pin=X2-1
+Added Pin To Net: NetName=+5 Pin=X3-2
+Added Pin To Net: NetName=+5 Pin=X4-1
+Added Pin To Net: NetName=+5 Pin=X5-1
+Added Pin To Net: NetName=+5 Pin=X6-1
+Added Pin To Net: NetName=+5 Pin=X7-1
+Added Pin To Net: NetName=+5 Pin=X8-1
+Added Net: Name=+5
+Added Pin To Net: NetName=ARGB Pin=U1-2
+Added Pin To Net: NetName=ARGB Pin=X1-2
+Added Pin To Net: NetName=ARGB Pin=X2-2
+Added Pin To Net: NetName=ARGB Pin=X4-2
+Added Net: Name=ARGB
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=U1-20
+Added Pin To Net: NetName=GND Pin=X1-3
+Added Pin To Net: NetName=GND Pin=X2-3
+Added Pin To Net: NetName=GND Pin=X3-3
+Added Pin To Net: NetName=GND Pin=X4-3
+Added Pin To Net: NetName=GND Pin=X5-3
+Added Pin To Net: NetName=GND Pin=X6-3
+Added Pin To Net: NetName=GND Pin=X7-3
+Added Pin To Net: NetName=GND Pin=X8-3
+Added Pin To Net: NetName=GND Pin=X?-2
+Added Pin To Net: NetName=GND Pin=X?-2
+Added Pin To Net: NetName=GND Pin=X?-2
+Added Net: Name=GND
+Added Pin To Net: NetName=ICLK Pin=U1-18
+Added Pin To Net: NetName=ICLK Pin=X3-4
+Added Net: Name=ICLK
+Added Pin To Net: NetName=IDAT Pin=U1-19
+Added Pin To Net: NetName=IDAT Pin=X3-5
+Added Net: Name=IDAT
+Added Pin To Net: NetName=MCLR Pin=R1-2
+Added Pin To Net: NetName=MCLR Pin=U1-4
+Added Net: Name=MCLR
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=X3-1
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=POT1 Pin=U1-6
+Added Pin To Net: NetName=POT1 Pin=X5-2
+Added Net: Name=POT1
+Added Pin To Net: NetName=POT2 Pin=U1-7
+Added Pin To Net: NetName=POT2 Pin=X6-2
+Added Net: Name=POT2
+Added Pin To Net: NetName=POT3 Pin=U1-8
+Added Pin To Net: NetName=POT3 Pin=X7-2
+Added Net: Name=POT3
+Added Pin To Net: NetName=POT4 Pin=U1-9
+Added Pin To Net: NetName=POT4 Pin=X8-2
+Added Net: Name=POT4
+Added Pin To Net: NetName=T1 Pin=U1-13
+Added Pin To Net: NetName=T1 Pin=X?-1
+Added Net: Name=T1
+Added Pin To Net: NetName=T2 Pin=U1-12
+Added Pin To Net: NetName=T2 Pin=X?-1
+Added Net: Name=T2
+Added Pin To Net: NetName=T3 Pin=U1-11
+Added Pin To Net: NetName=T3 Pin=X?-1
+Added Net: Name=T3
+Added Class: Name=Schema
