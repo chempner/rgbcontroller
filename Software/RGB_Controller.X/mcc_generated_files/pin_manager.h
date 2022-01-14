@@ -66,24 +66,24 @@
 #define PULL_UP_DISABLED     0
 
 // get/set ARGB aliases
-#define ARGB_TRIS                 TRISAbits.TRISA5
-#define ARGB_LAT                  LATAbits.LATA5
-#define ARGB_PORT                 PORTAbits.RA5
-#define ARGB_WPU                  WPUAbits.WPUA5
-#define ARGB_OD                   ODCONAbits.ODCA5
-#define ARGB_ANS                  ANSELAbits.ANSELA5
-#define ARGB_SetHigh()            do { LATAbits.LATA5 = 1; } while(0)
-#define ARGB_SetLow()             do { LATAbits.LATA5 = 0; } while(0)
-#define ARGB_Toggle()             do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0)
-#define ARGB_GetValue()           PORTAbits.RA5
-#define ARGB_SetDigitalInput()    do { TRISAbits.TRISA5 = 1; } while(0)
-#define ARGB_SetDigitalOutput()   do { TRISAbits.TRISA5 = 0; } while(0)
-#define ARGB_SetPullup()          do { WPUAbits.WPUA5 = 1; } while(0)
-#define ARGB_ResetPullup()        do { WPUAbits.WPUA5 = 0; } while(0)
-#define ARGB_SetPushPull()        do { ODCONAbits.ODCA5 = 0; } while(0)
-#define ARGB_SetOpenDrain()       do { ODCONAbits.ODCA5 = 1; } while(0)
-#define ARGB_SetAnalogMode()      do { ANSELAbits.ANSELA5 = 1; } while(0)
-#define ARGB_SetDigitalMode()     do { ANSELAbits.ANSELA5 = 0; } while(0)
+#define ARGB_TRIS                 TRISBbits.TRISB4
+#define ARGB_LAT                  LATBbits.LATB4
+#define ARGB_PORT                 PORTBbits.RB4
+#define ARGB_WPU                  WPUBbits.WPUB4
+#define ARGB_OD                   ODCONBbits.ODCB4
+#define ARGB_ANS                  ANSELBbits.ANSELB4
+#define ARGB_SetHigh()            do { LATBbits.LATB4 = 1; } while(0)
+#define ARGB_SetLow()             do { LATBbits.LATB4 = 0; } while(0)
+#define ARGB_Toggle()             do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0)
+#define ARGB_GetValue()           PORTBbits.RB4
+#define ARGB_SetDigitalInput()    do { TRISBbits.TRISB4 = 1; } while(0)
+#define ARGB_SetDigitalOutput()   do { TRISBbits.TRISB4 = 0; } while(0)
+#define ARGB_SetPullup()          do { WPUBbits.WPUB4 = 1; } while(0)
+#define ARGB_ResetPullup()        do { WPUBbits.WPUB4 = 0; } while(0)
+#define ARGB_SetPushPull()        do { ODCONBbits.ODCB4 = 0; } while(0)
+#define ARGB_SetOpenDrain()       do { ODCONBbits.ODCB4 = 1; } while(0)
+#define ARGB_SetAnalogMode()      do { ANSELBbits.ANSELB4 = 1; } while(0)
+#define ARGB_SetDigitalMode()     do { ANSELBbits.ANSELB4 = 0; } while(0)
 
 // get/set POT2 aliases
 #define POT2_TRIS                 TRISCbits.TRISC3
