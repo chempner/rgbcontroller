@@ -1,6 +1,5 @@
 #include "mcc_generated_files/mcc.h"
 #include "DivFunctions.h"
-//#include "DivFunctions.h"
 
 #define LEDCOUNT    400
 /*
@@ -11,8 +10,8 @@
 void main(void)
 {
     // Initialize the device
-    SYSTEM_Initialize(); 
-    
+    SYSTEM_Initialize();
+    SPI1_Open(SPI1_DEFAULT);
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
@@ -23,24 +22,12 @@ void main(void)
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
 
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
-    c_WS2812B_Write(150,105,150,150);
+    
     
     while (1)
     {
-        __delay_ms(10);
         
+        c_WS2812B_Write(25,0,250,100);
 //        ADCC_DischargeSampleCapacitor();
 //        red = ADCC_GetSingleConversion(POT1);
 //        ADCC_DischargeSampleCapacitor();

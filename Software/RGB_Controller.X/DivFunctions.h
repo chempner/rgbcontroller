@@ -23,3 +23,10 @@ extern "C" {
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 
+void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
+
+void onePulse(void);
+
+void zeroPulse(void);
+
+void ws_send_byte(uint8_t K);

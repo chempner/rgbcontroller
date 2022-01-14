@@ -1,18 +1,10 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"14 ./DivFunctions.h
-[; ;./DivFunctions.h: 14: void ws_send_byte(unsigned char K);
+"32 ./DivFunctions.h
+[; ;./DivFunctions.h: 32: void ws_send_byte(uint8_t K);
 [v _ws_send_byte `(v ~T0 @X0 0 ef1`uc ]
-"35981 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 35981:     struct {
-[s S1714 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1714 . . LATB4 LATB5 LATB6 LATB7 ]
-"35980
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 35980: typedef union {
-[u S1713 `S1714 1 ]
-[n S1713 . . ]
-"35989
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 35989: extern volatile LATBbits_t LATBbits __attribute__((address(0x4BF)));
-[v _LATBbits `VS1713 ~T0 @X0 0 e@1215 ]
+"66 ./mcc_generated_files/spi1.h
+[; ;./mcc_generated_files/spi1.h: 66: uint8_t SPI1_ExchangeByte(uint8_t data);
+[v _SPI1_ExchangeByte `(uc ~T0 @X0 0 ef1`uc ]
 "270 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2050,7 +2042,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _ws_send_byte (1 _W ]
 "9
 [; ;DivFunctions.c: 9: }
-[e :UE 1831 ]
+[e :UE 1833 ]
 }
 "11
 [; ;DivFunctions.c: 11: void onePulse(void)
@@ -2061,198 +2053,153 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _onePulse ]
 [f ]
 "13
-[; ;DivFunctions.c: 13: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+[; ;DivFunctions.c: 13:     SPI1_ExchangeByte(0xF0);
+[e ( _SPI1_ExchangeByte (1 -> -> 240 `i `uc ]
 "14
-[; ;DivFunctions.c: 14: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"15
-[; ;DivFunctions.c: 15: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"16
-[; ;DivFunctions.c: 16: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"17
-[; ;DivFunctions.c: 17: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"18
-[; ;DivFunctions.c: 18: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"19
-[; ;DivFunctions.c: 19: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"20
-[; ;DivFunctions.c: 20: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"21
-[; ;DivFunctions.c: 21: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"22
-[; ;DivFunctions.c: 22: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"23
-[; ;DivFunctions.c: 23: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"24
-[; ;DivFunctions.c: 24: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"25
-[; ;DivFunctions.c: 25: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"26
-[; ;DivFunctions.c: 26: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"27
-[; ;DivFunctions.c: 27: LATBbits.LATB4= 0;
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-"28
-[; ;DivFunctions.c: 28: }
-[e :UE 1832 ]
+[; ;DivFunctions.c: 14: }
+[e :UE 1834 ]
 }
-"30
-[; ;DivFunctions.c: 30: void zeroPulse(void)
+"16
+[; ;DivFunctions.c: 16: void zeroPulse(void)
 [v _zeroPulse `(v ~T0 @X0 1 ef ]
-"31
-[; ;DivFunctions.c: 31: {
+"17
+[; ;DivFunctions.c: 17: {
 {
 [e :U _zeroPulse ]
 [f ]
-"32
-[; ;DivFunctions.c: 32: LATBbits.LATB4= 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"33
-[; ;DivFunctions.c: 33: LATBbits.LATB4= 0;
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-"34
-[; ;DivFunctions.c: 34: }
-[e :UE 1833 ]
+"18
+[; ;DivFunctions.c: 18:     SPI1_ExchangeByte(0xC0);
+[e ( _SPI1_ExchangeByte (1 -> -> 192 `i `uc ]
+"19
+[; ;DivFunctions.c: 19: }
+[e :UE 1835 ]
 }
-"197
-[; ;DivFunctions.c: 197: void ws_send_byte(unsigned char K)
+"20
+[; ;DivFunctions.c: 20: void ws_send_byte(uint8_t K)
 [v _ws_send_byte `(v ~T0 @X0 1 ef1`uc ]
-"198
-[; ;DivFunctions.c: 198: {
+"21
+[; ;DivFunctions.c: 21: {
 {
 [e :U _ws_send_byte ]
-"197
-[; ;DivFunctions.c: 197: void ws_send_byte(unsigned char K)
+"20
+[; ;DivFunctions.c: 20: void ws_send_byte(uint8_t K)
 [v _K `uc ~T0 @X0 1 r1 ]
-"198
-[; ;DivFunctions.c: 198: {
+"21
+[; ;DivFunctions.c: 21: {
 [f ]
-"199
-[; ;DivFunctions.c: 199:     if(K & 0b10000000) {onePulse();}
-[e $ ! != & -> _K `i -> 128 `i -> 0 `i 1835  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1836  ]
-"200
-[; ;DivFunctions.c: 200:     else {zeroPulse();}
-[e :U 1835 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1836 ]
-"202
-[; ;DivFunctions.c: 202:     if(K & 0b01000000) {onePulse();}
-[e $ ! != & -> _K `i -> 64 `i -> 0 `i 1837  ]
+"22
+[; ;DivFunctions.c: 22:     if(K & 0b10000000) {onePulse();}
+[e $ ! != & -> _K `i -> 128 `i -> 0 `i 1837  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1838  ]
-"203
-[; ;DivFunctions.c: 203:     else {zeroPulse();}
+"23
+[; ;DivFunctions.c: 23:     else {zeroPulse();}
 [e :U 1837 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1838 ]
-"205
-[; ;DivFunctions.c: 205:     if(K & 0b00100000) {onePulse();}
-[e $ ! != & -> _K `i -> 32 `i -> 0 `i 1839  ]
+"25
+[; ;DivFunctions.c: 25:     if(K & 0b01000000) {onePulse();}
+[e $ ! != & -> _K `i -> 64 `i -> 0 `i 1839  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1840  ]
-"206
-[; ;DivFunctions.c: 206:     else {zeroPulse();}
+"26
+[; ;DivFunctions.c: 26:     else {zeroPulse();}
 [e :U 1839 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1840 ]
-"208
-[; ;DivFunctions.c: 208:     if(K & 0b00010000) {onePulse();}
-[e $ ! != & -> _K `i -> 16 `i -> 0 `i 1841  ]
+"28
+[; ;DivFunctions.c: 28:     if(K & 0b00100000) {onePulse();}
+[e $ ! != & -> _K `i -> 32 `i -> 0 `i 1841  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1842  ]
-"209
-[; ;DivFunctions.c: 209:     else {zeroPulse();}
+"29
+[; ;DivFunctions.c: 29:     else {zeroPulse();}
 [e :U 1841 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1842 ]
-"211
-[; ;DivFunctions.c: 211:     if(K & 0b00001000) {onePulse();}
-[e $ ! != & -> _K `i -> 8 `i -> 0 `i 1843  ]
+"31
+[; ;DivFunctions.c: 31:     if(K & 0b00010000) {onePulse();}
+[e $ ! != & -> _K `i -> 16 `i -> 0 `i 1843  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1844  ]
-"212
-[; ;DivFunctions.c: 212:     else {zeroPulse();}
+"32
+[; ;DivFunctions.c: 32:     else {zeroPulse();}
 [e :U 1843 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1844 ]
-"214
-[; ;DivFunctions.c: 214:     if(K & 0b00000100) {onePulse();}
-[e $ ! != & -> _K `i -> 4 `i -> 0 `i 1845  ]
+"34
+[; ;DivFunctions.c: 34:     if(K & 0b00001000) {onePulse();}
+[e $ ! != & -> _K `i -> 8 `i -> 0 `i 1845  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1846  ]
-"215
-[; ;DivFunctions.c: 215:     else {zeroPulse();}
+"35
+[; ;DivFunctions.c: 35:     else {zeroPulse();}
 [e :U 1845 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1846 ]
-"217
-[; ;DivFunctions.c: 217:     if(K & 0b00000010) {onePulse();}
-[e $ ! != & -> _K `i -> 2 `i -> 0 `i 1847  ]
+"37
+[; ;DivFunctions.c: 37:     if(K & 0b00000100) {onePulse();}
+[e $ ! != & -> _K `i -> 4 `i -> 0 `i 1847  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1848  ]
-"218
-[; ;DivFunctions.c: 218:     else {zeroPulse();}
+"38
+[; ;DivFunctions.c: 38:     else {zeroPulse();}
 [e :U 1847 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1848 ]
-"220
-[; ;DivFunctions.c: 220:     if(K & 0b00000001) {onePulse();}
-[e $ ! != & -> _K `i -> 1 `i -> 0 `i 1849  ]
+"40
+[; ;DivFunctions.c: 40:     if(K & 0b00000010) {onePulse();}
+[e $ ! != & -> _K `i -> 2 `i -> 0 `i 1849  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1850  ]
-"221
-[; ;DivFunctions.c: 221:     else {zeroPulse();}
+"41
+[; ;DivFunctions.c: 41:     else {zeroPulse();}
 [e :U 1849 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1850 ]
-"222
-[; ;DivFunctions.c: 222: }
-[e :UE 1834 ]
+"43
+[; ;DivFunctions.c: 43:     if(K & 0b00000001) {onePulse();}
+[e $ ! != & -> _K `i -> 1 `i -> 0 `i 1851  ]
+{
+[e ( _onePulse ..  ]
+}
+[e $U 1852  ]
+"44
+[; ;DivFunctions.c: 44:     else {zeroPulse();}
+[e :U 1851 ]
+{
+[e ( _zeroPulse ..  ]
+}
+[e :U 1852 ]
+"45
+[; ;DivFunctions.c: 45: }
+[e :UE 1836 ]
 }

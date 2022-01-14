@@ -62,6 +62,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31733
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 31733: extern volatile unsigned char INLVLC __attribute__((address(0x414)));
 [v _INLVLC `Vuc ~T0 @X0 0 e@1044 ]
+"11513
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 11513: extern volatile unsigned char SPI1SCKPPS __attribute__((address(0x26A)));
+[v _SPI1SCKPPS `Vuc ~T0 @X0 0 e@618 ]
+"8697
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 8697: extern volatile unsigned char RB6PPS __attribute__((address(0x20F)));
+[v _RB6PPS `Vuc ~T0 @X0 0 e@527 ]
+"8597
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 8597: extern volatile unsigned char RB4PPS __attribute__((address(0x20D)));
+[v _RB4PPS `Vuc ~T0 @X0 0 e@525 ]
+"11585
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 11585: extern volatile unsigned char SPI1SDIPPS __attribute__((address(0x26B)));
+[v _SPI1SDIPPS `Vuc ~T0 @X0 0 e@619 ]
 "270 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2090,8 +2102,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 67:     TRISA = 0x3F;
 [e = _TRISA -> -> 63 `i `uc ]
 "68
-[; ;mcc_generated_files/pin_manager.c: 68:     TRISB = 0xE0;
-[e = _TRISB -> -> 224 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 68:     TRISB = 0xA0;
+[e = _TRISB -> -> 160 `i `uc ]
 "69
 [; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0xFF;
 [e = _TRISC -> -> 255 `i `uc ]
@@ -2099,8 +2111,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0xFF;
 [e = _ANSELC -> -> 255 `i `uc ]
 "75
-[; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0xE0;
-[e = _ANSELB -> -> 224 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0xA0;
+[e = _ANSELB -> -> 160 `i `uc ]
 "76
 [; ;mcc_generated_files/pin_manager.c: 76:     ANSELA = 0x17;
 [e = _ANSELA -> -> 23 `i `uc ]
@@ -2140,19 +2152,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 "104
 [; ;mcc_generated_files/pin_manager.c: 104:     INLVLC = 0xFF;
 [e = _INLVLC -> -> 255 `i `uc ]
-"112
-[; ;mcc_generated_files/pin_manager.c: 112: }
+"113
+[; ;mcc_generated_files/pin_manager.c: 113:     SPI1SCKPPS = 0x0E;
+[e = _SPI1SCKPPS -> -> 14 `i `uc ]
+"114
+[; ;mcc_generated_files/pin_manager.c: 114:     RB6PPS = 0x1B;
+[e = _RB6PPS -> -> 27 `i `uc ]
+"115
+[; ;mcc_generated_files/pin_manager.c: 115:     RB4PPS = 0x1C;
+[e = _RB4PPS -> -> 28 `i `uc ]
+"116
+[; ;mcc_generated_files/pin_manager.c: 116:     SPI1SDIPPS = 0x05;
+[e = _SPI1SDIPPS -> -> 5 `i `uc ]
+"117
+[; ;mcc_generated_files/pin_manager.c: 117: }
 [e :UE 1831 ]
 }
-"114
-[; ;mcc_generated_files/pin_manager.c: 114: void PIN_MANAGER_IOC(void)
+"119
+[; ;mcc_generated_files/pin_manager.c: 119: void PIN_MANAGER_IOC(void)
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"115
-[; ;mcc_generated_files/pin_manager.c: 115: {
+"120
+[; ;mcc_generated_files/pin_manager.c: 120: {
 {
 [e :U _PIN_MANAGER_IOC ]
 [f ]
-"116
-[; ;mcc_generated_files/pin_manager.c: 116: }
+"121
+[; ;mcc_generated_files/pin_manager.c: 121: }
 [e :UE 1832 ]
 }

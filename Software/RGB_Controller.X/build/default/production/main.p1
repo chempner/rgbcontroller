@@ -1,15 +1,18 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"70 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
+"71 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"11 ./DivFunctions.h
-[; ;./DivFunctions.h: 11: void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
+"14 main.c
+[; ;main.c: 14:     SPI1_Open(SPI1_DEFAULT);
+[c E13289 0 .. ]
+[n E13289 . SPI1_DEFAULT  ]
+"64 ./mcc_generated_files/spi1.h
+[; ;./mcc_generated_files/spi1.h: 64: _Bool SPI1_Open(spi1_modes_t spi1UniqueConfiguration);
+[v _SPI1_Open `(a ~T0 @X0 0 ef1`E13289 ]
+"26 ./DivFunctions.h
+[; ;./DivFunctions.h: 26: void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
 [v _c_WS2812B_Write `(v ~T0 @X0 0 ef4`uc`uc`uc`uc ]
-[v F183 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:\Program Files\Microchip\xc8\v2.32\pic\include\builtins.h
-[v __delay `JF183 ~T0 @X0 0 e ]
-[p i __delay ]
 "270 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2018,79 +2021,36 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 37707: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"11 main.c
-[; ;main.c: 11: void main(void)
+"10 main.c
+[; ;main.c: 10: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"12
-[; ;main.c: 12: {
+"11
+[; ;main.c: 11: {
 {
 [e :U _main ]
 [f ]
-"14
-[; ;main.c: 14:     SYSTEM_Initialize();
+"13
+[; ;main.c: 13:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"16
-[; ;main.c: 16:     uint8_t red,green,blue,white = 0;
-[v _red `uc ~T0 @X0 1 a ]
-[v _green `uc ~T0 @X0 1 a ]
-[v _blue `uc ~T0 @X0 1 a ]
-[v _white `uc ~T0 @X0 1 a ]
-[e = _white -> -> 0 `i `uc ]
+"14
+[; ;main.c: 14:     SPI1_Open(SPI1_DEFAULT);
+[e ( _SPI1_Open (1 . `E13289 0 ]
+"27
+[; ;main.c: 27:     while (1)
+[e :U 1835 ]
 "28
-[; ;main.c: 28:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"29
-[; ;main.c: 29:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"30
-[; ;main.c: 30:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"31
-[; ;main.c: 31:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"32
-[; ;main.c: 32:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"33
-[; ;main.c: 33:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"34
-[; ;main.c: 34:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"35
-[; ;main.c: 35:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"36
-[; ;main.c: 36:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"37
-[; ;main.c: 37:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"38
-[; ;main.c: 38:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"39
-[; ;main.c: 39:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"40
-[; ;main.c: 40:     c_WS2812B_Write(150,105,150,150);
-[e ( _c_WS2812B_Write (4 , , , -> -> 150 `i `uc -> -> 105 `i `uc -> -> 150 `i `uc -> -> 150 `i `uc ]
-"42
-[; ;main.c: 42:     while (1)
-[e :U 1833 ]
-"43
-[; ;main.c: 43:     {
+[; ;main.c: 28:     {
 {
-"44
-[; ;main.c: 44:         _delay((unsigned long)((10)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"61
-[; ;main.c: 61:     }
+"30
+[; ;main.c: 30:         c_WS2812B_Write(25,0,250,100);
+[e ( _c_WS2812B_Write (4 , , , -> -> 25 `i `uc -> -> 0 `i `uc -> -> 250 `i `uc -> -> 100 `i `uc ]
+"46
+[; ;main.c: 46:     }
 }
-[e :U 1832 ]
-[e $U 1833  ]
 [e :U 1834 ]
-"62
-[; ;main.c: 62: }
-[e :UE 1831 ]
+[e $U 1835  ]
+[e :U 1836 ]
+"47
+[; ;main.c: 47: }
+[e :UE 1833 ]
 }
