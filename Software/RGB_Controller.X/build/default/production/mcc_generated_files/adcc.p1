@@ -67,8 +67,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ADCON0 `Vuc ~T0 @X0 0 e@1011 ]
 "113 mcc_generated_files/adcc.c
 [; ;mcc_generated_files/adcc.c: 113: void ADCC_StartConversion(adcc_channel_t channel)
-[c E12909 19 20 22 23 58 59 60 61 62 63 .. ]
-[n E12909 . POT2 POT1 POT3 POT4 channel_DAC2 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+[c E12909 2 16 17 18 58 59 60 61 62 63 .. ]
+[n E12909 . POT1 POT2 POT3 POT4 channel_DAC2 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "29858 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 29858:     struct {
 [s S1426 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]

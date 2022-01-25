@@ -23,10 +23,14 @@ extern "C" {
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 
-void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
+void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
+
+long map(long x, long in_min, long in_max, long out_min, long out_max);
 
 void onePulse(void);
 
 void zeroPulse(void);
 
 void ws_send_byte(uint8_t K);
+
+void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount);

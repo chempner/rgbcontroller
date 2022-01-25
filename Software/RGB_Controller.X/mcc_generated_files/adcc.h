@@ -88,10 +88,10 @@ typedef __uint24 uint24_t;
 
 typedef enum
 {
-    POT2 =  0x13,
-    POT1 =  0x14,
-    POT3 =  0x16,
-    POT4 =  0x17,
+    POT1 =  0x2,
+    POT2 =  0x10,
+    POT3 =  0x11,
+    POT4 =  0x12,
     channel_DAC2 =  0x3A,
     channel_VSS =  0x3B,
     channel_Temp =  0x3C,

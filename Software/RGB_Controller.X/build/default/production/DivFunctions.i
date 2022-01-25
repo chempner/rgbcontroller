@@ -22469,10 +22469,10 @@ typedef __uint24 uint24_t;
 # 89 "./mcc_generated_files/adcc.h"
 typedef enum
 {
-    POT2 = 0x13,
-    POT1 = 0x14,
-    POT3 = 0x16,
-    POT4 = 0x17,
+    POT1 = 0x2,
+    POT2 = 0x10,
+    POT3 = 0x11,
+    POT4 = 0x12,
     channel_DAC2 = 0x3A,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
@@ -22706,6 +22706,8 @@ void PMD_Initialize(void);
 # 26 "./DivFunctions.h"
 void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
 
+long map(long x, long in_min, long in_max, long out_min, long out_max);
+
 void onePulse(void);
 
 void zeroPulse(void);
@@ -22716,10 +22718,14 @@ void ws_send_byte(uint8_t K);
 
 void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
 {
-    ws_send_byte(R);
     ws_send_byte(G);
+    ws_send_byte(R);
     ws_send_byte(B);
     ws_send_byte(W);
+}
+
+long map(long x, long in_min, long in_max, long out_min, long out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
 void onePulse(void)

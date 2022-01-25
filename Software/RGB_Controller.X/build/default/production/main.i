@@ -22462,10 +22462,10 @@ typedef __uint24 uint24_t;
 # 89 "./mcc_generated_files/adcc.h"
 typedef enum
 {
-    POT2 = 0x13,
-    POT1 = 0x14,
-    POT3 = 0x16,
-    POT4 = 0x17,
+    POT1 = 0x2,
+    POT2 = 0x10,
+    POT3 = 0x11,
+    POT4 = 0x12,
     channel_DAC2 = 0x3A,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
@@ -22701,6 +22701,8 @@ void PMD_Initialize(void);
 # 26 "./DivFunctions.h"
 void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
 
+long map(long x, long in_min, long in_max, long out_min, long out_max);
+
 void onePulse(void);
 
 void zeroPulse(void);
@@ -22711,20 +22713,30 @@ void ws_send_byte(uint8_t K);
 
 
 
-
-
-
-
 void main(void)
 {
 
     SYSTEM_Initialize();
     SPI1_Open(SPI1_DEFAULT);
-# 27 "main.c"
+# 21 "main.c"
+    uint8_t red, green, blue, white = 0;
+
     while (1)
     {
+        _delay((unsigned long)((1)*(64000000/4000.0)));
 
-        c_WS2812B_Write(25,0,250,100);
-# 46 "main.c"
+        ADCC_DischargeSampleCapacitor();
+        red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
+        ADCC_DischargeSampleCapacitor();
+        green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
+        ADCC_DischargeSampleCapacitor();
+        blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
+        ADCC_DischargeSampleCapacitor();
+        white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);
+
+        for(uint8_t i = 0; i <= 3; i++)
+        {
+            c_WS2812B_Write(red, green, blue, white);
+        }
     }
 }

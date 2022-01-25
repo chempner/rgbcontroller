@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\RGB_Controller.X.debug.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>936</used>
+      <free>64600</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>4352</length>
+      <used>12</used>
+      <free>4340</free>
+    </memory>
+  </executable>
+</project>

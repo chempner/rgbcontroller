@@ -1,11 +1,15 @@
 #include "DivFunctions.h"
 
-void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
-{
-    ws_send_byte(R);
+void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
+{    
     ws_send_byte(G);
+    ws_send_byte(R);
     ws_send_byte(B);
     ws_send_byte(W);
+}
+
+long map(long x, long in_min, long in_max, long out_min, long out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
 void onePulse(void)
@@ -42,4 +46,12 @@ void ws_send_byte(uint8_t K)
     
     if(K & 0b00000001) {onePulse();}
     else {zeroPulse();}
+}
+
+void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
+{
+    for(uint24_t i=0; i <= ledcount; i++)
+    {
+        WS2812B_Write(red, green, blue, white);
+    }
 }

@@ -3,13 +3,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"14 main.c
-[; ;main.c: 14:     SPI1_Open(SPI1_DEFAULT);
+"10 main.c
+[; ;main.c: 10:     SPI1_Open(SPI1_DEFAULT);
 [c E13289 0 .. ]
 [n E13289 . SPI1_DEFAULT  ]
 "64 ./mcc_generated_files/spi1.h
 [; ;./mcc_generated_files/spi1.h: 64: _Bool SPI1_Open(spi1_modes_t spi1UniqueConfiguration);
 [v _SPI1_Open `(a ~T0 @X0 0 ef1`E13289 ]
+[v F183 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.32\pic\include\builtins.h
+[v __delay `JF183 ~T0 @X0 0 e ]
+[p i __delay ]
+"334 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 334: void ADCC_DischargeSampleCapacitor(void);
+[v _ADCC_DischargeSampleCapacitor `(v ~T0 @X0 0 ef ]
+"28 ./DivFunctions.h
+[; ;./DivFunctions.h: 28: long map(long x, long in_min, long in_max, long out_min, long out_max);
+[v _map `(l ~T0 @X0 0 ef5`l`l`l`l`l ]
+"28 main.c
+[; ;main.c: 28:         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
+[c E12924 2 16 17 18 58 59 60 61 62 63 .. ]
+[n E12924 . POT1 POT2 POT3 POT4 channel_DAC2 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"257 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 257: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E12924 ]
 "26 ./DivFunctions.h
 [; ;./DivFunctions.h: 26: void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
 [v _c_WS2812B_Write `(v ~T0 @X0 0 ef4`uc`uc`uc`uc ]
@@ -2021,36 +2038,88 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 37707: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"10 main.c
-[; ;main.c: 10: void main(void)
+"6 main.c
+[; ;main.c: 6: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"11
-[; ;main.c: 11: {
+"7
+[; ;main.c: 7: {
 {
 [e :U _main ]
 [f ]
-"13
-[; ;main.c: 13:     SYSTEM_Initialize();
+"9
+[; ;main.c: 9:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"14
-[; ;main.c: 14:     SPI1_Open(SPI1_DEFAULT);
+"10
+[; ;main.c: 10:     SPI1_Open(SPI1_DEFAULT);
 [e ( _SPI1_Open (1 . `E13289 0 ]
-"27
-[; ;main.c: 27:     while (1)
+"21
+[; ;main.c: 21:     uint8_t red, green, blue, white = 0;
+[v _red `uc ~T0 @X0 1 a ]
+[v _green `uc ~T0 @X0 1 a ]
+[v _blue `uc ~T0 @X0 1 a ]
+[v _white `uc ~T0 @X0 1 a ]
+[e = _white -> -> 0 `i `uc ]
+"23
+[; ;main.c: 23:     while (1)
 [e :U 1835 ]
-"28
-[; ;main.c: 28:     {
+"24
+[; ;main.c: 24:     {
 {
+"25
+[; ;main.c: 25:         _delay((unsigned long)((1)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"27
+[; ;main.c: 27:         ADCC_DischargeSampleCapacitor();
+[e ( _ADCC_DischargeSampleCapacitor ..  ]
+"28
+[; ;main.c: 28:         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
+[e = _red -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E12924 0 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
+"29
+[; ;main.c: 29:         ADCC_DischargeSampleCapacitor();
+[e ( _ADCC_DischargeSampleCapacitor ..  ]
 "30
-[; ;main.c: 30:         c_WS2812B_Write(25,0,250,100);
-[e ( _c_WS2812B_Write (4 , , , -> -> 25 `i `uc -> -> 0 `i `uc -> -> 250 `i `uc -> -> 100 `i `uc ]
-"46
-[; ;main.c: 46:     }
+[; ;main.c: 30:         green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
+[e = _green -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E12924 1 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
+"31
+[; ;main.c: 31:         ADCC_DischargeSampleCapacitor();
+[e ( _ADCC_DischargeSampleCapacitor ..  ]
+"32
+[; ;main.c: 32:         blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
+[e = _blue -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E12924 2 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
+"33
+[; ;main.c: 33:         ADCC_DischargeSampleCapacitor();
+[e ( _ADCC_DischargeSampleCapacitor ..  ]
+"34
+[; ;main.c: 34:         white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);
+[e = _white -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E12924 3 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
+"36
+[; ;main.c: 36:         for(uint8_t i = 0; i <= 3; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ <= -> _i `i -> 3 `i 1837  ]
+[e $U 1838  ]
+[e :U 1837 ]
+"37
+[; ;main.c: 37:         {
+{
+"38
+[; ;main.c: 38:             c_WS2812B_Write(red, green, blue, white);
+[e ( _c_WS2812B_Write (4 , , , _red _green _blue _white ]
+"39
+[; ;main.c: 39:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ <= -> _i `i -> 3 `i 1837  ]
+[e :U 1838 ]
+}
+"40
+[; ;main.c: 40:     }
 }
 [e :U 1834 ]
 [e $U 1835  ]
 [e :U 1836 ]
-"47
-[; ;main.c: 47: }
+"41
+[; ;main.c: 41: }
 [e :UE 1833 ]
 }
