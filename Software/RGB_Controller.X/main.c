@@ -50,6 +50,11 @@ void main(void)
     uint8_t taster3Flag = 0;
     uint8_t taster4Flag = 0;    
     
+    LED1_LAT = 0;
+    LED2_LAT = 0;
+    LED3_LAT = 0;
+    LED4_LAT = 0;
+    
     /*Statemachine Init*/
     typedef enum
     {
@@ -59,20 +64,21 @@ void main(void)
     state_t state = MANUAL;
     
     
-    /*Check if State is stored in EEPROM*/
-    if(EEPROM_READ(EE_STATECHECKBYTEADD) == EE_CHECKBYTEDATA)
+    /*===============================Check if State is stored in EEPROM==============*/
+    if(DATAEE_ReadByte(EE_STATECHECKBYTEADD) == EE_CHECKBYTEDATA)
     {
-        state = EEPROM_READ(EE_STATEBYTEADD);
+        state = DATAEE_ReadByte(EE_STATEBYTEADD);
        
         if(state == 1)
         {
-            if(EEPROM_READ(EE_MODE1CHECKBYTEADD) == EE_CHECKBYTEDATA)
+            if(DATAEE_ReadByte(EE_MODE1CHECKBYTEADD) == EE_CHECKBYTEDATA)
             {
-                red = EEPROM_READ(EE_MODE1_REDADD);
-                green = EEPROM_READ(EE_MODE1_GREENADD);
-                blue = EEPROM_READ(EE_MODE1_BLUEADD);
-                white = EEPROM_READ(EE_MODE1_WHITEADD);
+                red = DATAEE_ReadByte(EE_MODE1_REDADD);
+                green = DATAEE_ReadByte(EE_MODE1_GREENADD);
+                blue = DATAEE_ReadByte(EE_MODE1_BLUEADD);
+                white = DATAEE_ReadByte(EE_MODE1_WHITEADD);
                 LED_WriteFull(red, green, blue, white, LEDCOUNT);
+                LED1_LAT = 1;
             }
             
             else
@@ -83,13 +89,14 @@ void main(void)
         
         if(state == 2)
         {
-            if(EEPROM_READ(EE_MODE2CHECKBYTEADD) == EE_CHECKBYTEDATA)
+            if(DATAEE_ReadByte(EE_MODE2CHECKBYTEADD) == EE_CHECKBYTEDATA)
             {
-                red = EEPROM_READ(EE_MODE2_REDADD);
-                green = EEPROM_READ(EE_MODE2_GREENADD);
-                blue = EEPROM_READ(EE_MODE2_BLUEADD);
-                white = EEPROM_READ(EE_MODE2_WHITEADD);
+                red = DATAEE_ReadByte(EE_MODE2_REDADD);
+                green = DATAEE_ReadByte(EE_MODE2_GREENADD);
+                blue = DATAEE_ReadByte(EE_MODE2_BLUEADD);
+                white = DATAEE_ReadByte(EE_MODE2_WHITEADD);
                 LED_WriteFull(red, green, blue, white, LEDCOUNT);
+                LED2_LAT = 1;
             }
             
             else
@@ -100,13 +107,14 @@ void main(void)
         
         if(state == 3)
         {
-            if(EEPROM_READ(EE_MODE3CHECKBYTEADD) == EE_CHECKBYTEDATA)
+            if(DATAEE_ReadByte(EE_MODE3CHECKBYTEADD) == EE_CHECKBYTEDATA)
             {
-                red = EEPROM_READ(EE_MODE3_REDADD);
-                green = EEPROM_READ(EE_MODE3_GREENADD);
-                blue = EEPROM_READ(EE_MODE3_BLUEADD);
-                white = EEPROM_READ(EE_MODE3_WHITEADD);
+                red = DATAEE_ReadByte(EE_MODE3_REDADD);
+                green = DATAEE_ReadByte(EE_MODE3_GREENADD);
+                blue = DATAEE_ReadByte(EE_MODE3_BLUEADD);
+                white = DATAEE_ReadByte(EE_MODE3_WHITEADD);
                 LED_WriteFull(red, green, blue, white, LEDCOUNT);
+                LED3_LAT = 1;
             }
             
             else
@@ -117,13 +125,14 @@ void main(void)
         
         if(state == 4)
         {
-            if(EEPROM_READ(EE_MODE4CHECKBYTEADD) == EE_CHECKBYTEDATA)
+            if(DATAEE_ReadByte(EE_MODE4CHECKBYTEADD) == EE_CHECKBYTEDATA)
             {
-                red = EEPROM_READ(EE_MODE4_REDADD);
-                green = EEPROM_READ(EE_MODE4_GREENADD);
-                blue = EEPROM_READ(EE_MODE4_BLUEADD);
-                white = EEPROM_READ(EE_MODE4_WHITEADD);
+                red = DATAEE_ReadByte(EE_MODE4_REDADD);
+                green = DATAEE_ReadByte(EE_MODE4_GREENADD);
+                blue = DATAEE_ReadByte(EE_MODE4_BLUEADD);
+                white = DATAEE_ReadByte(EE_MODE4_WHITEADD);
                 LED_WriteFull(red, green, blue, white, LEDCOUNT);
+                LED4_LAT = 1;
             }
             
             else
@@ -133,8 +142,7 @@ void main(void)
         }
     }    
 //=================State and Mode Check ending==============================//
-    
-    
+
     
     LOOPDELAY_Init(LOOPTIME);
     
@@ -142,12 +150,35 @@ void main(void)
     {
         LOOPDELAY_Wait();
         
-        EEPROM_WRITE(EE_STATEBYTEADD, state);
-        EEPROM_WRITE(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);
+        DATAEE_WriteByte(EE_STATEBYTEADD, state);
+        DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);
         
         switch(state)
         {
             case MANUAL:
+                
+                ADCC_DischargeSampleCapacitor();
+                red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
+                ADCC_DischargeSampleCapacitor();
+                green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
+                ADCC_DischargeSampleCapacitor();
+                blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
+                ADCC_DischargeSampleCapacitor();
+                white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);
+                
+                if(T1_LAT && !taster1Flag)
+                {
+                    LED1_LAT = 1;
+                    state = T1;
+                }
+                taster1Flag = T1_LAT;
+                
+                if(T2_LAT && !taster2Flag)
+                {
+                    LED2_LAT = 1;
+                    state = T2 ;
+                }
+                taster2Flag = T2_LAT;
                 
                 break;
                 
@@ -155,10 +186,30 @@ void main(void)
                 
                 if(T1_LAT && !taster1Flag)
                 {
+                    LED1_LAT = 0;
                     state = MANUAL;
                 }
                 taster1Flag = T1_LAT;
                 
+                if(T2_LAT && !taster2Flag)
+                {
+                    if(DATAEE_ReadByte(EE_MODE2CHECKBYTEADD) == EE_CHECKBYTEDATA)
+                    {
+                        red = DATAEE_ReadByte(EE_MODE2_REDADD);
+                        green = DATAEE_ReadByte(EE_MODE2_GREENADD);
+                        blue = DATAEE_ReadByte(EE_MODE2_BLUEADD);
+                        white = DATAEE_ReadByte(EE_MODE2_WHITEADD);
+                        LED_WriteFull(red, green, blue, white, LEDCOUNT);
+                        LED2_LAT = 1;
+                        LED1_LAT = 0;
+
+                        state = T2;
+                    }
+                }
+                taster2Flag = T2_LAT;
+                
+                
+
                 break;
                 
             case T2:
@@ -179,6 +230,27 @@ void main(void)
                 }
                 taster3Flag = T3_LAT;
                 
+                if(T2_LAT && !taster2Flag)
+                {
+                    if(DATAEE_ReadByte(EE_MODE2CHECKBYTEADD) == EE_CHECKBYTEDATA)
+                    {
+                        red = DATAEE_ReadByte(EE_MODE2_REDADD);
+                        green = DATAEE_ReadByte(EE_MODE2_GREENADD);
+                        blue = DATAEE_ReadByte(EE_MODE2_BLUEADD);
+                        white = DATAEE_ReadByte(EE_MODE2_WHITEADD);
+                        LED_WriteFull(red, green, blue, white, LEDCOUNT);
+                        LED2_LAT = 1;
+
+                        state = T2;
+                    }
+
+                    else
+                    {
+                        state = MANUAL;
+                    }
+                }
+                taster2Flag = T2_LAT;
+                
                 break;
                 
             case T4:
@@ -189,16 +261,30 @@ void main(void)
                 }
                 taster4Flag = T4_LAT;
                 
+                if(T2_LAT && !taster2Flag)
+                {
+                    if(DATAEE_ReadByte(EE_MODE2CHECKBYTEADD) == EE_CHECKBYTEDATA)
+                    {
+                        red = DATAEE_ReadByte(EE_MODE2_REDADD);
+                        green = DATAEE_ReadByte(EE_MODE2_GREENADD);
+                        blue = DATAEE_ReadByte(EE_MODE2_BLUEADD);
+                        white = DATAEE_ReadByte(EE_MODE2_WHITEADD);
+                        LED_WriteFull(red, green, blue, white, LEDCOUNT);
+                        LED2_LAT = 1;
+
+                        state = T2;
+                    }
+
+                    else
+                    {
+                        state = MANUAL;
+                    }
+                }
+                taster2Flag = T2_LAT;
+                
                 break;
         }
         
-        ADCC_DischargeSampleCapacitor();
-        red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
-        ADCC_DischargeSampleCapacitor();
-        green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
-        ADCC_DischargeSampleCapacitor();
-        blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
-        ADCC_DischargeSampleCapacitor();
-        white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);        
+               
     }
 }

@@ -2099,32 +2099,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 62:     LATC = 0x00;
 [e = _LATC -> -> 0 `i `uc ]
 "67
-[; ;mcc_generated_files/pin_manager.c: 67:     TRISA = 0x3F;
-[e = _TRISA -> -> 63 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 67:     TRISA = 0x1F;
+[e = _TRISA -> -> 31 `i `uc ]
 "68
 [; ;mcc_generated_files/pin_manager.c: 68:     TRISB = 0xA0;
 [e = _TRISB -> -> 160 `i `uc ]
 "69
-[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0xFF;
-[e = _TRISC -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0x57;
+[e = _TRISC -> -> 87 `i `uc ]
 "74
-[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0xFF;
-[e = _ANSELC -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0xAF;
+[e = _ANSELC -> -> 175 `i `uc ]
 "75
-[; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0xA0;
-[e = _ANSELB -> -> 160 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0x00;
+[e = _ANSELB -> -> 0 `i `uc ]
 "76
-[; ;mcc_generated_files/pin_manager.c: 76:     ANSELA = 0x17;
-[e = _ANSELA -> -> 23 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 76:     ANSELA = 0x07;
+[e = _ANSELA -> -> 7 `i `uc ]
 "81
-[; ;mcc_generated_files/pin_manager.c: 81:     WPUB = 0x00;
-[e = _WPUB -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 81:     WPUB = 0x80;
+[e = _WPUB -> -> 128 `i `uc ]
 "82
-[; ;mcc_generated_files/pin_manager.c: 82:     WPUA = 0x00;
-[e = _WPUA -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 82:     WPUA = 0x10;
+[e = _WPUA -> -> 16 `i `uc ]
 "83
-[; ;mcc_generated_files/pin_manager.c: 83:     WPUC = 0x00;
-[e = _WPUC -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 83:     WPUC = 0x50;
+[e = _WPUC -> -> 80 `i `uc ]
 "88
 [; ;mcc_generated_files/pin_manager.c: 88:     ODCONA = 0x00;
 [e = _ODCONA -> -> 0 `i `uc ]
@@ -2162,8 +2162,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 115:     RB4PPS = 0x1C;
 [e = _RB4PPS -> -> 28 `i `uc ]
 "116
-[; ;mcc_generated_files/pin_manager.c: 116:     SPI1SDIPPS = 0x05;
-[e = _SPI1SDIPPS -> -> 5 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 116:     SPI1SDIPPS = 0x0D;
+[e = _SPI1SDIPPS -> -> 13 `i `uc ]
 "117
 [; ;mcc_generated_files/pin_manager.c: 117: }
 [e :UE 1831 ]

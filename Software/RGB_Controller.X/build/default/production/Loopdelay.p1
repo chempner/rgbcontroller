@@ -1,55 +1,4 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"97 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 97: void PMD_Initialize(void);
-[v _PMD_Initialize `(v ~T0 @X0 0 ef ]
-"194 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 194: void PIN_MANAGER_Initialize (void);
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"84 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 84: void OSCILLATOR_Initialize(void);
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"135 mcc_generated_files/adcc.h
-[; ;mcc_generated_files/adcc.h: 135: void ADCC_Initialize(void);
-[v _ADCC_Initialize `(v ~T0 @X0 0 ef ]
-"63 mcc_generated_files/spi1.h
-[; ;mcc_generated_files/spi1.h: 63: void SPI1_Initialize(void);
-[v _SPI1_Initialize `(v ~T0 @X0 0 ef ]
-"5126 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 5126: extern volatile unsigned char OSCCON1 __attribute__((address(0x0AD)));
-[v _OSCCON1 `Vuc ~T0 @X0 0 e@173 ]
-"5266
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 5266: extern volatile unsigned char OSCCON3 __attribute__((address(0x0AF)));
-[v _OSCCON3 `Vuc ~T0 @X0 0 e@175 ]
-"5566
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 5566: extern volatile unsigned char OSCEN __attribute__((address(0x0B3)));
-[v _OSCEN `Vuc ~T0 @X0 0 e@179 ]
-"5364
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 5364: extern volatile unsigned char OSCFRQ __attribute__((address(0x0B1)));
-[v _OSCFRQ `Vuc ~T0 @X0 0 e@177 ]
-"5306
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 5306: extern volatile unsigned char OSCTUNE __attribute__((address(0x0B0)));
-[v _OSCTUNE `Vuc ~T0 @X0 0 e@176 ]
-"5056
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 5056: extern volatile unsigned char ACTCON __attribute__((address(0x0AC)));
-[v _ACTCON `Vuc ~T0 @X0 0 e@172 ]
-"1210
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 1210: extern volatile unsigned char PMD0 __attribute__((address(0x063)));
-[v _PMD0 `Vuc ~T0 @X0 0 e@99 ]
-"1267
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 1267: extern volatile unsigned char PMD1 __attribute__((address(0x064)));
-[v _PMD1 `Vuc ~T0 @X0 0 e@100 ]
-"1329
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 1329: extern volatile unsigned char PMD2 __attribute__((address(0x065)));
-[v _PMD2 `Vuc ~T0 @X0 0 e@101 ]
-"1391
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 1391: extern volatile unsigned char PMD3 __attribute__((address(0x066)));
-[v _PMD3 `Vuc ~T0 @X0 0 e@102 ]
-"1453
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 1453: extern volatile unsigned char PMD4 __attribute__((address(0x067)));
-[v _PMD4 `Vuc ~T0 @X0 0 e@103 ]
-"1515
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 1515: extern volatile unsigned char PMD5 __attribute__((address(0x068)));
-[v _PMD5 `Vuc ~T0 @X0 0 e@104 ]
 "270 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2057,90 +2006,82 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37707
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 37707: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"50 mcc_generated_files/mcc.c
-[; ;mcc_generated_files/mcc.c: 50: void SYSTEM_Initialize(void)
-[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
-"51
-[; ;mcc_generated_files/mcc.c: 51: {
+"5 Loopdelay.c
+[; ;Loopdelay.c: 5: static volatile uint16_t loopTimeCnt = 0;
+[v _loopTimeCnt `Vus ~T0 @X0 1 s ]
+[i _loopTimeCnt
+-> -> 0 `i `us
+]
+"7
+[; ;Loopdelay.c: 7: static uint16_t loopTimeMS = 0;
+[v _loopTimeMS `us ~T0 @X0 1 s ]
+[i _loopTimeMS
+-> -> 0 `i `us
+]
+"9
+[; ;Loopdelay.c: 9: void LOOPDELAY_TimerISR(void)
+[v _LOOPDELAY_TimerISR `(v ~T0 @X0 1 ef ]
+"10
+[; ;Loopdelay.c: 10: {
 {
-[e :U _SYSTEM_Initialize ]
+[e :U _LOOPDELAY_TimerISR ]
 [f ]
-"52
-[; ;mcc_generated_files/mcc.c: 52:     PMD_Initialize();
-[e ( _PMD_Initialize ..  ]
-"53
-[; ;mcc_generated_files/mcc.c: 53:     PIN_MANAGER_Initialize();
-[e ( _PIN_MANAGER_Initialize ..  ]
-"54
-[; ;mcc_generated_files/mcc.c: 54:     OSCILLATOR_Initialize();
-[e ( _OSCILLATOR_Initialize ..  ]
-"55
-[; ;mcc_generated_files/mcc.c: 55:     ADCC_Initialize();
-[e ( _ADCC_Initialize ..  ]
-"56
-[; ;mcc_generated_files/mcc.c: 56:     SPI1_Initialize();
-[e ( _SPI1_Initialize ..  ]
-"57
-[; ;mcc_generated_files/mcc.c: 57: }
+"11
+[; ;Loopdelay.c: 11:     if(loopTimeCnt != 10000)
+[e $ ! != -> _loopTimeCnt `ui -> -> 10000 `i `ui 1834  ]
+"12
+[; ;Loopdelay.c: 12:     {
+{
+"13
+[; ;Loopdelay.c: 13:         loopTimeCnt += 1;
+[e =+ _loopTimeCnt -> -> 1 `i `Vus ]
+"14
+[; ;Loopdelay.c: 14:     }
+}
+[e :U 1834 ]
+"15
+[; ;Loopdelay.c: 15: }
 [e :UE 1833 ]
 }
-"59
-[; ;mcc_generated_files/mcc.c: 59: void OSCILLATOR_Initialize(void)
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
-"60
-[; ;mcc_generated_files/mcc.c: 60: {
+"17
+[; ;Loopdelay.c: 17: void LOOPDELAY_Wait(void)
+[v _LOOPDELAY_Wait `(v ~T0 @X0 1 ef ]
+"18
+[; ;Loopdelay.c: 18: {
 {
-[e :U _OSCILLATOR_Initialize ]
+[e :U _LOOPDELAY_Wait ]
 [f ]
-"62
-[; ;mcc_generated_files/mcc.c: 62:     OSCCON1 = 0x60;
-[e = _OSCCON1 -> -> 96 `i `uc ]
-"64
-[; ;mcc_generated_files/mcc.c: 64:     OSCCON3 = 0x00;
-[e = _OSCCON3 -> -> 0 `i `uc ]
-"66
-[; ;mcc_generated_files/mcc.c: 66:     OSCEN = 0x00;
-[e = _OSCEN -> -> 0 `i `uc ]
-"68
-[; ;mcc_generated_files/mcc.c: 68:     OSCFRQ = 0x08;
-[e = _OSCFRQ -> -> 8 `i `uc ]
-"70
-[; ;mcc_generated_files/mcc.c: 70:     OSCTUNE = 0x00;
-[e = _OSCTUNE -> -> 0 `i `uc ]
-"72
-[; ;mcc_generated_files/mcc.c: 72:     ACTCON = 0x00;
-[e = _ACTCON -> -> 0 `i `uc ]
-"73
-[; ;mcc_generated_files/mcc.c: 73: }
-[e :UE 1834 ]
-}
-"75
-[; ;mcc_generated_files/mcc.c: 75: void PMD_Initialize(void)
-[v _PMD_Initialize `(v ~T0 @X0 1 ef ]
-"76
-[; ;mcc_generated_files/mcc.c: 76: {
-{
-[e :U _PMD_Initialize ]
-[f ]
-"78
-[; ;mcc_generated_files/mcc.c: 78:     PMD0 = 0x00;
-[e = _PMD0 -> -> 0 `i `uc ]
-"80
-[; ;mcc_generated_files/mcc.c: 80:     PMD1 = 0x00;
-[e = _PMD1 -> -> 0 `i `uc ]
-"82
-[; ;mcc_generated_files/mcc.c: 82:     PMD2 = 0x00;
-[e = _PMD2 -> -> 0 `i `uc ]
-"84
-[; ;mcc_generated_files/mcc.c: 84:     PMD3 = 0x00;
-[e = _PMD3 -> -> 0 `i `uc ]
-"86
-[; ;mcc_generated_files/mcc.c: 86:     PMD4 = 0x00;
-[e = _PMD4 -> -> 0 `i `uc ]
-"88
-[; ;mcc_generated_files/mcc.c: 88:     PMD5 = 0x00;
-[e = _PMD5 -> -> 0 `i `uc ]
-"89
-[; ;mcc_generated_files/mcc.c: 89: }
+"19
+[; ;Loopdelay.c: 19:     while(loopTimeCnt < loopTimeMS);
+[e $U 1836  ]
+[e :U 1837 ]
+[e :U 1836 ]
+[e $ < -> _loopTimeCnt `ui -> _loopTimeMS `ui 1837  ]
+[e :U 1838 ]
+"20
+[; ;Loopdelay.c: 20:     loopTimeCnt = 0;
+[e = _loopTimeCnt -> -> 0 `i `us ]
+"21
+[; ;Loopdelay.c: 21: }
 [e :UE 1835 ]
+}
+"23
+[; ;Loopdelay.c: 23: void LOOPDELAY_Init(uint16_t newLoopTimeMS)
+[v _LOOPDELAY_Init `(v ~T0 @X0 1 ef1`us ]
+"24
+[; ;Loopdelay.c: 24: {
+{
+[e :U _LOOPDELAY_Init ]
+"23
+[; ;Loopdelay.c: 23: void LOOPDELAY_Init(uint16_t newLoopTimeMS)
+[v _newLoopTimeMS `us ~T0 @X0 1 r1 ]
+"24
+[; ;Loopdelay.c: 24: {
+[f ]
+"25
+[; ;Loopdelay.c: 25:     loopTimeMS = newLoopTimeMS;
+[e = _loopTimeMS _newLoopTimeMS ]
+"26
+[; ;Loopdelay.c: 26: }
+[e :UE 1839 ]
 }

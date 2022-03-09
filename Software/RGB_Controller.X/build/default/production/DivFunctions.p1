@@ -2013,14 +2013,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic18f16q40.h: 37707: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 "3 DivFunctions.c
-[; ;DivFunctions.c: 3: void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
-[v _c_WS2812B_Write `(v ~T0 @X0 1 ef4`uc`uc`uc`uc ]
+[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
+[v _WS2812B_Write `(v ~T0 @X0 1 ef4`uc`uc`uc`uc ]
 "4
 [; ;DivFunctions.c: 4: {
 {
-[e :U _c_WS2812B_Write ]
+[e :U _WS2812B_Write ]
 "3
-[; ;DivFunctions.c: 3: void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
+[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
 [v _R `uc ~T0 @X0 1 r1 ]
 [v _G `uc ~T0 @X0 1 r2 ]
 [v _B `uc ~T0 @X0 1 r3 ]
@@ -2221,4 +2221,46 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49
 [; ;DivFunctions.c: 49: }
 [e :UE 1837 ]
+}
+"51
+[; ;DivFunctions.c: 51: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
+[v _LED_WriteFull `(v ~T0 @X0 1 ef5`uc`uc`uc`uc`um ]
+"52
+[; ;DivFunctions.c: 52: {
+{
+[e :U _LED_WriteFull ]
+"51
+[; ;DivFunctions.c: 51: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
+[v _red `uc ~T0 @X0 1 r1 ]
+[v _green `uc ~T0 @X0 1 r2 ]
+[v _blue `uc ~T0 @X0 1 r3 ]
+[v _white `uc ~T0 @X0 1 r4 ]
+[v _ledcount `um ~T0 @X0 1 r5 ]
+"52
+[; ;DivFunctions.c: 52: {
+[f ]
+"53
+[; ;DivFunctions.c: 53:     for(uint24_t i=0; i <= ledcount; i++)
+{
+[v _i `um ~T0 @X0 1 a ]
+[e = _i -> -> -> 0 `i `m `um ]
+[e $U 1858  ]
+[e :U 1855 ]
+"54
+[; ;DivFunctions.c: 54:     {
+{
+"55
+[; ;DivFunctions.c: 55:         WS2812B_Write(red, green, blue, white);
+[e ( _WS2812B_Write (4 , , , _red _green _blue _white ]
+"56
+[; ;DivFunctions.c: 56:     }
+}
+[e ++ _i -> -> -> 1 `i `m `um ]
+[e :U 1858 ]
+[e $ <= _i _ledcount 1855  ]
+[e :U 1856 ]
+}
+"57
+[; ;DivFunctions.c: 57: }
+[e :UE 1854 ]
 }

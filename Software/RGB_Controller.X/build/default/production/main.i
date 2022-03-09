@@ -22411,9 +22411,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 194 "./mcc_generated_files/pin_manager.h"
+# 354 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 206 "./mcc_generated_files/pin_manager.h"
+# 366 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -22453,6 +22453,11 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 # 54 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 87 "./mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 55 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/adcc.h" 1
 # 72 "./mcc_generated_files/adcc.h"
@@ -22527,7 +22532,277 @@ _Bool ADCC_HasErrorCrossedUpperThreshold(void);
 _Bool ADCC_HasErrorCrossedLowerThreshold(void);
 # 832 "./mcc_generated_files/adcc.h"
 uint8_t ADCC_GetConversionStageStatus(void);
-# 55 "./mcc_generated_files/mcc.h" 2
+# 56 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/memory.h" 1
+# 81 "./mcc_generated_files/memory.h"
+uint8_t FLASH_ReadByte(uint32_t flashAddr);
+# 94 "./mcc_generated_files/memory.h"
+uint16_t FLASH_ReadWord(uint32_t flashAddr);
+# 116 "./mcc_generated_files/memory.h"
+void FLASH_ReadPage(uint32_t flashAddr);
+# 138 "./mcc_generated_files/memory.h"
+void FLASH_WritePage(uint32_t flashAddr);
+# 151 "./mcc_generated_files/memory.h"
+void FLASH_WriteWord(uint32_t flashAddr, uint16_t word);
+# 183 "./mcc_generated_files/memory.h"
+int8_t FLASH_WriteBlock(uint32_t flashAddr, uint16_t *flashWrBufPtr);
+# 195 "./mcc_generated_files/memory.h"
+void FLASH_EraseBlock(uint32_t flashAddr);
+# 212 "./mcc_generated_files/memory.h"
+void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
+# 225 "./mcc_generated_files/memory.h"
+uint8_t DATAEE_ReadByte(uint16_t bAdd);
+# 57 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr2.h" 1
+# 79 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+# 89 "./mcc_generated_files/tmr2.h"
+   TMR2_ROP_STARTS_TMRON,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSHIGH,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSBOTHEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSRISINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSFALLINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSHIGH,
+# 135 "./mcc_generated_files/tmr2.h"
+   TMR2_OS_STARTS_TMRON,
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSBOTHEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTRISINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSHIGH = 0x16,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSLOW = 0x17,
+# 192 "./mcc_generated_files/tmr2.h"
+   TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
+
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
+
+} TMR2_HLT_MODE;
+# 220 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+
+
+    TMR2_T2INPPS,
+
+
+
+    TMR2_RESERVED,
+
+
+
+    TMR2_T4POSTSCALED,
+
+
+
+    TMR2_RESERVED_2,
+
+
+
+    TMR2_CCP1_OUT,
+
+
+
+    TMR2_PWM1S1P1_OUT,
+
+
+
+    TMR2_PWM1S1P2_OUT,
+
+
+
+    TMR2_PWM2S1P1_OUT,
+
+
+
+    TMR2_PWM2S1P2_OUT,
+
+
+
+    TMR2_PWM3S1P1_OUT,
+
+
+
+    TMR2_PWM3S1P2_OUT,
+
+
+
+    TMR2_CMP1_OUT,
+
+
+
+    TMR2_CMP2_OUT,
+
+
+
+    TMR2_ZCD_OUTPUT,
+
+
+
+    TMR2_CLC1_OUT,
+
+
+
+    TMR2_CLC2_OUT,
+
+
+
+    TMR2_CLC3_OUT,
+
+
+
+    TMR2_CLC4_OUT,
+
+
+
+    TMR2_UART1_RX_EDGE,
+
+
+
+    TMR2_UART1_TX_EDGE,
+
+
+
+    TMR2_UART2_RX_EDGE,
+
+
+
+    TMR2_UART2_TX_EDGE,
+
+
+
+    TMR2_UART3_RX_EDGE,
+
+
+
+    TMR2_UART3_TX_EDGE,
+
+
+
+    TMR2_RESERVED_3
+
+
+} TMR2_HLT_EXT_RESET_SOURCE;
+# 365 "./mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 401 "./mcc_generated_files/tmr2.h"
+void TMR2_ModeSet(TMR2_HLT_MODE mode);
+# 436 "./mcc_generated_files/tmr2.h"
+void TMR2_ExtResetSourceSet(TMR2_HLT_EXT_RESET_SOURCE reset);
+# 465 "./mcc_generated_files/tmr2.h"
+void TMR2_Start(void);
+# 494 "./mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 526 "./mcc_generated_files/tmr2.h"
+void TMR2_Stop(void);
+# 558 "./mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 593 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_Counter8BitGet(void);
+# 628 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 667 "./mcc_generated_files/tmr2.h"
+void TMR2_Counter8BitSet(uint8_t timerVal);
+# 706 "./mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 758 "./mcc_generated_files/tmr2.h"
+void TMR2_Period8BitSet(uint8_t periodVal);
+# 810 "./mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 828 "./mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 846 "./mcc_generated_files/tmr2.h"
+ void TMR2_CallBack(void);
+# 863 "./mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 881 "./mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 899 "./mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
+# 58 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/spi1.h" 1
 # 54 "./mcc_generated_files/spi1.h"
@@ -22688,18 +22963,18 @@ void SPI1_WriteBlock(void *block, size_t blockSize);
 void SPI1_ReadBlock(void *block, size_t blockSize);
 void SPI1_WriteByte(uint8_t byte);
 uint8_t SPI1_ReadByte(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-# 71 "./mcc_generated_files/mcc.h"
+# 59 "./mcc_generated_files/mcc.h" 2
+# 74 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 84 "./mcc_generated_files/mcc.h"
+# 87 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 97 "./mcc_generated_files/mcc.h"
+# 100 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 1 "main.c" 2
 
 # 1 "./DivFunctions.h" 1
 # 26 "./DivFunctions.h"
-void c_WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
+void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
 
 long map(long x, long in_min, long in_max, long out_min, long out_max);
 
@@ -22708,35 +22983,267 @@ void onePulse(void);
 void zeroPulse(void);
 
 void ws_send_byte(uint8_t K);
+
+void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount);
 # 2 "main.c" 2
 
-
-
-
+# 1 "./Loopdelay.h" 1
+# 14 "./Loopdelay.h"
+void LOOPDELAY_TimerISR(void);
+void LOOPDELAY_Wait(void);
+void LOOPDELAY_Init(uint16_t newLoopTimeMS);
+# 3 "main.c" 2
+# 38 "main.c"
 void main(void)
 {
 
     SYSTEM_Initialize();
     SPI1_Open(SPI1_DEFAULT);
-# 21 "main.c"
+    (INTCON0bits.GIE = 1);
+
+    TMR2_SetInterruptHandler(LOOPDELAY_TimerISR);
+
     uint8_t red, green, blue, white = 0;
+    uint8_t taster1Flag = 0;
+    uint8_t taster2Flag = 0;
+    uint8_t taster3Flag = 0;
+    uint8_t taster4Flag = 0;
+
+    LATCbits.LATC7 = 0;
+    LATCbits.LATC5 = 0;
+    LATAbits.LATA5 = 0;
+    LATCbits.LATC3 = 0;
+
+
+    typedef enum
+    {
+        MANUAL, T1, T2, T3, T4
+    }state_t;
+
+    state_t state = MANUAL;
+
+
+
+    if(DATAEE_ReadByte(22) == 69)
+    {
+        state = DATAEE_ReadByte(56);
+
+        if(state == 1)
+        {
+            if(DATAEE_ReadByte(23) == 69)
+            {
+                red = DATAEE_ReadByte(31);
+                green = DATAEE_ReadByte(33);
+                blue = DATAEE_ReadByte(34);
+                white = DATAEE_ReadByte(36);
+                LED_WriteFull(red, green, blue, white, 3);
+                LATCbits.LATC7 = 1;
+            }
+
+            else
+            {
+                state = MANUAL;
+            }
+        }
+
+        if(state == 2)
+        {
+            if(DATAEE_ReadByte(24) == 69)
+            {
+                red = DATAEE_ReadByte(37);
+                green = DATAEE_ReadByte(38);
+                blue = DATAEE_ReadByte(39);
+                white = DATAEE_ReadByte(41);
+                LED_WriteFull(red, green, blue, white, 3);
+                LATCbits.LATC5 = 1;
+            }
+
+            else
+            {
+                state = MANUAL;
+            }
+        }
+
+        if(state == 3)
+        {
+            if(DATAEE_ReadByte(26) == 69)
+            {
+                red = DATAEE_ReadByte(43);
+                green = DATAEE_ReadByte(45);
+                blue = DATAEE_ReadByte(46);
+                white = DATAEE_ReadByte(48);
+                LED_WriteFull(red, green, blue, white, 3);
+                LATAbits.LATA5 = 1;
+            }
+
+            else
+            {
+                state = MANUAL;
+            }
+        }
+
+        if(state == 4)
+        {
+            if(DATAEE_ReadByte(28) == 69)
+            {
+                red = DATAEE_ReadByte(50);
+                green = DATAEE_ReadByte(51);
+                blue = DATAEE_ReadByte(53);
+                white = DATAEE_ReadByte(55);
+                LED_WriteFull(red, green, blue, white, 3);
+                LATCbits.LATC3 = 1;
+            }
+
+            else
+            {
+                state = MANUAL;
+            }
+        }
+    }
+
+
+
+    LOOPDELAY_Init(10);
 
     while (1)
     {
-        _delay((unsigned long)((1)*(64000000/4000.0)));
+        LOOPDELAY_Wait();
 
-        ADCC_DischargeSampleCapacitor();
-        red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
-        ADCC_DischargeSampleCapacitor();
-        green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
-        ADCC_DischargeSampleCapacitor();
-        blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
-        ADCC_DischargeSampleCapacitor();
-        white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);
+        DATAEE_WriteByte(56, state);
+        DATAEE_WriteByte(22, 69);
 
-        for(uint8_t i = 0; i <= 3; i++)
+        switch(state)
         {
-            c_WS2812B_Write(red, green, blue, white);
+            case MANUAL:
+
+                ADCC_DischargeSampleCapacitor();
+                red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
+                ADCC_DischargeSampleCapacitor();
+                green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
+                ADCC_DischargeSampleCapacitor();
+                blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
+                ADCC_DischargeSampleCapacitor();
+                white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);
+
+                if(LATCbits.LATC6 && !taster1Flag)
+                {
+                    LATCbits.LATC7 = 1;
+                    state = T1;
+                }
+                taster1Flag = LATCbits.LATC6;
+
+                if(LATAbits.LATA4 && !taster2Flag)
+                {
+                    LATCbits.LATC5 = 1;
+                    state = T2 ;
+                }
+                taster2Flag = LATAbits.LATA4;
+
+                break;
+
+            case T1:
+
+                if(LATCbits.LATC6 && !taster1Flag)
+                {
+                    LATCbits.LATC7 = 0;
+                    state = MANUAL;
+                }
+                taster1Flag = LATCbits.LATC6;
+
+                if(LATAbits.LATA4 && !taster2Flag)
+                {
+                    if(DATAEE_ReadByte(24) == 69)
+                    {
+                        red = DATAEE_ReadByte(37);
+                        green = DATAEE_ReadByte(38);
+                        blue = DATAEE_ReadByte(39);
+                        white = DATAEE_ReadByte(41);
+                        LED_WriteFull(red, green, blue, white, 3);
+                        LATCbits.LATC5 = 1;
+                        LATCbits.LATC7 = 0;
+
+                        state = T2;
+                    }
+                }
+                taster2Flag = LATAbits.LATA4;
+
+
+
+                break;
+
+            case T2:
+
+                if(LATAbits.LATA4 && !taster2Flag)
+                {
+                    state = MANUAL;
+                }
+                taster2Flag = LATAbits.LATA4;
+
+                break;
+
+            case T3:
+
+                if(LATCbits.LATC4 && !taster3Flag)
+                {
+                    state = MANUAL;
+                }
+                taster3Flag = LATCbits.LATC4;
+
+                if(LATAbits.LATA4 && !taster2Flag)
+                {
+                    if(DATAEE_ReadByte(24) == 69)
+                    {
+                        red = DATAEE_ReadByte(37);
+                        green = DATAEE_ReadByte(38);
+                        blue = DATAEE_ReadByte(39);
+                        white = DATAEE_ReadByte(41);
+                        LED_WriteFull(red, green, blue, white, 3);
+                        LATCbits.LATC5 = 1;
+
+                        state = T2;
+                    }
+
+                    else
+                    {
+                        state = MANUAL;
+                    }
+                }
+                taster2Flag = LATAbits.LATA4;
+
+                break;
+
+            case T4:
+
+                if(LATBbits.LATB7 && !taster4Flag)
+                {
+                    state = MANUAL;
+                }
+                taster4Flag = LATBbits.LATB7;
+
+                if(LATAbits.LATA4 && !taster2Flag)
+                {
+                    if(DATAEE_ReadByte(24) == 69)
+                    {
+                        red = DATAEE_ReadByte(37);
+                        green = DATAEE_ReadByte(38);
+                        blue = DATAEE_ReadByte(39);
+                        white = DATAEE_ReadByte(41);
+                        LED_WriteFull(red, green, blue, white, 3);
+                        LATCbits.LATC5 = 1;
+
+                        state = T2;
+                    }
+
+                    else
+                    {
+                        state = MANUAL;
+                    }
+                }
+                taster2Flag = LATAbits.LATA4;
+
+                break;
         }
+
+
     }
 }
