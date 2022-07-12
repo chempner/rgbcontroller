@@ -23056,45 +23056,45 @@ void main(void)
 
 
 
-    if(DATAEE_ReadByte(23) == 69)
+    if(DATAEE_ReadByte(3) == 69)
     {
-        redMode1 = DATAEE_ReadByte(31);
-        greenMode1 = DATAEE_ReadByte(33);
-        blueMode1 = DATAEE_ReadByte(34);
-        whiteMode1 = DATAEE_ReadByte(36);
+        redMode1 = DATAEE_ReadByte(11);
+        greenMode1 = DATAEE_ReadByte(12);
+        blueMode1 = DATAEE_ReadByte(15);
+        whiteMode1 = DATAEE_ReadByte(17);
     }
 
-    if(DATAEE_ReadByte(24) == 69)
+    if(DATAEE_ReadByte(4) == 69)
     {
-        redMode2 = DATAEE_ReadByte(37);
-        greenMode2 = DATAEE_ReadByte(38);
-        blueMode2 = DATAEE_ReadByte(39);
-        whiteMode2 = DATAEE_ReadByte(41);
+        redMode2 = DATAEE_ReadByte(18);
+        greenMode2 = DATAEE_ReadByte(19);
+        blueMode2 = DATAEE_ReadByte(20);
+        whiteMode2 = DATAEE_ReadByte(21);
     }
 
-    if(DATAEE_ReadByte(26) == 69)
+    if(DATAEE_ReadByte(6) == 69)
     {
-        redMode3 = DATAEE_ReadByte(43);
-        greenMode3 = DATAEE_ReadByte(45);
-        blueMode3 = DATAEE_ReadByte(46);
-        whiteMode3 = DATAEE_ReadByte(48);
+        redMode3 = DATAEE_ReadByte(22);
+        greenMode3 = DATAEE_ReadByte(24);
+        blueMode3 = DATAEE_ReadByte(25);
+        whiteMode3 = DATAEE_ReadByte(27);
     }
 
-    if(DATAEE_ReadByte(28) == 69)
+    if(DATAEE_ReadByte(8) == 69)
     {
-        redMode4 = DATAEE_ReadByte(50);
-        greenMode4 = DATAEE_ReadByte(51);
-        blueMode4 = DATAEE_ReadByte(53);
-        whiteMode4 = DATAEE_ReadByte(55);
+        redMode4 = DATAEE_ReadByte(30);
+        greenMode4 = DATAEE_ReadByte(31);
+        blueMode4 = DATAEE_ReadByte(32);
+        whiteMode4 = DATAEE_ReadByte(34);
     }
 
 
 
-    if(DATAEE_ReadByte(22) == 69)
+    if(DATAEE_ReadByte(2) == 69)
     {
-        state = DATAEE_ReadByte(56);
+        state = DATAEE_ReadByte(36);
 
-        if(state == 1 && (DATAEE_ReadByte(23) == 69))
+        if(state == 1 && (DATAEE_ReadByte(3) == 69))
         {
             LATCbits.LATC7 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
@@ -23105,7 +23105,7 @@ void main(void)
             state = MANUAL;
         }
 
-        if(state == 2 && (DATAEE_ReadByte(24) == 69))
+        if(state == 2 && (DATAEE_ReadByte(4) == 69))
         {
             LATCbits.LATC5 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
@@ -23116,7 +23116,7 @@ void main(void)
             state = MANUAL;
         }
 
-        if(state == 3 && (DATAEE_ReadByte(26) == 69))
+        if(state == 3 && (DATAEE_ReadByte(6) == 69))
         {
             LATAbits.LATA5 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
@@ -23127,7 +23127,7 @@ void main(void)
             state = MANUAL;
         }
 
-        if(state == 4 && (DATAEE_ReadByte(28) == 69))
+        if(state == 4 && (DATAEE_ReadByte(8) == 69))
         {
             LATCbits.LATC3 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
@@ -23244,11 +23244,11 @@ void main(void)
                     blueMode1 = blue;
                     whiteMode1 = white;
                     led1Blink = 0;
-                    DATAEE_WriteByte(34, blueMode1);
-                    DATAEE_WriteByte(33, greenMode1);
-                    DATAEE_WriteByte(31, redMode1);
-                    DATAEE_WriteByte(36, whiteMode1);
-                    DATAEE_WriteByte(23, 69);
+                    DATAEE_WriteByte(15, blueMode1);
+                    DATAEE_WriteByte(12, greenMode1);
+                    DATAEE_WriteByte(11, redMode1);
+                    DATAEE_WriteByte(17, whiteMode1);
+                    DATAEE_WriteByte(3, 69);
                 }
 
                 if(led2Blink && !PORTAbits.RA4 && taster2Flag)
@@ -23258,11 +23258,11 @@ void main(void)
                     blueMode2 = blue;
                     whiteMode2 = white;
                     led2Blink = 0;
-                    DATAEE_WriteByte(39, blueMode2);
-                    DATAEE_WriteByte(38, greenMode2);
-                    DATAEE_WriteByte(37, redMode2);
-                    DATAEE_WriteByte(41, whiteMode2);
-                    DATAEE_WriteByte(24, 69);
+                    DATAEE_WriteByte(20, blueMode2);
+                    DATAEE_WriteByte(19, greenMode2);
+                    DATAEE_WriteByte(18, redMode2);
+                    DATAEE_WriteByte(21, whiteMode2);
+                    DATAEE_WriteByte(4, 69);
                 }
 
                 if(led3Blink && !PORTCbits.RC4 && taster3Flag)
@@ -23272,11 +23272,11 @@ void main(void)
                     blueMode3 = blue;
                     whiteMode3 = white;
                     led3Blink = 0;
-                    DATAEE_WriteByte(46, blueMode3);
-                    DATAEE_WriteByte(45, greenMode3);
-                    DATAEE_WriteByte(43, redMode3);
-                    DATAEE_WriteByte(48, whiteMode3);
-                    DATAEE_WriteByte(26, 69);
+                    DATAEE_WriteByte(25, blueMode3);
+                    DATAEE_WriteByte(24, greenMode3);
+                    DATAEE_WriteByte(22, redMode3);
+                    DATAEE_WriteByte(27, whiteMode3);
+                    DATAEE_WriteByte(6, 69);
                 }
 
                 if(led4Blink && !PORTBbits.RB7 && taster4Flag)
@@ -23286,11 +23286,11 @@ void main(void)
                     blueMode4 = blue;
                     whiteMode4 = white;
                     led4Blink = 0;
-                    DATAEE_WriteByte(53, blueMode4);
-                    DATAEE_WriteByte(51, greenMode4);
-                    DATAEE_WriteByte(50, redMode4);
-                    DATAEE_WriteByte(55, whiteMode4);
-                    DATAEE_WriteByte(28, 69);
+                    DATAEE_WriteByte(32, blueMode4);
+                    DATAEE_WriteByte(31, greenMode4);
+                    DATAEE_WriteByte(30, redMode4);
+                    DATAEE_WriteByte(34, whiteMode4);
+                    DATAEE_WriteByte(8, 69);
                 }
 
 
@@ -23325,8 +23325,8 @@ void main(void)
                     LATCbits.LATC7 = 1;
                     LED_WriteFull(redMode1, greenMode1, blueMode1, whiteMode1, 3);
                     state = T1;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 500))
@@ -23334,8 +23334,8 @@ void main(void)
                     timeout5sPressed1 = 0;
                     led1Blink = 1;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 break;
@@ -23348,8 +23348,8 @@ void main(void)
                     LATCbits.LATC5 = 1;
                     LED_WriteFull(redMode2, greenMode2, blueMode2, whiteMode2, 3);
                     state = T2;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 500))
@@ -23357,8 +23357,8 @@ void main(void)
                     timeout5sPressed2 = 0;
                     led2Blink = 1;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 break;
@@ -23370,8 +23370,8 @@ void main(void)
                     LATAbits.LATA5 = 1;
                     LED_WriteFull(redMode3, greenMode3, blueMode3, whiteMode3, 3);
                     state = T3;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 500))
@@ -23379,8 +23379,8 @@ void main(void)
                     timeout5sPressed3 = 0;
                     led3Blink = 1;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 break;
@@ -23393,8 +23393,8 @@ void main(void)
                     LATCbits.LATC3 = 1;
                     LED_WriteFull(redMode4, greenMode4, blueMode4, whiteMode4, 3);
                     state = T4;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTBbits.RB7 && (++timeout5sPressed4 == 500))
@@ -23402,8 +23402,8 @@ void main(void)
                     timeout5sPressed4 = 0;
                     led4Blink = 1;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 break;
@@ -23416,8 +23416,8 @@ void main(void)
                 {
                     LATCbits.LATC7 = 0;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 500))
@@ -23437,8 +23437,8 @@ void main(void)
                 {
                     LATCbits.LATC5 = 0;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 500))
@@ -23458,8 +23458,8 @@ void main(void)
                 {
                     LATAbits.LATA5 = 0;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 500))
@@ -23479,8 +23479,8 @@ void main(void)
                 {
                     LATCbits.LATC3 = 0;
                     state = MANUAL;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTBbits.RB7 && (++timeout5sPressed4 == 500))
@@ -23519,11 +23519,15 @@ void main(void)
                     greenAdj = 0;
                     blueAdj = 0;
                     whiteAdj = 0;
-                    DATAEE_WriteByte(34, blueMode1);
-                    DATAEE_WriteByte(33, greenMode1);
-                    DATAEE_WriteByte(31, redMode1);
-                    DATAEE_WriteByte(36, whiteMode1);
-                    DATAEE_WriteByte(23, 69);
+                    redMode1 = red;
+                    greenMode1 = green;
+                    blueMode1 = blue;
+                    whiteMode1 = white;
+                    DATAEE_WriteByte(15, blueMode1);
+                    DATAEE_WriteByte(12, greenMode1);
+                    DATAEE_WriteByte(11, redMode1);
+                    DATAEE_WriteByte(17, whiteMode1);
+                    DATAEE_WriteByte(3, 69);
                 }
 
                 if(led1StateBlink)
@@ -23577,8 +23581,8 @@ void main(void)
                     LATCbits.LATC5 = 1;
                     LED_WriteFull(redMode2, greenMode2, blueMode2, whiteMode2, 3);
                     state = T2;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTCbits.RC4 && taster3Flag)
@@ -23587,8 +23591,8 @@ void main(void)
                     LATAbits.LATA5 = 1;
                     LED_WriteFull(redMode3, greenMode3, blueMode3, whiteMode3, 3);
                     state = T3 ;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTBbits.RB7 && taster4Flag)
@@ -23597,8 +23601,8 @@ void main(void)
                     LATCbits.LATC3 = 1;
                     LED_WriteFull(redMode4, greenMode4, blueMode4, whiteMode4, 3);
                     state = T4 ;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23632,11 +23636,15 @@ void main(void)
                     greenAdj = 0;
                     blueAdj = 0;
                     whiteAdj = 0;
-                    DATAEE_WriteByte(39, blueMode1);
-                    DATAEE_WriteByte(38, greenMode1);
-                    DATAEE_WriteByte(37, redMode1);
-                    DATAEE_WriteByte(41, whiteMode1);
-                    DATAEE_WriteByte(24, 69);
+                    redMode2 = red;
+                    greenMode2 = green;
+                    blueMode2 = blue;
+                    whiteMode2 = white;
+                    DATAEE_WriteByte(20, blueMode1);
+                    DATAEE_WriteByte(19, greenMode1);
+                    DATAEE_WriteByte(18, redMode1);
+                    DATAEE_WriteByte(21, whiteMode1);
+                    DATAEE_WriteByte(4, 69);
                 }
 
                 if(led2StateBlink)
@@ -23691,8 +23699,8 @@ void main(void)
                     LATCbits.LATC7 = 1;
                     LED_WriteFull(redMode1, greenMode1, blueMode1, whiteMode1, 3);
                     state = T1;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23702,8 +23710,8 @@ void main(void)
                     LATAbits.LATA5 = 1;
                     LED_WriteFull(redMode3, greenMode3, blueMode3, whiteMode3, 3);
                     state = T3 ;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 if(!PORTBbits.RB7 && taster4Flag)
@@ -23712,8 +23720,8 @@ void main(void)
                     LATCbits.LATC3 = 1;
                     LED_WriteFull(redMode4, greenMode4, blueMode4, whiteMode4, 3);
                     state = T4 ;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23746,11 +23754,15 @@ void main(void)
                     greenAdj = 0;
                     blueAdj = 0;
                     whiteAdj = 0;
-                    DATAEE_WriteByte(46, blueMode1);
-                    DATAEE_WriteByte(45, greenMode1);
-                    DATAEE_WriteByte(43, redMode1);
-                    DATAEE_WriteByte(48, whiteMode1);
-                    DATAEE_WriteByte(26, 69);
+                    redMode3 = red;
+                    greenMode3 = green;
+                    blueMode3 = blue;
+                    whiteMode3 = white;
+                    DATAEE_WriteByte(25, blueMode1);
+                    DATAEE_WriteByte(24, greenMode1);
+                    DATAEE_WriteByte(22, redMode1);
+                    DATAEE_WriteByte(27, whiteMode1);
+                    DATAEE_WriteByte(6, 69);
                 }
                 taster3Flag = PORTCbits.RC4;
 
@@ -23805,8 +23817,8 @@ void main(void)
                     LATCbits.LATC7 = 1;
                     LED_WriteFull(redMode1, greenMode1, blueMode1, whiteMode1, 3);
                     state = T1;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23816,8 +23828,8 @@ void main(void)
                     LATCbits.LATC5 = 1;
                     LED_WriteFull(redMode2, greenMode2, blueMode2, whiteMode2, 3);
                     state = T2;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23827,8 +23839,8 @@ void main(void)
                     LATCbits.LATC3 = 1;
                     LED_WriteFull(redMode4, greenMode4, blueMode4, whiteMode4, 3);
                     state = T4 ;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23859,11 +23871,15 @@ void main(void)
                     greenAdj = 0;
                     blueAdj = 0;
                     whiteAdj = 0;
-                    DATAEE_WriteByte(53, blueMode1);
-                    DATAEE_WriteByte(51, greenMode1);
-                    DATAEE_WriteByte(50, redMode1);
-                    DATAEE_WriteByte(55, whiteMode1);
-                    DATAEE_WriteByte(28, 69);
+                    redMode4 = red;
+                    greenMode4 = green;
+                    blueMode4 = blue;
+                    whiteMode4 = white;
+                    DATAEE_WriteByte(32, blueMode1);
+                    DATAEE_WriteByte(31, greenMode1);
+                    DATAEE_WriteByte(30, redMode1);
+                    DATAEE_WriteByte(34, whiteMode1);
+                    DATAEE_WriteByte(8, 69);
                 }
 
                 if(led4StateBlink)
@@ -23917,8 +23933,8 @@ void main(void)
                     LATCbits.LATC3 = 0;
                     LATCbits.LATC7 = 1;
                     state = T1;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23928,8 +23944,8 @@ void main(void)
                     LATCbits.LATC5 = 1;
                     LED_WriteFull(redMode2, greenMode2, blueMode2, whiteMode2, 3);
                     state = T2;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
 
@@ -23939,8 +23955,8 @@ void main(void)
                     LATAbits.LATA5 = 1;
                     LED_WriteFull(redMode3, greenMode3, blueMode3, whiteMode3, 3);
                     state = T3 ;
-                    DATAEE_WriteByte(56, state);
-                    DATAEE_WriteByte(22, 69);
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
                 }
 
                 break;

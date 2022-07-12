@@ -4,28 +4,28 @@
 
 #define LEDCOUNT 3
 
-#define EE_STATECHECKBYTEADD    22
-#define EE_MODE1CHECKBYTEADD    23
-#define EE_MODE2CHECKBYTEADD    24
-#define EE_MODE3CHECKBYTEADD    26
-#define EE_MODE4CHECKBYTEADD    28
-#define EE_MODE1_REDADD         31
-#define EE_MODE1_GREENADD       33
-#define EE_MODE1_BLUEADD        34
-#define EE_MODE1_WHITEADD       36
-#define EE_MODE2_REDADD         37
-#define EE_MODE2_GREENADD       38
-#define EE_MODE2_BLUEADD        39
-#define EE_MODE2_WHITEADD       41
-#define EE_MODE3_REDADD         43
-#define EE_MODE3_GREENADD       45
-#define EE_MODE3_BLUEADD        46
-#define EE_MODE3_WHITEADD       48
-#define EE_MODE4_REDADD         50
-#define EE_MODE4_GREENADD       51
-#define EE_MODE4_BLUEADD        53
-#define EE_MODE4_WHITEADD       55
-#define EE_STATEBYTEADD         56
+#define EE_STATECHECKBYTEADD    2
+#define EE_MODE1CHECKBYTEADD    3
+#define EE_MODE2CHECKBYTEADD    4
+#define EE_MODE3CHECKBYTEADD    6
+#define EE_MODE4CHECKBYTEADD    8
+#define EE_MODE1_REDADD         11
+#define EE_MODE1_GREENADD       12
+#define EE_MODE1_BLUEADD        15
+#define EE_MODE1_WHITEADD       17
+#define EE_MODE2_REDADD         18
+#define EE_MODE2_GREENADD       19
+#define EE_MODE2_BLUEADD        20
+#define EE_MODE2_WHITEADD       21
+#define EE_MODE3_REDADD         22
+#define EE_MODE3_GREENADD       24
+#define EE_MODE3_BLUEADD        25
+#define EE_MODE3_WHITEADD       27
+#define EE_MODE4_REDADD         30
+#define EE_MODE4_GREENADD       31
+#define EE_MODE4_BLUEADD        32
+#define EE_MODE4_WHITEADD       34
+#define EE_STATEBYTEADD         36
 
 #define EE_CHECKBYTEDATA        69
 
@@ -564,6 +564,10 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
+                    redMode1 = red;
+                    greenMode1 = green;
+                    blueMode1 = blue;
+                    whiteMode1 = white;
                     DATAEE_WriteByte(EE_MODE1_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE1_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE1_REDADD, redMode1);
@@ -677,6 +681,10 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
+                    redMode2 = red;
+                    greenMode2 = green;
+                    blueMode2 = blue;
+                    whiteMode2 = white;
                     DATAEE_WriteByte(EE_MODE2_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE2_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE2_REDADD, redMode1);
@@ -782,7 +790,7 @@ void main(void)
                 {
                     state = T3StateDummy;
                 }
-                                
+                
                 if(!T3_PORT && taster3Flag && led3StateBlink)
                 {
                     LED3_LAT = 1;
@@ -791,6 +799,10 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
+                    redMode3 = red;
+                    greenMode3 = green;
+                    blueMode3 = blue;
+                    whiteMode3 = white;
                     DATAEE_WriteByte(EE_MODE3_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE3_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE3_REDADD, redMode1);
@@ -904,6 +916,10 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
+                    redMode4 = red;
+                    greenMode4 = green;
+                    blueMode4 = blue;
+                    whiteMode4 = white;
                     DATAEE_WriteByte(EE_MODE4_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE4_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE4_REDADD, redMode1);
