@@ -23098,7 +23098,6 @@ void main(void)
         {
             LATCbits.LATC7 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
-            LED_WriteFull(redMode1, greenMode1, blueMode1, whiteMode1, 3);
         }
         else if (state == 1)
         {
@@ -23109,7 +23108,6 @@ void main(void)
         {
             LATCbits.LATC5 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
-            LED_WriteFull(redMode2, greenMode2, blueMode2, whiteMode2, 3);
         }
         else if(state == 2)
         {
@@ -23120,7 +23118,6 @@ void main(void)
         {
             LATAbits.LATA5 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
-            LED_WriteFull(redMode3, greenMode3, blueMode3, whiteMode3, 3);
         }
         else if(state == 3)
         {
@@ -23131,7 +23128,6 @@ void main(void)
         {
             LATCbits.LATC3 = 1;
             _delay((unsigned long)((50)*(64000000/4000000.0)));
-            LED_WriteFull(redMode4, greenMode4, blueMode4, whiteMode4, 3);
         }
         else if(state == 4)
         {

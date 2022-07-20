@@ -143,7 +143,6 @@ void main(void)
         {
             LED1_LAT = 1;
             __delay_us(50);
-            LED_WriteFull(redMode1, greenMode1, blueMode1, whiteMode1, LEDCOUNT);
         }
         else if (state == 1)
         {
@@ -153,8 +152,7 @@ void main(void)
         if(state == 2 && (DATAEE_ReadByte(EE_MODE2CHECKBYTEADD) == EE_CHECKBYTEDATA))
         {
             LED2_LAT = 1;
-            __delay_us(50);
-            LED_WriteFull(redMode2, greenMode2, blueMode2, whiteMode2, LEDCOUNT);
+            __delay_us(50);            
         }
         else if(state == 2)
         {
@@ -165,7 +163,6 @@ void main(void)
         {            
             LED3_LAT = 1;          
             __delay_us(50);
-            LED_WriteFull(redMode3, greenMode3, blueMode3, whiteMode3, LEDCOUNT);
         }
         else if(state == 3)
         {
@@ -176,7 +173,6 @@ void main(void)
         {
             LED4_LAT = 1;
             __delay_us(50);
-            LED_WriteFull(redMode4, greenMode4, blueMode4, whiteMode4, LEDCOUNT);
         }        
         else if(state == 4)
         {
