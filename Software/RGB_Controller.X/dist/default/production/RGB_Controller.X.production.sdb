@@ -1,0 +1,1081 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F16Q40 ]
+[d frameptr 1249 ]
+"113 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+[e E12898 . `uc
+POT1 2
+POT2 16
+POT3 17
+POT4 18
+channel_DAC2 58
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
+"79 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+[e E355 . `uc
+SPI1_DEFAULT 0
+]
+"96 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+[e E12896 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"102
+[e E12919 . `uc
+TMR2_T2INPPS 0
+TMR2_RESERVED 1
+TMR2_T4POSTSCALED 2
+TMR2_RESERVED_2 3
+TMR2_CCP1_OUT 4
+TMR2_PWM1S1P1_OUT 5
+TMR2_PWM1S1P2_OUT 6
+TMR2_PWM2S1P1_OUT 7
+TMR2_PWM2S1P2_OUT 8
+TMR2_PWM3S1P1_OUT 9
+TMR2_PWM3S1P2_OUT 10
+TMR2_CMP1_OUT 11
+TMR2_CMP2_OUT 12
+TMR2_ZCD_OUTPUT 13
+TMR2_CLC1_OUT 14
+TMR2_CLC2_OUT 15
+TMR2_CLC3_OUT 16
+TMR2_CLC4_OUT 17
+TMR2_UART1_RX_EDGE 18
+TMR2_UART1_TX_EDGE 19
+TMR2_UART2_RX_EDGE 20
+TMR2_UART2_TX_EDGE 21
+TMR2_UART3_RX_EDGE 22
+TMR2_UART3_TX_EDGE 23
+TMR2_RESERVED_3 24
+]
+"46 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\main.c
+[e E13378 . `uc
+SPI1_DEFAULT 0
+]
+"100
+[e E13477 . `uc
+MANUAL 0
+T1 1
+T2 2
+T3 3
+T4 4
+T1Dummy 5
+T2Dummy 6
+T3Dummy 7
+T4Dummy 8
+T1StateDummy 9
+T2StateDummy 10
+T3StateDummy 11
+T4StateDummy 12
+]
+"195
+[e E12914 . `uc
+POT1 2
+POT2 16
+POT3 17
+POT4 18
+channel_DAC2 58
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"3 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+[v _WS2812B_Write WS2812B_Write `(v  1 e 1 0 ]
+"11
+[v _map map `(l  1 e 4 0 ]
+"15
+[v _onePulse onePulse `(v  1 e 1 0 ]
+"22
+[v _zeroPulse zeroPulse `(v  1 e 1 0 ]
+"28
+[v _ws_send_byte ws_send_byte `(v  1 e 1 0 ]
+"55
+[v _LED_WriteFull LED_WriteFull `(v  1 e 1 0 ]
+"9 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+[v _LOOPDELAY_TimerISR LOOPDELAY_TimerISR `(v  1 e 1 0 ]
+"17
+[v _LOOPDELAY_Wait LOOPDELAY_Wait `(v  1 e 1 0 ]
+"23
+[v _LOOPDELAY_Init LOOPDELAY_Init `(v  1 e 1 0 ]
+"42 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"62 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"137
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+"174
+[v _ADCC_DischargeSampleCapacitor ADCC_DischargeSampleCapacitor `(v  1 e 1 0 ]
+"52 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"77
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"93 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+[v _FLASH_ReadPage FLASH_ReadPage `(v  1 e 1 0 ]
+"123
+[v _FLASH_WritePage FLASH_WritePage `(v  1 e 1 0 ]
+"200
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"231
+[v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+"264
+[v _DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
+"55 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"79
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"100
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+"108
+[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
+"64 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"108
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"119
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"130
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"144
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"155
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"165
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"176
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+"186
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"190
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X/DivFunctions.h
+[v _ledOutput ledOutput `[1]uc  1 e 1 0 ]
+"39
+[v _arrayPlace arrayPlace `l  1 e 4 0 ]
+[s S644 . 1 `uc 1 GO 1 0 :1:0 
+]
+"463 C:/Users/noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
+[s S646 . 1 `uc 1 NOT_DONE 1 0 :1:0 
+]
+[s S648 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S650 . 1 `uc 1 NVMGO 1 0 :1:0 
+]
+[u S652 . 1 `S644 1 . 1 0 `S646 1 . 1 0 `S648 1 . 1 0 `S650 1 . 1 0 ]
+[v _NVMCON0bits NVMCON0bits `VES652  1 e 1 @64 ]
+[s S627 . 1 `uc 1 CMD 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 WRERR 1 0 :1:7 
+]
+"503
+[s S631 . 1 `uc 1 NVMCMD 1 0 :3:0 
+]
+[u S633 . 1 `S627 1 . 1 0 `S631 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES633  1 e 1 @65 ]
+"523
+[v _NVMLOCK NVMLOCK `VEuc  1 e 1 @66 ]
+"552
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @67 ]
+"622
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @68 ]
+"692
+[v _NVMADRU NVMADRU `VEuc  1 e 1 @69 ]
+"757
+[v _NVMDATL NVMDATL `VEuc  1 e 1 @70 ]
+"1210
+[v _PMD0 PMD0 `VEuc  1 e 1 @99 ]
+"1267
+[v _PMD1 PMD1 `VEuc  1 e 1 @100 ]
+"1329
+[v _PMD2 PMD2 `VEuc  1 e 1 @101 ]
+"1391
+[v _PMD3 PMD3 `VEuc  1 e 1 @102 ]
+"1453
+[v _PMD4 PMD4 `VEuc  1 e 1 @103 ]
+"1515
+[v _PMD5 PMD5 `VEuc  1 e 1 @104 ]
+"3112
+[v _SPI1RXB SPI1RXB `VEuc  1 e 1 @128 ]
+"3182
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @129 ]
+"3259
+[v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @130 ]
+"3299
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @132 ]
+[s S496 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"3320
+[s S502 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S508 . 1 `S496 1 . 1 0 `S502 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES508  1 e 1 @132 ]
+"3365
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @133 ]
+"3467
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @134 ]
+"3667
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @137 ]
+"3921
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @140 ]
+"5056
+[v _ACTCON ACTCON `VEuc  1 e 1 @172 ]
+"5126
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5266
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5306
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5364
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5566
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"8597
+[v _RB4PPS RB4PPS `VEuc  1 e 1 @525 ]
+"8697
+[v _RB6PPS RB6PPS `VEuc  1 e 1 @527 ]
+"11513
+[v _SPI1SCKPPS SPI1SCKPPS `VEuc  1 e 1 @618 ]
+"11585
+[v _SPI1SDIPPS SPI1SDIPPS `VEuc  1 e 1 @619 ]
+"19846
+[v _T2TMR T2TMR `VEuc  1 e 1 @796 ]
+"19851
+[v _TMR2 TMR2 `VEuc  1 e 1 @796 ]
+"19884
+[v _T2PR T2PR `VEuc  1 e 1 @797 ]
+"19889
+[v _PR2 PR2 `VEuc  1 e 1 @797 ]
+"19922
+[v _T2CON T2CON `VEuc  1 e 1 @798 ]
+[s S991 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"19958
+[s S995 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S999 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S1007 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S1016 . 1 `S991 1 . 1 0 `S995 1 . 1 0 `S999 1 . 1 0 `S1007 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1016  1 e 1 @798 ]
+"20068
+[v _T2HLT T2HLT `VEuc  1 e 1 @799 ]
+[s S877 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"20101
+[s S882 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S888 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S893 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S899 . 1 `S877 1 . 1 0 `S882 1 . 1 0 `S888 1 . 1 0 `S893 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES899  1 e 1 @799 ]
+"20196
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @800 ]
+"20354
+[v _T2RST T2RST `VEuc  1 e 1 @801 ]
+[s S953 . 1 `uc 1 RSEL 1 0 :8:0 
+]
+"20381
+[s S955 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+`uc 1 RSEL4 1 0 :1:4 
+]
+[s S961 . 1 `uc 1 T2RSEL 1 0 :8:0 
+]
+[s S963 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+`uc 1 T2RSEL4 1 0 :1:4 
+]
+[u S969 . 1 `S953 1 . 1 0 `S955 1 . 1 0 `S961 1 . 1 0 `S963 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES969  1 e 1 @801 ]
+"26822
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @985 ]
+"26950
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @986 ]
+"27085
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @987 ]
+"27213
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @988 ]
+"27348
+[v _ADERRL ADERRL `VEuc  1 e 1 @989 ]
+"27476
+[v _ADERRH ADERRH `VEuc  1 e 1 @990 ]
+"27611
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @991 ]
+"27739
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @992 ]
+"27874
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @993 ]
+"28002
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @994 ]
+"28139
+[v _ADACCL ADACCL `VEuc  1 e 1 @995 ]
+"28267
+[v _ADACCH ADACCH `VEuc  1 e 1 @996 ]
+"28395
+[v _ADACCU ADACCU `VEuc  1 e 1 @997 ]
+"28523
+[v _ADCNT ADCNT `VEuc  1 e 1 @998 ]
+"28651
+[v _ADRPT ADRPT `VEuc  1 e 1 @999 ]
+"28786
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @1000 ]
+"28914
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @1001 ]
+"29049
+[v _ADRESL ADRESL `VEuc  1 e 1 @1002 ]
+"29177
+[v _ADRESH ADRESH `VEuc  1 e 1 @1003 ]
+"29297
+[v _ADPCH ADPCH `VEuc  1 e 1 @1004 ]
+"29362
+[v _ADACQL ADACQL `VEuc  1 e 1 @1006 ]
+"29490
+[v _ADACQH ADACQH `VEuc  1 e 1 @1007 ]
+"29582
+[v _ADCAP ADCAP `VEuc  1 e 1 @1008 ]
+"29641
+[v _ADPREL ADPREL `VEuc  1 e 1 @1009 ]
+"29769
+[v _ADPREH ADPREH `VEuc  1 e 1 @1010 ]
+"29861
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @1011 ]
+[s S84 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"29901
+[s S92 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S100 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+`uc 1 FM1 1 0 :1:3 
+]
+[s S105 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+[s S107 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[u S112 . 1 `S84 1 . 1 0 `S92 1 . 1 0 `S100 1 . 1 0 `S105 1 . 1 0 `S107 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES112  1 e 1 @1011 ]
+"29991
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @1012 ]
+[s S328 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"30012
+[s S334 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+[u S340 . 1 `S328 1 . 1 0 `S334 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES340  1 e 1 @1012 ]
+"30057
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @1013 ]
+[s S204 . 1 `uc 1 MD 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"30094
+[s S209 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+[s S218 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+[s S222 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+[u S230 . 1 `S204 1 . 1 0 `S209 1 . 1 0 `S218 1 . 1 0 `S222 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES230  1 e 1 @1013 ]
+"30199
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @1014 ]
+[s S149 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"30234
+[s S153 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[s S161 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[s S165 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+[u S173 . 1 `S149 1 . 1 0 `S153 1 . 1 0 `S161 1 . 1 0 `S165 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES173  1 e 1 @1014 ]
+"30329
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @1015 ]
+[s S264 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 AOV 1 0 :1:7 
+]
+"30366
+[s S271 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+[s S280 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+[s S284 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 OV 1 0 :1:7 
+]
+[u S290 . 1 `S264 1 . 1 0 `S271 1 . 1 0 `S280 1 . 1 0 `S284 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES290  1 e 1 @1015 ]
+"30461
+[v _ADREF ADREF `VEuc  1 e 1 @1016 ]
+"30601
+[v _ADACT ADACT `VEuc  1 e 1 @1017 ]
+"30693
+[v _ADCLK ADCLK `VEuc  1 e 1 @1018 ]
+"30797
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"30842
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"30892
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"30937
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"30982
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"31182
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"31221
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"31260
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"31299
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"31338
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"31494
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"31556
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"31618
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"31680
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"31742
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+[s S763 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+`uc 1 SPI1TXIE 1 0 :1:1 
+`uc 1 SPI1IE 1 0 :1:2 
+`uc 1 TMR2IE 1 0 :1:3 
+`uc 1 TMR1IE 1 0 :1:4 
+`uc 1 TMR1GIE 1 0 :1:5 
+`uc 1 CCP1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"34840
+[u S772 . 1 `S763 1 . 1 0 ]
+"34840
+"34840
+[v _PIE3bits PIE3bits `VES772  1 e 1 @1195 ]
+[s S672 . 1 `uc 1 SWIF 1 0 :1:0 
+`uc 1 HLVDIF 1 0 :1:1 
+`uc 1 OSFIF 1 0 :1:2 
+`uc 1 CSWIF 1 0 :1:3 
+`uc 1 NVMIF 1 0 :1:4 
+`uc 1 CLC1IF 1 0 :1:5 
+`uc 1 CRCIF 1 0 :1:6 
+`uc 1 IOCIF 1 0 :1:7 
+]
+"35309
+[u S681 . 1 `S672 1 . 1 0 ]
+"35309
+"35309
+[v _PIR0bits PIR0bits `VES681  1 e 1 @1203 ]
+[s S526 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"35487
+[u S535 . 1 `S526 1 . 1 0 ]
+"35487
+"35487
+[v _PIR3bits PIR3bits `VES535  1 e 1 @1206 ]
+"35939
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+[s S1151 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"35954
+[u S1158 . 1 `S1151 1 . 1 0 ]
+"35954
+"35954
+[v _LATAbits LATAbits `VES1158  1 e 1 @1214 ]
+"35984
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+"36023
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+[s S1130 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"36040
+[u S1139 . 1 `S1130 1 . 1 0 ]
+"36040
+"36040
+[v _LATCbits LATCbits `VES1139  1 e 1 @1216 ]
+"36085
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"36135
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+[s S479 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"36149
+[u S485 . 1 `S479 1 . 1 0 ]
+"36149
+"36149
+[v _TRISBbits TRISBbits `VES485  1 e 1 @1223 ]
+"36174
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+[s S1215 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"36251
+[u S1222 . 1 `S1215 1 . 1 0 ]
+"36251
+"36251
+[v _PORTAbits PORTAbits `VES1222  1 e 1 @1230 ]
+[s S1232 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"36300
+[u S1238 . 1 `S1232 1 . 1 0 ]
+"36300
+"36300
+[v _PORTBbits PORTBbits `VES1238  1 e 1 @1231 ]
+[s S1194 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"36342
+[u S1203 . 1 `S1194 1 . 1 0 ]
+"36342
+"36342
+[v _PORTCbits PORTCbits `VES1203  1 e 1 @1232 ]
+[s S598 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"36407
+[s S606 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"36407
+[u S609 . 1 `S598 1 . 1 0 `S606 1 . 1 0 ]
+"36407
+"36407
+[v _INTCON0bits INTCON0bits `VES609  1 e 1 @1238 ]
+"37390
+[v _TABLAT TABLAT `VEuc  1 e 1 @1269 ]
+"37419
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @1270 ]
+"37439
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @1271 ]
+"37459
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @1272 ]
+"5 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+[v _loopTimeCnt loopTimeCnt `VEus  1 s 2 loopTimeCnt ]
+"7
+[v _loopTimeMS loopTimeMS `us  1 s 2 loopTimeMS ]
+"58 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+[v _bufferRAM bufferRAM `us  1 e 2 @5376 ]
+[s S468 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+"60 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+[v _spi1_configuration spi1_configuration `C[1]S468  1 s 5 spi1_configuration ]
+"58 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"42 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"83
+[v main@timeout5sPressed4 timeout5sPressed4 `us  1 a 2 11 ]
+"82
+[v main@timeout5sPressed3 timeout5sPressed3 `us  1 a 2 9 ]
+"81
+[v main@timeout5sPressed2 timeout5sPressed2 `us  1 a 2 7 ]
+"80
+[v main@timeout5sPressed1 timeout5sPressed1 `us  1 a 2 5 ]
+"84
+[v main@timeout10s timeout10s `us  1 a 2 3 ]
+"79
+[v main@timeout5s timeout5s `us  1 a 2 0 ]
+"100
+[v main@state state `E13477  1 a 1 51 ]
+"51
+[v main@white white `uc  1 a 1 50 ]
+[v main@blue blue `uc  1 a 1 49 ]
+[v main@green green `uc  1 a 1 48 ]
+[v main@red red `uc  1 a 1 47 ]
+"52
+[v main@whiteMode1 whiteMode1 `uc  1 a 1 46 ]
+[v main@blueMode1 blueMode1 `uc  1 a 1 45 ]
+[v main@greenMode1 greenMode1 `uc  1 a 1 44 ]
+[v main@redMode1 redMode1 `uc  1 a 1 43 ]
+"65
+[v main@led4Blink led4Blink `a  1 a 1 42 ]
+"64
+[v main@led3Blink led3Blink `a  1 a 1 41 ]
+"63
+[v main@led2Blink led2Blink `a  1 a 1 40 ]
+"62
+[v main@led1Blink led1Blink `a  1 a 1 39 ]
+"55
+[v main@whiteMode4 whiteMode4 `uc  1 a 1 38 ]
+"54
+[v main@whiteMode3 whiteMode3 `uc  1 a 1 37 ]
+"53
+[v main@whiteMode2 whiteMode2 `uc  1 a 1 36 ]
+"55
+[v main@blueMode4 blueMode4 `uc  1 a 1 35 ]
+[v main@greenMode4 greenMode4 `uc  1 a 1 34 ]
+[v main@redMode4 redMode4 `uc  1 a 1 33 ]
+"54
+[v main@blueMode3 blueMode3 `uc  1 a 1 32 ]
+[v main@greenMode3 greenMode3 `uc  1 a 1 31 ]
+[v main@redMode3 redMode3 `uc  1 a 1 30 ]
+"53
+[v main@blueMode2 blueMode2 `uc  1 a 1 29 ]
+[v main@greenMode2 greenMode2 `uc  1 a 1 28 ]
+[v main@redMode2 redMode2 `uc  1 a 1 27 ]
+"58
+[v main@taster3Flag taster3Flag `uc  1 a 1 26 ]
+"59
+[v main@taster4Flag taster4Flag `uc  1 a 1 25 ]
+"57
+[v main@taster2Flag taster2Flag `uc  1 a 1 24 ]
+"56
+[v main@taster1Flag taster1Flag `uc  1 a 1 23 ]
+"76
+[v main@whiteAdj whiteAdj `a  1 a 1 22 ]
+"75
+[v main@blueAdj blueAdj `a  1 a 1 21 ]
+"74
+[v main@greenAdj greenAdj `a  1 a 1 20 ]
+"73
+[v main@redAdj redAdj `a  1 a 1 19 ]
+"85
+[v main@timeout500ms timeout500ms `uc  1 a 1 18 ]
+"86
+[v main@timeout250ms timeout250ms `uc  1 a 1 17 ]
+"71
+[v main@led4StateBlink led4StateBlink `a  1 a 1 16 ]
+"70
+[v main@led3StateBlink led3StateBlink `a  1 a 1 15 ]
+"69
+[v main@led2StateBlink led2StateBlink `a  1 a 1 14 ]
+"68
+[v main@led1StateBlink led1StateBlink `a  1 a 1 13 ]
+"78
+[v main@timeout100ms timeout100ms `uc  1 a 1 2 ]
+"990
+} 0
+"11 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+[v _map map `(l  1 e 4 0 ]
+{
+[v map@x x `l  1 p 4 26 ]
+[v map@in_min in_min `l  1 p 4 30 ]
+[v map@in_max in_max `l  1 p 4 34 ]
+[v map@out_min out_min `l  1 p 4 38 ]
+[v map@out_max out_max `l  1 p 4 42 ]
+"13
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 22 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 21 ]
+[v ___aldiv@counter counter `uc  1 a 1 20 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 12 ]
+[v ___aldiv@divisor divisor `l  1 p 4 16 ]
+"41
+} 0
+"50 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"64 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"186
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"188
+} 0
+"64 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"77 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"55 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"117
+} 0
+"61 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"52 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"62 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"111
+} 0
+"79 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+"81
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 1 ]
+"93
+} 0
+"17 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+[v _LOOPDELAY_Wait LOOPDELAY_Wait `(v  1 e 1 0 ]
+{
+"21
+} 0
+"23
+[v _LOOPDELAY_Init LOOPDELAY_Init `(v  1 e 1 0 ]
+{
+[v LOOPDELAY_Init@newLoopTimeMS newLoopTimeMS `us  1 p 2 0 ]
+"26
+} 0
+"55 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+[v _LED_WriteFull LED_WriteFull `(v  1 e 1 0 ]
+{
+[v LED_WriteFull@red red `uc  1 a 1 wreg ]
+"57
+[v LED_WriteFull@i i `um  1 a 3 13 ]
+"55
+[v LED_WriteFull@red red `uc  1 a 1 wreg ]
+[v LED_WriteFull@green green `uc  1 p 1 6 ]
+[v LED_WriteFull@blue blue `uc  1 p 1 7 ]
+[v LED_WriteFull@white white `uc  1 p 1 8 ]
+[v LED_WriteFull@ledcount ledcount `um  1 p 3 9 ]
+"57
+[v LED_WriteFull@red red `uc  1 a 1 12 ]
+"67
+} 0
+"3
+[v _WS2812B_Write WS2812B_Write `(v  1 e 1 0 ]
+{
+[v WS2812B_Write@R R `uc  1 a 1 wreg ]
+[v WS2812B_Write@R R `uc  1 a 1 wreg ]
+[v WS2812B_Write@G G `uc  1 p 1 1 ]
+[v WS2812B_Write@B B `uc  1 p 1 2 ]
+[v WS2812B_Write@W W `uc  1 p 1 3 ]
+"5
+[v WS2812B_Write@R R `uc  1 a 1 4 ]
+"9
+} 0
+"28
+[v _ws_send_byte ws_send_byte `(v  1 e 1 0 ]
+{
+[v ws_send_byte@K K `uc  1 a 1 wreg ]
+[v ws_send_byte@K K `uc  1 a 1 wreg ]
+"30
+[v ws_send_byte@K K `uc  1 a 1 0 ]
+"53
+} 0
+"22
+[v _zeroPulse zeroPulse `(v  1 e 1 0 ]
+{
+"27
+} 0
+"15
+[v _onePulse onePulse `(v  1 e 1 0 ]
+{
+"20
+} 0
+"108 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
+{
+"110
+[v SPI1_ExchangeBlock@data data `*.39uc  1 a 2 4 ]
+"108
+[v SPI1_ExchangeBlock@block block `*.39v  1 p 2 0 ]
+[v SPI1_ExchangeBlock@blockSize blockSize `ui  1 p 2 2 ]
+"118
+} 0
+"231 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+[v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+{
+"233
+[v DATAEE_WriteByte@GIEBitValue GIEBitValue `uc  1 a 1 3 ]
+"231
+[v DATAEE_WriteByte@bAdd bAdd `us  1 p 2 0 ]
+[v DATAEE_WriteByte@bData bData `uc  1 p 1 2 ]
+"262
+} 0
+"264
+[v _DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
+{
+[v DATAEE_ReadByte@bAdd bAdd `us  1 p 2 0 ]
+"276
+} 0
+"137 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E12898  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E12898  1 a 1 wreg ]
+"140
+[v ADCC_GetSingleConversion@channel channel `E12898  1 a 1 4 ]
+"160
+} 0
+"174
+[v _ADCC_DischargeSampleCapacitor ADCC_DischargeSampleCapacitor `(v  1 e 1 0 ]
+{
+"178
+} 0
+"58 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"69
+} 0
+"165 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"174
+} 0
+"176
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+{
+"184
+} 0
+"9 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+[v _LOOPDELAY_TimerISR LOOPDELAY_TimerISR `(v  1 e 1 0 ]
+{
+"15
+} 0
+"190 D:\Git Repos\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"193
+} 0

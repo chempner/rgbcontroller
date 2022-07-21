@@ -14,12 +14,16 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 
 void onePulse(void)
 {
-    SPI1_ExchangeByte(0xF0);
+//    SPI1_ExchangeByte(0xF0);
+    ledOutput[arrayPlace] = 0xF0;
+    arrayPlace++;
 }
 
 void zeroPulse(void)
 {
-    SPI1_ExchangeByte(0xC0);
+//    SPI1_ExchangeByte(0xC0);
+    ledOutput[arrayPlace] = 0xC0;
+    arrayPlace++;
 }
 void ws_send_byte(uint8_t K)
 {
@@ -53,5 +57,11 @@ void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint
     for(uint24_t i=0; i <= ledcount; i++)
     {
         WS2812B_Write(red, green, blue, white);
+    }
+    
+    SPI1_ExchangeBlock(ledOutput, sizeof(ledOutput));
+    for(;arrayPlace >= 0; arrayPlace--)
+    {
+        ledOutput[arrayPlace] = 0;
     }
 }

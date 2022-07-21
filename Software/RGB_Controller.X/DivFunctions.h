@@ -34,3 +34,6 @@ void zeroPulse(void);
 void ws_send_byte(uint8_t K);
 
 void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount);
+
+uint8_t ledOutput [] = {0};
+long arrayPlace = 0;
