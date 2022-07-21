@@ -37,7 +37,7 @@
 #define TIMEOUT5S       250
 #define TIMEOUT10s      500
 #define TIMEOUT100MS    20
-#define TIMEOUT250MS    50
+#define TIMEOUT250MS    12
 
 void main(void)
 {
