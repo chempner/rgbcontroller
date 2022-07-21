@@ -13,46 +13,46 @@
 %PSECTS
 $dist/default/production\RGB_Controller.X.production.o
 ivt0x8 CODE 0 8 8 12 1
-cinit CODE 0 3E7A 3E7A 20 1
+cinit CODE 0 3E4A 3E4A 1C 1
 idloc IDLOC 5 200000 200000 20 1
 text0 CODE 0 1608 1608 2218 1
-text1 CODE 0 3B74 3B74 7A 1
-text2 CODE 0 3BEE 3BEE 6A 1
+text1 CODE 0 3ADA 3ADA 7A 1
+text2 CODE 0 3B54 3B54 6A 1
 text3 CODE 0 3820 3820 10C 1
-text4 CODE 0 3EBA 3EBA 1E 1
-text5 CODE 0 3DFE 3DFE 2E 1
-text6 CODE 0 3FBA 3FBA A 1
-text7 CODE 0 3F86 3F86 1A 1
-text8 CODE 0 3F32 3F32 1C 1
-text9 CODE 0 3C58 3C58 66 1
-nvCOMRAM COMRAM 1 53F 53F 2 1
-text10 CODE 0 3F4E 3F4E 1C 1
-text11 CODE 0 3FDE 3FDE 4 1
-text12 CODE 0 3D1E 3D1E 5C 1
+text4 CODE 0 3E0E 3E0E 1E 1
+text5 CODE 0 3D50 3D50 2E 1
+text6 CODE 0 3EEE 3EEE A 1
+text7 CODE 0 3EBA 3EBA 1A 1
+text8 CODE 0 3E66 3E66 1C 1
+text9 CODE 0 3BBE 3BBE 66 1
+nvCOMRAM COMRAM 1 53A 53A 2 1
+text10 CODE 0 3E82 3E82 1C 1
+text11 CODE 0 3F22 3F22 4 1
+text12 CODE 0 3C24 3C24 5C 1
 text13 CODE 0 392C 392C DA 1
-text14 CODE 0 3E9A 3E9A 20 1
-text15 CODE 0 3FC4 3FC4 A 1
-text16 CODE 0 3ADA 3ADA 9A 1
-text17 CODE 0 3F6A 3F6A 1C 1
+text14 CODE 0 3DEE 3DEE 20 1
+text15 CODE 0 3EF8 3EF8 A 1
+text16 CODE 0 3CD2 3CD2 4C 1
+text17 CODE 0 3E9E 3E9E 1C 1
 text18 CODE 0 3A06 3A06 D4 1
-text19 CODE 0 3ED8 3ED8 1E 1
-text20 CODE 0 3EF6 3EF6 1E 1
-text21 CODE 0 3CBE 3CBE 60 1
-text22 CODE 0 3D7A 3D7A 52 1
-text23 CODE 0 3FA0 3FA0 1A 1
-text24 CODE 0 3DCC 3DCC 32 1
-text25 CODE 0 3FCE 3FCE 8 1
-text26 CODE 0 3E58 3E58 22 1
-text27 CODE 0 3FD6 3FD6 8 1
-text28 CODE 0 3E2C 3E2C 2C 1
-text29 CODE 0 3F14 3F14 1E 1
-text30 CODE 0 3FE2 3FE2 2 1
+text19 CODE 0 3F02 3F02 8 1
+text20 CODE 0 3F0A 3F0A 8 1
+text21 CODE 0 3DAA 3DAA 22 1
+text22 CODE 0 3C80 3C80 52 1
+text23 CODE 0 3ED4 3ED4 1A 1
+text24 CODE 0 3D1E 3D1E 32 1
+text25 CODE 0 3F12 3F12 8 1
+text26 CODE 0 3DCC 3DCC 22 1
+text27 CODE 0 3F1A 3F1A 8 1
+text28 CODE 0 3D7E 3D7E 2C 1
+text29 CODE 0 3E2C 3E2C 1E 1
+text30 CODE 0 3F26 3F26 2 1
 cstackCOMRAM COMRAM 1 501 501 35 1
 cstackBANK5 BANK5 1 560 560 34 1
 smallconst SMALLCONST 0 1600 1600 8 1
-bssCOMRAM COMRAM 1 536 536 9 1
+bssCOMRAM COMRAM 1 536 536 4 1
 config CONFIG 4 300000 300000 A 1
-$C:\Users\noe\AppData\Local\Temp\scko.o
+$C:\Users\noe\AppData\Local\Temp\sbv8.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 1A 1A 4 1
 reset_vec CODE 0 0 0 4 1
@@ -73,12 +73,12 @@ BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
 CONST 1E-15FF 1
-CONST 3FE4-FFFF 1
+CONST 3F28-FFFF 1
 STACK 594-14FF 1
-SMALLCONST 3FE4-FFFF 1
+SMALLCONST 3F28-FFFF 1
 CODE 4-7 1
 CODE 1E-15FF 1
-CODE 3FE4-FFFF 1
+CODE 3F28-FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
@@ -91,13 +91,13 @@ BANK18 1200-12FF 1
 BANK19 1300-13FF 1
 BANK20 1400-14FF 1
 BANK21 1502-15FF 1
-BIGRAM 541-55F 1
+BIGRAM 53C-55F 1
 BIGRAM 594-14FF 1
 BIGRAM 1502-15FF 1
-COMRAM 541-55F 1
+COMRAM 53C-55F 1
 CONFIG 30000A-300011 1
 EEDATA 380000-3803FF 1
-MEDIUMCONST 3FE4-FFFF 1
+MEDIUMCONST 3F28-FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -112,117 +112,107 @@ MEDIUMCONST 3FE4-FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\RGB_Controller.X.production.o
-3FE2 text30 CODE >190:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3FE2 text30 CODE >193:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3F14 text29 CODE >9:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3F14 text29 CODE >11:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3F2C text29 CODE >13:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3F30 text29 CODE >15:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3E2C text28 CODE >176:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E2C text28 CODE >180:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E3E text28 CODE >182:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E56 text28 CODE >184:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3FD6 text27 CODE >165:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3FD6 text27 CODE >169:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3FD8 text27 CODE >173:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3FDC text27 CODE >174:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E58 text26 CODE >58:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
-3E58 text26 CODE >61:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
-3E74 text26 CODE >63:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
-3E78 text26 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
-3FCE text25 CODE >174:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3FCE text25 CODE >177:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3FD4 text25 CODE >178:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DCC text24 CODE >137:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DCE text24 CODE >140:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DD4 text24 CODE >143:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DD8 text24 CODE >146:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DDA text24 CODE >149:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DDC text24 CODE >153:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DDC text24 CODE >155:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DEA text24 CODE >159:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3DFC text24 CODE >160:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3FA0 text23 CODE >264:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3FA0 text23 CODE >267:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3FA6 text23 CODE >268:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3FAA text23 CODE >269:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3FB0 text23 CODE >272:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3FB4 text23 CODE >273:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3FB6 text23 CODE >275:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3FB8 text23 CODE >276:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3D7A text22 CODE >231:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3D7A text22 CODE >233:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3D82 text22 CODE >236:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3D88 text22 CODE >237:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3D8C text22 CODE >238:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3D92 text22 CODE >241:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3D98 text22 CODE >244:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DA0 text22 CODE >247:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DA2 text22 CODE >250:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DA6 text22 CODE >251:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DAA text22 CODE >254:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DAC text22 CODE >255:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DBA text22 CODE >258:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DC4 text22 CODE >261:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3DCA text22 CODE >262:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
-3CBE text21 CODE >108:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3CBE text21 CODE >110:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3CC6 text21 CODE >111:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3CCA text21 CODE >113:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3CD0 text21 CODE >114:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3CE0 text21 CODE >115:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3CEE text21 CODE >116:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3D02 text21 CODE >111:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3D1C text21 CODE >118:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3EF6 text20 CODE >15:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3EF6 text20 CODE >18:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F06 text20 CODE >19:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F12 text20 CODE >20:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3ED8 text19 CODE >22:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3ED8 text19 CODE >25:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3EE8 text19 CODE >26:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3EF4 text19 CODE >27:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A06 text18 CODE >28:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A08 text18 CODE >30:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A1E text18 CODE >31:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A22 text18 CODE >33:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A38 text18 CODE >34:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A3C text18 CODE >36:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A52 text18 CODE >37:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A56 text18 CODE >39:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A6C text18 CODE >40:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A70 text18 CODE >42:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A86 text18 CODE >43:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3A8A text18 CODE >45:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3AA0 text18 CODE >46:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3AA4 text18 CODE >48:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3ABA text18 CODE >49:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3ABE text18 CODE >51:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3AD4 text18 CODE >52:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3AD8 text18 CODE >53:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F6A text17 CODE >3:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F6C text17 CODE >5:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F72 text17 CODE >6:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F78 text17 CODE >7:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F7E text17 CODE >8:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3F84 text17 CODE >9:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3ADA text16 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3ADC text16 CODE >57:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3AEC text16 CODE >59:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3AFE text16 CODE >60:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3B24 text16 CODE >62:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3B2E text16 CODE >63:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3B40 text16 CODE >64:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3B44 text16 CODE >66:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3B54 text16 CODE >67:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3B72 text16 CODE >68:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3FC4 text15 CODE >23:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3FC4 text15 CODE >25:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3FCC text15 CODE >26:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3E9A text14 CODE >17:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3E9A text14 CODE >19:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3EB0 text14 CODE >20:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
-3EB8 text14 CODE >21:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3F26 text30 CODE >190:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3F26 text30 CODE >193:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3E2C text29 CODE >9:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3E2C text29 CODE >11:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3E44 text29 CODE >13:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3E48 text29 CODE >15:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3D7E text28 CODE >176:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D7E text28 CODE >180:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D90 text28 CODE >182:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3DA8 text28 CODE >184:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3F1A text27 CODE >165:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3F1A text27 CODE >169:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3F1C text27 CODE >173:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3F20 text27 CODE >174:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3DCC text26 CODE >58:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+3DCC text26 CODE >61:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+3DE8 text26 CODE >63:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+3DEC text26 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+3F12 text25 CODE >174:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3F12 text25 CODE >177:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3F18 text25 CODE >178:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D1E text24 CODE >137:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D20 text24 CODE >140:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D26 text24 CODE >143:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D2A text24 CODE >146:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D2C text24 CODE >149:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D2E text24 CODE >153:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D2E text24 CODE >155:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D3C text24 CODE >159:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3D4E text24 CODE >160:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3ED4 text23 CODE >264:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3ED4 text23 CODE >267:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3EDA text23 CODE >268:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3EDE text23 CODE >269:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3EE4 text23 CODE >272:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3EE8 text23 CODE >273:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3EEA text23 CODE >275:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3EEC text23 CODE >276:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3C80 text22 CODE >231:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3C80 text22 CODE >233:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3C88 text22 CODE >236:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3C8E text22 CODE >237:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3C92 text22 CODE >238:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3C98 text22 CODE >241:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3C9E text22 CODE >244:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CA6 text22 CODE >247:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CA8 text22 CODE >250:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CAC text22 CODE >251:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CB0 text22 CODE >254:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CB2 text22 CODE >255:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CC0 text22 CODE >258:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CCA text22 CODE >261:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3CD0 text22 CODE >262:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
+3DAA text21 CODE >100:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3DAC text21 CODE >102:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3DB2 text21 CODE >103:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3DB8 text21 CODE >104:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3DC6 text21 CODE >105:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3DCA text21 CODE >106:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3F0A text20 CODE >15:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3F0A text20 CODE >17:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3F10 text20 CODE >18:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3F02 text19 CODE >20:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3F02 text19 CODE >22:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3F08 text19 CODE >23:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A06 text18 CODE >24:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A08 text18 CODE >26:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A1E text18 CODE >27:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A22 text18 CODE >29:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A38 text18 CODE >30:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A3C text18 CODE >32:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A52 text18 CODE >33:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A56 text18 CODE >35:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A6C text18 CODE >36:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A70 text18 CODE >38:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A86 text18 CODE >39:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3A8A text18 CODE >41:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3AA0 text18 CODE >42:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3AA4 text18 CODE >44:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3ABA text18 CODE >45:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3ABE text18 CODE >47:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3AD4 text18 CODE >48:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3AD8 text18 CODE >49:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3E9E text17 CODE >3:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3EA0 text17 CODE >5:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3EA6 text17 CODE >6:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3EAC text17 CODE >7:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3EB2 text17 CODE >8:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3EB8 text17 CODE >9:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3CD2 text16 CODE >51:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3CD4 text16 CODE >53:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3CE4 text16 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3CF6 text16 CODE >56:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3D1C text16 CODE >57:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3EF8 text15 CODE >23:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3EF8 text15 CODE >25:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3F00 text15 CODE >26:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3DEE text14 CODE >17:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3DEE text14 CODE >19:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3E04 text14 CODE >20:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
+3E0C text14 CODE >21:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
 392C text13 CODE >79:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
 392E text13 CODE >81:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
 393E text13 CODE >83:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
@@ -233,107 +223,107 @@ $dist/default/production\RGB_Controller.X.production.o
 39CC text13 CODE >88:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
 3A02 text13 CODE >89:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
 3A04 text13 CODE >93:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3D1E text12 CODE >62:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D1E text12 CODE >66:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D24 text12 CODE >68:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D28 text12 CODE >70:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D2C text12 CODE >72:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D30 text12 CODE >74:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D34 text12 CODE >76:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D38 text12 CODE >78:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D3C text12 CODE >80:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D40 text12 CODE >82:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D44 text12 CODE >84:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D48 text12 CODE >86:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D4C text12 CODE >88:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D50 text12 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D54 text12 CODE >92:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D58 text12 CODE >94:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D5C text12 CODE >96:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D60 text12 CODE >98:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D64 text12 CODE >100:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D68 text12 CODE >102:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D6C text12 CODE >104:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D70 text12 CODE >106:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D74 text12 CODE >108:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3D78 text12 CODE >111:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
-3FDE text11 CODE >52:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
-3FDE text11 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
-3FE0 text11 CODE >56:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
-3F4E text10 CODE >61:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F4E text10 CODE >64:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F54 text10 CODE >66:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F58 text10 CODE >68:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F5C text10 CODE >70:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F60 text10 CODE >72:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F64 text10 CODE >74:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F68 text10 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3C58 text9 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C58 text9 CODE >60:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C5C text9 CODE >61:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C60 text9 CODE >62:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C64 text9 CODE >67:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C68 text9 CODE >68:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C6C text9 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C70 text9 CODE >74:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C76 text9 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C7A text9 CODE >76:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C7E text9 CODE >81:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C82 text9 CODE >82:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C86 text9 CODE >83:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C8A text9 CODE >88:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C8E text9 CODE >89:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C92 text9 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C96 text9 CODE >95:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C9A text9 CODE >96:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3C9E text9 CODE >97:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CA0 text9 CODE >102:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CA4 text9 CODE >103:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CA8 text9 CODE >104:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CAA text9 CODE >113:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CB0 text9 CODE >114:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CB4 text9 CODE >115:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CB8 text9 CODE >116:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3CBC text9 CODE >117:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
-3F32 text8 CODE >77:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F32 text8 CODE >80:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F38 text8 CODE >82:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F3C text8 CODE >84:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F40 text8 CODE >86:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F44 text8 CODE >88:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F48 text8 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F4C text8 CODE >91:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3F86 text7 CODE >64:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3F86 text7 CODE >67:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3F8C text7 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3F90 text7 CODE >71:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3F94 text7 CODE >73:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3F98 text7 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3F9C text7 CODE >76:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3F9E text7 CODE >77:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-3FBA text6 CODE >186:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3FBA text6 CODE >187:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3FC2 text6 CODE >188:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3DFE text5 CODE >64:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3DFE text5 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E04 text5 CODE >72:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E08 text5 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E0C text5 CODE >78:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E10 text5 CODE >81:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E14 text5 CODE >84:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E16 text5 CODE >87:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E18 text5 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E24 text5 CODE >93:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3E2A text5 CODE >94:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
-3EBA text4 CODE >50:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3EBA text4 CODE >52:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3EBE text4 CODE >53:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3EC2 text4 CODE >54:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3EC6 text4 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3ECA text4 CODE >56:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3ECE text4 CODE >57:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3ED2 text4 CODE >58:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
-3ED6 text4 CODE >59:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3C24 text12 CODE >62:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C24 text12 CODE >66:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C2A text12 CODE >68:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C2E text12 CODE >70:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C32 text12 CODE >72:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C36 text12 CODE >74:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C3A text12 CODE >76:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C3E text12 CODE >78:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C42 text12 CODE >80:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C46 text12 CODE >82:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C4A text12 CODE >84:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C4E text12 CODE >86:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C52 text12 CODE >88:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C56 text12 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C5A text12 CODE >92:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C5E text12 CODE >94:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C62 text12 CODE >96:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C66 text12 CODE >98:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C6A text12 CODE >100:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C6E text12 CODE >102:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C72 text12 CODE >104:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C76 text12 CODE >106:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C7A text12 CODE >108:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3C7E text12 CODE >111:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
+3F22 text11 CODE >52:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+3F22 text11 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+3F24 text11 CODE >56:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/interrupt_manager.c
+3E82 text10 CODE >61:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E82 text10 CODE >64:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E88 text10 CODE >66:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E8C text10 CODE >68:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E90 text10 CODE >70:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E94 text10 CODE >72:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E98 text10 CODE >74:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E9C text10 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3BBE text9 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BBE text9 CODE >60:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BC2 text9 CODE >61:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BC6 text9 CODE >62:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BCA text9 CODE >67:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BCE text9 CODE >68:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BD2 text9 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BD6 text9 CODE >74:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BDC text9 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BE0 text9 CODE >76:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BE4 text9 CODE >81:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BE8 text9 CODE >82:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BEC text9 CODE >83:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BF0 text9 CODE >88:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BF4 text9 CODE >89:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BF8 text9 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3BFC text9 CODE >95:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C00 text9 CODE >96:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C04 text9 CODE >97:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C06 text9 CODE >102:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C0A text9 CODE >103:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C0E text9 CODE >104:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C10 text9 CODE >113:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C16 text9 CODE >114:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C1A text9 CODE >115:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C1E text9 CODE >116:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3C22 text9 CODE >117:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/pin_manager.c
+3E66 text8 CODE >77:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E66 text8 CODE >80:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E6C text8 CODE >82:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E70 text8 CODE >84:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E74 text8 CODE >86:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E78 text8 CODE >88:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E7C text8 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E80 text8 CODE >91:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3EBA text7 CODE >64:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3EBA text7 CODE >67:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3EC0 text7 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3EC4 text7 CODE >71:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3EC8 text7 CODE >73:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3ECC text7 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3ED0 text7 CODE >76:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3ED2 text7 CODE >77:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+3EEE text6 CODE >186:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3EEE text6 CODE >187:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3EF6 text6 CODE >188:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D50 text5 CODE >64:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D50 text5 CODE >69:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D56 text5 CODE >72:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D5A text5 CODE >75:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D5E text5 CODE >78:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D62 text5 CODE >81:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D66 text5 CODE >84:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D68 text5 CODE >87:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D6A text5 CODE >90:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D76 text5 CODE >93:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3D7C text5 CODE >94:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
+3E0E text4 CODE >50:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E0E text4 CODE >52:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E12 text4 CODE >53:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E16 text4 CODE >54:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E1A text4 CODE >55:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E1E text4 CODE >56:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E22 text4 CODE >57:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E26 text4 CODE >58:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
+3E2A text4 CODE >59:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/mcc.c
 3820 text3 CODE >7:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 3820 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 3824 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
@@ -359,18 +349,18 @@ $dist/default/production\RGB_Controller.X.production.o
 390A text3 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 391A text3 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
 392A text3 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c
-3BEE text2 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3BEE text2 CODE >119:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3BFE text2 CODE >121:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3C0C text2 CODE >122:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3C1C text2 CODE >123:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3C26 text2 CODE >124:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3C30 text2 CODE >125:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3C46 text2 CODE >128:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3C56 text2 CODE >129:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
-3B74 text1 CODE >11:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3B74 text1 CODE >12:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
-3BEC text1 CODE >13:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3B54 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3B54 text2 CODE >119:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3B64 text2 CODE >121:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3B72 text2 CODE >122:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3B82 text2 CODE >123:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3B8C text2 CODE >124:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3B96 text2 CODE >125:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3BAC text2 CODE >128:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3BBC text2 CODE >129:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
+3ADA text1 CODE >11:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3ADA text1 CODE >12:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+3B52 text1 CODE >13:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
 1608 text0 CODE >42:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\main.c
 1608 text0 CODE >45:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\main.c
 160C text0 CODE >46:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\main.c
@@ -889,25 +879,23 @@ $dist/default/production\RGB_Controller.X.production.o
 3770 text0 CODE >981:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\main.c
 378E text0 CODE >982:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\main.c
 3798 text0 CODE >988:C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\main.c
-3E7A cinit CODE >13828:C:\Users\noe\AppData\Local\Temp\scko.s
-3E7A cinit CODE >13830:C:\Users\noe\AppData\Local\Temp\scko.s
-3E7A cinit CODE >13833:C:\Users\noe\AppData\Local\Temp\scko.s
-3E7A cinit CODE >13852:C:\Users\noe\AppData\Local\Temp\scko.s
-3E7E cinit CODE >13853:C:\Users\noe\AppData\Local\Temp\scko.s
-3E80 cinit CODE >13854:C:\Users\noe\AppData\Local\Temp\scko.s
-3E80 cinit CODE >13855:C:\Users\noe\AppData\Local\Temp\scko.s
-3E82 cinit CODE >13856:C:\Users\noe\AppData\Local\Temp\scko.s
-3E84 cinit CODE >13857:C:\Users\noe\AppData\Local\Temp\scko.s
-3E86 cinit CODE >13865:C:\Users\noe\AppData\Local\Temp\scko.s
-3E88 cinit CODE >13866:C:\Users\noe\AppData\Local\Temp\scko.s
-3E8A cinit CODE >13867:C:\Users\noe\AppData\Local\Temp\scko.s
-3E8C cinit CODE >13868:C:\Users\noe\AppData\Local\Temp\scko.s
-3E8E cinit CODE >13869:C:\Users\noe\AppData\Local\Temp\scko.s
-3E90 cinit CODE >13870:C:\Users\noe\AppData\Local\Temp\scko.s
-3E92 cinit CODE >13871:C:\Users\noe\AppData\Local\Temp\scko.s
-3E94 cinit CODE >13877:C:\Users\noe\AppData\Local\Temp\scko.s
-3E94 cinit CODE >13879:C:\Users\noe\AppData\Local\Temp\scko.s
-3E96 cinit CODE >13880:C:\Users\noe\AppData\Local\Temp\scko.s
+3E4A cinit CODE >13827:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E4A cinit CODE >13829:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E4A cinit CODE >13832:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E4A cinit CODE >13845:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E4C cinit CODE >13846:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E4E cinit CODE >13847:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E50 cinit CODE >13848:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E52 cinit CODE >13856:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E54 cinit CODE >13857:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E56 cinit CODE >13858:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E58 cinit CODE >13859:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E5A cinit CODE >13860:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E5C cinit CODE >13861:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E5E cinit CODE >13862:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E60 cinit CODE >13868:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E60 cinit CODE >13870:C:\Users\noe\AppData\Local\Temp\sbv8.s
+3E62 cinit CODE >13871:C:\Users\noe\AppData\Local\Temp\sbv8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -923,21 +911,20 @@ $dist/default/production\RGB_Controller.X.production.o
 _SPI1SCKPPS 26A 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SPI1SDIPPS 26B 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\RGB_Controller.X.production.o
-__Hspace_0 3FE4 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
+__Hspace_0 3F28 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Hspace_1 594 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\RGB_Controller.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\noe\AppData\Local\Temp\scko.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\noe\AppData\Local\Temp\sbv8.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\RGB_Controller.X.production.o
 _TBLPTRH 4F7 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _TBLPTRL 4F6 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _TBLPTRU 4F8 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__end_of_INTERRUPT_Initialize 3FE2 0 CODE 0 text11 dist/default/production\RGB_Controller.X.production.o
-SPI1_ExchangeBlock@blockSize 503 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-_PMD_Initialize 3F32 0 CODE 0 text8 dist/default/production\RGB_Controller.X.production.o
-_LOOPDELAY_Init 3FC4 0 CODE 0 text15 dist/default/production\RGB_Controller.X.production.o
-_LOOPDELAY_Wait 3E9A 0 CODE 0 text14 dist/default/production\RGB_Controller.X.production.o
+__end_of_INTERRUPT_Initialize 3F26 0 CODE 0 text11 dist/default/production\RGB_Controller.X.production.o
+_PMD_Initialize 3E66 0 CODE 0 text8 dist/default/production\RGB_Controller.X.production.o
+_LOOPDELAY_Init 3EF8 0 CODE 0 text15 dist/default/production\RGB_Controller.X.production.o
+_LOOPDELAY_Wait 3DEE 0 CODE 0 text14 dist/default/production\RGB_Controller.X.production.o
 ?_map 51B 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Lsmallconst 1600 0 SMALLCONST 0 smallconst dist/default/production\RGB_Controller.X.production.o
 _LATA 4BE 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -954,22 +941,19 @@ _TMR2 31C 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _WPUA 401 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _WPUB 409 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _WPUC 411 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\noe\AppData\Local\Temp\scko.o
+___sp 0 0 STACK 2 stack C:\Users\noe\AppData\Local\Temp\sbv8.o
 _main 1608 0 CODE 0 text0 dist/default/production\RGB_Controller.X.production.o
 map@x 51B 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-start 1A 0 CODE 0 init C:\Users\noe\AppData\Local\Temp\scko.o
+start 1A 0 CODE 0 init C:\Users\noe\AppData\Local\Temp\sbv8.o
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-SPI1_ExchangeBlock@data 505 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
-__end_of_SPI1_Initialize 3FA0 0 CODE 0 text7 dist/default/production\RGB_Controller.X.production.o
-LED_WriteFull@sizeArr 511 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+__end_of_SPI1_Initialize 3ED4 0 CODE 0 text7 dist/default/production\RGB_Controller.X.production.o
 ?___lmul 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 ?_ADCC_GetSingleConversion 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\RGB_Controller.X.production.o
 __end_of_spi1_configuration 1606 0 SMALLCONST 0 smallconst dist/default/production\RGB_Controller.X.production.o
-__size_of_SPI1_ExchangeBlock 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_TMR2_Initialize 3DFE 0 CODE 0 text5 dist/default/production\RGB_Controller.X.production.o
+_TMR2_Initialize 3D50 0 CODE 0 text5 dist/default/production\RGB_Controller.X.production.o
 main@timeout10s 563 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\RGB_Controller.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -977,11 +961,11 @@ main@blueMode1 58D 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.
 main@blueMode2 57D 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@blueMode3 580 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@blueMode4 583 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\noe\AppData\Local\Temp\scko.o
-intlevel0 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\scko.o
-intlevel1 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\scko.o
-intlevel2 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\scko.o
-intlevel3 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\scko.o
+__accesstop 560 0 ABS 0 - C:\Users\noe\AppData\Local\Temp\sbv8.o
+intlevel0 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\sbv8.o
+intlevel1 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\sbv8.o
+intlevel2 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\sbv8.o
+intlevel3 0 0 CODE 0 text C:\Users\noe\AppData\Local\Temp\sbv8.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
 main@timeout100ms 562 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@timeout250ms 571 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
@@ -990,16 +974,16 @@ ___aldiv@divisor 511 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Control
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\RGB_Controller.X.production.o
 main@timeout5s 560 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\RGB_Controller.X.production.o
-__end_of_PMD_Initialize 3F4E 0 CODE 0 text8 dist/default/production\RGB_Controller.X.production.o
+__end_of_PMD_Initialize 3E82 0 CODE 0 text8 dist/default/production\RGB_Controller.X.production.o
 ___aldiv@sign 516 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-__end_of_LOOPDELAY_Init 3FCE 0 CODE 0 text15 dist/default/production\RGB_Controller.X.production.o
-__end_of_LOOPDELAY_Wait 3EBA 0 CODE 0 text14 dist/default/production\RGB_Controller.X.production.o
+__end_of_LOOPDELAY_Init 3F02 0 CODE 0 text15 dist/default/production\RGB_Controller.X.production.o
+__end_of_LOOPDELAY_Wait 3E0E 0 CODE 0 text14 dist/default/production\RGB_Controller.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\RGB_Controller.X.production.o
-_LED_WriteFull 3ADA 0 CODE 0 text16 dist/default/production\RGB_Controller.X.production.o
+_LED_WriteFull 3CD2 0 CODE 0 text16 dist/default/production\RGB_Controller.X.production.o
 ivt0x8_base 8 0 CODE 0 ivt0x8 dist/default/production\RGB_Controller.X.production.o
 __size_of_WS2812B_Write 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SPI1CON0bits 84 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_SPI1_Initialize 3F86 0 CODE 0 text7 dist/default/production\RGB_Controller.X.production.o
+_SPI1_Initialize 3EBA 0 CODE 0 text7 dist/default/production\RGB_Controller.X.production.o
 _ACTCON AC 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ADACCH 3E4 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ADACCL 3E3 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -1027,34 +1011,33 @@ _ANSELB 408 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ANSELC 410 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 DATAEE_WriteByte@GIEBitValue 504 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __size_of_ADCC_GetSingleConversion 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\noe\AppData\Local\Temp\scko.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\noe\AppData\Local\Temp\scko.o
-__end_of_INTERRUPT_InterruptManager 3E7A 0 CODE 0 text26 dist/default/production\RGB_Controller.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\noe\AppData\Local\Temp\sbv8.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\noe\AppData\Local\Temp\sbv8.o
+__end_of_INTERRUPT_InterruptManager 3DEE 0 CODE 0 text26 dist/default/production\RGB_Controller.X.production.o
 main@taster1Flag 577 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@taster2Flag 578 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@taster3Flag 57A 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@taster4Flag 579 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-__end_of___lmul 3C58 0 CODE 0 text2 dist/default/production\RGB_Controller.X.production.o
+__end_of___lmul 3BBE 0 CODE 0 text2 dist/default/production\RGB_Controller.X.production.o
 ADCC_GetSingleConversion@channel 505 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\RGB_Controller.X.production.o
 main@red 58F 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\RGB_Controller.X.production.o
+__size_of_SPI1_ExchangeByte 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __end_of___aldiv 392C 0 CODE 0 text3 dist/default/production\RGB_Controller.X.production.o
 __size_of_LOOPDELAY_TimerISR 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__end_of_DATAEE_ReadByte 3FBA 0 CODE 0 text23 dist/default/production\RGB_Controller.X.production.o
-__end_of_WS2812B_Write 3F86 0 CODE 0 text17 dist/default/production\RGB_Controller.X.production.o
+__end_of_DATAEE_ReadByte 3EEE 0 CODE 0 text23 dist/default/production\RGB_Controller.X.production.o
+__end_of_WS2812B_Write 3EBA 0 CODE 0 text17 dist/default/production\RGB_Controller.X.production.o
 _INLVLA 404 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _INLVLB 40C 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _INLVLC 414 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 LED_WriteFull@i 50E 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-_TMR2_SetInterruptHandler 3FBA 0 CODE 0 text6 dist/default/production\RGB_Controller.X.production.o
+_TMR2_SetInterruptHandler 3EEE 0 CODE 0 text6 dist/default/production\RGB_Controller.X.production.o
 __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\RGB_Controller.X.production.o
 __size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _INTCON0bits 4D6 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_PIN_MANAGER_Initialize 3C58 0 CODE 0 text9 dist/default/production\RGB_Controller.X.production.o
-_arrayPlace 536 0 COMRAM 1 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
-start_initialization 3E7A 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
-SPI1_ExchangeBlock@block 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+_PIN_MANAGER_Initialize 3BBE 0 CODE 0 text9 dist/default/production\RGB_Controller.X.production.o
+start_initialization 3E4A 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
 _ODCONA 402 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ODCONB 40A 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ODCONC 412 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -1071,19 +1054,19 @@ _ADSTPTH 3E0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ADSTPTL 3DF 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _RB4PPS 20D 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _RB6PPS 20F 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_DATAEE_WriteByte 3D7A 0 CODE 0 text22 dist/default/production\RGB_Controller.X.production.o
-__end_of_SYSTEM_Initialize 3ED8 0 CODE 0 text4 dist/default/production\RGB_Controller.X.production.o
-_ADCC_DischargeSampleCapacitor 3FCE 0 CODE 0 text25 dist/default/production\RGB_Controller.X.production.o
+_DATAEE_WriteByte 3C80 0 CODE 0 text22 dist/default/production\RGB_Controller.X.production.o
+__end_of_SYSTEM_Initialize 3E2C 0 CODE 0 text4 dist/default/production\RGB_Controller.X.production.o
+_ADCC_DischargeSampleCapacitor 3F12 0 CODE 0 text25 dist/default/production\RGB_Controller.X.production.o
 LED_WriteFull@blue 508 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __pcstackBANK5 560 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 _T2CLKCON 320 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _TABLAT 4F5 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __size_of_LED_WriteFull 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__end_of_ADCC_GetSingleConversion 3DFE 0 CODE 0 text24 dist/default/production\RGB_Controller.X.production.o
+__end_of_ADCC_GetSingleConversion 3D50 0 CODE 0 text24 dist/default/production\RGB_Controller.X.production.o
 __size_of_SPI1_Initialize 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_DATAEE_ReadByte 3FA0 0 CODE 0 text23 dist/default/production\RGB_Controller.X.production.o
+_DATAEE_ReadByte 3ED4 0 CODE 0 text23 dist/default/production\RGB_Controller.X.production.o
 TMR2_SetInterruptHandler@InterruptHandler 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-__end_of_ADCC_Initialize 3D7A 0 CODE 0 text12 dist/default/production\RGB_Controller.X.production.o
+__end_of_ADCC_Initialize 3C80 0 CODE 0 text12 dist/default/production\RGB_Controller.X.production.o
 main@led1StateBlink 56D 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __Hbank5 0 0 ABS 0 bank5 dist/default/production\RGB_Controller.X.production.o
 __Hbank6 0 0 ABS 0 bank6 dist/default/production\RGB_Controller.X.production.o
@@ -1129,7 +1112,7 @@ __Hbank20 0 0 ABS 0 bank20 dist/default/production\RGB_Controller.X.production.o
 __Hbank21 0 0 ABS 0 bank21 dist/default/production\RGB_Controller.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\RGB_Controller.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\RGB_Controller.X.production.o
-__smallconst 1600 0 SMALLCONST 0 smallconst C:\Users\noe\AppData\Local\Temp\scko.o
+__smallconst 1600 0 SMALLCONST 0 smallconst C:\Users\noe\AppData\Local\Temp\sbv8.o
 main@whiteMode1 58E 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@whiteMode2 584 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@whiteMode3 585 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
@@ -1149,7 +1132,7 @@ __Lidata 0 0 CODE 0 idata dist/default/production\RGB_Controller.X.production.o
 __Lidloc 0 0 IDLOC 5 idloc dist/default/production\RGB_Controller.X.production.o
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\RGB_Controller.X.production.o
 __Lparam 0 0 COMRAM 1 rparam dist/default/production\RGB_Controller.X.production.o
-__end_of_LED_WriteFull 3B74 0 CODE 0 text16 dist/default/production\RGB_Controller.X.production.o
+__end_of_LED_WriteFull 3D1E 0 CODE 0 text16 dist/default/production\RGB_Controller.X.production.o
 __Lrdata 0 0 COMRAM 1 rdata dist/default/production\RGB_Controller.X.production.o
 __Lstack 0 0 STACK 2 stack dist/default/production\RGB_Controller.X.production.o
 __Ltext0 0 0 ABS 0 text0 dist/default/production\RGB_Controller.X.production.o
@@ -1166,7 +1149,7 @@ __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\RGB_Controller.X.productio
 _PORTAbits 4CE 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _PORTBbits 4CF 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _PORTCbits 4D0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_INTERRUPT_Initialize 3FDE 0 CODE 0 text11 dist/default/production\RGB_Controller.X.production.o
+_INTERRUPT_Initialize 3F22 0 CODE 0 text11 dist/default/production\RGB_Controller.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\RGB_Controller.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\RGB_Controller.X.production.o
 __Hinit 1E 0 CODE 0 init dist/default/production\RGB_Controller.X.production.o
@@ -1181,42 +1164,43 @@ __Lrbit 0 0 COMRAM 1 rbit dist/default/production\RGB_Controller.X.production.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\RGB_Controller.X.production.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\RGB_Controller.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\RGB_Controller.X.production.o
-___lmul 3BEE 0 CODE 0 text2 dist/default/production\RGB_Controller.X.production.o
+___lmul 3B54 0 CODE 0 text2 dist/default/production\RGB_Controller.X.production.o
+__end_of_SPI1_ExchangeByte 3DCC 0 CODE 0 text21 dist/default/production\RGB_Controller.X.production.o
 __LcstackBANK5 0 0 ABS 0 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\RGB_Controller.X.production.o
 _PR2 31D 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__S0 3FE4 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
+__S0 3F28 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __S1 594 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __S2 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_map 3B74 0 CODE 0 text1 dist/default/production\RGB_Controller.X.production.o
+_map 3ADA 0 CODE 0 text1 dist/default/production\RGB_Controller.X.production.o
 __Hivt0x8 1A 0 CODE 0 ivt0x8 dist/default/production\RGB_Controller.X.production.o
 __size_of_TMR2_ISR 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 IVTBASEH 45E 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 IVTBASEL 45D 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 IVTBASEU 45F 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__pnvCOMRAM 53F 0 COMRAM 1 nvCOMRAM dist/default/production\RGB_Controller.X.production.o
+__pnvCOMRAM 53A 0 COMRAM 1 nvCOMRAM dist/default/production\RGB_Controller.X.production.o
 _SPI1BAUD 89 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SPI1CON0 84 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SPI1CON1 85 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SPI1CON2 86 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __size_of_onePulse 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _T2RSTbits 321 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_ADCC_Initialize 3D1E 0 CODE 0 text12 dist/default/production\RGB_Controller.X.production.o
+_ADCC_Initialize 3C24 0 CODE 0 text12 dist/default/production\RGB_Controller.X.production.o
 __pivt0x8 8 0 CODE 0 ivt0x8 dist/default/production\RGB_Controller.X.production.o
-__end_of_DATAEE_WriteByte 3DCC 0 CODE 0 text22 dist/default/production\RGB_Controller.X.production.o
+__end_of_DATAEE_WriteByte 3CD2 0 CODE 0 text22 dist/default/production\RGB_Controller.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\RGB_Controller.X.production.o
 __size_of_TMR2_SetInterruptHandler 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\RGB_Controller.X.production.o
-_loopTimeMS 53A 0 COMRAM 1 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
-_SYSTEM_Initialize 3EBA 0 CODE 0 text4 dist/default/production\RGB_Controller.X.production.o
-__end_of_map 3BEE 0 CODE 0 text1 dist/default/production\RGB_Controller.X.production.o
-_TMR2_DefaultInterruptHandler 3FE2 0 CODE 0 text30 dist/default/production\RGB_Controller.X.production.o
+_loopTimeMS 536 0 COMRAM 1 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
+_SYSTEM_Initialize 3E0E 0 CODE 0 text4 dist/default/production\RGB_Controller.X.production.o
+__end_of_map 3B54 0 CODE 0 text1 dist/default/production\RGB_Controller.X.production.o
+_TMR2_DefaultInterruptHandler 3F26 0 CODE 0 text30 dist/default/production\RGB_Controller.X.production.o
 __size_of_DATAEE_WriteByte 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_TMR2_CallBack 3E2C 0 CODE 0 text28 dist/default/production\RGB_Controller.X.production.o
+_TMR2_CallBack 3D7E 0 CODE 0 text28 dist/default/production\RGB_Controller.X.production.o
 LOOPDELAY_Init@newLoopTimeMS 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Hramtop 1600 0 RAM 0 ramtop dist/default/production\RGB_Controller.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\RGB_Controller.X.production.o
@@ -1246,7 +1230,7 @@ __Htext28 0 0 ABS 0 text28 dist/default/production\RGB_Controller.X.production.o
 __Htext29 0 0 ABS 0 text29 dist/default/production\RGB_Controller.X.production.o
 __Htext30 0 0 ABS 0 text30 dist/default/production\RGB_Controller.X.production.o
 __Htext31 0 0 ABS 0 text31 dist/default/production\RGB_Controller.X.production.o
-_INTERRUPT_InterruptManager 3E58 0 CODE 0 text26 dist/default/production\RGB_Controller.X.production.o
+_INTERRUPT_InterruptManager 3DCC 0 CODE 0 text26 dist/default/production\RGB_Controller.X.production.o
 __size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ws_send_byte 3A06 0 CODE 0 text18 dist/default/production\RGB_Controller.X.production.o
 _PIE3bits 4AB 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -1256,31 +1240,31 @@ main@greenMode1 58C 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller
 main@greenMode2 57C 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@greenMode3 57F 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@greenMode4 582 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-_TMR2_ISR 3FD6 0 CODE 0 text27 dist/default/production\RGB_Controller.X.production.o
-__ptext10 3F4E 0 CODE 0 text10 dist/default/production\RGB_Controller.X.production.o
-__ptext11 3FDE 0 CODE 0 text11 dist/default/production\RGB_Controller.X.production.o
-__ptext12 3D1E 0 CODE 0 text12 dist/default/production\RGB_Controller.X.production.o
+_TMR2_ISR 3F1A 0 CODE 0 text27 dist/default/production\RGB_Controller.X.production.o
+__ptext10 3E82 0 CODE 0 text10 dist/default/production\RGB_Controller.X.production.o
+__ptext11 3F22 0 CODE 0 text11 dist/default/production\RGB_Controller.X.production.o
+__ptext12 3C24 0 CODE 0 text12 dist/default/production\RGB_Controller.X.production.o
 __ptext13 392C 0 CODE 0 text13 dist/default/production\RGB_Controller.X.production.o
-__ptext14 3E9A 0 CODE 0 text14 dist/default/production\RGB_Controller.X.production.o
-__ptext15 3FC4 0 CODE 0 text15 dist/default/production\RGB_Controller.X.production.o
-__ptext16 3ADA 0 CODE 0 text16 dist/default/production\RGB_Controller.X.production.o
-__ptext17 3F6A 0 CODE 0 text17 dist/default/production\RGB_Controller.X.production.o
+__ptext14 3DEE 0 CODE 0 text14 dist/default/production\RGB_Controller.X.production.o
+__ptext15 3EF8 0 CODE 0 text15 dist/default/production\RGB_Controller.X.production.o
+__ptext16 3CD2 0 CODE 0 text16 dist/default/production\RGB_Controller.X.production.o
+__ptext17 3E9E 0 CODE 0 text17 dist/default/production\RGB_Controller.X.production.o
 __ptext18 3A06 0 CODE 0 text18 dist/default/production\RGB_Controller.X.production.o
-__ptext19 3ED8 0 CODE 0 text19 dist/default/production\RGB_Controller.X.production.o
-__ptext20 3EF6 0 CODE 0 text20 dist/default/production\RGB_Controller.X.production.o
-__ptext21 3CBE 0 CODE 0 text21 dist/default/production\RGB_Controller.X.production.o
-__ptext22 3D7A 0 CODE 0 text22 dist/default/production\RGB_Controller.X.production.o
-__ptext23 3FA0 0 CODE 0 text23 dist/default/production\RGB_Controller.X.production.o
-__ptext24 3DCC 0 CODE 0 text24 dist/default/production\RGB_Controller.X.production.o
-__ptext25 3FCE 0 CODE 0 text25 dist/default/production\RGB_Controller.X.production.o
-__ptext26 3E58 0 CODE 0 text26 dist/default/production\RGB_Controller.X.production.o
-__ptext27 3FD6 0 CODE 0 text27 dist/default/production\RGB_Controller.X.production.o
-__ptext28 3E2C 0 CODE 0 text28 dist/default/production\RGB_Controller.X.production.o
-__ptext29 3F14 0 CODE 0 text29 dist/default/production\RGB_Controller.X.production.o
-__ptext30 3FE2 0 CODE 0 text30 dist/default/production\RGB_Controller.X.production.o
+__ptext19 3F02 0 CODE 0 text19 dist/default/production\RGB_Controller.X.production.o
+__ptext20 3F0A 0 CODE 0 text20 dist/default/production\RGB_Controller.X.production.o
+__ptext21 3DAA 0 CODE 0 text21 dist/default/production\RGB_Controller.X.production.o
+__ptext22 3C80 0 CODE 0 text22 dist/default/production\RGB_Controller.X.production.o
+__ptext23 3ED4 0 CODE 0 text23 dist/default/production\RGB_Controller.X.production.o
+__ptext24 3D1E 0 CODE 0 text24 dist/default/production\RGB_Controller.X.production.o
+__ptext25 3F12 0 CODE 0 text25 dist/default/production\RGB_Controller.X.production.o
+__ptext26 3DCC 0 CODE 0 text26 dist/default/production\RGB_Controller.X.production.o
+__ptext27 3F1A 0 CODE 0 text27 dist/default/production\RGB_Controller.X.production.o
+__ptext28 3D7E 0 CODE 0 text28 dist/default/production\RGB_Controller.X.production.o
+__ptext29 3E2C 0 CODE 0 text29 dist/default/production\RGB_Controller.X.production.o
+__ptext30 3F26 0 CODE 0 text30 dist/default/production\RGB_Controller.X.production.o
 __ptext31 0 0 CODE 0 text31 dist/default/production\RGB_Controller.X.production.o
 main@greenAdj 574 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-__end_of_PIN_MANAGER_Initialize 3CBE 0 CODE 0 text9 dist/default/production\RGB_Controller.X.production.o
+__end_of_PIN_MANAGER_Initialize 3C24 0 CODE 0 text9 dist/default/production\RGB_Controller.X.production.o
 ___aldiv 3820 0 CODE 0 text3 dist/default/production\RGB_Controller.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\RGB_Controller.X.production.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\RGB_Controller.X.production.o
@@ -1298,29 +1282,30 @@ __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\RGB_Controller.X.productio
 __Lbigram 0 0 ABS 0 bigram dist/default/production\RGB_Controller.X.production.o
 ___lmul@multiplier 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 main@led1Blink 587 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-_onePulse 3EF6 0 CODE 0 text20 dist/default/production\RGB_Controller.X.production.o
+SPI1_ExchangeByte@data 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+_onePulse 3F0A 0 CODE 0 text20 dist/default/production\RGB_Controller.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\RGB_Controller.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\RGB_Controller.X.production.o
-__end_of_TMR2_ISR 3FDE 0 CODE 0 text27 dist/default/production\RGB_Controller.X.production.o
+__end_of_TMR2_ISR 3F22 0 CODE 0 text27 dist/default/production\RGB_Controller.X.production.o
 main@led2Blink 588 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 _LATAbits 4BE 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _LATCbits 4C0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_loopTimeCnt 53C 0 COMRAM 1 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
+_loopTimeCnt 538 0 COMRAM 1 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
 main@led3Blink 589 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@blue 591 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\RGB_Controller.X.production.o
 main@led4Blink 58A 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@green 590 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-__end_of_onePulse 3F14 0 CODE 0 text20 dist/default/production\RGB_Controller.X.production.o
+_SPI1_ExchangeByte 3DAA 0 CODE 0 text21 dist/default/production\RGB_Controller.X.production.o
+__end_of_onePulse 3F12 0 CODE 0 text20 dist/default/production\RGB_Controller.X.production.o
 main@state 593 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\RGB_Controller.X.production.o
 map@in_max 523 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 map@in_min 51F 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 main@white 592 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-__end_of_SPI1_ExchangeBlock 3D1E 0 CODE 0 text21 dist/default/production\RGB_Controller.X.production.o
 __end_of_SPI1_Open 3A06 0 CODE 0 text13 dist/default/production\RGB_Controller.X.production.o
-stackhi 14FF 0 ABS 0 - C:\Users\noe\AppData\Local\Temp\scko.o
-stacklo 594 0 ABS 0 - C:\Users\noe\AppData\Local\Temp\scko.o
+stackhi 14FF 0 ABS 0 - C:\Users\noe\AppData\Local\Temp\sbv8.o
+stacklo 594 0 ABS 0 - C:\Users\noe\AppData\Local\Temp\sbv8.o
 __size_of_SPI1_Open 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _OSCCON1 AD 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _OSCCON3 AF 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -1329,7 +1314,7 @@ __Lirdata 0 0 CODE 0 irdata dist/default/production\RGB_Controller.X.production.
 __Livt0x8 8 0 CODE 0 ivt0x8 dist/default/production\RGB_Controller.X.production.o
 _ADCON0bits 3F3 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ADCON1bits 3F4 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__end_of_zeroPulse 3EF6 0 CODE 0 text19 dist/default/production\RGB_Controller.X.production.o
+__end_of_zeroPulse 3F0A 0 CODE 0 text19 dist/default/production\RGB_Controller.X.production.o
 _ADCON2bits 3F5 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _ADCON3bits 3F6 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __size_of_ws_send_byte 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -1340,15 +1325,15 @@ __Lspace_1 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __pbssCOMRAM 536 0 COMRAM 1 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
-__end_of_TMR2_SetInterruptHandler 3FC4 0 CODE 0 text6 dist/default/production\RGB_Controller.X.production.o
+__end_of_TMR2_SetInterruptHandler 3EF8 0 CODE 0 text6 dist/default/production\RGB_Controller.X.production.o
 __HcstackBANK5 0 0 ABS 0 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-__end_of_ADCC_DischargeSampleCapacitor 3FD6 0 CODE 0 text25 dist/default/production\RGB_Controller.X.production.o
+__end_of_ADCC_DischargeSampleCapacitor 3F1A 0 CODE 0 text25 dist/default/production\RGB_Controller.X.production.o
 _PIR0bits 4B3 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _PIR3bits 4B6 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 SPI1_Open@spi1UniqueConfiguration 502 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 _SPI1TCNTL 82 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-end_of_initialization 3E94 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
+end_of_initialization 3E60 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
 _SPI1_Open 392C 0 CODE 0 text13 dist/default/production\RGB_Controller.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\RGB_Controller.X.production.o
 map@out_max 52B 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
@@ -1356,30 +1341,29 @@ map@out_min 527 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X
 LED_WriteFull@green 507 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 LED_WriteFull@white 509 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 ?___aldiv 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-_zeroPulse 3ED8 0 CODE 0 text19 dist/default/production\RGB_Controller.X.production.o
-ws_send_byte@K 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+_zeroPulse 3F02 0 CODE 0 text19 dist/default/production\RGB_Controller.X.production.o
+ws_send_byte@K 502 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __size_of_TMR2_CallBack 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_SPI1_ExchangeBlock 3CBE 0 CODE 0 text21 dist/default/production\RGB_Controller.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\RGB_Controller.X.production.o
 __end_of_ws_send_byte 3ADA 0 CODE 0 text18 dist/default/production\RGB_Controller.X.production.o
-WS2812B_Write@B 503 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-WS2812B_Write@G 502 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-WS2812B_Write@R 505 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-WS2812B_Write@W 504 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+WS2812B_Write@B 504 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+WS2812B_Write@G 503 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+WS2812B_Write@R 506 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
+WS2812B_Write@W 505 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Lramtop 1600 0 RAM 0 ramtop dist/default/production\RGB_Controller.X.production.o
 LED_WriteFull@red 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\RGB_Controller.X.production.o
-__pcinit 3E7A 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
+__pcinit 3E4A 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
 __ptext0 1608 0 CODE 0 text0 dist/default/production\RGB_Controller.X.production.o
-__ptext1 3B74 0 CODE 0 text1 dist/default/production\RGB_Controller.X.production.o
-__ptext2 3BEE 0 CODE 0 text2 dist/default/production\RGB_Controller.X.production.o
+__ptext1 3ADA 0 CODE 0 text1 dist/default/production\RGB_Controller.X.production.o
+__ptext2 3B54 0 CODE 0 text2 dist/default/production\RGB_Controller.X.production.o
 __ptext3 3820 0 CODE 0 text3 dist/default/production\RGB_Controller.X.production.o
-__ptext4 3EBA 0 CODE 0 text4 dist/default/production\RGB_Controller.X.production.o
-__ptext5 3DFE 0 CODE 0 text5 dist/default/production\RGB_Controller.X.production.o
-__ptext6 3FBA 0 CODE 0 text6 dist/default/production\RGB_Controller.X.production.o
-__ptext7 3F86 0 CODE 0 text7 dist/default/production\RGB_Controller.X.production.o
-__ptext8 3F32 0 CODE 0 text8 dist/default/production\RGB_Controller.X.production.o
-__ptext9 3C58 0 CODE 0 text9 dist/default/production\RGB_Controller.X.production.o
+__ptext4 3E0E 0 CODE 0 text4 dist/default/production\RGB_Controller.X.production.o
+__ptext5 3D50 0 CODE 0 text5 dist/default/production\RGB_Controller.X.production.o
+__ptext6 3EEE 0 CODE 0 text6 dist/default/production\RGB_Controller.X.production.o
+__ptext7 3EBA 0 CODE 0 text7 dist/default/production\RGB_Controller.X.production.o
+__ptext8 3E66 0 CODE 0 text8 dist/default/production\RGB_Controller.X.production.o
+__ptext9 3BBE 0 CODE 0 text9 dist/default/production\RGB_Controller.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\RGB_Controller.X.production.o
 DATAEE_WriteByte@bAdd 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\RGB_Controller.X.production.o
@@ -1404,14 +1388,14 @@ __Ltext28 0 0 ABS 0 text28 dist/default/production\RGB_Controller.X.production.o
 __Ltext29 0 0 ABS 0 text29 dist/default/production\RGB_Controller.X.production.o
 __Ltext30 0 0 ABS 0 text30 dist/default/production\RGB_Controller.X.production.o
 __Ltext31 0 0 ABS 0 text31 dist/default/production\RGB_Controller.X.production.o
-__ramtop 1600 0 RAM 0 ramtop C:\Users\noe\AppData\Local\Temp\scko.o
+__ramtop 1600 0 RAM 0 ramtop C:\Users\noe\AppData\Local\Temp\sbv8.o
 ___aldiv@dividend 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\RGB_Controller.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\RGB_Controller.X.production.o
 __psmallconst 1600 0 SMALLCONST 0 smallconst dist/default/production\RGB_Controller.X.production.o
-__end_of_LOOPDELAY_TimerISR 3F32 0 CODE 0 text29 dist/default/production\RGB_Controller.X.production.o
+__end_of_LOOPDELAY_TimerISR 3E4A 0 CODE 0 text29 dist/default/production\RGB_Controller.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\RGB_Controller.X.production.o
-__end_of_TMR2_CallBack 3E58 0 CODE 0 text28 dist/default/production\RGB_Controller.X.production.o
+__end_of_TMR2_CallBack 3DAA 0 CODE 0 text28 dist/default/production\RGB_Controller.X.production.o
 _SLRCONA 403 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SLRCONB 40B 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SLRCONC 413 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -1422,14 +1406,14 @@ main@redMode2 57B 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X
 main@redMode3 57E 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@redMode4 581 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\RGB_Controller.X.production.o
-__end_of__initialization 3E94 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
+__end_of__initialization 3E60 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
 main@redAdj 573 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 DATAEE_ReadByte@bAdd 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\RGB_Controller.X.production.o
 _ADSTATbits 3F7 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _NVMCON0bits 40 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _NVMCON1bits 41 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__end_of_TMR2_DefaultInterruptHandler 3FE4 0 CODE 0 text30 dist/default/production\RGB_Controller.X.production.o
+__end_of_TMR2_DefaultInterruptHandler 3F28 0 CODE 0 text30 dist/default/production\RGB_Controller.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\RGB_Controller.X.production.o
 _SPI1CLK 8C 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 _SPI1RXB 80 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
@@ -1439,8 +1423,7 @@ LED_WriteFull@ledcount 50A 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_C
 ___lmul@multiplicand 505 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __pcstackCOMRAM 501 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 DATAEE_WriteByte@bData 503 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
-_ledOutput 53E 0 COMRAM 1 bssCOMRAM dist/default/production\RGB_Controller.X.production.o
-_LOOPDELAY_TimerISR 3F14 0 CODE 0 text29 dist/default/production\RGB_Controller.X.production.o
+_LOOPDELAY_TimerISR 3E2C 0 CODE 0 text29 dist/default/production\RGB_Controller.X.production.o
 ___aldiv@counter 515 0 COMRAM 1 cstackCOMRAM dist/default/production\RGB_Controller.X.production.o
 __end_of_main 3820 0 CODE 0 text0 dist/default/production\RGB_Controller.X.production.o
 _bufferRAM 1500 0 ABS 1 - dist/default/production\RGB_Controller.X.production.o
@@ -1468,12 +1451,12 @@ __Lbss 0 0 RAM 1 bss dist/default/production\RGB_Controller.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\RGB_Controller.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\RGB_Controller.X.production.o
 main@led2StateBlink 56E 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-_TMR2_InterruptHandler 53F 0 COMRAM 1 nvCOMRAM dist/default/production\RGB_Controller.X.production.o
+_TMR2_InterruptHandler 53A 0 COMRAM 1 nvCOMRAM dist/default/production\RGB_Controller.X.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 __size_of_map 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-__end_of_OSCILLATOR_Initialize 3F6A 0 CODE 0 text10 dist/default/production\RGB_Controller.X.production.o
-__initialization 3E7A 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
-_ADCC_GetSingleConversion 3DCC 0 CODE 0 text24 dist/default/production\RGB_Controller.X.production.o
+__end_of_OSCILLATOR_Initialize 3E9E 0 CODE 0 text10 dist/default/production\RGB_Controller.X.production.o
+__initialization 3E4A 0 CODE 0 cinit dist/default/production\RGB_Controller.X.production.o
+_ADCC_GetSingleConversion 3D1E 0 CODE 0 text24 dist/default/production\RGB_Controller.X.production.o
 _T2CONbits 31E 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
 main@led4StateBlink 570 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\RGB_Controller.X.production.o
@@ -1485,11 +1468,11 @@ main@timeout5sPressed1 565 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Con
 main@timeout5sPressed2 567 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@timeout5sPressed3 569 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
 main@timeout5sPressed4 56B 0 BANK5 1 cstackBANK5 dist/default/production\RGB_Controller.X.production.o
-_WS2812B_Write 3F6A 0 CODE 0 text17 dist/default/production\RGB_Controller.X.production.o
+_WS2812B_Write 3E9E 0 CODE 0 text17 dist/default/production\RGB_Controller.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\RGB_Controller.X.production.o
 __size_of_INTERRUPT_Initialize 0 0 ABS 0 - dist/default/production\RGB_Controller.X.production.o
-_OSCILLATOR_Initialize 3F4E 0 CODE 0 text10 dist/default/production\RGB_Controller.X.production.o
-__end_of_TMR2_Initialize 3E2C 0 CODE 0 text5 dist/default/production\RGB_Controller.X.production.o
+_OSCILLATOR_Initialize 3E82 0 CODE 0 text10 dist/default/production\RGB_Controller.X.production.o
+__end_of_TMR2_Initialize 3D7E 0 CODE 0 text5 dist/default/production\RGB_Controller.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1516,8 +1499,8 @@ _bufferRAM 1 1500 2
 # All other numeric quantities are in decimal.
 %SEGMENTS
 ivt0x8 0 8 8 16 1
-text0 0 1608 1608 29DC 1
-cstackCOMRAM 1 501 501 40 1
+text0 0 1608 1608 2920 1
+cstackCOMRAM 1 501 501 3B 1
 cstackBANK5 1 560 560 34 1
 reset_vec 0 0 0 4 1
 smallconst 0 1600 1600 8 1

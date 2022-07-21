@@ -22953,9 +22953,6 @@ void zeroPulse(void);
 void ws_send_byte(uint8_t K);
 
 void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount);
-
-uint8_t ledOutput [] = {0};
-long arrayPlace = 0;
 # 1 "DivFunctions.c" 2
 
 
@@ -22973,16 +22970,12 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 
 void onePulse(void)
 {
-
-    ledOutput[arrayPlace] = 0xF0;
-    arrayPlace++;
+    SPI1_ExchangeByte(0xF0);
 }
 
 void zeroPulse(void)
 {
-
-    ledOutput[arrayPlace] = 0xC0;
-    arrayPlace++;
+    SPI1_ExchangeByte(0xC0);
 }
 void ws_send_byte(uint8_t K)
 {
@@ -23016,12 +23009,5 @@ void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint
     for(uint24_t i=0; i <= ledcount; i++)
     {
         WS2812B_Write(red, green, blue, white);
-    }
-
-    uint8_t sizeArr = (ledcount*192);
-    SPI1_ExchangeBlock(ledOutput, sizeArr);
-    for(;arrayPlace >= 0; arrayPlace--)
-    {
-        ledOutput[arrayPlace] = 0;
     }
 }

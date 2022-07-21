@@ -22948,9 +22948,6 @@ void zeroPulse(void);
 void ws_send_byte(uint8_t K);
 
 void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount);
-
-uint8_t ledOutput [] = {0};
-long arrayPlace = 0;
 # 2 "main.c" 2
 
 # 1 "./Loopdelay.h" 1
@@ -23163,25 +23160,25 @@ void main(void)
                     led4Blink = 0;
                 }
 
-                if(led1Blink && ++timeout500ms == 50)
+                if(led1Blink && ++timeout500ms == 12)
                 {
                     timeout500ms = 0;
                     LATCbits.LATC7 = !LATCbits.LATC7;
                 }
 
-                if(led2Blink && ++timeout500ms == 50)
+                if(led2Blink && ++timeout500ms == 12)
                 {
                     timeout500ms = 0;
                     LATCbits.LATC5 = !LATCbits.LATC5;
                 }
 
-                if(led3Blink && ++timeout500ms == 50)
+                if(led3Blink && ++timeout500ms == 12)
                 {
                     timeout500ms = 0;
                     LATAbits.LATA5 = !LATAbits.LATA5;
                 }
 
-                if(led4Blink && ++timeout500ms == 50)
+                if(led4Blink && ++timeout500ms == 12)
                 {
                     timeout500ms = 0;
                     LATCbits.LATC3 = !LATCbits.LATC3;
@@ -23462,7 +23459,7 @@ void main(void)
 
 
 
-                if(led1StateBlink && (++timeout250ms == 50))
+                if(led1StateBlink && (++timeout250ms == 12))
                 {
                     timeout250ms = 0;
                     LATCbits.LATC7 = !LATCbits.LATC7;
@@ -23575,7 +23572,7 @@ void main(void)
 
 
 
-                if(led2StateBlink && (++timeout250ms == 50))
+                if(led2StateBlink && (++timeout250ms == 12))
                 {
                     timeout250ms = 0;
                     LATCbits.LATC5 = !LATCbits.LATC5;
@@ -23689,7 +23686,7 @@ void main(void)
 
 
 
-                if(led3StateBlink && (++timeout250ms == 50))
+                if(led3StateBlink && (++timeout250ms == 12))
                 {
                     timeout250ms = 0;
                     LATAbits.LATA5 = !LATAbits.LATA5;
@@ -23802,7 +23799,7 @@ void main(void)
 
 
 
-                if(led4StateBlink && (++timeout250ms == 50))
+                if(led4StateBlink && (++timeout250ms == 12))
                 {
                     timeout250ms = 0;
                     LATCbits.LATC3 = !LATCbits.LATC3;

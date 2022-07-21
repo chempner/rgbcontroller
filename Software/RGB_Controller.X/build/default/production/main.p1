@@ -56,8 +56,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _LATAbits `VS1712 ~T0 @X0 0 e@1214 ]
 "100 main.c
 [; ;main.c: 100:     state_t state = MANUAL;
-[c E13477 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
-[n E13477 . MANUAL T1 T2 T3 T4 T1Dummy T2Dummy T3Dummy T4Dummy T1StateDummy T2StateDummy T3StateDummy T4StateDummy  ]
+[c E13475 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
+[n E13475 . MANUAL T1 T2 T3 T4 T1Dummy T2Dummy T3Dummy T4Dummy T1StateDummy T2StateDummy T3StateDummy T4StateDummy  ]
 "225 ./mcc_generated_files/memory.h
 [; ;./mcc_generated_files/memory.h: 225: uint8_t DATAEE_ReadByte(uint16_t bAdd);
 [v _DATAEE_ReadByte `(uc ~T0 @X0 0 ef1`us ]
@@ -2130,20 +2130,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37716
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 37716: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"38 ./DivFunctions.h
-[; ;./DivFunctions.h: 38: uint8_t ledOutput [] = {0};
-[v _ledOutput `uc ~T0 @X0 -> -> 1 `i `ux e ]
-[i _ledOutput
-:U ..
--> -> 0 `i `uc
-..
-]
-"39
-[; ;./DivFunctions.h: 39: long arrayPlace = 0;
-[v _arrayPlace `l ~T0 @X0 1 e ]
-[i _arrayPlace
--> -> 0 `i `l
-]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "42 main.c
 [; ;main.c: 42: void main(void)
@@ -2315,8 +2301,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 "100
 [; ;main.c: 100:     state_t state = MANUAL;
-[v _state `E13477 ~T0 @X0 1 a ]
-[e = _state . `E13477 0 ]
+[v _state `E13475 ~T0 @X0 1 a ]
+[e = _state . `E13475 0 ]
 "104
 [; ;main.c: 104:     if(DATAEE_ReadByte(3) == 69)
 [e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 3 `i `us `i -> 69 `i 1835  ]
@@ -2413,7 +2399,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "140
 [; ;main.c: 140:         state = DATAEE_ReadByte(36);
-[e = _state -> ( _DATAEE_ReadByte (1 -> -> 36 `i `us `E13477 ]
+[e = _state -> ( _DATAEE_ReadByte (1 -> -> 36 `i `us `E13475 ]
 "142
 [; ;main.c: 142:         if(state == 1 && (DATAEE_ReadByte(3) == 69))
 [e $ ! && == -> _state `ui -> -> 1 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 3 `i `us `i -> 69 `i 1840  ]
@@ -2439,7 +2425,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "149
 [; ;main.c: 149:             state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "150
 [; ;main.c: 150:         }
 }
@@ -2470,7 +2456,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "159
 [; ;main.c: 159:             state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "160
 [; ;main.c: 160:         }
 }
@@ -2501,7 +2487,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "169
 [; ;main.c: 169:             state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "170
 [; ;main.c: 170:         }
 }
@@ -2532,7 +2518,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "179
 [; ;main.c: 179:             state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "180
 [; ;main.c: 180:         }
 }
@@ -2613,7 +2599,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "217
 [; ;main.c: 217:                     state = T1Dummy;
-[e = _state . `E13477 5 ]
+[e = _state . `E13475 5 ]
 "218
 [; ;main.c: 218:                 }
 }
@@ -2626,7 +2612,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "222
 [; ;main.c: 222:                     state = T2Dummy;
-[e = _state . `E13477 6 ]
+[e = _state . `E13475 6 ]
 "223
 [; ;main.c: 223:                 }
 }
@@ -2639,7 +2625,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "227
 [; ;main.c: 227:                     state = T3Dummy;
-[e = _state . `E13477 7 ]
+[e = _state . `E13475 7 ]
 "228
 [; ;main.c: 228:                 }
 }
@@ -2652,7 +2638,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "231
 [; ;main.c: 231:                     state = T4Dummy ;
-[e = _state . `E13477 8 ]
+[e = _state . `E13475 8 ]
 "232
 [; ;main.c: 232:                 }
 }
@@ -2683,8 +2669,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 1862 ]
 "245
-[; ;main.c: 245:                 if(led1Blink && ++timeout500ms == 50)
-[e $ ! && != -> _led1Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 50 `i 1863  ]
+[; ;main.c: 245:                 if(led1Blink && ++timeout500ms == 12)
+[e $ ! && != -> _led1Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 12 `i 1863  ]
 "246
 [; ;main.c: 246:                 {
 {
@@ -2699,8 +2685,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 1863 ]
 "251
-[; ;main.c: 251:                 if(led2Blink && ++timeout500ms == 50)
-[e $ ! && != -> _led2Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 50 `i 1864  ]
+[; ;main.c: 251:                 if(led2Blink && ++timeout500ms == 12)
+[e $ ! && != -> _led2Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 12 `i 1864  ]
 "252
 [; ;main.c: 252:                 {
 {
@@ -2715,8 +2701,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 1864 ]
 "257
-[; ;main.c: 257:                 if(led3Blink && ++timeout500ms == 50)
-[e $ ! && != -> _led3Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 50 `i 1865  ]
+[; ;main.c: 257:                 if(led3Blink && ++timeout500ms == 12)
+[e $ ! && != -> _led3Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 12 `i 1865  ]
 "258
 [; ;main.c: 258:                 {
 {
@@ -2731,8 +2717,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 1865 ]
 "263
-[; ;main.c: 263:                 if(led4Blink && ++timeout500ms == 50)
-[e $ ! && != -> _led4Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 50 `i 1866  ]
+[; ;main.c: 263:                 if(led4Blink && ++timeout500ms == 12)
+[e $ ! && != -> _led4Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 12 `i 1866  ]
 "264
 [; ;main.c: 264:                 {
 {
@@ -3003,7 +2989,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode1 _greenMode1 _blueMode1 _whiteMode1 -> -> -> 300 `i `m `um ]
 "368
 [; ;main.c: 368:                     state = T1;
-[e = _state . `E13477 1 ]
+[e = _state . `E13475 1 ]
 "369
 [; ;main.c: 369:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3028,7 +3014,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led1Blink -> -> 1 `i `a ]
 "377
 [; ;main.c: 377:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "378
 [; ;main.c: 378:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3059,7 +3045,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode2 _greenMode2 _blueMode2 _whiteMode2 -> -> -> 300 `i `m `um ]
 "391
 [; ;main.c: 391:                     state = T2;
-[e = _state . `E13477 2 ]
+[e = _state . `E13475 2 ]
 "392
 [; ;main.c: 392:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3084,7 +3070,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led2Blink -> -> 1 `i `a ]
 "400
 [; ;main.c: 400:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "401
 [; ;main.c: 401:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3115,7 +3101,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode3 _greenMode3 _blueMode3 _whiteMode3 -> -> -> 300 `i `m `um ]
 "413
 [; ;main.c: 413:                     state = T3;
-[e = _state . `E13477 3 ]
+[e = _state . `E13475 3 ]
 "414
 [; ;main.c: 414:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3140,7 +3126,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led3Blink -> -> 1 `i `a ]
 "422
 [; ;main.c: 422:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "423
 [; ;main.c: 423:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3171,7 +3157,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode4 _greenMode4 _blueMode4 _whiteMode4 -> -> -> 300 `i `m `um ]
 "436
 [; ;main.c: 436:                     state = T4;
-[e = _state . `E13477 4 ]
+[e = _state . `E13475 4 ]
 "437
 [; ;main.c: 437:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3196,7 +3182,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led4Blink -> -> 1 `i `a ]
 "445
 [; ;main.c: 445:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "446
 [; ;main.c: 446:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3224,7 +3210,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
 "459
 [; ;main.c: 459:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "460
 [; ;main.c: 460:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3249,7 +3235,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led1StateBlink -> -> 1 `i `a ]
 "468
 [; ;main.c: 468:                     state = T1;
-[e = _state . `E13477 1 ]
+[e = _state . `E13475 1 ]
 "469
 [; ;main.c: 469:                 }
 }
@@ -3271,7 +3257,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
 "480
 [; ;main.c: 480:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "481
 [; ;main.c: 481:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3296,7 +3282,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led2StateBlink -> -> 1 `i `a ]
 "489
 [; ;main.c: 489:                     state = T2;
-[e = _state . `E13477 2 ]
+[e = _state . `E13475 2 ]
 "490
 [; ;main.c: 490:                 }
 }
@@ -3318,7 +3304,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 "501
 [; ;main.c: 501:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "502
 [; ;main.c: 502:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3343,7 +3329,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led3StateBlink -> -> 1 `i `a ]
 "510
 [; ;main.c: 510:                     state = T3;
-[e = _state . `E13477 3 ]
+[e = _state . `E13475 3 ]
 "511
 [; ;main.c: 511:                 }
 }
@@ -3365,7 +3351,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 "522
 [; ;main.c: 522:                     state = MANUAL;
-[e = _state . `E13477 0 ]
+[e = _state . `E13475 0 ]
 "523
 [; ;main.c: 523:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3390,7 +3376,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _led4StateBlink -> -> 1 `i `a ]
 "531
 [; ;main.c: 531:                     state = T4;
-[e = _state . `E13477 4 ]
+[e = _state . `E13475 4 ]
 "532
 [; ;main.c: 532:                 }
 }
@@ -3405,8 +3391,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 540:                 LED_WriteFull(redMode1,greenMode1,blueMode1, whiteMode1, 300);
 [e ( _LED_WriteFull (4 , , , , _redMode1 _greenMode1 _blueMode1 _whiteMode1 -> -> -> 300 `i `m `um ]
 "544
-[; ;main.c: 544:                 if(led1StateBlink && (++timeout250ms == 50))
-[e $ ! && != -> _led1StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 50 `i 1901  ]
+[; ;main.c: 544:                 if(led1StateBlink && (++timeout250ms == 12))
+[e $ ! && != -> _led1StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 12 `i 1901  ]
 "545
 [; ;main.c: 545:                 {
 {
@@ -3428,7 +3414,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "552
 [; ;main.c: 552:                     state = T1StateDummy;
-[e = _state . `E13477 9 ]
+[e = _state . `E13475 9 ]
 "553
 [; ;main.c: 553:                 }
 }
@@ -3607,7 +3593,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode2 _greenMode2 _blueMode2 _whiteMode2 -> -> -> 300 `i `m `um ]
 "620
 [; ;main.c: 620:                     state = T2;
-[e = _state . `E13477 2 ]
+[e = _state . `E13475 2 ]
 "621
 [; ;main.c: 621:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3635,7 +3621,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode3 _greenMode3 _blueMode3 _whiteMode3 -> -> -> 300 `i `m `um ]
 "630
 [; ;main.c: 630:                     state = T3 ;
-[e = _state . `E13477 3 ]
+[e = _state . `E13475 3 ]
 "631
 [; ;main.c: 631:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3663,7 +3649,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode4 _greenMode4 _blueMode4 _whiteMode4 -> -> -> 300 `i `m `um ]
 "640
 [; ;main.c: 640:                     state = T4 ;
-[e = _state . `E13477 4 ]
+[e = _state . `E13475 4 ]
 "641
 [; ;main.c: 641:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3684,8 +3670,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 653:                 LED_WriteFull(redMode2,greenMode2,blueMode2, whiteMode2, 300);
 [e ( _LED_WriteFull (4 , , , , _redMode2 _greenMode2 _blueMode2 _whiteMode2 -> -> -> 300 `i `m `um ]
 "657
-[; ;main.c: 657:                 if(led2StateBlink && (++timeout250ms == 50))
-[e $ ! && != -> _led2StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 50 `i 1917  ]
+[; ;main.c: 657:                 if(led2StateBlink && (++timeout250ms == 12))
+[e $ ! && != -> _led2StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 12 `i 1917  ]
 "658
 [; ;main.c: 658:                 {
 {
@@ -3707,7 +3693,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "665
 [; ;main.c: 665:                     state = T2StateDummy;
-[e = _state . `E13477 10 ]
+[e = _state . `E13475 10 ]
 "666
 [; ;main.c: 666:                 }
 }
@@ -3886,7 +3872,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode1 _greenMode1 _blueMode1 _whiteMode1 -> -> -> 300 `i `m `um ]
 "734
 [; ;main.c: 734:                     state = T1;
-[e = _state . `E13477 1 ]
+[e = _state . `E13475 1 ]
 "735
 [; ;main.c: 735:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3914,7 +3900,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode3 _greenMode3 _blueMode3 _whiteMode3 -> -> -> 300 `i `m `um ]
 "745
 [; ;main.c: 745:                     state = T3 ;
-[e = _state . `E13477 3 ]
+[e = _state . `E13475 3 ]
 "746
 [; ;main.c: 746:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3942,7 +3928,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode4 _greenMode4 _blueMode4 _whiteMode4 -> -> -> 300 `i `m `um ]
 "755
 [; ;main.c: 755:                     state = T4 ;
-[e = _state . `E13477 4 ]
+[e = _state . `E13475 4 ]
 "756
 [; ;main.c: 756:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -3963,8 +3949,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 767:                 LED_WriteFull(redMode3,greenMode3,blueMode3, whiteMode3, 300);
 [e ( _LED_WriteFull (4 , , , , _redMode3 _greenMode3 _blueMode3 _whiteMode3 -> -> -> 300 `i `m `um ]
 "771
-[; ;main.c: 771:                 if(led3StateBlink && (++timeout250ms == 50))
-[e $ ! && != -> _led3StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 50 `i 1933  ]
+[; ;main.c: 771:                 if(led3StateBlink && (++timeout250ms == 12))
+[e $ ! && != -> _led3StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 12 `i 1933  ]
 "772
 [; ;main.c: 772:                 {
 {
@@ -3986,7 +3972,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "779
 [; ;main.c: 779:                     state = T3StateDummy;
-[e = _state . `E13477 11 ]
+[e = _state . `E13475 11 ]
 "780
 [; ;main.c: 780:                 }
 }
@@ -4168,7 +4154,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode1 _greenMode1 _blueMode1 _whiteMode1 -> -> -> 300 `i `m `um ]
 "848
 [; ;main.c: 848:                     state = T1;
-[e = _state . `E13477 1 ]
+[e = _state . `E13475 1 ]
 "849
 [; ;main.c: 849:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -4196,7 +4182,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode2 _greenMode2 _blueMode2 _whiteMode2 -> -> -> 300 `i `m `um ]
 "859
 [; ;main.c: 859:                     state = T2;
-[e = _state . `E13477 2 ]
+[e = _state . `E13475 2 ]
 "860
 [; ;main.c: 860:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -4224,7 +4210,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode4 _greenMode4 _blueMode4 _whiteMode4 -> -> -> 300 `i `m `um ]
 "870
 [; ;main.c: 870:                     state = T4 ;
-[e = _state . `E13477 4 ]
+[e = _state . `E13475 4 ]
 "871
 [; ;main.c: 871:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -4242,8 +4228,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 880:                 LED_WriteFull(redMode4,greenMode4,blueMode4, whiteMode4, 300);
 [e ( _LED_WriteFull (4 , , , , _redMode4 _greenMode4 _blueMode4 _whiteMode4 -> -> -> 300 `i `m `um ]
 "884
-[; ;main.c: 884:                 if(led4StateBlink && (++timeout250ms == 50))
-[e $ ! && != -> _led4StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 50 `i 1949  ]
+[; ;main.c: 884:                 if(led4StateBlink && (++timeout250ms == 12))
+[e $ ! && != -> _led4StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 12 `i 1949  ]
 "885
 [; ;main.c: 885:                 {
 {
@@ -4265,7 +4251,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "892
 [; ;main.c: 892:                     state = T4StateDummy;
-[e = _state . `E13477 12 ]
+[e = _state . `E13475 12 ]
 "893
 [; ;main.c: 893:                 }
 }
@@ -4441,7 +4427,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
 "960
 [; ;main.c: 960:                     state = T1;
-[e = _state . `E13477 1 ]
+[e = _state . `E13475 1 ]
 "961
 [; ;main.c: 961:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -4469,7 +4455,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode2 _greenMode2 _blueMode2 _whiteMode2 -> -> -> 300 `i `m `um ]
 "971
 [; ;main.c: 971:                     state = T2;
-[e = _state . `E13477 2 ]
+[e = _state . `E13475 2 ]
 "972
 [; ;main.c: 972:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -4497,7 +4483,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _LED_WriteFull (4 , , , , _redMode3 _greenMode3 _blueMode3 _whiteMode3 -> -> -> 300 `i `m `um ]
 "982
 [; ;main.c: 982:                     state = T3 ;
-[e = _state . `E13477 3 ]
+[e = _state . `E13475 3 ]
 "983
 [; ;main.c: 983:                     DATAEE_WriteByte(36, state);
 [e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
@@ -4516,19 +4502,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 1855  ]
 [e :U 1856 ]
-[e [\ -> _state `ui , $ -> . `E13477 0 `ui 1857
- , $ -> . `E13477 5 `ui 1876
- , $ -> . `E13477 6 `ui 1879
- , $ -> . `E13477 7 `ui 1882
- , $ -> . `E13477 8 `ui 1885
- , $ -> . `E13477 9 `ui 1888
- , $ -> . `E13477 10 `ui 1891
- , $ -> . `E13477 11 `ui 1894
- , $ -> . `E13477 12 `ui 1897
- , $ -> . `E13477 1 `ui 1900
- , $ -> . `E13477 2 `ui 1916
- , $ -> . `E13477 3 `ui 1932
- , $ -> . `E13477 4 `ui 1948
+[e [\ -> _state `ui , $ -> . `E13475 0 `ui 1857
+ , $ -> . `E13475 5 `ui 1876
+ , $ -> . `E13475 6 `ui 1879
+ , $ -> . `E13475 7 `ui 1882
+ , $ -> . `E13475 8 `ui 1885
+ , $ -> . `E13475 9 `ui 1888
+ , $ -> . `E13475 10 `ui 1891
+ , $ -> . `E13475 11 `ui 1894
+ , $ -> . `E13475 12 `ui 1897
+ , $ -> . `E13475 1 `ui 1900
+ , $ -> . `E13475 2 `ui 1916
+ , $ -> . `E13475 3 `ui 1932
+ , $ -> . `E13475 4 `ui 1948
  1855 ]
 [e :U 1855 ]
 "989

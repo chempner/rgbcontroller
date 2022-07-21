@@ -2,9 +2,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34 ./DivFunctions.h
 [; ;./DivFunctions.h: 34: void ws_send_byte(uint8_t K);
 [v _ws_send_byte `(v ~T0 @X0 0 ef1`uc ]
-"67 ./mcc_generated_files/spi1.h
-[; ;./mcc_generated_files/spi1.h: 67: void SPI1_ExchangeBlock(void *block, size_t blockSize);
-[v _SPI1_ExchangeBlock `(v ~T0 @X0 0 ef2`*v`ui ]
+"66 ./mcc_generated_files/spi1.h
+[; ;./mcc_generated_files/spi1.h: 66: uint8_t SPI1_ExchangeByte(uint8_t data);
+[v _SPI1_ExchangeByte `(uc ~T0 @X0 0 ef1`uc ]
 "270 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2012,20 +2012,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37716
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 37716: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"38 ./DivFunctions.h
-[; ;./DivFunctions.h: 38: uint8_t ledOutput [] = {0};
-[v _ledOutput `uc ~T0 @X0 -> -> 1 `i `ux e ]
-[i _ledOutput
-:U ..
--> -> 0 `i `uc
-..
-]
-"39
-[; ;./DivFunctions.h: 39: long arrayPlace = 0;
-[v _arrayPlace `l ~T0 @X0 1 e ]
-[i _arrayPlace
--> -> 0 `i `l
-]
 "3 DivFunctions.c
 [; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
 [v _WS2812B_Write `(v ~T0 @X0 1 ef4`uc`uc`uc`uc ]
@@ -2085,228 +2071,196 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _onePulse ]
 [f ]
+"17
+[; ;DivFunctions.c: 17:     SPI1_ExchangeByte(0xF0);
+[e ( _SPI1_ExchangeByte (1 -> -> 240 `i `uc ]
 "18
-[; ;DivFunctions.c: 18:     ledOutput[arrayPlace] = 0xF0;
-[e = *U + &U _ledOutput * -> _arrayPlace `ux -> -> # *U &U _ledOutput `ui `ux -> -> 240 `i `uc ]
-"19
-[; ;DivFunctions.c: 19:     arrayPlace++;
-[e ++ _arrayPlace -> -> 1 `i `l ]
-"20
-[; ;DivFunctions.c: 20: }
+[; ;DivFunctions.c: 18: }
 [e :UE 1836 ]
 }
-"22
-[; ;DivFunctions.c: 22: void zeroPulse(void)
+"20
+[; ;DivFunctions.c: 20: void zeroPulse(void)
 [v _zeroPulse `(v ~T0 @X0 1 ef ]
-"23
-[; ;DivFunctions.c: 23: {
+"21
+[; ;DivFunctions.c: 21: {
 {
 [e :U _zeroPulse ]
 [f ]
-"25
-[; ;DivFunctions.c: 25:     ledOutput[arrayPlace] = 0xC0;
-[e = *U + &U _ledOutput * -> _arrayPlace `ux -> -> # *U &U _ledOutput `ui `ux -> -> 192 `i `uc ]
-"26
-[; ;DivFunctions.c: 26:     arrayPlace++;
-[e ++ _arrayPlace -> -> 1 `i `l ]
-"27
-[; ;DivFunctions.c: 27: }
+"22
+[; ;DivFunctions.c: 22:     SPI1_ExchangeByte(0xC0);
+[e ( _SPI1_ExchangeByte (1 -> -> 192 `i `uc ]
+"23
+[; ;DivFunctions.c: 23: }
 [e :UE 1837 ]
 }
-"28
-[; ;DivFunctions.c: 28: void ws_send_byte(uint8_t K)
+"24
+[; ;DivFunctions.c: 24: void ws_send_byte(uint8_t K)
 [v _ws_send_byte `(v ~T0 @X0 1 ef1`uc ]
-"29
-[; ;DivFunctions.c: 29: {
+"25
+[; ;DivFunctions.c: 25: {
 {
 [e :U _ws_send_byte ]
-"28
-[; ;DivFunctions.c: 28: void ws_send_byte(uint8_t K)
+"24
+[; ;DivFunctions.c: 24: void ws_send_byte(uint8_t K)
 [v _K `uc ~T0 @X0 1 r1 ]
-"29
-[; ;DivFunctions.c: 29: {
+"25
+[; ;DivFunctions.c: 25: {
 [f ]
-"30
-[; ;DivFunctions.c: 30:     if(K & 0b10000000) {onePulse();}
+"26
+[; ;DivFunctions.c: 26:     if(K & 0b10000000) {onePulse();}
 [e $ ! != & -> _K `i -> 128 `i -> 0 `i 1839  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1840  ]
-"31
-[; ;DivFunctions.c: 31:     else {zeroPulse();}
+"27
+[; ;DivFunctions.c: 27:     else {zeroPulse();}
 [e :U 1839 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1840 ]
-"33
-[; ;DivFunctions.c: 33:     if(K & 0b01000000) {onePulse();}
+"29
+[; ;DivFunctions.c: 29:     if(K & 0b01000000) {onePulse();}
 [e $ ! != & -> _K `i -> 64 `i -> 0 `i 1841  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1842  ]
-"34
-[; ;DivFunctions.c: 34:     else {zeroPulse();}
+"30
+[; ;DivFunctions.c: 30:     else {zeroPulse();}
 [e :U 1841 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1842 ]
-"36
-[; ;DivFunctions.c: 36:     if(K & 0b00100000) {onePulse();}
+"32
+[; ;DivFunctions.c: 32:     if(K & 0b00100000) {onePulse();}
 [e $ ! != & -> _K `i -> 32 `i -> 0 `i 1843  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1844  ]
-"37
-[; ;DivFunctions.c: 37:     else {zeroPulse();}
+"33
+[; ;DivFunctions.c: 33:     else {zeroPulse();}
 [e :U 1843 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1844 ]
-"39
-[; ;DivFunctions.c: 39:     if(K & 0b00010000) {onePulse();}
+"35
+[; ;DivFunctions.c: 35:     if(K & 0b00010000) {onePulse();}
 [e $ ! != & -> _K `i -> 16 `i -> 0 `i 1845  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1846  ]
-"40
-[; ;DivFunctions.c: 40:     else {zeroPulse();}
+"36
+[; ;DivFunctions.c: 36:     else {zeroPulse();}
 [e :U 1845 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1846 ]
-"42
-[; ;DivFunctions.c: 42:     if(K & 0b00001000) {onePulse();}
+"38
+[; ;DivFunctions.c: 38:     if(K & 0b00001000) {onePulse();}
 [e $ ! != & -> _K `i -> 8 `i -> 0 `i 1847  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1848  ]
-"43
-[; ;DivFunctions.c: 43:     else {zeroPulse();}
+"39
+[; ;DivFunctions.c: 39:     else {zeroPulse();}
 [e :U 1847 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1848 ]
-"45
-[; ;DivFunctions.c: 45:     if(K & 0b00000100) {onePulse();}
+"41
+[; ;DivFunctions.c: 41:     if(K & 0b00000100) {onePulse();}
 [e $ ! != & -> _K `i -> 4 `i -> 0 `i 1849  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1850  ]
-"46
-[; ;DivFunctions.c: 46:     else {zeroPulse();}
+"42
+[; ;DivFunctions.c: 42:     else {zeroPulse();}
 [e :U 1849 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1850 ]
-"48
-[; ;DivFunctions.c: 48:     if(K & 0b00000010) {onePulse();}
+"44
+[; ;DivFunctions.c: 44:     if(K & 0b00000010) {onePulse();}
 [e $ ! != & -> _K `i -> 2 `i -> 0 `i 1851  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1852  ]
-"49
-[; ;DivFunctions.c: 49:     else {zeroPulse();}
+"45
+[; ;DivFunctions.c: 45:     else {zeroPulse();}
 [e :U 1851 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1852 ]
-"51
-[; ;DivFunctions.c: 51:     if(K & 0b00000001) {onePulse();}
+"47
+[; ;DivFunctions.c: 47:     if(K & 0b00000001) {onePulse();}
 [e $ ! != & -> _K `i -> 1 `i -> 0 `i 1853  ]
 {
 [e ( _onePulse ..  ]
 }
 [e $U 1854  ]
-"52
-[; ;DivFunctions.c: 52:     else {zeroPulse();}
+"48
+[; ;DivFunctions.c: 48:     else {zeroPulse();}
 [e :U 1853 ]
 {
 [e ( _zeroPulse ..  ]
 }
 [e :U 1854 ]
-"53
-[; ;DivFunctions.c: 53: }
+"49
+[; ;DivFunctions.c: 49: }
 [e :UE 1838 ]
 }
-"55
-[; ;DivFunctions.c: 55: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
+"51
+[; ;DivFunctions.c: 51: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
 [v _LED_WriteFull `(v ~T0 @X0 1 ef5`uc`uc`uc`uc`um ]
-"56
-[; ;DivFunctions.c: 56: {
+"52
+[; ;DivFunctions.c: 52: {
 {
 [e :U _LED_WriteFull ]
-"55
-[; ;DivFunctions.c: 55: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
+"51
+[; ;DivFunctions.c: 51: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
 [v _red `uc ~T0 @X0 1 r1 ]
 [v _green `uc ~T0 @X0 1 r2 ]
 [v _blue `uc ~T0 @X0 1 r3 ]
 [v _white `uc ~T0 @X0 1 r4 ]
 [v _ledcount `um ~T0 @X0 1 r5 ]
-"56
-[; ;DivFunctions.c: 56: {
+"52
+[; ;DivFunctions.c: 52: {
 [f ]
-"57
-[; ;DivFunctions.c: 57:     for(uint24_t i=0; i <= ledcount; i++)
+"53
+[; ;DivFunctions.c: 53:     for(uint24_t i=0; i <= ledcount; i++)
 {
 [v _i `um ~T0 @X0 1 a ]
 [e = _i -> -> -> 0 `i `m `um ]
 [e $U 1859  ]
 [e :U 1856 ]
-"58
-[; ;DivFunctions.c: 58:     {
+"54
+[; ;DivFunctions.c: 54:     {
 {
-"59
-[; ;DivFunctions.c: 59:         WS2812B_Write(red, green, blue, white);
+"55
+[; ;DivFunctions.c: 55:         WS2812B_Write(red, green, blue, white);
 [e ( _WS2812B_Write (4 , , , _red _green _blue _white ]
-"60
-[; ;DivFunctions.c: 60:     }
+"56
+[; ;DivFunctions.c: 56:     }
 }
 [e ++ _i -> -> -> 1 `i `m `um ]
 [e :U 1859 ]
 [e $ <= _i _ledcount 1856  ]
 [e :U 1857 ]
 }
-"62
-[; ;DivFunctions.c: 62:     uint8_t sizeArr = (ledcount*192);
-[v _sizeArr `uc ~T0 @X0 1 a ]
-[e = _sizeArr -> * _ledcount -> -> -> 192 `i `m `um `uc ]
-"63
-[; ;DivFunctions.c: 63:     SPI1_ExchangeBlock(ledOutput, sizeArr);
-[e ( _SPI1_ExchangeBlock (2 , -> &U _ledOutput `*v -> _sizeArr `ui ]
-"64
-[; ;DivFunctions.c: 64:     for(;arrayPlace >= 0; arrayPlace--)
-{
-[e $U 1863  ]
-[e :U 1860 ]
-"65
-[; ;DivFunctions.c: 65:     {
-{
-"66
-[; ;DivFunctions.c: 66:         ledOutput[arrayPlace] = 0;
-[e = *U + &U _ledOutput * -> _arrayPlace `ux -> -> # *U &U _ledOutput `ui `ux -> -> 0 `i `uc ]
-"67
-[; ;DivFunctions.c: 67:     }
-}
-[e -- _arrayPlace -> -> 1 `i `l ]
-[e :U 1863 ]
-[e $ >= _arrayPlace -> -> 0 `i `l 1860  ]
-[e :U 1861 ]
-}
-"68
-[; ;DivFunctions.c: 68: }
+"57
+[; ;DivFunctions.c: 57: }
 [e :UE 1855 ]
 }

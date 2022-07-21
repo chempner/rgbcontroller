@@ -77,7 +77,7 @@ TMR2_RESERVED_3 24
 SPI1_DEFAULT 0
 ]
 "100
-[e E13477 . `uc
+[e E13475 . `uc
 MANUAL 0
 T1 1
 T2 2
@@ -137,11 +137,11 @@ channel_FVR_Buffer2 63
 [v _map map `(l  1 e 4 0 ]
 "15
 [v _onePulse onePulse `(v  1 e 1 0 ]
-"22
+"20
 [v _zeroPulse zeroPulse `(v  1 e 1 0 ]
-"28
+"24
 [v _ws_send_byte ws_send_byte `(v  1 e 1 0 ]
-"55
+"51
 [v _LED_WriteFull LED_WriteFull `(v  1 e 1 0 ]
 "9 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\Loopdelay.c
 [v _LOOPDELAY_TimerISR LOOPDELAY_TimerISR `(v  1 e 1 0 ]
@@ -185,8 +185,6 @@ channel_FVR_Buffer2 63
 [v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
 "100
 [v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
-"108
-[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
 "64 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "108
@@ -207,10 +205,6 @@ channel_FVR_Buffer2 63
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 "190
 [v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
-"38 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X/DivFunctions.h
-[v _ledOutput ledOutput `[1]uc  1 e 1 0 ]
-"39
-[v _arrayPlace arrayPlace `l  1 e 4 0 ]
 [s S644 . 1 `uc 1 GO 1 0 :1:0 
 ]
 "463 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
@@ -799,7 +793,7 @@ channel_FVR_Buffer2 63
 "79
 [v main@timeout5s timeout5s `us  1 a 2 0 ]
 "100
-[v main@state state `E13477  1 a 1 51 ]
+[v main@state state `E13475  1 a 1 51 ]
 "51
 [v main@white white `uc  1 a 1 50 ]
 [v main@blue blue `uc  1 a 1 49 ]
@@ -967,64 +961,61 @@ channel_FVR_Buffer2 63
 [v LOOPDELAY_Init@newLoopTimeMS newLoopTimeMS `us  1 p 2 0 ]
 "26
 } 0
-"55 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+"51 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
 [v _LED_WriteFull LED_WriteFull `(v  1 e 1 0 ]
 {
 [v LED_WriteFull@red red `uc  1 a 1 wreg ]
-"57
+"53
 [v LED_WriteFull@i i `um  1 a 3 13 ]
-"62
-[v LED_WriteFull@sizeArr sizeArr `uc  1 a 1 16 ]
-"55
+"51
 [v LED_WriteFull@red red `uc  1 a 1 wreg ]
 [v LED_WriteFull@green green `uc  1 p 1 6 ]
 [v LED_WriteFull@blue blue `uc  1 p 1 7 ]
 [v LED_WriteFull@white white `uc  1 p 1 8 ]
 [v LED_WriteFull@ledcount ledcount `um  1 p 3 9 ]
-"57
+"53
 [v LED_WriteFull@red red `uc  1 a 1 12 ]
-"68
+"57
 } 0
 "3
 [v _WS2812B_Write WS2812B_Write `(v  1 e 1 0 ]
 {
 [v WS2812B_Write@R R `uc  1 a 1 wreg ]
 [v WS2812B_Write@R R `uc  1 a 1 wreg ]
-[v WS2812B_Write@G G `uc  1 p 1 1 ]
-[v WS2812B_Write@B B `uc  1 p 1 2 ]
-[v WS2812B_Write@W W `uc  1 p 1 3 ]
+[v WS2812B_Write@G G `uc  1 p 1 2 ]
+[v WS2812B_Write@B B `uc  1 p 1 3 ]
+[v WS2812B_Write@W W `uc  1 p 1 4 ]
 "5
-[v WS2812B_Write@R R `uc  1 a 1 4 ]
+[v WS2812B_Write@R R `uc  1 a 1 5 ]
 "9
 } 0
-"28
+"24
 [v _ws_send_byte ws_send_byte `(v  1 e 1 0 ]
 {
 [v ws_send_byte@K K `uc  1 a 1 wreg ]
 [v ws_send_byte@K K `uc  1 a 1 wreg ]
-"30
-[v ws_send_byte@K K `uc  1 a 1 0 ]
-"53
+"26
+[v ws_send_byte@K K `uc  1 a 1 1 ]
+"49
 } 0
-"22
+"20
 [v _zeroPulse zeroPulse `(v  1 e 1 0 ]
 {
-"27
+"23
 } 0
 "15
 [v _onePulse onePulse `(v  1 e 1 0 ]
 {
-"20
+"18
 } 0
-"108 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
-[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
+"100 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/spi1.c
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
 {
-"110
-[v SPI1_ExchangeBlock@data data `*.39uc  1 a 2 4 ]
-"108
-[v SPI1_ExchangeBlock@block block `*.39v  1 p 2 0 ]
-[v SPI1_ExchangeBlock@blockSize blockSize `ui  1 p 2 2 ]
-"118
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"102
+[v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
+"106
 } 0
 "231 C:\__GitRepo\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
 [v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
