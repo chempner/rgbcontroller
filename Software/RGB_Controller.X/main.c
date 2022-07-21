@@ -2,7 +2,7 @@
 #include "DivFunctions.h"
 #include "Loopdelay.h"
 
-#define LEDCOUNT 3
+#define LEDCOUNT 300
 
 #define EE_STATECHECKBYTEADD    2
 #define EE_MODE1CHECKBYTEADD    3
@@ -29,15 +29,15 @@
 
 #define EE_CHECKBYTEDATA        69
 
-#define LOOPTIME        10
+#define LOOPTIME        20
 
 #define ADJ_THRESHOLD   5
 
-#define TIMEOUT1S       100
-#define TIMEOUT5S       500
-#define TIMEOUT10s      1000
-#define TIMEOUT100MS    10
-#define TIMEOUT250MS    25
+#define TIMEOUT1S       50
+#define TIMEOUT5S       250
+#define TIMEOUT10s      500
+#define TIMEOUT100MS    20
+#define TIMEOUT250MS    50
 
 void main(void)
 {
@@ -560,10 +560,6 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
-                    redMode1 = red;
-                    greenMode1 = green;
-                    blueMode1 = blue;
-                    whiteMode1 = white;
                     DATAEE_WriteByte(EE_MODE1_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE1_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE1_REDADD, redMode1);
@@ -677,10 +673,6 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
-                    redMode2 = red;
-                    greenMode2 = green;
-                    blueMode2 = blue;
-                    whiteMode2 = white;
                     DATAEE_WriteByte(EE_MODE2_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE2_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE2_REDADD, redMode1);
@@ -795,10 +787,6 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
-                    redMode3 = red;
-                    greenMode3 = green;
-                    blueMode3 = blue;
-                    whiteMode3 = white;
                     DATAEE_WriteByte(EE_MODE3_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE3_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE3_REDADD, redMode1);
@@ -912,10 +900,6 @@ void main(void)
                     greenAdj = false;
                     blueAdj = false;
                     whiteAdj = false;
-                    redMode4 = red;
-                    greenMode4 = green;
-                    blueMode4 = blue;
-                    whiteMode4 = white;
                     DATAEE_WriteByte(EE_MODE4_BLUEADD, blueMode1);
                     DATAEE_WriteByte(EE_MODE4_GREENADD, greenMode1);
                     DATAEE_WriteByte(EE_MODE4_REDADD, redMode1);
