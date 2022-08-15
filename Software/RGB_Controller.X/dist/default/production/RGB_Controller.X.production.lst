@@ -1,9 +1,9 @@
 
 
-Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Thu Jul 21 23:55:11 2022
+Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
+                                                                                               Mon Aug 15 21:17:51 2022
 
-Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
+Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	18F16Q40
      2                           	fnconf	rparam,??,?,0
      3                           	pagewidth 120
@@ -734,7 +734,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    716 ;;      Totals:         7      52       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
    717 ;;Total ram usage:       59 bytes
-   718 ;; Hardware stack levels required when called:    9
+   718 ;; Hardware stack levels required when called: 9
    719 ;; This function calls:
    720 ;;		_ADCC_DischargeSampleCapacitor
    721 ;;		_ADCC_GetSingleConversion
@@ -6147,8 +6147,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6075 ;;      Totals:        20       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6076 ;;Total ram usage:       20 bytes
-  6077 ;; Hardware stack levels used:    1
-  6078 ;; Hardware stack levels required when called:    5
+  6077 ;; Hardware stack levels used: 1
+  6078 ;; Hardware stack levels required when called: 5
   6079 ;; This function calls:
   6080 ;;		___aldiv
   6081 ;;		___lmul
@@ -6225,7 +6225,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6151                           
   6152 ;; *************** function ___lmul *****************
   6153 ;; Defined at:
-  6154 ;;		line 15 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c"
+  6154 ;;		line 15 in file "C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c"
   6155 ;; Parameters:    Size  Location     Type
   6156 ;;  multiplier      4    0[COMRAM] unsigned long 
   6157 ;;  multiplicand    4    4[COMRAM] unsigned long 
@@ -6250,8 +6250,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6172 ;;      Totals:        12       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6173 ;;Total ram usage:       12 bytes
-  6174 ;; Hardware stack levels used:    1
-  6175 ;; Hardware stack levels required when called:    4
+  6174 ;; Hardware stack levels used: 1
+  6175 ;; Hardware stack levels required when called: 4
   6176 ;; This function calls:
   6177 ;;		Nothing
   6178 ;; This function is called by:
@@ -6318,7 +6318,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6239                           
   6240 ;; *************** function ___aldiv *****************
   6241 ;; Defined at:
-  6242 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aldiv.c"
+  6242 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c"
   6243 ;; Parameters:    Size  Location     Type
   6244 ;;  dividend        4   12[COMRAM] long 
   6245 ;;  divisor         4   16[COMRAM] long 
@@ -6345,8 +6345,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6262 ;;      Totals:        14       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6263 ;;Total ram usage:       14 bytes
-  6264 ;; Hardware stack levels used:    1
-  6265 ;; Hardware stack levels required when called:    4
+  6264 ;; Hardware stack levels used: 1
+  6265 ;; Hardware stack levels required when called: 4
   6266 ;; This function calls:
   6267 ;;		Nothing
   6268 ;; This function is called by:
@@ -6518,8 +6518,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6430 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6431 ;;Total ram usage:        0 bytes
-  6432 ;; Hardware stack levels used:    1
-  6433 ;; Hardware stack levels required when called:    6
+  6432 ;; Hardware stack levels used: 1
+  6433 ;; Hardware stack levels required when called: 6
   6434 ;; This function calls:
   6435 ;;		_ADCC_Initialize
   6436 ;;		_INTERRUPT_Initialize
@@ -6589,8 +6589,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6496 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6497 ;;Total ram usage:        0 bytes
-  6498 ;; Hardware stack levels used:    1
-  6499 ;; Hardware stack levels required when called:    5
+  6498 ;; Hardware stack levels used: 1
+  6499 ;; Hardware stack levels required when called: 5
   6500 ;; This function calls:
   6501 ;;		_TMR2_SetInterruptHandler
   6502 ;; This function is called by:
@@ -6679,8 +6679,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6580 ;;      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6581 ;;Total ram usage:        2 bytes
-  6582 ;; Hardware stack levels used:    1
-  6583 ;; Hardware stack levels required when called:    4
+  6582 ;; Hardware stack levels used: 1
+  6583 ;; Hardware stack levels required when called: 4
   6584 ;; This function calls:
   6585 ;;		Nothing
   6586 ;; This function is called by:
@@ -6728,8 +6728,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6624 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6625 ;;Total ram usage:        0 bytes
-  6626 ;; Hardware stack levels used:    1
-  6627 ;; Hardware stack levels required when called:    4
+  6626 ;; Hardware stack levels used: 1
+  6627 ;; Hardware stack levels required when called: 4
   6628 ;; This function calls:
   6629 ;;		Nothing
   6630 ;; This function is called by:
@@ -6799,8 +6799,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6690 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6691 ;;Total ram usage:        0 bytes
-  6692 ;; Hardware stack levels used:    1
-  6693 ;; Hardware stack levels required when called:    4
+  6692 ;; Hardware stack levels used: 1
+  6693 ;; Hardware stack levels required when called: 4
   6694 ;; This function calls:
   6695 ;;		Nothing
   6696 ;; This function is called by:
@@ -6870,8 +6870,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6756 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6757 ;;Total ram usage:        0 bytes
-  6758 ;; Hardware stack levels used:    1
-  6759 ;; Hardware stack levels required when called:    4
+  6758 ;; Hardware stack levels used: 1
+  6759 ;; Hardware stack levels required when called: 4
   6760 ;; This function calls:
   6761 ;;		Nothing
   6762 ;; This function is called by:
@@ -7018,8 +7018,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6899 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6900 ;;Total ram usage:        0 bytes
-  6901 ;; Hardware stack levels used:    1
-  6902 ;; Hardware stack levels required when called:    4
+  6901 ;; Hardware stack levels used: 1
+  6902 ;; Hardware stack levels required when called: 4
   6903 ;; This function calls:
   6904 ;;		Nothing
   6905 ;; This function is called by:
@@ -7089,8 +7089,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6965 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   6966 ;;Total ram usage:        0 bytes
-  6967 ;; Hardware stack levels used:    1
-  6968 ;; Hardware stack levels required when called:    4
+  6967 ;; Hardware stack levels used: 1
+  6968 ;; Hardware stack levels required when called: 4
   6969 ;; This function calls:
   6970 ;;		Nothing
   6971 ;; This function is called by:
@@ -7136,8 +7136,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7007 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7008 ;;Total ram usage:        0 bytes
-  7009 ;; Hardware stack levels used:    1
-  7010 ;; Hardware stack levels required when called:    4
+  7009 ;; Hardware stack levels used: 1
+  7010 ;; Hardware stack levels required when called: 4
   7011 ;; This function calls:
   7012 ;;		Nothing
   7013 ;; This function is called by:
@@ -7271,8 +7271,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7137 ;;      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7138 ;;Total ram usage:        2 bytes
-  7139 ;; Hardware stack levels used:    1
-  7140 ;; Hardware stack levels required when called:    4
+  7139 ;; Hardware stack levels used: 1
+  7140 ;; Hardware stack levels required when called: 4
   7141 ;; This function calls:
   7142 ;;		Nothing
   7143 ;; This function is called by:
@@ -7462,8 +7462,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7316 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7317 ;;Total ram usage:        0 bytes
-  7318 ;; Hardware stack levels used:    1
-  7319 ;; Hardware stack levels required when called:    4
+  7318 ;; Hardware stack levels used: 1
+  7319 ;; Hardware stack levels required when called: 4
   7320 ;; This function calls:
   7321 ;;		Nothing
   7322 ;; This function is called by:
@@ -7523,8 +7523,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7372 ;;      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7373 ;;Total ram usage:        2 bytes
-  7374 ;; Hardware stack levels used:    1
-  7375 ;; Hardware stack levels required when called:    4
+  7374 ;; Hardware stack levels used: 1
+  7375 ;; Hardware stack levels required when called: 4
   7376 ;; This function calls:
   7377 ;;		Nothing
   7378 ;; This function is called by:
@@ -7577,8 +7577,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7420 ;;      Totals:        10       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7421 ;;Total ram usage:       10 bytes
-  7422 ;; Hardware stack levels used:    1
-  7423 ;; Hardware stack levels required when called:    8
+  7422 ;; Hardware stack levels used: 1
+  7423 ;; Hardware stack levels required when called: 8
   7424 ;; This function calls:
   7425 ;;		_WS2812B_Write
   7426 ;; This function is called by:
@@ -7669,8 +7669,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7504 ;;      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7505 ;;Total ram usage:        4 bytes
-  7506 ;; Hardware stack levels used:    1
-  7507 ;; Hardware stack levels required when called:    7
+  7506 ;; Hardware stack levels used: 1
+  7507 ;; Hardware stack levels required when called: 7
   7508 ;; This function calls:
   7509 ;;		_ws_send_byte
   7510 ;; This function is called by:
@@ -7734,8 +7734,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7563 ;;      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7564 ;;Total ram usage:        1 bytes
-  7565 ;; Hardware stack levels used:    1
-  7566 ;; Hardware stack levels required when called:    6
+  7565 ;; Hardware stack levels used: 1
+  7566 ;; Hardware stack levels required when called: 6
   7567 ;; This function calls:
   7568 ;;		_onePulse
   7569 ;;		_zeroPulse
@@ -7888,8 +7888,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7711 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7712 ;;Total ram usage:        0 bytes
-  7713 ;; Hardware stack levels used:    1
-  7714 ;; Hardware stack levels required when called:    5
+  7713 ;; Hardware stack levels used: 1
+  7714 ;; Hardware stack levels required when called: 5
   7715 ;; This function calls:
   7716 ;;		_SPI1_ExchangeByte
   7717 ;; This function is called by:
@@ -7936,8 +7936,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7754 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7755 ;;Total ram usage:        0 bytes
-  7756 ;; Hardware stack levels used:    1
-  7757 ;; Hardware stack levels required when called:    5
+  7756 ;; Hardware stack levels used: 1
+  7757 ;; Hardware stack levels required when called: 5
   7758 ;; This function calls:
   7759 ;;		_SPI1_ExchangeByte
   7760 ;; This function is called by:
@@ -7984,8 +7984,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7797 ;;      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7798 ;;Total ram usage:        1 bytes
-  7799 ;; Hardware stack levels used:    1
-  7800 ;; Hardware stack levels required when called:    4
+  7799 ;; Hardware stack levels used: 1
+  7800 ;; Hardware stack levels required when called: 4
   7801 ;; This function calls:
   7802 ;;		Nothing
   7803 ;; This function is called by:
@@ -8059,8 +8059,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7866 ;;      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7867 ;;Total ram usage:        4 bytes
-  7868 ;; Hardware stack levels used:    1
-  7869 ;; Hardware stack levels required when called:    4
+  7868 ;; Hardware stack levels used: 1
+  7869 ;; Hardware stack levels required when called: 4
   7870 ;; This function calls:
   7871 ;;		Nothing
   7872 ;; This function is called by:
@@ -8180,8 +8180,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7980 ;;      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   7981 ;;Total ram usage:        2 bytes
-  7982 ;; Hardware stack levels used:    1
-  7983 ;; Hardware stack levels required when called:    4
+  7982 ;; Hardware stack levels used: 1
+  7983 ;; Hardware stack levels required when called: 4
   7984 ;; This function calls:
   7985 ;;		Nothing
   7986 ;; This function is called by:
@@ -8251,8 +8251,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8045 ;;      Totals:         5       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   8046 ;;Total ram usage:        5 bytes
-  8047 ;; Hardware stack levels used:    1
-  8048 ;; Hardware stack levels required when called:    4
+  8047 ;; Hardware stack levels used: 1
+  8048 ;; Hardware stack levels required when called: 4
   8049 ;; This function calls:
   8050 ;;		Nothing
   8051 ;; This function is called by:
@@ -8341,8 +8341,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8128 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   8129 ;;Total ram usage:        0 bytes
-  8130 ;; Hardware stack levels used:    1
-  8131 ;; Hardware stack levels required when called:    4
+  8130 ;; Hardware stack levels used: 1
+  8131 ;; Hardware stack levels required when called: 4
   8132 ;; This function calls:
   8133 ;;		Nothing
   8134 ;; This function is called by:
@@ -8392,8 +8392,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8174 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   8175 ;;Total ram usage:        0 bytes
-  8176 ;; Hardware stack levels used:    1
-  8177 ;; Hardware stack levels required when called:    3
+  8176 ;; Hardware stack levels used: 1
+  8177 ;; Hardware stack levels required when called: 3
   8178 ;; This function calls:
   8179 ;;		_TMR2_ISR
   8180 ;; This function is called by:
@@ -8456,8 +8456,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8231 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   8232 ;;Total ram usage:        0 bytes
-  8233 ;; Hardware stack levels used:    1
-  8234 ;; Hardware stack levels required when called:    2
+  8233 ;; Hardware stack levels used: 1
+  8234 ;; Hardware stack levels required when called: 2
   8235 ;; This function calls:
   8236 ;;		_TMR2_CallBack
   8237 ;; This function is called by:
@@ -8506,8 +8506,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8276 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   8277 ;;Total ram usage:        0 bytes
-  8278 ;; Hardware stack levels used:    1
-  8279 ;; Hardware stack levels required when called:    1
+  8278 ;; Hardware stack levels used: 1
+  8279 ;; Hardware stack levels required when called: 1
   8280 ;; This function calls:
   8281 ;;		Absolute function
   8282 ;;		_LOOPDELAY_TimerISR
@@ -8579,7 +8579,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8343 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   8344 ;;Total ram usage:        0 bytes
-  8345 ;; Hardware stack levels used:    1
+  8345 ;; Hardware stack levels used: 1
   8346 ;; This function calls:
   8347 ;;		Nothing
   8348 ;; This function is called by:
@@ -8641,7 +8641,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8400 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
       +0       0       0       0       0       0
   8401 ;;Total ram usage:        0 bytes
-  8402 ;; Hardware stack levels used:    1
+  8402 ;; Hardware stack levels used: 1
   8403 ;; This function calls:
   8404 ;;		Nothing
   8405 ;; This function is called by:
@@ -9331,8 +9331,8 @@ DATA                 0      0      6F       3        0.0%
 CODE                 0      0       0       0        0.0%
 
 
-Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Thu Jul 21 23:55:11 2022
+Microchip Technology PIC18 Macro Assembler V2.32 build 20210201212658 
+Symbol Table                                                                                   Mon Aug 15 21:17:51 2022
 
                        _SPI1_ExchangeByte 3DAA          __end_of_TMR2_SetInterruptHandler 3EF8  
                                       l53 3C22                        ?_SPI1_ExchangeByte 0501  
@@ -9979,142 +9979,143 @@ Symbol Table                                                                    
               __size_of_SPI1_ExchangeByte 0022                            ?_LED_WriteFull 0507  
                        __end_of_SPI1_Open 3A06                                    ___lmul 3B54  
                                ??___aldiv 0515                __end_of_LOOPDELAY_TimerISR 3E4A  
-                        __end_of_onePulse 3F12                   __end_of_DATAEE_ReadByte 3EEE  
-                         _ADCC_Initialize 3C24                            _PMD_Initialize 3E66  
-                           main@timeout5s 0560                              __mediumconst 0000  
-                                  tblptrh 0004F7                                    tblptrl 0004F6  
-                                  tblptru 0004F8         __size_of_ADCC_GetSingleConversion 0032  
-               ?_ADCC_GetSingleConversion 0501  TMR2_SetInterruptHandler@InterruptHandler 0501  
-                      LED_WriteFull@green 0507             __size_of_INTERRUPT_Initialize 0004  
-                      LED_WriteFull@white 0509                         _SYSTEM_Initialize 3E0E  
-                              __accesstop 0560                   __end_of__initialization 3E60  
-                   __end_of_TMR2_CallBack 3DAA                        ?_SYSTEM_Initialize 0501  
-                           ___rparam_used 000001                            __pcstackCOMRAM 0501  
-                     ??_SYSTEM_Initialize 0503                    __size_of_WS2812B_Write 001C  
-                               ?_TMR2_ISR 0501                          _DATAEE_WriteByte 3C80  
-                       ??_SPI1_Initialize 0501                          ?_TMR2_Initialize 0501  
-                  __end_of_PMD_Initialize 3E82                     SPI1_ExchangeByte@data 0501  
-                      _spi1_configuration 1601                 __end_of_SYSTEM_Initialize 3E2C  
-                        LED_WriteFull@red 050D                                __pnvCOMRAM 053A  
-                         ??_LED_WriteFull 050D                                   IVTBASEH 00045E  
-                                 IVTBASEL 00045D                                   IVTBASEU 00045F  
-          ?_ADCC_DischargeSampleCapacitor 0501                                   ?___lmul 0501  
-                              ??_TMR2_ISR 0501                   __end_of_ADCC_Initialize 3C80  
-                                 _ADFLTRH 0003E2                                   _ADFLTRL 0003E1  
-                          ___lmul@product 0509                                   _ADPREVH 0003E9  
-                                 _ADPREVL 0003E8                                   _ADSTPTH 0003E0  
-                                 _ADSTPTL 0003DF                           ?_PMD_Initialize 0501  
-                          main@greenMode1 058C                            main@greenMode2 057C  
-                          main@greenMode3 057F                            main@greenMode4 0582  
-                   fp__LOOPDELAY_TimerISR 0000                          ?_DATAEE_ReadByte 0501  
-                                 _OSCCON1 0000AD                                   _OSCCON3 0000AF  
-                                 _TBLPTRH 0004F7                                   _TBLPTRL 0004F6  
-                                 i2u10_40 3E44                                   i2u10_41 3E40  
-                                 _SPI1CLK 00008C                                   _TBLPTRU 0004F8  
-                                 i2u11_40 3D90                                   i2u11_41 3D8C  
-                                 i2u12_48 3D96                                   i2u12_49 3DA8  
-                                 i2u40_40 3DE8                                   i2u40_41 3DE4  
-                                 _SPI1RXB 000080                                   _NVMADRH 000044  
-                                 _NVMADRL 000043                                   _SPI1TXB 000081  
-                                 _NVMADRU 000045                                   _OSCTUNE 0000B0  
-                                 _NVMDATL 000046                                   i2u39_40 3DDA  
-                                 i2u39_41 3DD6                                   _NVMLOCK 000042  
-                                 _SLRCONA 000403                                   _SLRCONB 00040B  
-                                 _SLRCONC 000413                             _WS2812B_Write 3E9E  
-                      __size_of_zeroPulse 0008                      DATAEE_WriteByte@bAdd 0501  
-                               ?_onePulse 0501                   __size_of_LOOPDELAY_Init 000A  
-                                 __Hparam 0000                   __size_of_LOOPDELAY_Wait 0020  
-                                 __Lparam 0000                ??_TMR2_SetInterruptHandler 0503  
-                                 ___aldiv 3820                           __size_of___lmul 006A  
-                            __psmallconst 1600                                   __pcinit 3E4A  
-                                 __ramtop 1600                                   __ptext0 1608  
-                                 __ptext1 3ADA                                   __ptext2 3B54  
-                                 __ptext3 3820                                   __ptext4 3E0E  
-                                 __ptext5 3D50                                   __ptext6 3EEE  
-                                 __ptext7 3EBA                                   __ptext8 3E66  
-                                 __ptext9 3BBE                     _OSCILLATOR_Initialize 3E82  
-                               _T2CONbits 00031E                              __size_of_map 007A  
-                        ___aldiv@dividend 050D                  ??_PIN_MANAGER_Initialize 0501  
-                               _T2HLTbits 00031F                            ?_WS2812B_Write 0503  
-              __size_of_SYSTEM_Initialize 001E                                   main@red 058F  
-                    end_of_initialization 3E60                                _loopTimeMS 0536  
-                               _T2RSTbits 000321                            main@timeout10s 0563  
-                              ??_onePulse 0502                            main@whiteMode1 058E  
-                          main@whiteMode2 0584                            main@whiteMode3 0585  
-                          main@whiteMode4 0586                                 _SPI1TCNTL 000082  
-                        ___aldiv@quotient 0517                          ?_ADCC_Initialize 0501  
-                               _SPI1_Open 392C          __end_of_ADCC_GetSingleConversion 3D50  
-                       __end_of_zeroPulse 3F0A                                 _PORTAbits 0004CE  
-                               _PORTBbits 0004CF                                 _PORTCbits 0004D0  
-                      main@led1StateBlink 056D                                 _TRISBbits 0004C7  
-                      _LOOPDELAY_TimerISR 3E2C                        main@led2StateBlink 056E  
-                __end_of_DATAEE_WriteByte 3CD2                                map@out_max 052B  
-                              map@out_min 0527                       ?_LOOPDELAY_TimerISR 0501  
-                         _SPI1_Initialize 3EBA                                main@redAdj 0573  
-                      main@led3StateBlink 056F              __end_of_INTERRUPT_Initialize 3F26  
-    __end_of_TMR2_DefaultInterruptHandler 3F28     __size_of_TMR2_DefaultInterruptHandler 0002  
-            _TMR2_DefaultInterruptHandler 3F26                        main@led4StateBlink 0570  
-                              ?_SPI1_Open 0501                            __end_of___lmul 3BBE  
-                       __size_of_TMR2_ISR 0008                      ??_LOOPDELAY_TimerISR 0501  
-                  ?_OSCILLATOR_Initialize 0501                           ??_WS2812B_Write 0506  
-                     start_initialization 3E4A           __size_of_PIN_MANAGER_Initialize 0066  
-                             __end_of_map 3B54                                ivt0x8_base 0008  
-                     DATAEE_ReadByte@bAdd 0501                            _LOOPDELAY_Init 3EF8  
-                          _LOOPDELAY_Wait 3DEE                          ??_PMD_Initialize 0501  
-                                ??___lmul 0509           fp__TMR2_DefaultInterruptHandler 0000  
-           ?_TMR2_DefaultInterruptHandler 0501                         LED_WriteFull@blue 0508  
-                _ADCC_GetSingleConversion 3D1E                    __size_of_TMR2_CallBack 002C  
-                             __pbssCOMRAM 0536                             __pcstackBANK5 0560  
-                __size_of_TMR2_Initialize 002E                   __end_of_SPI1_Initialize 3ED4  
-                  __end_of_LOOPDELAY_Init 3F02                    __end_of_LOOPDELAY_Wait 3E0E  
-                   __end_of_LED_WriteFull 3D1E                    _PIN_MANAGER_Initialize 3BBE  
-                           ?_ws_send_byte 0501                         __size_of_onePulse 0008  
-                                ?___aldiv 050D           ADCC_GetSingleConversion@channel 0505  
-                             ??_SPI1_Open 0501                                 _bufferRAM 001500  
-            ??_INTERRUPT_InterruptManager 0501                               __smallconst 1600  
-                                _T2CLKCON 000320                  __size_of_DATAEE_ReadByte 001A  
-                    _INTERRUPT_Initialize 3F22                           ___aldiv@divisor 0511  
-                         ___aldiv@counter 0515                           ?_LOOPDELAY_Init 0501  
-                         ?_LOOPDELAY_Wait 0501                                  _LATAbits 0004BE  
-                                _LATCbits 0004C0                             _TMR2_CallBack 3D7E  
-                                _PIE3bits 0004AB                              _SPI1CON0bits 000084  
-                          ??_ws_send_byte 0502       __size_of_INTERRUPT_InterruptManager 0022  
-                                _PIR0bits 0004B3                                  _SPI1BAUD 000089  
-                                _PIR3bits 0004B6                                  _SPI1CON0 000084  
-                                _SPI1CON1 000085                                  _SPI1CON2 000086  
-                                _TMR2_ISR 3F1A                                 map@in_max 0523  
-                               map@in_min 051F                                _ADCON0bits 0003F3  
-                              _ADCON1bits 0003F4                                _ADCON2bits 0003F5  
-                              _ADCON3bits 0003F6                                 main@green 0590  
-          ??_TMR2_DefaultInterruptHandler 0501         __size_of_TMR2_SetInterruptHandler 000A  
-                               _zeroPulse 3F02                                 main@state 0593  
-                               main@white 0592                 ?_TMR2_SetInterruptHandler 0501  
-                   DATAEE_WriteByte@bData 0503                          ?_SPI1_Initialize 0501  
-                             _INTCON0bits 0004D6                         ___lmul@multiplier 0501  
-                   ?_INTERRUPT_Initialize 0501                         ?_DATAEE_WriteByte 0501  
-                       ??_TMR2_Initialize 0503                            ?_TMR2_CallBack 0501  
-                      ??_DATAEE_WriteByte 0504                                _ADSTATbits 0003F7  
-                                __Hrparam 0000                                  __Lrparam 0000  
-                        main@timeout100ms 0562                          main@timeout250ms 0571  
-                        main@timeout500ms 0572                             ws_send_byte@K 0502  
-                 ??_OSCILLATOR_Initialize 0501                          __size_of___aldiv 010C  
-                __size_of_ADCC_Initialize 005C                                ?_zeroPulse 0501  
-                                __pivt0x8 0008                                  __ptext10 3E82  
-                                __ptext11 3F22                                  __ptext20 3F0A  
-                                __ptext12 3C24                                  __ptext21 3DAA  
-                                __ptext13 392C                                  __ptext30 3F26  
-                                __ptext22 3C80                                  __ptext14 3DEE  
-                                __ptext31 0000                                  __ptext23 3ED4  
-                                __ptext15 3EF8                                  __ptext24 3D1E  
-                                __ptext16 3CD2                                  __ptext25 3F12  
-                                __ptext17 3E9E                                  __ptext26 3DCC  
-                                __ptext18 3A06                                  __ptext27 3F1A  
-                                __ptext19 3F02                                  __ptext28 3D7E  
-                                __ptext29 3E2C               DATAEE_WriteByte@GIEBitValue 0504  
-                           __size_of_main 2218                                  _onePulse 3F0A  
-                       ??_DATAEE_ReadByte 0503                           main@taster1Flag 0577  
-                         main@taster2Flag 0578                           main@taster3Flag 057A  
-                         main@taster4Flag 0579                ??_ADCC_GetSingleConversion 0503  
+                                  isa$std 000001                          __end_of_onePulse 3F12  
+                 __end_of_DATAEE_ReadByte 3EEE                           _ADCC_Initialize 3C24  
+                          _PMD_Initialize 3E66                             main@timeout5s 0560  
+                            __mediumconst 0000                                    tblptrh 0004F7  
+                                  tblptrl 0004F6                                    tblptru 0004F8  
+       __size_of_ADCC_GetSingleConversion 0032                 ?_ADCC_GetSingleConversion 0501  
+TMR2_SetInterruptHandler@InterruptHandler 0501                        LED_WriteFull@green 0507  
+           __size_of_INTERRUPT_Initialize 0004                        LED_WriteFull@white 0509  
+                       _SYSTEM_Initialize 3E0E                                __accesstop 0560  
+                 __end_of__initialization 3E60                     __end_of_TMR2_CallBack 3DAA  
+                      ?_SYSTEM_Initialize 0501                             ___rparam_used 000001  
+                          __pcstackCOMRAM 0501                       ??_SYSTEM_Initialize 0503  
+                  __size_of_WS2812B_Write 001C                                 ?_TMR2_ISR 0501  
+                        _DATAEE_WriteByte 3C80                         ??_SPI1_Initialize 0501  
+                        ?_TMR2_Initialize 0501                    __end_of_PMD_Initialize 3E82  
+                   SPI1_ExchangeByte@data 0501                        _spi1_configuration 1601  
+               __end_of_SYSTEM_Initialize 3E2C                          LED_WriteFull@red 050D  
+                              __pnvCOMRAM 053A                           ??_LED_WriteFull 050D  
+                                 IVTBASEH 00045E                                   IVTBASEL 00045D  
+                                 IVTBASEU 00045F            ?_ADCC_DischargeSampleCapacitor 0501  
+                                 ?___lmul 0501                                ??_TMR2_ISR 0501  
+                 __end_of_ADCC_Initialize 3C80                                   _ADFLTRH 0003E2  
+                                 _ADFLTRL 0003E1                            ___lmul@product 0509  
+                                 _ADPREVH 0003E9                                   _ADPREVL 0003E8  
+                                 _ADSTPTH 0003E0                                   _ADSTPTL 0003DF  
+                         ?_PMD_Initialize 0501                            main@greenMode1 058C  
+                          main@greenMode2 057C                            main@greenMode3 057F  
+                          main@greenMode4 0582                     fp__LOOPDELAY_TimerISR 0000  
+                        ?_DATAEE_ReadByte 0501                                   _OSCCON1 0000AD  
+                                 _OSCCON3 0000AF                                   _TBLPTRH 0004F7  
+                                 _TBLPTRL 0004F6                                   i2u10_40 3E44  
+                                 i2u10_41 3E40                                   _SPI1CLK 00008C  
+                                 _TBLPTRU 0004F8                                   i2u11_40 3D90  
+                                 i2u11_41 3D8C                                   i2u12_48 3D96  
+                                 i2u12_49 3DA8                                   i2u40_40 3DE8  
+                                 i2u40_41 3DE4                                   _SPI1RXB 000080  
+                                 _NVMADRH 000044                                   _NVMADRL 000043  
+                                 _SPI1TXB 000081                                   _NVMADRU 000045  
+                                 _OSCTUNE 0000B0                                   _NVMDATL 000046  
+                                 i2u39_40 3DDA                                   i2u39_41 3DD6  
+                                 _NVMLOCK 000042                                   _SLRCONA 000403  
+                                 _SLRCONB 00040B                                   _SLRCONC 000413  
+                           _WS2812B_Write 3E9E                        __size_of_zeroPulse 0008  
+                    DATAEE_WriteByte@bAdd 0501                                 ?_onePulse 0501  
+                 __size_of_LOOPDELAY_Init 000A                                   __Hparam 0000  
+                 __size_of_LOOPDELAY_Wait 0020                                   __Lparam 0000  
+              ??_TMR2_SetInterruptHandler 0503                                   ___aldiv 3820  
+                         __size_of___lmul 006A                              __psmallconst 1600  
+                                 __pcinit 3E4A                                   __ramtop 1600  
+                                 __ptext0 1608                                   __ptext1 3ADA  
+                                 __ptext2 3B54                                   __ptext3 3820  
+                                 __ptext4 3E0E                                   __ptext5 3D50  
+                                 __ptext6 3EEE                                   __ptext7 3EBA  
+                                 __ptext8 3E66                                   __ptext9 3BBE  
+                   _OSCILLATOR_Initialize 3E82                                 _T2CONbits 00031E  
+                            __size_of_map 007A                          ___aldiv@dividend 050D  
+                ??_PIN_MANAGER_Initialize 0501                                 _T2HLTbits 00031F  
+                          ?_WS2812B_Write 0503                __size_of_SYSTEM_Initialize 001E  
+                                 main@red 058F                      end_of_initialization 3E60  
+                              _loopTimeMS 0536                                 _T2RSTbits 000321  
+                          main@timeout10s 0563                                ??_onePulse 0502  
+                          main@whiteMode1 058E                            main@whiteMode2 0584  
+                          main@whiteMode3 0585                            main@whiteMode4 0586  
+                               _SPI1TCNTL 000082                          ___aldiv@quotient 0517  
+                        ?_ADCC_Initialize 0501                                 _SPI1_Open 392C  
+        __end_of_ADCC_GetSingleConversion 3D50                         __end_of_zeroPulse 3F0A  
+                               _PORTAbits 0004CE                                 _PORTBbits 0004CF  
+                               _PORTCbits 0004D0                        main@led1StateBlink 056D  
+                               _TRISBbits 0004C7                        _LOOPDELAY_TimerISR 3E2C  
+                      main@led2StateBlink 056E                  __end_of_DATAEE_WriteByte 3CD2  
+                              map@out_max 052B                                map@out_min 0527  
+                     ?_LOOPDELAY_TimerISR 0501                           _SPI1_Initialize 3EBA  
+                              main@redAdj 0573                        main@led3StateBlink 056F  
+            __end_of_INTERRUPT_Initialize 3F26      __end_of_TMR2_DefaultInterruptHandler 3F28  
+   __size_of_TMR2_DefaultInterruptHandler 0002              _TMR2_DefaultInterruptHandler 3F26  
+                      main@led4StateBlink 0570                                ?_SPI1_Open 0501  
+                          __end_of___lmul 3BBE                         __size_of_TMR2_ISR 0008  
+                    ??_LOOPDELAY_TimerISR 0501                    ?_OSCILLATOR_Initialize 0501  
+                         ??_WS2812B_Write 0506                       start_initialization 3E4A  
+         __size_of_PIN_MANAGER_Initialize 0066                               __end_of_map 3B54  
+                              ivt0x8_base 0008                       DATAEE_ReadByte@bAdd 0501  
+                          _LOOPDELAY_Init 3EF8                            _LOOPDELAY_Wait 3DEE  
+                        ??_PMD_Initialize 0501                                  ??___lmul 0509  
+         fp__TMR2_DefaultInterruptHandler 0000             ?_TMR2_DefaultInterruptHandler 0501  
+                       LED_WriteFull@blue 0508                  _ADCC_GetSingleConversion 3D1E  
+                  __size_of_TMR2_CallBack 002C                               __pbssCOMRAM 0536  
+                           __pcstackBANK5 0560                  __size_of_TMR2_Initialize 002E  
+                 __end_of_SPI1_Initialize 3ED4                    __end_of_LOOPDELAY_Init 3F02  
+                  __end_of_LOOPDELAY_Wait 3E0E                     __end_of_LED_WriteFull 3D1E  
+                  _PIN_MANAGER_Initialize 3BBE                             ?_ws_send_byte 0501  
+                       __size_of_onePulse 0008                                  ?___aldiv 050D  
+         ADCC_GetSingleConversion@channel 0505                               ??_SPI1_Open 0501  
+                               _bufferRAM 001500              ??_INTERRUPT_InterruptManager 0501  
+                             __smallconst 1600                                  _T2CLKCON 000320  
+                __size_of_DATAEE_ReadByte 001A                      _INTERRUPT_Initialize 3F22  
+                         ___aldiv@divisor 0511                           ___aldiv@counter 0515  
+                         ?_LOOPDELAY_Init 0501                           ?_LOOPDELAY_Wait 0501  
+                                _LATAbits 0004BE                                  _LATCbits 0004C0  
+                           _TMR2_CallBack 3D7E                                  _PIE3bits 0004AB  
+                            _SPI1CON0bits 000084                            ??_ws_send_byte 0502  
+     __size_of_INTERRUPT_InterruptManager 0022                                  _PIR0bits 0004B3  
+                                _SPI1BAUD 000089                                  _PIR3bits 0004B6  
+                                _SPI1CON0 000084                                  _SPI1CON1 000085  
+                                _SPI1CON2 000086                                  _TMR2_ISR 3F1A  
+                               map@in_max 0523                                 map@in_min 051F  
+                              _ADCON0bits 0003F3                                _ADCON1bits 0003F4  
+                              _ADCON2bits 0003F5                                _ADCON3bits 0003F6  
+                               main@green 0590            ??_TMR2_DefaultInterruptHandler 0501  
+       __size_of_TMR2_SetInterruptHandler 000A                                 _zeroPulse 3F02  
+                               main@state 0593                                 main@white 0592  
+               ?_TMR2_SetInterruptHandler 0501                     DATAEE_WriteByte@bData 0503  
+                        ?_SPI1_Initialize 0501                               _INTCON0bits 0004D6  
+                       ___lmul@multiplier 0501                     ?_INTERRUPT_Initialize 0501  
+                       ?_DATAEE_WriteByte 0501                         ??_TMR2_Initialize 0503  
+                          ?_TMR2_CallBack 0501                        ??_DATAEE_WriteByte 0504  
+                              _ADSTATbits 0003F7                                  __Hrparam 0000  
+                                __Lrparam 0000                          main@timeout100ms 0562  
+                        main@timeout250ms 0571                          main@timeout500ms 0572  
+                           ws_send_byte@K 0502                   ??_OSCILLATOR_Initialize 0501  
+                        __size_of___aldiv 010C                  __size_of_ADCC_Initialize 005C  
+                              ?_zeroPulse 0501                                  __pivt0x8 0008  
+                                __ptext10 3E82                                  __ptext11 3F22  
+                                __ptext20 3F0A                                  __ptext12 3C24  
+                                __ptext21 3DAA                                  __ptext13 392C  
+                                __ptext30 3F26                                  __ptext22 3C80  
+                                __ptext14 3DEE                                  __ptext31 0000  
+                                __ptext23 3ED4                                  __ptext15 3EF8  
+                                __ptext24 3D1E                                  __ptext16 3CD2  
+                                __ptext25 3F12                                  __ptext17 3E9E  
+                                __ptext26 3DCC                                  __ptext18 3A06  
+                                __ptext27 3F1A                                  __ptext19 3F02  
+                                __ptext28 3D7E                                  __ptext29 3E2C  
+             DATAEE_WriteByte@GIEBitValue 0504                             __size_of_main 2218  
+                                _onePulse 3F0A                         ??_DATAEE_ReadByte 0503  
+                         main@taster1Flag 0577                           main@taster2Flag 0578  
+                         main@taster3Flag 057A                           main@taster4Flag 0579  
+                                isa$xinst 000000                ??_ADCC_GetSingleConversion 0503  
       __end_of_INTERRUPT_InterruptManager 3DEE                _INTERRUPT_InterruptManager 3DCC  
                                 main@blue 0591               __size_of_LOOPDELAY_TimerISR 001E  
                              _loopTimeCnt 0538                               _NVMCON0bits 000040  
