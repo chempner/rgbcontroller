@@ -5,7 +5,7 @@ void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
     ws_send_byte(G);
     ws_send_byte(R);
     ws_send_byte(B);
-    ws_send_byte(W);
+//    ws_send_byte(W);
 }
 
 long map(long x, long in_min, long in_max, long out_min, long out_max) {

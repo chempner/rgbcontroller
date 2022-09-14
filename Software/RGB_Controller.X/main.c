@@ -29,15 +29,15 @@
 
 #define EE_CHECKBYTEDATA        69
 
-#define LOOPTIME        20
+#define LOOPTIME        10
 
 #define ADJ_THRESHOLD   5
 
-#define TIMEOUT1S       50
-#define TIMEOUT5S       250
-#define TIMEOUT10s      500
-#define TIMEOUT100MS    20
-#define TIMEOUT250MS    12
+#define TIMEOUT1S       100
+#define TIMEOUT5S       500
+#define TIMEOUT10s      1000
+#define TIMEOUT100MS    10
+#define TIMEOUT250MS    25
 
 void main(void)
 {
