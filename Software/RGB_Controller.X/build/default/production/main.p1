@@ -56,8 +56,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _LATAbits `VS1715 ~T0 @X0 0 e@1214 ]
 "100 main.c
 [; ;main.c: 100:     state_t state = MANUAL;
+<<<<<<< Updated upstream
 [c E13506 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
 [n E13506 . MANUAL T1 T2 T3 T4 T1Dummy T2Dummy T3Dummy T4Dummy T1StateDummy T2StateDummy T3StateDummy T4StateDummy  ]
+=======
+[c E13474 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
+[n E13474 . MANUAL T1 T2 T3 T4 T1Dummy T2Dummy T3Dummy T4Dummy T1StateDummy T2StateDummy T3StateDummy T4StateDummy  ]
+>>>>>>> Stashed changes
 "225 ./mcc_generated_files/memory.h
 [; ;./mcc_generated_files/memory.h: 225: uint8_t DATAEE_ReadByte(uint16_t bAdd);
 [v _DATAEE_ReadByte `(uc ~T0 @X0 0 ef1`us ]
@@ -68,6 +73,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16 ./Loopdelay.h
 [; ;./Loopdelay.h: 16: void LOOPDELAY_Init(uint16_t newLoopTimeMS);
 [v _LOOPDELAY_Init `(v ~T0 @X0 0 ef1`us ]
+<<<<<<< Updated upstream
 "36376 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f16q40.h
 [; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f16q40.h: 36376:     struct {
 [s S1732 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -125,6 +131,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _DATAEE_WriteByte `(v ~T0 @X0 0 ef2`us`uc ]
 "270 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f16q40.h
 [; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
+=======
+"26 ./DivFunctions.h
+[; ;./DivFunctions.h: 26: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B);
+[v _WS2812B_Write `(v ~T0 @X0 0 ef3`uc`uc`uc ]
+"270 C:/Users/noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
+[; ;C:/Users/noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
+>>>>>>> Stashed changes
 [; <" CLKRCON equ 039h ;# ">
 "374
 [; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f16q40.h: 374: __asm("CLKRCLK equ 03Ah");
@@ -2301,8 +2314,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 "100
 [; ;main.c: 100:     state_t state = MANUAL;
+<<<<<<< Updated upstream
 [v _state `E13506 ~T0 @X0 1 a ]
 [e = _state . `E13506 0 ]
+=======
+[v _state `E13474 ~T0 @X0 1 a ]
+[e = _state . `E13474 0 ]
+>>>>>>> Stashed changes
 "104
 [; ;main.c: 104:     if(DATAEE_ReadByte(3) == 69)
 [e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 3 `i `us `i -> 69 `i 1838  ]
@@ -2399,7 +2417,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "140
 [; ;main.c: 140:         state = DATAEE_ReadByte(36);
+<<<<<<< Updated upstream
 [e = _state -> ( _DATAEE_ReadByte (1 -> -> 36 `i `us `E13506 ]
+=======
+[e = _state -> ( _DATAEE_ReadByte (1 -> -> 36 `i `us `E13474 ]
+>>>>>>> Stashed changes
 "142
 [; ;main.c: 142:         if(state == 1 && (DATAEE_ReadByte(3) == 69))
 [e $ ! && == -> _state `ui -> -> 1 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 3 `i `us `i -> 69 `i 1843  ]
@@ -2425,7 +2447,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "149
 [; ;main.c: 149:             state = MANUAL;
+<<<<<<< Updated upstream
 [e = _state . `E13506 0 ]
+=======
+[e = _state . `E13474 0 ]
+>>>>>>> Stashed changes
 "150
 [; ;main.c: 150:         }
 }
@@ -2456,7 +2482,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "159
 [; ;main.c: 159:             state = MANUAL;
+<<<<<<< Updated upstream
 [e = _state . `E13506 0 ]
+=======
+[e = _state . `E13474 0 ]
+>>>>>>> Stashed changes
 "160
 [; ;main.c: 160:         }
 }
@@ -2487,7 +2517,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "169
 [; ;main.c: 169:             state = MANUAL;
+<<<<<<< Updated upstream
 [e = _state . `E13506 0 ]
+=======
+[e = _state . `E13474 0 ]
+>>>>>>> Stashed changes
 "170
 [; ;main.c: 170:         }
 }
@@ -2518,7 +2552,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "179
 [; ;main.c: 179:             state = MANUAL;
+<<<<<<< Updated upstream
 [e = _state . `E13506 0 ]
+=======
+[e = _state . `E13474 0 ]
+>>>>>>> Stashed changes
 "180
 [; ;main.c: 180:         }
 }
@@ -2532,15 +2570,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 185:     LOOPDELAY_Init(20);
 [e ( _LOOPDELAY_Init (1 -> -> 20 `i `us ]
 "187
+<<<<<<< Updated upstream
 [; ;main.c: 187:     while (1)
 [e :U 1856 ]
 "188
 [; ;main.c: 188:     {
 {
+=======
+[; ;main.c: 187:     WS2812B_Write(100,0,0);
+[e ( _WS2812B_Write (3 , , -> -> 100 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+>>>>>>> Stashed changes
 "189
-[; ;main.c: 189:         taster1Flag = PORTCbits.RC6;
-[e = _taster1Flag . . _PORTCbits 0 6 ]
+[; ;main.c: 189:     while (1)
+[e :U 1853 ]
 "190
+<<<<<<< Updated upstream
 [; ;main.c: 190:         taster2Flag = PORTAbits.RA4;
 [e = _taster2Flag . . _PORTAbits 0 4 ]
 "191
@@ -4526,4 +4570,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "990
 [; ;main.c: 990: }
 [e :UE 1837 ]
+=======
+[; ;main.c: 190:     {
+{
+"991
+[; ;main.c: 991:     }
+}
+[e :U 1852 ]
+[e $U 1853  ]
+[e :U 1854 ]
+"992
+[; ;main.c: 992: }
+[e :UE 1834 ]
+>>>>>>> Stashed changes
 }

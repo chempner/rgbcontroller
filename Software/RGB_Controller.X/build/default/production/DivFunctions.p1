@@ -2013,33 +2013,29 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f16q40.h: 37761: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 "3 DivFunctions.c
-[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
-[v _WS2812B_Write `(v ~T0 @X0 1 ef4`uc`uc`uc`uc ]
+[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B)
+[v _WS2812B_Write `(v ~T0 @X0 1 ef3`uc`uc`uc ]
 "4
 [; ;DivFunctions.c: 4: {
 {
 [e :U _WS2812B_Write ]
 "3
-[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
+[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B)
 [v _R `uc ~T0 @X0 1 r1 ]
 [v _G `uc ~T0 @X0 1 r2 ]
 [v _B `uc ~T0 @X0 1 r3 ]
-[v _W `uc ~T0 @X0 1 r4 ]
 "4
 [; ;DivFunctions.c: 4: {
 [f ]
 "5
-[; ;DivFunctions.c: 5:     ws_send_byte(G);
-[e ( _ws_send_byte (1 _G ]
-"6
-[; ;DivFunctions.c: 6:     ws_send_byte(R);
+[; ;DivFunctions.c: 5:     ws_send_byte(R);
 [e ( _ws_send_byte (1 _R ]
+"6
+[; ;DivFunctions.c: 6:     ws_send_byte(G);
+[e ( _ws_send_byte (1 _G ]
 "7
 [; ;DivFunctions.c: 7:     ws_send_byte(B);
 [e ( _ws_send_byte (1 _B ]
-"8
-[; ;DivFunctions.c: 8:     ws_send_byte(W);
-[e ( _ws_send_byte (1 _W ]
 "9
 [; ;DivFunctions.c: 9: }
 [e :UE 1837 ]
@@ -2072,8 +2068,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _onePulse ]
 [f ]
 "17
-[; ;DivFunctions.c: 17:     SPI1_ExchangeByte(0xF0);
-[e ( _SPI1_ExchangeByte (1 -> -> 240 `i `uc ]
+[; ;DivFunctions.c: 17:     SPI1_ExchangeByte(0xFC);
+[e ( _SPI1_ExchangeByte (1 -> -> 252 `i `uc ]
 "18
 [; ;DivFunctions.c: 18: }
 [e :UE 1839 ]
@@ -2250,8 +2246,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;DivFunctions.c: 54:     {
 {
 "55
-[; ;DivFunctions.c: 55:         WS2812B_Write(red, green, blue, white);
-[e ( _WS2812B_Write (4 , , , _red _green _blue _white ]
+[; ;DivFunctions.c: 55:         WS2812B_Write(red, green, blue);
+[e ( _WS2812B_Write (3 , , _red _green _blue ]
 "56
 [; ;DivFunctions.c: 56:     }
 }
