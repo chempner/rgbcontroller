@@ -23,7 +23,7 @@ extern "C" {
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 
-void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B);
+void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W);
 
 long map(long x, long in_min, long in_max, long out_min, long out_max);
 
