@@ -1,11 +1,10 @@
 #include "DivFunctions.h"
 
-void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B, uint8_t W)
+void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B)
 {    
-    ws_send_byte(G);
     ws_send_byte(R);
+    ws_send_byte(G);    
     ws_send_byte(B);
-    ws_send_byte(W);
 }
 
 long map(long x, long in_min, long in_max, long out_min, long out_max) {
@@ -14,12 +13,41 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 
 void onePulse(void)
 {
-    SPI1_ExchangeByte(0xF0);
+    IO_RB4_LAT = 1;
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    IO_RB4_LAT = 0;    
 }
 
 void zeroPulse(void)
 {
-    SPI1_ExchangeByte(0xC0);
+    IO_RB4_LAT = 1;   
+    NOP();
+    NOP();
+    NOP();
+    IO_RB4_LAT = 0;
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
+    NOP();
 }
 void ws_send_byte(uint8_t K)
 {
@@ -48,10 +76,15 @@ void ws_send_byte(uint8_t K)
     else {zeroPulse();}
 }
 
-void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, uint24_t ledcount)
+void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint24_t ledcount)
 {
-    for(uint24_t i=0; i <= ledcount; i++)
+    for(uint24_t x = 0; x <= (ledcount/20); x++)
     {
-        WS2812B_Write(red, green, blue, white);
+        for(uint8_t i=0; i <= 20; i++)
+        {
+            WS2812B_Write(red, green, blue);
+        }
+//        __delay_us(300);
     }
+    
 }
