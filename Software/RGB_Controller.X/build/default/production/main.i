@@ -22377,9 +22377,9 @@ unsigned char __t3rd16on(void);
 # 1 "./mcc_generated_files/device_config.h" 1
 # 51 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 338 "./mcc_generated_files/pin_manager.h"
+# 278 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 350 "./mcc_generated_files/pin_manager.h"
+# 290 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 52 "./mcc_generated_files/mcc.h" 2
 
@@ -22569,7 +22569,6 @@ typedef enum
     POT1 = 0x2,
     POT2 = 0x10,
     POT3 = 0x11,
-    POT4 = 0x12,
     channel_DAC2 = 0x3A,
     channel_VSS = 0x3B,
     channel_Temp = 0x3C,
@@ -22577,59 +22576,59 @@ typedef enum
     channel_FVR_Buffer1 = 0x3E,
     channel_FVR_Buffer2 = 0x3F
 } adcc_channel_t;
-# 135 "./mcc_generated_files/adcc.h"
+# 134 "./mcc_generated_files/adcc.h"
 void ADCC_Initialize(void);
-# 164 "./mcc_generated_files/adcc.h"
+# 163 "./mcc_generated_files/adcc.h"
 void ADCC_StartConversion(adcc_channel_t channel);
-# 194 "./mcc_generated_files/adcc.h"
+# 193 "./mcc_generated_files/adcc.h"
 _Bool ADCC_IsConversionDone(void);
-# 226 "./mcc_generated_files/adcc.h"
+# 225 "./mcc_generated_files/adcc.h"
 adc_result_t ADCC_GetConversionResult(void);
-# 257 "./mcc_generated_files/adcc.h"
+# 256 "./mcc_generated_files/adcc.h"
 adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
-# 282 "./mcc_generated_files/adcc.h"
+# 281 "./mcc_generated_files/adcc.h"
 void ADCC_StopConversion(void);
-# 309 "./mcc_generated_files/adcc.h"
+# 308 "./mcc_generated_files/adcc.h"
 void ADCC_SetStopOnInterrupt(void);
-# 334 "./mcc_generated_files/adcc.h"
+# 333 "./mcc_generated_files/adcc.h"
 void ADCC_DischargeSampleCapacitor(void);
-# 360 "./mcc_generated_files/adcc.h"
+# 359 "./mcc_generated_files/adcc.h"
 void ADCC_LoadAcquisitionRegister(uint16_t);
-# 386 "./mcc_generated_files/adcc.h"
+# 385 "./mcc_generated_files/adcc.h"
 void ADCC_SetPrechargeTime(uint16_t);
-# 411 "./mcc_generated_files/adcc.h"
+# 410 "./mcc_generated_files/adcc.h"
 void ADCC_SetRepeatCount(uint8_t);
-# 439 "./mcc_generated_files/adcc.h"
+# 438 "./mcc_generated_files/adcc.h"
 uint8_t ADCC_GetCurrentCountofConversions(void);
-# 463 "./mcc_generated_files/adcc.h"
+# 462 "./mcc_generated_files/adcc.h"
 void ADCC_ClearAccumulator(void);
-# 488 "./mcc_generated_files/adcc.h"
+# 487 "./mcc_generated_files/adcc.h"
 uint24_t ADCC_GetAccumulatorValue(void);
-# 516 "./mcc_generated_files/adcc.h"
+# 515 "./mcc_generated_files/adcc.h"
 _Bool ADCC_HasAccumulatorOverflowed(void);
-# 541 "./mcc_generated_files/adcc.h"
+# 540 "./mcc_generated_files/adcc.h"
 uint16_t ADCC_GetFilterValue(void);
-# 569 "./mcc_generated_files/adcc.h"
+# 568 "./mcc_generated_files/adcc.h"
 uint16_t ADCC_GetPreviousResult(void);
-# 595 "./mcc_generated_files/adcc.h"
+# 594 "./mcc_generated_files/adcc.h"
 void ADCC_DefineSetPoint(uint16_t);
-# 621 "./mcc_generated_files/adcc.h"
+# 620 "./mcc_generated_files/adcc.h"
 void ADCC_SetUpperThreshold(uint16_t);
-# 647 "./mcc_generated_files/adcc.h"
+# 646 "./mcc_generated_files/adcc.h"
 void ADCC_SetLowerThreshold(uint16_t);
-# 674 "./mcc_generated_files/adcc.h"
+# 673 "./mcc_generated_files/adcc.h"
 uint16_t ADCC_GetErrorCalculation(void);
-# 701 "./mcc_generated_files/adcc.h"
+# 700 "./mcc_generated_files/adcc.h"
 void ADCC_EnableDoubleSampling(void);
-# 725 "./mcc_generated_files/adcc.h"
+# 724 "./mcc_generated_files/adcc.h"
 void ADCC_EnableContinuousConversion(void);
-# 749 "./mcc_generated_files/adcc.h"
+# 748 "./mcc_generated_files/adcc.h"
 void ADCC_DisableContinuousConversion(void);
-# 777 "./mcc_generated_files/adcc.h"
+# 776 "./mcc_generated_files/adcc.h"
 _Bool ADCC_HasErrorCrossedUpperThreshold(void);
-# 805 "./mcc_generated_files/adcc.h"
+# 804 "./mcc_generated_files/adcc.h"
 _Bool ADCC_HasErrorCrossedLowerThreshold(void);
-# 832 "./mcc_generated_files/adcc.h"
+# 831 "./mcc_generated_files/adcc.h"
 uint8_t ADCC_GetConversionStageStatus(void);
 # 57 "./mcc_generated_files/mcc.h" 2
 # 71 "./mcc_generated_files/mcc.h"
@@ -22705,13 +22704,12 @@ void main(void)
     LATCbits.LATC7 = 0;
     LATCbits.LATC5 = 0;
     LATAbits.LATA5 = 0;
-    LATCbits.LATC3 = 0;
 
 
     typedef enum
     {
-        MANUAL, T1, T2, T3, T4, T1Dummy, T2Dummy, T3Dummy, T4Dummy,
-        T1StateDummy, T2StateDummy, T3StateDummy, T4StateDummy
+        MANUAL, T1, T2, T3, T1Dummy, T2Dummy, T3Dummy,
+        T1StateDummy, T2StateDummy, T3StateDummy,
     }state_t;
 
     state_t state = MANUAL;
@@ -22740,14 +22738,6 @@ void main(void)
         greenMode3 = DATAEE_ReadByte(24);
         blueMode3 = DATAEE_ReadByte(25);
         whiteMode3 = DATAEE_ReadByte(27);
-    }
-
-    if(DATAEE_ReadByte(8) == 69)
-    {
-        redMode4 = DATAEE_ReadByte(30);
-        greenMode4 = DATAEE_ReadByte(31);
-        blueMode4 = DATAEE_ReadByte(32);
-        whiteMode4 = DATAEE_ReadByte(34);
     }
 
 
@@ -22785,28 +22775,17 @@ void main(void)
         {
             state = MANUAL;
         }
-
-        if(state == 4 && (DATAEE_ReadByte(8) == 69))
-        {
-            LATCbits.LATC3 = 1;
-            _delay((unsigned long)((50)*(64000000/4000000.0)));
-        }
-        else if(state == 4)
-        {
-            state = MANUAL;
-        }
     }
 
 
 
-    LOOPDELAY_Init(20);
+
 
     while (1)
     {
         taster1Flag = PORTCbits.RC6;
         taster2Flag = PORTAbits.RA4;
         taster3Flag = PORTCbits.RC4;
-        taster4Flag = PORTBbits.RB7;
 
         ADCC_DischargeSampleCapacitor();
         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
@@ -22814,15 +22793,572 @@ void main(void)
         green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
         ADCC_DischargeSampleCapacitor();
         blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
-        ADCC_DischargeSampleCapacitor();
-        white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);
 
 
 
-        while(1)
+        _delay((unsigned long)((5)*(64000000/4000.0)));
+
+        switch(state)
         {
-            LED_WriteFull(20,0,0,144);
+            case MANUAL:
+
+                LED_WriteFull(red, green, blue, 300);
+
+                _delay((unsigned long)((50)*(64000000/4000000.0)));
+
+
+
+                if(!PORTCbits.RC6 && taster1Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+                {
+                    state = T1Dummy;
+                }
+
+                if(!PORTAbits.RA4 && taster2Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+                {
+                    state = T2Dummy;
+                }
+
+                if(!PORTCbits.RC4 && taster3Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+                {
+                    state = T3Dummy;
+                }
+
+
+                if((led1Blink || led2Blink || led3Blink || led4Blink) && (++timeout10s == 500))
+                {
+                    timeout10s = 0;
+
+                    led1Blink = 0;
+                    led2Blink = 0;
+                    led3Blink = 0;
+                    led4Blink = 0;
+                }
+
+                if(led1Blink && ++timeout500ms == 12)
+                {
+                    timeout500ms = 0;
+                    LATCbits.LATC7 = !LATCbits.LATC7;
+                }
+
+                if(led2Blink && ++timeout500ms == 12)
+                {
+                    timeout500ms = 0;
+                    LATCbits.LATC5 = !LATCbits.LATC5;
+                }
+
+                if(led3Blink && ++timeout500ms == 12)
+                {
+                    timeout500ms = 0;
+                    LATAbits.LATA5 = !LATAbits.LATA5;
+                }
+
+                if(!(led1Blink || led2Blink || led3Blink || led4Blink))
+                {
+                    timeout500ms = 0;
+
+                    LATCbits.LATC7 = 0;
+                    LATCbits.LATC5 = 0;
+                    LATAbits.LATA5 = 0;
+                }
+
+
+
+                if(led1Blink && !PORTCbits.RC6 && taster1Flag)
+                {
+                    redMode1 = red;
+                    greenMode1 = green;
+                    blueMode1 = blue;
+                    whiteMode1 = white;
+                    led1Blink = 0;
+                    DATAEE_WriteByte(15, blueMode1);
+                    DATAEE_WriteByte(12, greenMode1);
+                    DATAEE_WriteByte(11, redMode1);
+                    DATAEE_WriteByte(17, whiteMode1);
+                    DATAEE_WriteByte(3, 69);
+                }
+
+                if(led2Blink && !PORTAbits.RA4 && taster2Flag)
+                {
+                    redMode2 = red;
+                    greenMode2 = green;
+                    blueMode2 = blue;
+                    whiteMode2 = white;
+                    led2Blink = 0;
+                    DATAEE_WriteByte(20, blueMode2);
+                    DATAEE_WriteByte(19, greenMode2);
+                    DATAEE_WriteByte(18, redMode2);
+                    DATAEE_WriteByte(21, whiteMode2);
+                    DATAEE_WriteByte(4, 69);
+                }
+
+                if(led3Blink && !PORTCbits.RC4 && taster3Flag)
+                {
+                    redMode3 = red;
+                    greenMode3 = green;
+                    blueMode3 = blue;
+                    whiteMode3 = white;
+                    led3Blink = 0;
+                    DATAEE_WriteByte(25, blueMode3);
+                    DATAEE_WriteByte(24, greenMode3);
+                    DATAEE_WriteByte(22, redMode3);
+                    DATAEE_WriteByte(27, whiteMode3);
+                    DATAEE_WriteByte(6, 69);
+                }
+
+
+
+                if(PORTCbits.RC6)
+                {
+                    timeout5sPressed1 = 0;
+                }
+
+                if(PORTAbits.RA4)
+                {
+                    timeout5sPressed2 = 0;
+                }
+
+                if(PORTCbits.RC4)
+                {
+                    timeout5sPressed3 = 0;
+                }
+
+                break;
+
+
+            case T1Dummy:
+
+                if(PORTCbits.RC6)
+                {
+                    LATCbits.LATC7 = 1;
+                    LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+                    state = T1;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+                {
+                    timeout5sPressed1 = 0;
+                    led1Blink = 1;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                break;
+
+
+            case T2Dummy:
+
+                if(PORTAbits.RA4)
+                {
+                    LATCbits.LATC5 = 1;
+                    LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+                    state = T2;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+                {
+                    timeout5sPressed2 = 0;
+                    led2Blink = 1;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                break;
+
+            case T3Dummy:
+
+                if(PORTCbits.RC4)
+                {
+                    LATAbits.LATA5 = 1;
+                    LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+                    state = T3;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+                {
+                    timeout5sPressed3 = 0;
+                    led3Blink = 1;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                break;
+
+
+            case T1StateDummy:
+
+                if(PORTCbits.RC6)
+                {
+                    LATCbits.LATC7 = 0;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+                {
+                    timeout5sPressed1 = 0;
+                    led1StateBlink = 1;
+                    state = T1;
+                }
+
+                break;
+
+
+
+            case T2StateDummy:
+
+                if(PORTAbits.RA4)
+                {
+                    LATCbits.LATC5 = 0;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+                {
+                    timeout5sPressed2 = 0;
+                    led2StateBlink = 1;
+                    state = T2;
+                }
+
+                break;
+
+
+
+            case T3StateDummy:
+
+                if(PORTCbits.RC4)
+                {
+                    LATAbits.LATA5 = 0;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+                {
+                    timeout5sPressed3 = 0;
+                    led3StateBlink = 1;
+                    state = T3;
+                }
+
+                break;
+
+
+
+            case T1:
+
+                LED_WriteFull(redMode1,greenMode1,blueMode1, 300);
+
+
+
+                if(led1StateBlink && (++timeout250ms == 12))
+                {
+                    timeout250ms = 0;
+                    LATCbits.LATC7 = !LATCbits.LATC7;
+                }
+
+                if(!PORTCbits.RC6 && taster1Flag && !led1StateBlink)
+                {
+                    state = T1StateDummy;
+                }
+
+                if(!PORTCbits.RC6 && taster1Flag && led1StateBlink)
+                {
+                    LATCbits.LATC7 = 1;
+                    led1StateBlink = 0;
+                    redAdj = 0;
+                    greenAdj = 0;
+                    blueAdj = 0;
+                    whiteAdj = 0;
+                    DATAEE_WriteByte(15, blueMode1);
+                    DATAEE_WriteByte(12, greenMode1);
+                    DATAEE_WriteByte(11, redMode1);
+                    DATAEE_WriteByte(17, whiteMode1);
+                    DATAEE_WriteByte(3, 69);
+                }
+
+                if(led1StateBlink)
+                {
+                    if((red >= (redMode1 - 5) && red <= redMode1 + 5))
+                    {
+                        redAdj = 1;
+                    }
+
+                    if(redAdj)
+                    {
+                        redMode1 = red;
+                    }
+
+                    if((white >= (whiteMode1 - 5) && white <= whiteMode1 + 5))
+                    {
+                        whiteAdj = 1;
+                    }
+
+                    if(whiteAdj)
+                    {
+                        whiteMode1 = white;
+                    }
+
+                    if((green >= (greenMode1 - 5) && green <= greenMode1 + 5))
+                    {
+                       greenAdj = 1;
+                    }
+
+                    if(greenAdj)
+                    {
+                        greenMode1 = green;
+                    }
+
+                    if((blue >= (blueMode1 - 5) && blue <= blueMode1 + 5))
+                    {
+                        blueAdj = 1;
+                    }
+
+                    if(blueAdj)
+                    {
+                        blueMode1 = blue;
+                    }
+                }
+
+
+
+                if(!PORTAbits.RA4 && taster2Flag)
+                {
+                    LATCbits.LATC7 = 0;
+                    LATCbits.LATC5 = 1;
+                    LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+                    state = T2;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTCbits.RC4 && taster3Flag)
+                {
+                    LATCbits.LATC7 = 0;
+                    LATAbits.LATA5 = 1;
+                    LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+                    state = T3 ;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                break;
+
+
+
+            case T2:
+
+                LED_WriteFull(redMode2,greenMode2,blueMode2, 300);
+
+
+
+                if(led2StateBlink && (++timeout250ms == 12))
+                {
+                    timeout250ms = 0;
+                    LATCbits.LATC5 = !LATCbits.LATC5;
+                }
+
+                if(!PORTAbits.RA4 && taster2Flag && !led2StateBlink)
+                {
+                    state = T2StateDummy;
+                }
+
+                if(!PORTAbits.RA4 && taster2Flag && led2StateBlink)
+                {
+                    LATCbits.LATC5 = 1;
+                    led2StateBlink = 0;
+                    redAdj = 0;
+                    greenAdj = 0;
+                    blueAdj = 0;
+                    whiteAdj = 0;
+                    DATAEE_WriteByte(20, blueMode1);
+                    DATAEE_WriteByte(19, greenMode1);
+                    DATAEE_WriteByte(18, redMode1);
+                    DATAEE_WriteByte(21, whiteMode1);
+                    DATAEE_WriteByte(4, 69);
+                }
+
+                if(led2StateBlink)
+                {
+                    if((red >= (redMode2 - 5) && red <= redMode2 + 5))
+                    {
+                        redAdj = 1;
+                    }
+
+                    if(redAdj)
+                    {
+                        redMode2 = red;
+                    }
+
+                    if((white >= (whiteMode2 - 5) && white <= whiteMode2 + 5))
+                    {
+                        whiteAdj = 1;
+                    }
+
+                    if(whiteAdj)
+                    {
+                        whiteMode2 = white;
+                    }
+
+                    if((green >= (greenMode2 - 5) && green <= greenMode2 + 5))
+                    {
+                       greenAdj = 1;
+                    }
+
+                    if(greenAdj)
+                    {
+                        greenMode2 = green;
+                    }
+
+                    if((blue >= (blueMode2 - 5) && blue <= blueMode2 + 5))
+                    {
+                        blueAdj = 1;
+                    }
+
+                    if(blueAdj)
+                    {
+                        blueMode2 = blue;
+                    }
+                }
+
+
+
+
+                if(!PORTCbits.RC6 && taster1Flag)
+                {
+                    LATCbits.LATC5 = 0;
+                    LATCbits.LATC7 = 1;
+                    LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+                    state = T1;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+
+                if(!PORTCbits.RC4 && taster3Flag)
+                {
+                    LATCbits.LATC5 = 0;
+                    LATAbits.LATA5 = 1;
+                    LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+                    state = T3 ;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                break;
+
+
+
+            case T3:
+
+                LED_WriteFull(redMode3,greenMode3,blueMode3, 300);
+
+
+
+                if(led3StateBlink && (++timeout250ms == 12))
+                {
+                    timeout250ms = 0;
+                    LATAbits.LATA5 = !LATAbits.LATA5;
+                }
+
+                if(!PORTCbits.RC4 && taster3Flag && !led3StateBlink)
+                {
+                    state = T3StateDummy;
+                }
+
+                if(!PORTCbits.RC4 && taster3Flag && led3StateBlink)
+                {
+                    LATAbits.LATA5 = 1;
+                    led3StateBlink = 0;
+                    redAdj = 0;
+                    greenAdj = 0;
+                    blueAdj = 0;
+                    whiteAdj = 0;
+                    DATAEE_WriteByte(25, blueMode1);
+                    DATAEE_WriteByte(24, greenMode1);
+                    DATAEE_WriteByte(22, redMode1);
+                    DATAEE_WriteByte(27, whiteMode1);
+                    DATAEE_WriteByte(6, 69);
+                }
+                taster3Flag = PORTCbits.RC4;
+
+                if(led3StateBlink)
+                {
+                    if((red >= (redMode3 - 5) && red <= redMode3 + 5))
+                    {
+                        redAdj = 1;
+                    }
+
+                    if(redAdj)
+                    {
+                        redMode3 = red;
+                    }
+
+                    if((white >= (whiteMode3 - 5) && white <= whiteMode3 + 5))
+                    {
+                        whiteAdj = 1;
+                    }
+
+                    if(whiteAdj)
+                    {
+                        whiteMode3 = white;
+                    }
+
+                    if((green >= (greenMode3 - 5) && green <= greenMode3 + 5))
+                    {
+                       greenAdj = 1;
+                    }
+
+                    if(greenAdj)
+                    {
+                        greenMode3 = green;
+                    }
+
+                    if((blue >= (blueMode3 - 5) && blue <= blueMode3 + 5))
+                    {
+                        blueAdj = 1;
+                    }
+
+                    if(blueAdj)
+                    {
+                        blueMode3 = blue;
+                    }
+                }
+
+
+
+                if(!PORTCbits.RC6 && taster1Flag)
+                {
+                    LATAbits.LATA5 = 0;
+                    LATCbits.LATC7 = 1;
+                    LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+                    state = T1;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+
+                if(!PORTAbits.RA4 && taster2Flag)
+                {
+                    LATAbits.LATA5 = 0;
+                    LATCbits.LATC5 = 1;
+                    LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+                    state = T2;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
         }
-# 990 "main.c"
     }
 }

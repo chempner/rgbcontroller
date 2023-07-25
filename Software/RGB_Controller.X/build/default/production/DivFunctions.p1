@@ -2039,11 +2039,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;DivFunctions.c: 4: {
 [f ]
 "5
-[; ;DivFunctions.c: 5:     ws_send_byte(R);
-[e ( _ws_send_byte (1 _R ]
-"6
-[; ;DivFunctions.c: 6:     ws_send_byte(G);
+[; ;DivFunctions.c: 5:     ws_send_byte(G);
 [e ( _ws_send_byte (1 _G ]
+"6
+[; ;DivFunctions.c: 6:     ws_send_byte(R);
+[e ( _ws_send_byte (1 _R ]
 "7
 [; ;DivFunctions.c: 7:     ws_send_byte(B);
 [e ( _ws_send_byte (1 _B ]

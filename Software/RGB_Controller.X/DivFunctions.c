@@ -2,8 +2,8 @@
 
 void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B)
 {    
-    ws_send_byte(R);
     ws_send_byte(G);    
+    ws_send_byte(R);    
     ws_send_byte(B);
 }
 

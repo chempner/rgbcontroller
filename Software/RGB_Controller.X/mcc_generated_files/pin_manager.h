@@ -145,26 +145,6 @@
 #define IO_RB4_SetAnalogMode()      do { ANSELBbits.ANSELB4 = 1; } while(0)
 #define IO_RB4_SetDigitalMode()     do { ANSELBbits.ANSELB4 = 0; } while(0)
 
-// get/set T4 aliases
-#define T4_TRIS                 TRISBbits.TRISB7
-#define T4_LAT                  LATBbits.LATB7
-#define T4_PORT                 PORTBbits.RB7
-#define T4_WPU                  WPUBbits.WPUB7
-#define T4_OD                   ODCONBbits.ODCB7
-#define T4_ANS                  ANSELBbits.ANSELB7
-#define T4_SetHigh()            do { LATBbits.LATB7 = 1; } while(0)
-#define T4_SetLow()             do { LATBbits.LATB7 = 0; } while(0)
-#define T4_Toggle()             do { LATBbits.LATB7 = ~LATBbits.LATB7; } while(0)
-#define T4_GetValue()           PORTBbits.RB7
-#define T4_SetDigitalInput()    do { TRISBbits.TRISB7 = 1; } while(0)
-#define T4_SetDigitalOutput()   do { TRISBbits.TRISB7 = 0; } while(0)
-#define T4_SetPullup()          do { WPUBbits.WPUB7 = 1; } while(0)
-#define T4_ResetPullup()        do { WPUBbits.WPUB7 = 0; } while(0)
-#define T4_SetPushPull()        do { ODCONBbits.ODCB7 = 0; } while(0)
-#define T4_SetOpenDrain()       do { ODCONBbits.ODCB7 = 1; } while(0)
-#define T4_SetAnalogMode()      do { ANSELBbits.ANSELB7 = 1; } while(0)
-#define T4_SetDigitalMode()     do { ANSELBbits.ANSELB7 = 0; } while(0)
-
 // get/set POT2 aliases
 #define POT2_TRIS                 TRISCbits.TRISC0
 #define POT2_LAT                  LATCbits.LATC0
@@ -204,46 +184,6 @@
 #define POT3_SetOpenDrain()       do { ODCONCbits.ODCC1 = 1; } while(0)
 #define POT3_SetAnalogMode()      do { ANSELCbits.ANSELC1 = 1; } while(0)
 #define POT3_SetDigitalMode()     do { ANSELCbits.ANSELC1 = 0; } while(0)
-
-// get/set POT4 aliases
-#define POT4_TRIS                 TRISCbits.TRISC2
-#define POT4_LAT                  LATCbits.LATC2
-#define POT4_PORT                 PORTCbits.RC2
-#define POT4_WPU                  WPUCbits.WPUC2
-#define POT4_OD                   ODCONCbits.ODCC2
-#define POT4_ANS                  ANSELCbits.ANSELC2
-#define POT4_SetHigh()            do { LATCbits.LATC2 = 1; } while(0)
-#define POT4_SetLow()             do { LATCbits.LATC2 = 0; } while(0)
-#define POT4_Toggle()             do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0)
-#define POT4_GetValue()           PORTCbits.RC2
-#define POT4_SetDigitalInput()    do { TRISCbits.TRISC2 = 1; } while(0)
-#define POT4_SetDigitalOutput()   do { TRISCbits.TRISC2 = 0; } while(0)
-#define POT4_SetPullup()          do { WPUCbits.WPUC2 = 1; } while(0)
-#define POT4_ResetPullup()        do { WPUCbits.WPUC2 = 0; } while(0)
-#define POT4_SetPushPull()        do { ODCONCbits.ODCC2 = 0; } while(0)
-#define POT4_SetOpenDrain()       do { ODCONCbits.ODCC2 = 1; } while(0)
-#define POT4_SetAnalogMode()      do { ANSELCbits.ANSELC2 = 1; } while(0)
-#define POT4_SetDigitalMode()     do { ANSELCbits.ANSELC2 = 0; } while(0)
-
-// get/set LED4 aliases
-#define LED4_TRIS                 TRISCbits.TRISC3
-#define LED4_LAT                  LATCbits.LATC3
-#define LED4_PORT                 PORTCbits.RC3
-#define LED4_WPU                  WPUCbits.WPUC3
-#define LED4_OD                   ODCONCbits.ODCC3
-#define LED4_ANS                  ANSELCbits.ANSELC3
-#define LED4_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
-#define LED4_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
-#define LED4_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
-#define LED4_GetValue()           PORTCbits.RC3
-#define LED4_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
-#define LED4_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
-#define LED4_SetPullup()          do { WPUCbits.WPUC3 = 1; } while(0)
-#define LED4_ResetPullup()        do { WPUCbits.WPUC3 = 0; } while(0)
-#define LED4_SetPushPull()        do { ODCONCbits.ODCC3 = 0; } while(0)
-#define LED4_SetOpenDrain()       do { ODCONCbits.ODCC3 = 1; } while(0)
-#define LED4_SetAnalogMode()      do { ANSELCbits.ANSELC3 = 1; } while(0)
-#define LED4_SetDigitalMode()     do { ANSELCbits.ANSELC3 = 0; } while(0)
 
 // get/set T3 aliases
 #define T3_TRIS                 TRISCbits.TRISC4

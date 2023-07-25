@@ -25,10 +25,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35954
 [; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 35954: extern volatile LATAbits_t LATAbits __attribute__((address(0x4BE)));
 [v _LATAbits `VS1712 ~T0 @X0 0 e@1214 ]
-"96 main.c
-[; ;main.c: 96:     state_t state = MANUAL;
-[c E13368 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
-[n E13368 . MANUAL T1 T2 T3 T4 T1Dummy T2Dummy T3Dummy T4Dummy T1StateDummy T2StateDummy T3StateDummy T4StateDummy  ]
+"95 main.c
+[; ;main.c: 95:     state_t state = MANUAL;
+[c E13367 0 1 2 3 4 5 6 7 8 9 .. ]
+[n E13367 . MANUAL T1 T2 T3 T1Dummy T2Dummy T3Dummy T1StateDummy T2StateDummy T3StateDummy  ]
 "225 ./mcc_generated_files/memory.h
 [; ;./mcc_generated_files/memory.h: 225: uint8_t DATAEE_ReadByte(uint16_t bAdd);
 [v _DATAEE_ReadByte `(uc ~T0 @X0 0 ef1`us ]
@@ -36,9 +36,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
-"16 ./Loopdelay.h
-[; ;./Loopdelay.h: 16: void LOOPDELAY_Init(uint16_t newLoopTimeMS);
-[v _LOOPDELAY_Init `(v ~T0 @X0 0 ef1`us ]
 "36331 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
 [; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 36331:     struct {
 [s S1729 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -61,33 +58,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "36251
 [; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 36251: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x4CE)));
 [v _PORTAbits `VS1724 ~T0 @X0 0 e@1230 ]
-"36292
-[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 36292:     struct {
-[s S1727 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1727 . . RB4 RB5 RB6 RB7 ]
-"36291
-[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 36291: typedef union {
-[u S1726 `S1727 1 ]
-[n S1726 . . ]
-"36300
-[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 36300: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x4CF)));
-[v _PORTBbits `VS1726 ~T0 @X0 0 e@1231 ]
-"334 ./mcc_generated_files/adcc.h
-[; ;./mcc_generated_files/adcc.h: 334: void ADCC_DischargeSampleCapacitor(void);
+"333 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 333: void ADCC_DischargeSampleCapacitor(void);
 [v _ADCC_DischargeSampleCapacitor `(v ~T0 @X0 0 ef ]
 "28 ./DivFunctions.h
 [; ;./DivFunctions.h: 28: long map(long x, long in_min, long in_max, long out_min, long out_max);
 [v _map `(l ~T0 @X0 0 ef5`l`l`l`l`l ]
-"191 main.c
-[; ;main.c: 191:         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
-[c E13248 2 16 17 18 58 59 60 61 62 63 .. ]
-[n E13248 . POT1 POT2 POT3 POT4 channel_DAC2 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
-"257 ./mcc_generated_files/adcc.h
-[; ;./mcc_generated_files/adcc.h: 257: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+"171 main.c
+[; ;main.c: 171:         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
+[c E13248 2 16 17 58 59 60 61 62 63 .. ]
+[n E13248 . POT1 POT2 POT3 channel_DAC2 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"256 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 256: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
 [v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E13248 ]
 "36 ./DivFunctions.h
 [; ;./DivFunctions.h: 36: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint24_t ledcount);
 [v _LED_WriteFull `(v ~T0 @X0 0 ef4`uc`uc`uc`um ]
+"212 ./mcc_generated_files/memory.h
+[; ;./mcc_generated_files/memory.h: 212: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
+[v _DATAEE_WriteByte `(v ~T0 @X0 0 ef2`us`uc ]
 "270 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
 [; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2252,305 +2241,1615 @@ Version 4.0 HI-TECH Software Intermediate Code
 "86
 [; ;main.c: 86:     LATAbits.LATA5 = 0;
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-"87
-[; ;main.c: 87:     LATCbits.LATC3 = 0;
-[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
-"96
-[; ;main.c: 96:     state_t state = MANUAL;
-[v _state `E13368 ~T0 @X0 1 a ]
-[e = _state . `E13368 0 ]
-"100
-[; ;main.c: 100:     if(DATAEE_ReadByte(3) == 69)
+"95
+[; ;main.c: 95:     state_t state = MANUAL;
+[v _state `E13367 ~T0 @X0 1 a ]
+[e = _state . `E13367 0 ]
+"99
+[; ;main.c: 99:     if(DATAEE_ReadByte(3) == 69)
 [e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 3 `i `us `i -> 69 `i 1835  ]
-"101
-[; ;main.c: 101:     {
+"100
+[; ;main.c: 100:     {
 {
-"102
-[; ;main.c: 102:         redMode1 = DATAEE_ReadByte(11);
+"101
+[; ;main.c: 101:         redMode1 = DATAEE_ReadByte(11);
 [e = _redMode1 ( _DATAEE_ReadByte (1 -> -> 11 `i `us ]
-"103
-[; ;main.c: 103:         greenMode1 = DATAEE_ReadByte(12);
+"102
+[; ;main.c: 102:         greenMode1 = DATAEE_ReadByte(12);
 [e = _greenMode1 ( _DATAEE_ReadByte (1 -> -> 12 `i `us ]
-"104
-[; ;main.c: 104:         blueMode1 = DATAEE_ReadByte(15);
+"103
+[; ;main.c: 103:         blueMode1 = DATAEE_ReadByte(15);
 [e = _blueMode1 ( _DATAEE_ReadByte (1 -> -> 15 `i `us ]
-"105
-[; ;main.c: 105:         whiteMode1 = DATAEE_ReadByte(17);
+"104
+[; ;main.c: 104:         whiteMode1 = DATAEE_ReadByte(17);
 [e = _whiteMode1 ( _DATAEE_ReadByte (1 -> -> 17 `i `us ]
-"106
-[; ;main.c: 106:     }
+"105
+[; ;main.c: 105:     }
 }
 [e :U 1835 ]
-"108
-[; ;main.c: 108:     if(DATAEE_ReadByte(4) == 69)
+"107
+[; ;main.c: 107:     if(DATAEE_ReadByte(4) == 69)
 [e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 4 `i `us `i -> 69 `i 1836  ]
-"109
-[; ;main.c: 109:     {
+"108
+[; ;main.c: 108:     {
 {
-"110
-[; ;main.c: 110:         redMode2 = DATAEE_ReadByte(18);
+"109
+[; ;main.c: 109:         redMode2 = DATAEE_ReadByte(18);
 [e = _redMode2 ( _DATAEE_ReadByte (1 -> -> 18 `i `us ]
-"111
-[; ;main.c: 111:         greenMode2 = DATAEE_ReadByte(19);
+"110
+[; ;main.c: 110:         greenMode2 = DATAEE_ReadByte(19);
 [e = _greenMode2 ( _DATAEE_ReadByte (1 -> -> 19 `i `us ]
-"112
-[; ;main.c: 112:         blueMode2 = DATAEE_ReadByte(20);
+"111
+[; ;main.c: 111:         blueMode2 = DATAEE_ReadByte(20);
 [e = _blueMode2 ( _DATAEE_ReadByte (1 -> -> 20 `i `us ]
-"113
-[; ;main.c: 113:         whiteMode2 = DATAEE_ReadByte(21);
+"112
+[; ;main.c: 112:         whiteMode2 = DATAEE_ReadByte(21);
 [e = _whiteMode2 ( _DATAEE_ReadByte (1 -> -> 21 `i `us ]
-"114
-[; ;main.c: 114:     }
+"113
+[; ;main.c: 113:     }
 }
 [e :U 1836 ]
-"116
-[; ;main.c: 116:     if(DATAEE_ReadByte(6) == 69)
+"115
+[; ;main.c: 115:     if(DATAEE_ReadByte(6) == 69)
 [e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 6 `i `us `i -> 69 `i 1837  ]
-"117
-[; ;main.c: 117:     {
+"116
+[; ;main.c: 116:     {
 {
-"118
-[; ;main.c: 118:         redMode3 = DATAEE_ReadByte(22);
+"117
+[; ;main.c: 117:         redMode3 = DATAEE_ReadByte(22);
 [e = _redMode3 ( _DATAEE_ReadByte (1 -> -> 22 `i `us ]
-"119
-[; ;main.c: 119:         greenMode3 = DATAEE_ReadByte(24);
+"118
+[; ;main.c: 118:         greenMode3 = DATAEE_ReadByte(24);
 [e = _greenMode3 ( _DATAEE_ReadByte (1 -> -> 24 `i `us ]
-"120
-[; ;main.c: 120:         blueMode3 = DATAEE_ReadByte(25);
+"119
+[; ;main.c: 119:         blueMode3 = DATAEE_ReadByte(25);
 [e = _blueMode3 ( _DATAEE_ReadByte (1 -> -> 25 `i `us ]
-"121
-[; ;main.c: 121:         whiteMode3 = DATAEE_ReadByte(27);
+"120
+[; ;main.c: 120:         whiteMode3 = DATAEE_ReadByte(27);
 [e = _whiteMode3 ( _DATAEE_ReadByte (1 -> -> 27 `i `us ]
-"122
-[; ;main.c: 122:     }
+"121
+[; ;main.c: 121:     }
 }
 [e :U 1837 ]
-"124
-[; ;main.c: 124:     if(DATAEE_ReadByte(8) == 69)
-[e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 8 `i `us `i -> 69 `i 1838  ]
 "125
-[; ;main.c: 125:     {
-{
+[; ;main.c: 125:     if(DATAEE_ReadByte(2) == 69)
+[e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 2 `i `us `i -> 69 `i 1838  ]
 "126
-[; ;main.c: 126:         redMode4 = DATAEE_ReadByte(30);
-[e = _redMode4 ( _DATAEE_ReadByte (1 -> -> 30 `i `us ]
+[; ;main.c: 126:     {
+{
 "127
-[; ;main.c: 127:         greenMode4 = DATAEE_ReadByte(31);
-[e = _greenMode4 ( _DATAEE_ReadByte (1 -> -> 31 `i `us ]
-"128
-[; ;main.c: 128:         blueMode4 = DATAEE_ReadByte(32);
-[e = _blueMode4 ( _DATAEE_ReadByte (1 -> -> 32 `i `us ]
+[; ;main.c: 127:         state = DATAEE_ReadByte(36);
+[e = _state -> ( _DATAEE_ReadByte (1 -> -> 36 `i `us `E13367 ]
 "129
-[; ;main.c: 129:         whiteMode4 = DATAEE_ReadByte(34);
-[e = _whiteMode4 ( _DATAEE_ReadByte (1 -> -> 34 `i `us ]
+[; ;main.c: 129:         if(state == 1 && (DATAEE_ReadByte(3) == 69))
+[e $ ! && == -> _state `ui -> -> 1 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 3 `i `us `i -> 69 `i 1839  ]
 "130
-[; ;main.c: 130:     }
+[; ;main.c: 130:         {
+{
+"131
+[; ;main.c: 131:             LATCbits.LATC7 = 1;
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+"132
+[; ;main.c: 132:             _delay((unsigned long)((50)*(64000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
+"133
+[; ;main.c: 133:         }
 }
-[e :U 1838 ]
+[e $U 1840  ]
 "134
-[; ;main.c: 134:     if(DATAEE_ReadByte(2) == 69)
-[e $ ! == -> ( _DATAEE_ReadByte (1 -> -> 2 `i `us `i -> 69 `i 1839  ]
+[; ;main.c: 134:         else if (state == 1)
+[e :U 1839 ]
+[e $ ! == -> _state `ui -> -> 1 `i `ui 1841  ]
 "135
-[; ;main.c: 135:     {
+[; ;main.c: 135:         {
 {
 "136
-[; ;main.c: 136:         state = DATAEE_ReadByte(36);
-[e = _state -> ( _DATAEE_ReadByte (1 -> -> 36 `i `us `E13368 ]
-"138
-[; ;main.c: 138:         if(state == 1 && (DATAEE_ReadByte(3) == 69))
-[e $ ! && == -> _state `ui -> -> 1 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 3 `i `us `i -> 69 `i 1840  ]
-"139
-[; ;main.c: 139:         {
-{
-"140
-[; ;main.c: 140:             LATCbits.LATC7 = 1;
-[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
-"141
-[; ;main.c: 141:             _delay((unsigned long)((50)*(64000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
-"142
-[; ;main.c: 142:         }
+[; ;main.c: 136:             state = MANUAL;
+[e = _state . `E13367 0 ]
+"137
+[; ;main.c: 137:         }
 }
-[e $U 1841  ]
-"143
-[; ;main.c: 143:         else if (state == 1)
-[e :U 1840 ]
-[e $ ! == -> _state `ui -> -> 1 `i `ui 1842  ]
-"144
-[; ;main.c: 144:         {
-{
-"145
-[; ;main.c: 145:             state = MANUAL;
-[e = _state . `E13368 0 ]
-"146
-[; ;main.c: 146:         }
-}
-[e :U 1842 ]
 [e :U 1841 ]
-"148
-[; ;main.c: 148:         if(state == 2 && (DATAEE_ReadByte(4) == 69))
-[e $ ! && == -> _state `ui -> -> 2 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 4 `i `us `i -> 69 `i 1843  ]
-"149
-[; ;main.c: 149:         {
+[e :U 1840 ]
+"139
+[; ;main.c: 139:         if(state == 2 && (DATAEE_ReadByte(4) == 69))
+[e $ ! && == -> _state `ui -> -> 2 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 4 `i `us `i -> 69 `i 1842  ]
+"140
+[; ;main.c: 140:         {
 {
-"150
-[; ;main.c: 150:             LATCbits.LATC5 = 1;
+"141
+[; ;main.c: 141:             LATCbits.LATC5 = 1;
 [e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
-"151
-[; ;main.c: 151:             _delay((unsigned long)((50)*(64000000/4000000.0)));
+"142
+[; ;main.c: 142:             _delay((unsigned long)((50)*(64000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
-"152
-[; ;main.c: 152:         }
+"143
+[; ;main.c: 143:         }
 }
-[e $U 1844  ]
-"153
-[; ;main.c: 153:         else if(state == 2)
-[e :U 1843 ]
-[e $ ! == -> _state `ui -> -> 2 `i `ui 1845  ]
-"154
-[; ;main.c: 154:         {
+[e $U 1843  ]
+"144
+[; ;main.c: 144:         else if(state == 2)
+[e :U 1842 ]
+[e $ ! == -> _state `ui -> -> 2 `i `ui 1844  ]
+"145
+[; ;main.c: 145:         {
 {
-"155
-[; ;main.c: 155:             state = MANUAL;
-[e = _state . `E13368 0 ]
-"156
-[; ;main.c: 156:         }
+"146
+[; ;main.c: 146:             state = MANUAL;
+[e = _state . `E13367 0 ]
+"147
+[; ;main.c: 147:         }
 }
-[e :U 1845 ]
 [e :U 1844 ]
-"158
-[; ;main.c: 158:         if(state == 3 && (DATAEE_ReadByte(6) == 69))
-[e $ ! && == -> _state `ui -> -> 3 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 6 `i `us `i -> 69 `i 1846  ]
-"159
-[; ;main.c: 159:         {
+[e :U 1843 ]
+"149
+[; ;main.c: 149:         if(state == 3 && (DATAEE_ReadByte(6) == 69))
+[e $ ! && == -> _state `ui -> -> 3 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 6 `i `us `i -> 69 `i 1845  ]
+"150
+[; ;main.c: 150:         {
 {
-"160
-[; ;main.c: 160:             LATAbits.LATA5 = 1;
+"151
+[; ;main.c: 151:             LATAbits.LATA5 = 1;
 [e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
-"161
-[; ;main.c: 161:             _delay((unsigned long)((50)*(64000000/4000000.0)));
+"152
+[; ;main.c: 152:             _delay((unsigned long)((50)*(64000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
-"162
-[; ;main.c: 162:         }
+"153
+[; ;main.c: 153:         }
 }
-[e $U 1847  ]
-"163
-[; ;main.c: 163:         else if(state == 3)
-[e :U 1846 ]
-[e $ ! == -> _state `ui -> -> 3 `i `ui 1848  ]
-"164
-[; ;main.c: 164:         {
+[e $U 1846  ]
+"154
+[; ;main.c: 154:         else if(state == 3)
+[e :U 1845 ]
+[e $ ! == -> _state `ui -> -> 3 `i `ui 1847  ]
+"155
+[; ;main.c: 155:         {
 {
-"165
-[; ;main.c: 165:             state = MANUAL;
-[e = _state . `E13368 0 ]
-"166
-[; ;main.c: 166:         }
+"156
+[; ;main.c: 156:             state = MANUAL;
+[e = _state . `E13367 0 ]
+"157
+[; ;main.c: 157:         }
 }
-[e :U 1848 ]
 [e :U 1847 ]
-"168
-[; ;main.c: 168:         if(state == 4 && (DATAEE_ReadByte(8) == 69))
-[e $ ! && == -> _state `ui -> -> 4 `i `ui == -> ( _DATAEE_ReadByte (1 -> -> 8 `i `us `i -> 69 `i 1849  ]
-"169
-[; ;main.c: 169:         {
-{
-"170
-[; ;main.c: 170:             LATCbits.LATC3 = 1;
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-"171
-[; ;main.c: 171:             _delay((unsigned long)((50)*(64000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
-"172
-[; ;main.c: 172:         }
+[e :U 1846 ]
+"158
+[; ;main.c: 158:     }
 }
-[e $U 1850  ]
-"173
-[; ;main.c: 173:         else if(state == 4)
+[e :U 1838 ]
+"164
+[; ;main.c: 164:     while (1)
 [e :U 1849 ]
-[e $ ! == -> _state `ui -> -> 4 `i `ui 1851  ]
-"174
-[; ;main.c: 174:         {
+"165
+[; ;main.c: 165:     {
 {
-"175
-[; ;main.c: 175:             state = MANUAL;
-[e = _state . `E13368 0 ]
-"176
-[; ;main.c: 176:         }
-}
-[e :U 1851 ]
-[e :U 1850 ]
-"177
-[; ;main.c: 177:     }
-}
-[e :U 1839 ]
-"181
-[; ;main.c: 181:     LOOPDELAY_Init(20);
-[e ( _LOOPDELAY_Init (1 -> -> 20 `i `us ]
-"183
-[; ;main.c: 183:     while (1)
-[e :U 1853 ]
-"184
-[; ;main.c: 184:     {
-{
-"185
-[; ;main.c: 185:         taster1Flag = PORTCbits.RC6;
+"166
+[; ;main.c: 166:         taster1Flag = PORTCbits.RC6;
 [e = _taster1Flag . . _PORTCbits 0 6 ]
-"186
-[; ;main.c: 186:         taster2Flag = PORTAbits.RA4;
+"167
+[; ;main.c: 167:         taster2Flag = PORTAbits.RA4;
 [e = _taster2Flag . . _PORTAbits 0 4 ]
-"187
-[; ;main.c: 187:         taster3Flag = PORTCbits.RC4;
+"168
+[; ;main.c: 168:         taster3Flag = PORTCbits.RC4;
 [e = _taster3Flag . . _PORTCbits 0 4 ]
-"188
-[; ;main.c: 188:         taster4Flag = PORTBbits.RB7;
-[e = _taster4Flag . . _PORTBbits 0 4 ]
-"190
-[; ;main.c: 190:         ADCC_DischargeSampleCapacitor();
+"170
+[; ;main.c: 170:         ADCC_DischargeSampleCapacitor();
 [e ( _ADCC_DischargeSampleCapacitor ..  ]
-"191
-[; ;main.c: 191:         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
+"171
+[; ;main.c: 171:         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
 [e = _red -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E13248 0 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
-"192
-[; ;main.c: 192:         ADCC_DischargeSampleCapacitor();
+"172
+[; ;main.c: 172:         ADCC_DischargeSampleCapacitor();
 [e ( _ADCC_DischargeSampleCapacitor ..  ]
-"193
-[; ;main.c: 193:         green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
+"173
+[; ;main.c: 173:         green = map(ADCC_GetSingleConversion(POT2),0,4095,0,255);
 [e = _green -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E13248 1 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
-"194
-[; ;main.c: 194:         ADCC_DischargeSampleCapacitor();
+"174
+[; ;main.c: 174:         ADCC_DischargeSampleCapacitor();
 [e ( _ADCC_DischargeSampleCapacitor ..  ]
-"195
-[; ;main.c: 195:         blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
+"175
+[; ;main.c: 175:         blue = map(ADCC_GetSingleConversion(POT3),0,4095,0,255);
 [e = _blue -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E13248 2 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
-"196
-[; ;main.c: 196:         ADCC_DischargeSampleCapacitor();
-[e ( _ADCC_DischargeSampleCapacitor ..  ]
-"197
-[; ;main.c: 197:         white = map(ADCC_GetSingleConversion(POT4),0,4095,0,255);
-[e = _white -> ( _map (4 , , , , -> ( _ADCC_GetSingleConversion (1 . `E13248 3 `l -> -> 0 `i `l -> -> 4095 `i `l -> -> 0 `i `l -> -> 255 `i `l `uc ]
-"201
-[; ;main.c: 201:         while(1)
-[e :U 1856 ]
-"202
-[; ;main.c: 202:         {
+"179
+[; ;main.c: 179:         _delay((unsigned long)((5)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"181
+[; ;main.c: 181:         switch(state)
+[e $U 1852  ]
+"182
+[; ;main.c: 182:         {
 {
-"203
-[; ;main.c: 203:             LED_WriteFull(20,0,0,144);
-[e ( _LED_WriteFull (4 , , , -> -> 20 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> -> 144 `i `m `um ]
-"204
-[; ;main.c: 204:         }
+"183
+[; ;main.c: 183:             case MANUAL:
+[e :U 1853 ]
+"185
+[; ;main.c: 185:                 LED_WriteFull(red, green, blue, 300);
+[e ( _LED_WriteFull (4 , , , _red _green _blue -> -> -> 300 `i `m `um ]
+"187
+[; ;main.c: 187:                 _delay((unsigned long)((50)*(64000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
+"191
+[; ;main.c: 191:                 if(!PORTCbits.RC6 && taster1Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+[e $ ! && && && && && ! != -> . . _PORTCbits 0 6 `i -> 0 `i != -> _taster1Flag `i -> 0 `i ! != -> _led1Blink `i -> 0 `i ! != -> _led2Blink `i -> 0 `i ! != -> _led3Blink `i -> 0 `i ! != -> _led4Blink `i -> 0 `i 1854  ]
+"192
+[; ;main.c: 192:                 {
+{
+"193
+[; ;main.c: 193:                     state = T1Dummy;
+[e = _state . `E13367 4 ]
+"194
+[; ;main.c: 194:                 }
+}
+[e :U 1854 ]
+"196
+[; ;main.c: 196:                 if(!PORTAbits.RA4 && taster2Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+[e $ ! && && && && && ! != -> . . _PORTAbits 0 4 `i -> 0 `i != -> _taster2Flag `i -> 0 `i ! != -> _led1Blink `i -> 0 `i ! != -> _led2Blink `i -> 0 `i ! != -> _led3Blink `i -> 0 `i ! != -> _led4Blink `i -> 0 `i 1855  ]
+"197
+[; ;main.c: 197:                 {
+{
+"198
+[; ;main.c: 198:                     state = T2Dummy;
+[e = _state . `E13367 5 ]
+"199
+[; ;main.c: 199:                 }
 }
 [e :U 1855 ]
-[e $U 1856  ]
-[e :U 1857 ]
-"990
-[; ;main.c: 990:     }
+"201
+[; ;main.c: 201:                 if(!PORTCbits.RC4 && taster3Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+[e $ ! && && && && && ! != -> . . _PORTCbits 0 4 `i -> 0 `i != -> _taster3Flag `i -> 0 `i ! != -> _led1Blink `i -> 0 `i ! != -> _led2Blink `i -> 0 `i ! != -> _led3Blink `i -> 0 `i ! != -> _led4Blink `i -> 0 `i 1856  ]
+"202
+[; ;main.c: 202:                 {
+{
+"203
+[; ;main.c: 203:                     state = T3Dummy;
+[e = _state . `E13367 6 ]
+"204
+[; ;main.c: 204:                 }
 }
+[e :U 1856 ]
+"207
+[; ;main.c: 207:                 if((led1Blink || led2Blink || led3Blink || led4Blink) && (++timeout10s == 500))
+[e $ ! && || || || != -> _led1Blink `i -> 0 `i != -> _led2Blink `i -> 0 `i != -> _led3Blink `i -> 0 `i != -> _led4Blink `i -> 0 `i == -> =+ _timeout10s -> -> 1 `i `us `ui -> -> 500 `i `ui 1857  ]
+"208
+[; ;main.c: 208:                 {
+{
+"209
+[; ;main.c: 209:                     timeout10s = 0;
+[e = _timeout10s -> -> 0 `i `us ]
+"211
+[; ;main.c: 211:                     led1Blink = 0;
+[e = _led1Blink -> -> 0 `i `a ]
+"212
+[; ;main.c: 212:                     led2Blink = 0;
+[e = _led2Blink -> -> 0 `i `a ]
+"213
+[; ;main.c: 213:                     led3Blink = 0;
+[e = _led3Blink -> -> 0 `i `a ]
+"214
+[; ;main.c: 214:                     led4Blink = 0;
+[e = _led4Blink -> -> 0 `i `a ]
+"215
+[; ;main.c: 215:                 }
+}
+[e :U 1857 ]
+"217
+[; ;main.c: 217:                 if(led1Blink && ++timeout500ms == 12)
+[e $ ! && != -> _led1Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 12 `i 1858  ]
+"218
+[; ;main.c: 218:                 {
+{
+"219
+[; ;main.c: 219:                     timeout500ms = 0;
+[e = _timeout500ms -> -> 0 `i `uc ]
+"220
+[; ;main.c: 220:                     LATCbits.LATC7 = !LATCbits.LATC7;
+[e = . . _LATCbits 0 7 -> -> ! != -> . . _LATCbits 0 7 `i -> 0 `i `i `uc ]
+"221
+[; ;main.c: 221:                 }
+}
+[e :U 1858 ]
+"223
+[; ;main.c: 223:                 if(led2Blink && ++timeout500ms == 12)
+[e $ ! && != -> _led2Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 12 `i 1859  ]
+"224
+[; ;main.c: 224:                 {
+{
+"225
+[; ;main.c: 225:                     timeout500ms = 0;
+[e = _timeout500ms -> -> 0 `i `uc ]
+"226
+[; ;main.c: 226:                     LATCbits.LATC5 = !LATCbits.LATC5;
+[e = . . _LATCbits 0 5 -> -> ! != -> . . _LATCbits 0 5 `i -> 0 `i `i `uc ]
+"227
+[; ;main.c: 227:                 }
+}
+[e :U 1859 ]
+"229
+[; ;main.c: 229:                 if(led3Blink && ++timeout500ms == 12)
+[e $ ! && != -> _led3Blink `i -> 0 `i == -> =+ _timeout500ms -> -> 1 `i `uc `i -> 12 `i 1860  ]
+"230
+[; ;main.c: 230:                 {
+{
+"231
+[; ;main.c: 231:                     timeout500ms = 0;
+[e = _timeout500ms -> -> 0 `i `uc ]
+"232
+[; ;main.c: 232:                     LATAbits.LATA5 = !LATAbits.LATA5;
+[e = . . _LATAbits 0 5 -> -> ! != -> . . _LATAbits 0 5 `i -> 0 `i `i `uc ]
+"233
+[; ;main.c: 233:                 }
+}
+[e :U 1860 ]
+"235
+[; ;main.c: 235:                 if(!(led1Blink || led2Blink || led3Blink || led4Blink))
+[e $ ! ! || || || != -> _led1Blink `i -> 0 `i != -> _led2Blink `i -> 0 `i != -> _led3Blink `i -> 0 `i != -> _led4Blink `i -> 0 `i 1861  ]
+"236
+[; ;main.c: 236:                 {
+{
+"237
+[; ;main.c: 237:                     timeout500ms = 0;
+[e = _timeout500ms -> -> 0 `i `uc ]
+"239
+[; ;main.c: 239:                     LATCbits.LATC7 = 0;
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+"240
+[; ;main.c: 240:                     LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"241
+[; ;main.c: 241:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"242
+[; ;main.c: 242:                 }
+}
+[e :U 1861 ]
+"246
+[; ;main.c: 246:                 if(led1Blink && !PORTCbits.RC6 && taster1Flag)
+[e $ ! && && != -> _led1Blink `i -> 0 `i ! != -> . . _PORTCbits 0 6 `i -> 0 `i != -> _taster1Flag `i -> 0 `i 1862  ]
+"247
+[; ;main.c: 247:                 {
+{
+"248
+[; ;main.c: 248:                     redMode1 = red;
+[e = _redMode1 _red ]
+"249
+[; ;main.c: 249:                     greenMode1 = green;
+[e = _greenMode1 _green ]
+"250
+[; ;main.c: 250:                     blueMode1 = blue;
+[e = _blueMode1 _blue ]
+"251
+[; ;main.c: 251:                     whiteMode1 = white;
+[e = _whiteMode1 _white ]
+"252
+[; ;main.c: 252:                     led1Blink = 0;
+[e = _led1Blink -> -> 0 `i `a ]
+"253
+[; ;main.c: 253:                     DATAEE_WriteByte(15, blueMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 15 `i `us _blueMode1 ]
+"254
+[; ;main.c: 254:                     DATAEE_WriteByte(12, greenMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 12 `i `us _greenMode1 ]
+"255
+[; ;main.c: 255:                     DATAEE_WriteByte(11, redMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 11 `i `us _redMode1 ]
+"256
+[; ;main.c: 256:                     DATAEE_WriteByte(17, whiteMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 17 `i `us _whiteMode1 ]
+"257
+[; ;main.c: 257:                     DATAEE_WriteByte(3, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 3 `i `us -> -> 69 `i `uc ]
+"258
+[; ;main.c: 258:                 }
+}
+[e :U 1862 ]
+"260
+[; ;main.c: 260:                 if(led2Blink && !PORTAbits.RA4 && taster2Flag)
+[e $ ! && && != -> _led2Blink `i -> 0 `i ! != -> . . _PORTAbits 0 4 `i -> 0 `i != -> _taster2Flag `i -> 0 `i 1863  ]
+"261
+[; ;main.c: 261:                 {
+{
+"262
+[; ;main.c: 262:                     redMode2 = red;
+[e = _redMode2 _red ]
+"263
+[; ;main.c: 263:                     greenMode2 = green;
+[e = _greenMode2 _green ]
+"264
+[; ;main.c: 264:                     blueMode2 = blue;
+[e = _blueMode2 _blue ]
+"265
+[; ;main.c: 265:                     whiteMode2 = white;
+[e = _whiteMode2 _white ]
+"266
+[; ;main.c: 266:                     led2Blink = 0;
+[e = _led2Blink -> -> 0 `i `a ]
+"267
+[; ;main.c: 267:                     DATAEE_WriteByte(20, blueMode2);
+[e ( _DATAEE_WriteByte (2 , -> -> 20 `i `us _blueMode2 ]
+"268
+[; ;main.c: 268:                     DATAEE_WriteByte(19, greenMode2);
+[e ( _DATAEE_WriteByte (2 , -> -> 19 `i `us _greenMode2 ]
+"269
+[; ;main.c: 269:                     DATAEE_WriteByte(18, redMode2);
+[e ( _DATAEE_WriteByte (2 , -> -> 18 `i `us _redMode2 ]
+"270
+[; ;main.c: 270:                     DATAEE_WriteByte(21, whiteMode2);
+[e ( _DATAEE_WriteByte (2 , -> -> 21 `i `us _whiteMode2 ]
+"271
+[; ;main.c: 271:                     DATAEE_WriteByte(4, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 4 `i `us -> -> 69 `i `uc ]
+"272
+[; ;main.c: 272:                 }
+}
+[e :U 1863 ]
+"274
+[; ;main.c: 274:                 if(led3Blink && !PORTCbits.RC4 && taster3Flag)
+[e $ ! && && != -> _led3Blink `i -> 0 `i ! != -> . . _PORTCbits 0 4 `i -> 0 `i != -> _taster3Flag `i -> 0 `i 1864  ]
+"275
+[; ;main.c: 275:                 {
+{
+"276
+[; ;main.c: 276:                     redMode3 = red;
+[e = _redMode3 _red ]
+"277
+[; ;main.c: 277:                     greenMode3 = green;
+[e = _greenMode3 _green ]
+"278
+[; ;main.c: 278:                     blueMode3 = blue;
+[e = _blueMode3 _blue ]
+"279
+[; ;main.c: 279:                     whiteMode3 = white;
+[e = _whiteMode3 _white ]
+"280
+[; ;main.c: 280:                     led3Blink = 0;
+[e = _led3Blink -> -> 0 `i `a ]
+"281
+[; ;main.c: 281:                     DATAEE_WriteByte(25, blueMode3);
+[e ( _DATAEE_WriteByte (2 , -> -> 25 `i `us _blueMode3 ]
+"282
+[; ;main.c: 282:                     DATAEE_WriteByte(24, greenMode3);
+[e ( _DATAEE_WriteByte (2 , -> -> 24 `i `us _greenMode3 ]
+"283
+[; ;main.c: 283:                     DATAEE_WriteByte(22, redMode3);
+[e ( _DATAEE_WriteByte (2 , -> -> 22 `i `us _redMode3 ]
+"284
+[; ;main.c: 284:                     DATAEE_WriteByte(27, whiteMode3);
+[e ( _DATAEE_WriteByte (2 , -> -> 27 `i `us _whiteMode3 ]
+"285
+[; ;main.c: 285:                     DATAEE_WriteByte(6, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 6 `i `us -> -> 69 `i `uc ]
+"286
+[; ;main.c: 286:                 }
+}
+[e :U 1864 ]
+"290
+[; ;main.c: 290:                 if(PORTCbits.RC6)
+[e $ ! != -> . . _PORTCbits 0 6 `i -> 0 `i 1865  ]
+"291
+[; ;main.c: 291:                 {
+{
+"292
+[; ;main.c: 292:                     timeout5sPressed1 = 0;
+[e = _timeout5sPressed1 -> -> 0 `i `us ]
+"293
+[; ;main.c: 293:                 }
+}
+[e :U 1865 ]
+"295
+[; ;main.c: 295:                 if(PORTAbits.RA4)
+[e $ ! != -> . . _PORTAbits 0 4 `i -> 0 `i 1866  ]
+"296
+[; ;main.c: 296:                 {
+{
+"297
+[; ;main.c: 297:                     timeout5sPressed2 = 0;
+[e = _timeout5sPressed2 -> -> 0 `i `us ]
+"298
+[; ;main.c: 298:                 }
+}
+[e :U 1866 ]
+"300
+[; ;main.c: 300:                 if(PORTCbits.RC4)
+[e $ ! != -> . . _PORTCbits 0 4 `i -> 0 `i 1867  ]
+"301
+[; ;main.c: 301:                 {
+{
+"302
+[; ;main.c: 302:                     timeout5sPressed3 = 0;
+[e = _timeout5sPressed3 -> -> 0 `i `us ]
+"303
+[; ;main.c: 303:                 }
+}
+[e :U 1867 ]
+"305
+[; ;main.c: 305:                 break;
+[e $U 1851  ]
+"308
+[; ;main.c: 308:             case T1Dummy:
+[e :U 1868 ]
+"310
+[; ;main.c: 310:                 if(PORTCbits.RC6)
+[e $ ! != -> . . _PORTCbits 0 6 `i -> 0 `i 1869  ]
+"311
+[; ;main.c: 311:                 {
+{
+"312
+[; ;main.c: 312:                     LATCbits.LATC7 = 1;
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+"313
+[; ;main.c: 313:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+[e ( _LED_WriteFull (4 , , , _redMode1 _greenMode1 _blueMode1 -> -> -> 300 `i `m `um ]
+"314
+[; ;main.c: 314:                     state = T1;
+[e = _state . `E13367 1 ]
+"315
+[; ;main.c: 315:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"316
+[; ;main.c: 316:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"317
+[; ;main.c: 317:                 }
+}
+[e :U 1869 ]
+"319
+[; ;main.c: 319:                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+[e $ ! && ! != -> . . _PORTCbits 0 6 `i -> 0 `i == -> =+ _timeout5sPressed1 -> -> 1 `i `us `ui -> -> 250 `i `ui 1870  ]
+"320
+[; ;main.c: 320:                 {
+{
+"321
+[; ;main.c: 321:                     timeout5sPressed1 = 0;
+[e = _timeout5sPressed1 -> -> 0 `i `us ]
+"322
+[; ;main.c: 322:                     led1Blink = 1;
+[e = _led1Blink -> -> 1 `i `a ]
+"323
+[; ;main.c: 323:                     state = MANUAL;
+[e = _state . `E13367 0 ]
+"324
+[; ;main.c: 324:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"325
+[; ;main.c: 325:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"326
+[; ;main.c: 326:                 }
+}
+[e :U 1870 ]
+"328
+[; ;main.c: 328:                 break;
+[e $U 1851  ]
+"331
+[; ;main.c: 331:             case T2Dummy:
+[e :U 1871 ]
+"333
+[; ;main.c: 333:                 if(PORTAbits.RA4)
+[e $ ! != -> . . _PORTAbits 0 4 `i -> 0 `i 1872  ]
+"334
+[; ;main.c: 334:                 {
+{
+"335
+[; ;main.c: 335:                     LATCbits.LATC5 = 1;
+[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
+"336
+[; ;main.c: 336:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+[e ( _LED_WriteFull (4 , , , _redMode2 _greenMode2 _blueMode2 -> -> -> 300 `i `m `um ]
+"337
+[; ;main.c: 337:                     state = T2;
+[e = _state . `E13367 2 ]
+"338
+[; ;main.c: 338:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"339
+[; ;main.c: 339:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"340
+[; ;main.c: 340:                 }
+}
+[e :U 1872 ]
+"342
+[; ;main.c: 342:                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+[e $ ! && ! != -> . . _PORTAbits 0 4 `i -> 0 `i == -> =+ _timeout5sPressed2 -> -> 1 `i `us `ui -> -> 250 `i `ui 1873  ]
+"343
+[; ;main.c: 343:                 {
+{
+"344
+[; ;main.c: 344:                     timeout5sPressed2 = 0;
+[e = _timeout5sPressed2 -> -> 0 `i `us ]
+"345
+[; ;main.c: 345:                     led2Blink = 1;
+[e = _led2Blink -> -> 1 `i `a ]
+"346
+[; ;main.c: 346:                     state = MANUAL;
+[e = _state . `E13367 0 ]
+"347
+[; ;main.c: 347:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"348
+[; ;main.c: 348:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"349
+[; ;main.c: 349:                 }
+}
+[e :U 1873 ]
+"351
+[; ;main.c: 351:                 break;
+[e $U 1851  ]
+"353
+[; ;main.c: 353:             case T3Dummy:
+[e :U 1874 ]
+"355
+[; ;main.c: 355:                 if(PORTCbits.RC4)
+[e $ ! != -> . . _PORTCbits 0 4 `i -> 0 `i 1875  ]
+"356
+[; ;main.c: 356:                 {
+{
+"357
+[; ;main.c: 357:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"358
+[; ;main.c: 358:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+[e ( _LED_WriteFull (4 , , , _redMode3 _greenMode3 _blueMode3 -> -> -> 300 `i `m `um ]
+"359
+[; ;main.c: 359:                     state = T3;
+[e = _state . `E13367 3 ]
+"360
+[; ;main.c: 360:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"361
+[; ;main.c: 361:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"362
+[; ;main.c: 362:                 }
+}
+[e :U 1875 ]
+"364
+[; ;main.c: 364:                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+[e $ ! && ! != -> . . _PORTCbits 0 4 `i -> 0 `i == -> =+ _timeout5sPressed3 -> -> 1 `i `us `ui -> -> 250 `i `ui 1876  ]
+"365
+[; ;main.c: 365:                 {
+{
+"366
+[; ;main.c: 366:                     timeout5sPressed3 = 0;
+[e = _timeout5sPressed3 -> -> 0 `i `us ]
+"367
+[; ;main.c: 367:                     led3Blink = 1;
+[e = _led3Blink -> -> 1 `i `a ]
+"368
+[; ;main.c: 368:                     state = MANUAL;
+[e = _state . `E13367 0 ]
+"369
+[; ;main.c: 369:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"370
+[; ;main.c: 370:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"371
+[; ;main.c: 371:                 }
+}
+[e :U 1876 ]
+"373
+[; ;main.c: 373:                 break;
+[e $U 1851  ]
+"376
+[; ;main.c: 376:             case T1StateDummy:
+[e :U 1877 ]
+"378
+[; ;main.c: 378:                 if(PORTCbits.RC6)
+[e $ ! != -> . . _PORTCbits 0 6 `i -> 0 `i 1878  ]
+"379
+[; ;main.c: 379:                 {
+{
+"380
+[; ;main.c: 380:                     LATCbits.LATC7 = 0;
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+"381
+[; ;main.c: 381:                     state = MANUAL;
+[e = _state . `E13367 0 ]
+"382
+[; ;main.c: 382:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"383
+[; ;main.c: 383:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"384
+[; ;main.c: 384:                 }
+}
+[e :U 1878 ]
+"386
+[; ;main.c: 386:                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+[e $ ! && ! != -> . . _PORTCbits 0 6 `i -> 0 `i == -> =+ _timeout5sPressed1 -> -> 1 `i `us `ui -> -> 250 `i `ui 1879  ]
+"387
+[; ;main.c: 387:                 {
+{
+"388
+[; ;main.c: 388:                     timeout5sPressed1 = 0;
+[e = _timeout5sPressed1 -> -> 0 `i `us ]
+"389
+[; ;main.c: 389:                     led1StateBlink = 1;
+[e = _led1StateBlink -> -> 1 `i `a ]
+"390
+[; ;main.c: 390:                     state = T1;
+[e = _state . `E13367 1 ]
+"391
+[; ;main.c: 391:                 }
+}
+[e :U 1879 ]
+"393
+[; ;main.c: 393:                 break;
+[e $U 1851  ]
+"397
+[; ;main.c: 397:             case T2StateDummy:
+[e :U 1880 ]
+"399
+[; ;main.c: 399:                 if(PORTAbits.RA4)
+[e $ ! != -> . . _PORTAbits 0 4 `i -> 0 `i 1881  ]
+"400
+[; ;main.c: 400:                 {
+{
+"401
+[; ;main.c: 401:                     LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"402
+[; ;main.c: 402:                     state = MANUAL;
+[e = _state . `E13367 0 ]
+"403
+[; ;main.c: 403:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"404
+[; ;main.c: 404:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"405
+[; ;main.c: 405:                 }
+}
+[e :U 1881 ]
+"407
+[; ;main.c: 407:                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+[e $ ! && ! != -> . . _PORTAbits 0 4 `i -> 0 `i == -> =+ _timeout5sPressed2 -> -> 1 `i `us `ui -> -> 250 `i `ui 1882  ]
+"408
+[; ;main.c: 408:                 {
+{
+"409
+[; ;main.c: 409:                     timeout5sPressed2 = 0;
+[e = _timeout5sPressed2 -> -> 0 `i `us ]
+"410
+[; ;main.c: 410:                     led2StateBlink = 1;
+[e = _led2StateBlink -> -> 1 `i `a ]
+"411
+[; ;main.c: 411:                     state = T2;
+[e = _state . `E13367 2 ]
+"412
+[; ;main.c: 412:                 }
+}
+[e :U 1882 ]
+"414
+[; ;main.c: 414:                 break;
+[e $U 1851  ]
+"418
+[; ;main.c: 418:             case T3StateDummy:
+[e :U 1883 ]
+"420
+[; ;main.c: 420:                 if(PORTCbits.RC4)
+[e $ ! != -> . . _PORTCbits 0 4 `i -> 0 `i 1884  ]
+"421
+[; ;main.c: 421:                 {
+{
+"422
+[; ;main.c: 422:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"423
+[; ;main.c: 423:                     state = MANUAL;
+[e = _state . `E13367 0 ]
+"424
+[; ;main.c: 424:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"425
+[; ;main.c: 425:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"426
+[; ;main.c: 426:                 }
+}
+[e :U 1884 ]
+"428
+[; ;main.c: 428:                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+[e $ ! && ! != -> . . _PORTCbits 0 4 `i -> 0 `i == -> =+ _timeout5sPressed3 -> -> 1 `i `us `ui -> -> 250 `i `ui 1885  ]
+"429
+[; ;main.c: 429:                 {
+{
+"430
+[; ;main.c: 430:                     timeout5sPressed3 = 0;
+[e = _timeout5sPressed3 -> -> 0 `i `us ]
+"431
+[; ;main.c: 431:                     led3StateBlink = 1;
+[e = _led3StateBlink -> -> 1 `i `a ]
+"432
+[; ;main.c: 432:                     state = T3;
+[e = _state . `E13367 3 ]
+"433
+[; ;main.c: 433:                 }
+}
+[e :U 1885 ]
+"435
+[; ;main.c: 435:                 break;
+[e $U 1851  ]
+"439
+[; ;main.c: 439:             case T1:
+[e :U 1886 ]
+"441
+[; ;main.c: 441:                 LED_WriteFull(redMode1,greenMode1,blueMode1, 300);
+[e ( _LED_WriteFull (4 , , , _redMode1 _greenMode1 _blueMode1 -> -> -> 300 `i `m `um ]
+"445
+[; ;main.c: 445:                 if(led1StateBlink && (++timeout250ms == 12))
+[e $ ! && != -> _led1StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 12 `i 1887  ]
+"446
+[; ;main.c: 446:                 {
+{
+"447
+[; ;main.c: 447:                     timeout250ms = 0;
+[e = _timeout250ms -> -> 0 `i `uc ]
+"448
+[; ;main.c: 448:                     LATCbits.LATC7 = !LATCbits.LATC7;
+[e = . . _LATCbits 0 7 -> -> ! != -> . . _LATCbits 0 7 `i -> 0 `i `i `uc ]
+"449
+[; ;main.c: 449:                 }
+}
+[e :U 1887 ]
+"451
+[; ;main.c: 451:                 if(!PORTCbits.RC6 && taster1Flag && !led1StateBlink)
+[e $ ! && && ! != -> . . _PORTCbits 0 6 `i -> 0 `i != -> _taster1Flag `i -> 0 `i ! != -> _led1StateBlink `i -> 0 `i 1888  ]
+"452
+[; ;main.c: 452:                 {
+{
+"453
+[; ;main.c: 453:                     state = T1StateDummy;
+[e = _state . `E13367 7 ]
+"454
+[; ;main.c: 454:                 }
+}
+[e :U 1888 ]
+"456
+[; ;main.c: 456:                 if(!PORTCbits.RC6 && taster1Flag && led1StateBlink)
+[e $ ! && && ! != -> . . _PORTCbits 0 6 `i -> 0 `i != -> _taster1Flag `i -> 0 `i != -> _led1StateBlink `i -> 0 `i 1889  ]
+"457
+[; ;main.c: 457:                 {
+{
+"458
+[; ;main.c: 458:                     LATCbits.LATC7 = 1;
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+"459
+[; ;main.c: 459:                     led1StateBlink = 0;
+[e = _led1StateBlink -> -> 0 `i `a ]
+"460
+[; ;main.c: 460:                     redAdj = 0;
+[e = _redAdj -> -> 0 `i `a ]
+"461
+[; ;main.c: 461:                     greenAdj = 0;
+[e = _greenAdj -> -> 0 `i `a ]
+"462
+[; ;main.c: 462:                     blueAdj = 0;
+[e = _blueAdj -> -> 0 `i `a ]
+"463
+[; ;main.c: 463:                     whiteAdj = 0;
+[e = _whiteAdj -> -> 0 `i `a ]
+"464
+[; ;main.c: 464:                     DATAEE_WriteByte(15, blueMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 15 `i `us _blueMode1 ]
+"465
+[; ;main.c: 465:                     DATAEE_WriteByte(12, greenMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 12 `i `us _greenMode1 ]
+"466
+[; ;main.c: 466:                     DATAEE_WriteByte(11, redMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 11 `i `us _redMode1 ]
+"467
+[; ;main.c: 467:                     DATAEE_WriteByte(17, whiteMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 17 `i `us _whiteMode1 ]
+"468
+[; ;main.c: 468:                     DATAEE_WriteByte(3, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 3 `i `us -> -> 69 `i `uc ]
+"469
+[; ;main.c: 469:                 }
+}
+[e :U 1889 ]
+"471
+[; ;main.c: 471:                 if(led1StateBlink)
+[e $ ! != -> _led1StateBlink `i -> 0 `i 1890  ]
+"472
+[; ;main.c: 472:                 {
+{
+"473
+[; ;main.c: 473:                     if((red >= (redMode1 - 5) && red <= redMode1 + 5))
+[e $ ! && >= -> _red `i - -> _redMode1 `i -> 5 `i <= -> _red `i + -> _redMode1 `i -> 5 `i 1891  ]
+"474
+[; ;main.c: 474:                     {
+{
+"475
+[; ;main.c: 475:                         redAdj = 1;
+[e = _redAdj -> -> 1 `i `a ]
+"476
+[; ;main.c: 476:                     }
+}
+[e :U 1891 ]
+"478
+[; ;main.c: 478:                     if(redAdj)
+[e $ ! != -> _redAdj `i -> 0 `i 1892  ]
+"479
+[; ;main.c: 479:                     {
+{
+"480
+[; ;main.c: 480:                         redMode1 = red;
+[e = _redMode1 _red ]
+"481
+[; ;main.c: 481:                     }
+}
+[e :U 1892 ]
+"483
+[; ;main.c: 483:                     if((white >= (whiteMode1 - 5) && white <= whiteMode1 + 5))
+[e $ ! && >= -> _white `i - -> _whiteMode1 `i -> 5 `i <= -> _white `i + -> _whiteMode1 `i -> 5 `i 1893  ]
+"484
+[; ;main.c: 484:                     {
+{
+"485
+[; ;main.c: 485:                         whiteAdj = 1;
+[e = _whiteAdj -> -> 1 `i `a ]
+"486
+[; ;main.c: 486:                     }
+}
+[e :U 1893 ]
+"488
+[; ;main.c: 488:                     if(whiteAdj)
+[e $ ! != -> _whiteAdj `i -> 0 `i 1894  ]
+"489
+[; ;main.c: 489:                     {
+{
+"490
+[; ;main.c: 490:                         whiteMode1 = white;
+[e = _whiteMode1 _white ]
+"491
+[; ;main.c: 491:                     }
+}
+[e :U 1894 ]
+"493
+[; ;main.c: 493:                     if((green >= (greenMode1 - 5) && green <= greenMode1 + 5))
+[e $ ! && >= -> _green `i - -> _greenMode1 `i -> 5 `i <= -> _green `i + -> _greenMode1 `i -> 5 `i 1895  ]
+"494
+[; ;main.c: 494:                     {
+{
+"495
+[; ;main.c: 495:                        greenAdj = 1;
+[e = _greenAdj -> -> 1 `i `a ]
+"496
+[; ;main.c: 496:                     }
+}
+[e :U 1895 ]
+"498
+[; ;main.c: 498:                     if(greenAdj)
+[e $ ! != -> _greenAdj `i -> 0 `i 1896  ]
+"499
+[; ;main.c: 499:                     {
+{
+"500
+[; ;main.c: 500:                         greenMode1 = green;
+[e = _greenMode1 _green ]
+"501
+[; ;main.c: 501:                     }
+}
+[e :U 1896 ]
+"503
+[; ;main.c: 503:                     if((blue >= (blueMode1 - 5) && blue <= blueMode1 + 5))
+[e $ ! && >= -> _blue `i - -> _blueMode1 `i -> 5 `i <= -> _blue `i + -> _blueMode1 `i -> 5 `i 1897  ]
+"504
+[; ;main.c: 504:                     {
+{
+"505
+[; ;main.c: 505:                         blueAdj = 1;
+[e = _blueAdj -> -> 1 `i `a ]
+"506
+[; ;main.c: 506:                     }
+}
+[e :U 1897 ]
+"508
+[; ;main.c: 508:                     if(blueAdj)
+[e $ ! != -> _blueAdj `i -> 0 `i 1898  ]
+"509
+[; ;main.c: 509:                     {
+{
+"510
+[; ;main.c: 510:                         blueMode1 = blue;
+[e = _blueMode1 _blue ]
+"511
+[; ;main.c: 511:                     }
+}
+[e :U 1898 ]
+"512
+[; ;main.c: 512:                 }
+}
+[e :U 1890 ]
+"516
+[; ;main.c: 516:                 if(!PORTAbits.RA4 && taster2Flag)
+[e $ ! && ! != -> . . _PORTAbits 0 4 `i -> 0 `i != -> _taster2Flag `i -> 0 `i 1899  ]
+"517
+[; ;main.c: 517:                 {
+{
+"518
+[; ;main.c: 518:                     LATCbits.LATC7 = 0;
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+"519
+[; ;main.c: 519:                     LATCbits.LATC5 = 1;
+[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
+"520
+[; ;main.c: 520:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+[e ( _LED_WriteFull (4 , , , _redMode2 _greenMode2 _blueMode2 -> -> -> 300 `i `m `um ]
+"521
+[; ;main.c: 521:                     state = T2;
+[e = _state . `E13367 2 ]
+"522
+[; ;main.c: 522:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"523
+[; ;main.c: 523:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"524
+[; ;main.c: 524:                 }
+}
+[e :U 1899 ]
+"526
+[; ;main.c: 526:                 if(!PORTCbits.RC4 && taster3Flag)
+[e $ ! && ! != -> . . _PORTCbits 0 4 `i -> 0 `i != -> _taster3Flag `i -> 0 `i 1900  ]
+"527
+[; ;main.c: 527:                 {
+{
+"528
+[; ;main.c: 528:                     LATCbits.LATC7 = 0;
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+"529
+[; ;main.c: 529:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"530
+[; ;main.c: 530:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+[e ( _LED_WriteFull (4 , , , _redMode3 _greenMode3 _blueMode3 -> -> -> 300 `i `m `um ]
+"531
+[; ;main.c: 531:                     state = T3 ;
+[e = _state . `E13367 3 ]
+"532
+[; ;main.c: 532:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"533
+[; ;main.c: 533:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"534
+[; ;main.c: 534:                 }
+}
+[e :U 1900 ]
+"536
+[; ;main.c: 536:                 break;
+[e $U 1851  ]
+"540
+[; ;main.c: 540:             case T2:
+[e :U 1901 ]
+"542
+[; ;main.c: 542:                 LED_WriteFull(redMode2,greenMode2,blueMode2, 300);
+[e ( _LED_WriteFull (4 , , , _redMode2 _greenMode2 _blueMode2 -> -> -> 300 `i `m `um ]
+"546
+[; ;main.c: 546:                 if(led2StateBlink && (++timeout250ms == 12))
+[e $ ! && != -> _led2StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 12 `i 1902  ]
+"547
+[; ;main.c: 547:                 {
+{
+"548
+[; ;main.c: 548:                     timeout250ms = 0;
+[e = _timeout250ms -> -> 0 `i `uc ]
+"549
+[; ;main.c: 549:                     LATCbits.LATC5 = !LATCbits.LATC5;
+[e = . . _LATCbits 0 5 -> -> ! != -> . . _LATCbits 0 5 `i -> 0 `i `i `uc ]
+"550
+[; ;main.c: 550:                 }
+}
+[e :U 1902 ]
+"552
+[; ;main.c: 552:                 if(!PORTAbits.RA4 && taster2Flag && !led2StateBlink)
+[e $ ! && && ! != -> . . _PORTAbits 0 4 `i -> 0 `i != -> _taster2Flag `i -> 0 `i ! != -> _led2StateBlink `i -> 0 `i 1903  ]
+"553
+[; ;main.c: 553:                 {
+{
+"554
+[; ;main.c: 554:                     state = T2StateDummy;
+[e = _state . `E13367 8 ]
+"555
+[; ;main.c: 555:                 }
+}
+[e :U 1903 ]
+"557
+[; ;main.c: 557:                 if(!PORTAbits.RA4 && taster2Flag && led2StateBlink)
+[e $ ! && && ! != -> . . _PORTAbits 0 4 `i -> 0 `i != -> _taster2Flag `i -> 0 `i != -> _led2StateBlink `i -> 0 `i 1904  ]
+"558
+[; ;main.c: 558:                 {
+{
+"559
+[; ;main.c: 559:                     LATCbits.LATC5 = 1;
+[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
+"560
+[; ;main.c: 560:                     led2StateBlink = 0;
+[e = _led2StateBlink -> -> 0 `i `a ]
+"561
+[; ;main.c: 561:                     redAdj = 0;
+[e = _redAdj -> -> 0 `i `a ]
+"562
+[; ;main.c: 562:                     greenAdj = 0;
+[e = _greenAdj -> -> 0 `i `a ]
+"563
+[; ;main.c: 563:                     blueAdj = 0;
+[e = _blueAdj -> -> 0 `i `a ]
+"564
+[; ;main.c: 564:                     whiteAdj = 0;
+[e = _whiteAdj -> -> 0 `i `a ]
+"565
+[; ;main.c: 565:                     DATAEE_WriteByte(20, blueMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 20 `i `us _blueMode1 ]
+"566
+[; ;main.c: 566:                     DATAEE_WriteByte(19, greenMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 19 `i `us _greenMode1 ]
+"567
+[; ;main.c: 567:                     DATAEE_WriteByte(18, redMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 18 `i `us _redMode1 ]
+"568
+[; ;main.c: 568:                     DATAEE_WriteByte(21, whiteMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 21 `i `us _whiteMode1 ]
+"569
+[; ;main.c: 569:                     DATAEE_WriteByte(4, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 4 `i `us -> -> 69 `i `uc ]
+"570
+[; ;main.c: 570:                 }
+}
+[e :U 1904 ]
+"572
+[; ;main.c: 572:                 if(led2StateBlink)
+[e $ ! != -> _led2StateBlink `i -> 0 `i 1905  ]
+"573
+[; ;main.c: 573:                 {
+{
+"574
+[; ;main.c: 574:                     if((red >= (redMode2 - 5) && red <= redMode2 + 5))
+[e $ ! && >= -> _red `i - -> _redMode2 `i -> 5 `i <= -> _red `i + -> _redMode2 `i -> 5 `i 1906  ]
+"575
+[; ;main.c: 575:                     {
+{
+"576
+[; ;main.c: 576:                         redAdj = 1;
+[e = _redAdj -> -> 1 `i `a ]
+"577
+[; ;main.c: 577:                     }
+}
+[e :U 1906 ]
+"579
+[; ;main.c: 579:                     if(redAdj)
+[e $ ! != -> _redAdj `i -> 0 `i 1907  ]
+"580
+[; ;main.c: 580:                     {
+{
+"581
+[; ;main.c: 581:                         redMode2 = red;
+[e = _redMode2 _red ]
+"582
+[; ;main.c: 582:                     }
+}
+[e :U 1907 ]
+"584
+[; ;main.c: 584:                     if((white >= (whiteMode2 - 5) && white <= whiteMode2 + 5))
+[e $ ! && >= -> _white `i - -> _whiteMode2 `i -> 5 `i <= -> _white `i + -> _whiteMode2 `i -> 5 `i 1908  ]
+"585
+[; ;main.c: 585:                     {
+{
+"586
+[; ;main.c: 586:                         whiteAdj = 1;
+[e = _whiteAdj -> -> 1 `i `a ]
+"587
+[; ;main.c: 587:                     }
+}
+[e :U 1908 ]
+"589
+[; ;main.c: 589:                     if(whiteAdj)
+[e $ ! != -> _whiteAdj `i -> 0 `i 1909  ]
+"590
+[; ;main.c: 590:                     {
+{
+"591
+[; ;main.c: 591:                         whiteMode2 = white;
+[e = _whiteMode2 _white ]
+"592
+[; ;main.c: 592:                     }
+}
+[e :U 1909 ]
+"594
+[; ;main.c: 594:                     if((green >= (greenMode2 - 5) && green <= greenMode2 + 5))
+[e $ ! && >= -> _green `i - -> _greenMode2 `i -> 5 `i <= -> _green `i + -> _greenMode2 `i -> 5 `i 1910  ]
+"595
+[; ;main.c: 595:                     {
+{
+"596
+[; ;main.c: 596:                        greenAdj = 1;
+[e = _greenAdj -> -> 1 `i `a ]
+"597
+[; ;main.c: 597:                     }
+}
+[e :U 1910 ]
+"599
+[; ;main.c: 599:                     if(greenAdj)
+[e $ ! != -> _greenAdj `i -> 0 `i 1911  ]
+"600
+[; ;main.c: 600:                     {
+{
+"601
+[; ;main.c: 601:                         greenMode2 = green;
+[e = _greenMode2 _green ]
+"602
+[; ;main.c: 602:                     }
+}
+[e :U 1911 ]
+"604
+[; ;main.c: 604:                     if((blue >= (blueMode2 - 5) && blue <= blueMode2 + 5))
+[e $ ! && >= -> _blue `i - -> _blueMode2 `i -> 5 `i <= -> _blue `i + -> _blueMode2 `i -> 5 `i 1912  ]
+"605
+[; ;main.c: 605:                     {
+{
+"606
+[; ;main.c: 606:                         blueAdj = 1;
+[e = _blueAdj -> -> 1 `i `a ]
+"607
+[; ;main.c: 607:                     }
+}
+[e :U 1912 ]
+"609
+[; ;main.c: 609:                     if(blueAdj)
+[e $ ! != -> _blueAdj `i -> 0 `i 1913  ]
+"610
+[; ;main.c: 610:                     {
+{
+"611
+[; ;main.c: 611:                         blueMode2 = blue;
+[e = _blueMode2 _blue ]
+"612
+[; ;main.c: 612:                     }
+}
+[e :U 1913 ]
+"613
+[; ;main.c: 613:                 }
+}
+[e :U 1905 ]
+"618
+[; ;main.c: 618:                 if(!PORTCbits.RC6 && taster1Flag)
+[e $ ! && ! != -> . . _PORTCbits 0 6 `i -> 0 `i != -> _taster1Flag `i -> 0 `i 1914  ]
+"619
+[; ;main.c: 619:                 {
+{
+"620
+[; ;main.c: 620:                     LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"621
+[; ;main.c: 621:                     LATCbits.LATC7 = 1;
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+"622
+[; ;main.c: 622:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+[e ( _LED_WriteFull (4 , , , _redMode1 _greenMode1 _blueMode1 -> -> -> 300 `i `m `um ]
+"623
+[; ;main.c: 623:                     state = T1;
+[e = _state . `E13367 1 ]
+"624
+[; ;main.c: 624:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"625
+[; ;main.c: 625:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"626
+[; ;main.c: 626:                 }
+}
+[e :U 1914 ]
+"629
+[; ;main.c: 629:                 if(!PORTCbits.RC4 && taster3Flag)
+[e $ ! && ! != -> . . _PORTCbits 0 4 `i -> 0 `i != -> _taster3Flag `i -> 0 `i 1915  ]
+"630
+[; ;main.c: 630:                 {
+{
+"631
+[; ;main.c: 631:                     LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"632
+[; ;main.c: 632:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"633
+[; ;main.c: 633:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+[e ( _LED_WriteFull (4 , , , _redMode3 _greenMode3 _blueMode3 -> -> -> 300 `i `m `um ]
+"634
+[; ;main.c: 634:                     state = T3 ;
+[e = _state . `E13367 3 ]
+"635
+[; ;main.c: 635:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"636
+[; ;main.c: 636:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"637
+[; ;main.c: 637:                 }
+}
+[e :U 1915 ]
+"639
+[; ;main.c: 639:                 break;
+[e $U 1851  ]
+"643
+[; ;main.c: 643:             case T3:
+[e :U 1916 ]
+"645
+[; ;main.c: 645:                 LED_WriteFull(redMode3,greenMode3,blueMode3, 300);
+[e ( _LED_WriteFull (4 , , , _redMode3 _greenMode3 _blueMode3 -> -> -> 300 `i `m `um ]
+"649
+[; ;main.c: 649:                 if(led3StateBlink && (++timeout250ms == 12))
+[e $ ! && != -> _led3StateBlink `i -> 0 `i == -> =+ _timeout250ms -> -> 1 `i `uc `i -> 12 `i 1917  ]
+"650
+[; ;main.c: 650:                 {
+{
+"651
+[; ;main.c: 651:                     timeout250ms = 0;
+[e = _timeout250ms -> -> 0 `i `uc ]
+"652
+[; ;main.c: 652:                     LATAbits.LATA5 = !LATAbits.LATA5;
+[e = . . _LATAbits 0 5 -> -> ! != -> . . _LATAbits 0 5 `i -> 0 `i `i `uc ]
+"653
+[; ;main.c: 653:                 }
+}
+[e :U 1917 ]
+"655
+[; ;main.c: 655:                 if(!PORTCbits.RC4 && taster3Flag && !led3StateBlink)
+[e $ ! && && ! != -> . . _PORTCbits 0 4 `i -> 0 `i != -> _taster3Flag `i -> 0 `i ! != -> _led3StateBlink `i -> 0 `i 1918  ]
+"656
+[; ;main.c: 656:                 {
+{
+"657
+[; ;main.c: 657:                     state = T3StateDummy;
+[e = _state . `E13367 9 ]
+"658
+[; ;main.c: 658:                 }
+}
+[e :U 1918 ]
+"660
+[; ;main.c: 660:                 if(!PORTCbits.RC4 && taster3Flag && led3StateBlink)
+[e $ ! && && ! != -> . . _PORTCbits 0 4 `i -> 0 `i != -> _taster3Flag `i -> 0 `i != -> _led3StateBlink `i -> 0 `i 1919  ]
+"661
+[; ;main.c: 661:                 {
+{
+"662
+[; ;main.c: 662:                     LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"663
+[; ;main.c: 663:                     led3StateBlink = 0;
+[e = _led3StateBlink -> -> 0 `i `a ]
+"664
+[; ;main.c: 664:                     redAdj = 0;
+[e = _redAdj -> -> 0 `i `a ]
+"665
+[; ;main.c: 665:                     greenAdj = 0;
+[e = _greenAdj -> -> 0 `i `a ]
+"666
+[; ;main.c: 666:                     blueAdj = 0;
+[e = _blueAdj -> -> 0 `i `a ]
+"667
+[; ;main.c: 667:                     whiteAdj = 0;
+[e = _whiteAdj -> -> 0 `i `a ]
+"668
+[; ;main.c: 668:                     DATAEE_WriteByte(25, blueMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 25 `i `us _blueMode1 ]
+"669
+[; ;main.c: 669:                     DATAEE_WriteByte(24, greenMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 24 `i `us _greenMode1 ]
+"670
+[; ;main.c: 670:                     DATAEE_WriteByte(22, redMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 22 `i `us _redMode1 ]
+"671
+[; ;main.c: 671:                     DATAEE_WriteByte(27, whiteMode1);
+[e ( _DATAEE_WriteByte (2 , -> -> 27 `i `us _whiteMode1 ]
+"672
+[; ;main.c: 672:                     DATAEE_WriteByte(6, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 6 `i `us -> -> 69 `i `uc ]
+"673
+[; ;main.c: 673:                 }
+}
+[e :U 1919 ]
+"674
+[; ;main.c: 674:                 taster3Flag = PORTCbits.RC4;
+[e = _taster3Flag . . _PORTCbits 0 4 ]
+"676
+[; ;main.c: 676:                 if(led3StateBlink)
+[e $ ! != -> _led3StateBlink `i -> 0 `i 1920  ]
+"677
+[; ;main.c: 677:                 {
+{
+"678
+[; ;main.c: 678:                     if((red >= (redMode3 - 5) && red <= redMode3 + 5))
+[e $ ! && >= -> _red `i - -> _redMode3 `i -> 5 `i <= -> _red `i + -> _redMode3 `i -> 5 `i 1921  ]
+"679
+[; ;main.c: 679:                     {
+{
+"680
+[; ;main.c: 680:                         redAdj = 1;
+[e = _redAdj -> -> 1 `i `a ]
+"681
+[; ;main.c: 681:                     }
+}
+[e :U 1921 ]
+"683
+[; ;main.c: 683:                     if(redAdj)
+[e $ ! != -> _redAdj `i -> 0 `i 1922  ]
+"684
+[; ;main.c: 684:                     {
+{
+"685
+[; ;main.c: 685:                         redMode3 = red;
+[e = _redMode3 _red ]
+"686
+[; ;main.c: 686:                     }
+}
+[e :U 1922 ]
+"688
+[; ;main.c: 688:                     if((white >= (whiteMode3 - 5) && white <= whiteMode3 + 5))
+[e $ ! && >= -> _white `i - -> _whiteMode3 `i -> 5 `i <= -> _white `i + -> _whiteMode3 `i -> 5 `i 1923  ]
+"689
+[; ;main.c: 689:                     {
+{
+"690
+[; ;main.c: 690:                         whiteAdj = 1;
+[e = _whiteAdj -> -> 1 `i `a ]
+"691
+[; ;main.c: 691:                     }
+}
+[e :U 1923 ]
+"693
+[; ;main.c: 693:                     if(whiteAdj)
+[e $ ! != -> _whiteAdj `i -> 0 `i 1924  ]
+"694
+[; ;main.c: 694:                     {
+{
+"695
+[; ;main.c: 695:                         whiteMode3 = white;
+[e = _whiteMode3 _white ]
+"696
+[; ;main.c: 696:                     }
+}
+[e :U 1924 ]
+"698
+[; ;main.c: 698:                     if((green >= (greenMode3 - 5) && green <= greenMode3 + 5))
+[e $ ! && >= -> _green `i - -> _greenMode3 `i -> 5 `i <= -> _green `i + -> _greenMode3 `i -> 5 `i 1925  ]
+"699
+[; ;main.c: 699:                     {
+{
+"700
+[; ;main.c: 700:                        greenAdj = 1;
+[e = _greenAdj -> -> 1 `i `a ]
+"701
+[; ;main.c: 701:                     }
+}
+[e :U 1925 ]
+"703
+[; ;main.c: 703:                     if(greenAdj)
+[e $ ! != -> _greenAdj `i -> 0 `i 1926  ]
+"704
+[; ;main.c: 704:                     {
+{
+"705
+[; ;main.c: 705:                         greenMode3 = green;
+[e = _greenMode3 _green ]
+"706
+[; ;main.c: 706:                     }
+}
+[e :U 1926 ]
+"708
+[; ;main.c: 708:                     if((blue >= (blueMode3 - 5) && blue <= blueMode3 + 5))
+[e $ ! && >= -> _blue `i - -> _blueMode3 `i -> 5 `i <= -> _blue `i + -> _blueMode3 `i -> 5 `i 1927  ]
+"709
+[; ;main.c: 709:                     {
+{
+"710
+[; ;main.c: 710:                         blueAdj = 1;
+[e = _blueAdj -> -> 1 `i `a ]
+"711
+[; ;main.c: 711:                     }
+}
+[e :U 1927 ]
+"713
+[; ;main.c: 713:                     if(blueAdj)
+[e $ ! != -> _blueAdj `i -> 0 `i 1928  ]
+"714
+[; ;main.c: 714:                     {
+{
+"715
+[; ;main.c: 715:                         blueMode3 = blue;
+[e = _blueMode3 _blue ]
+"716
+[; ;main.c: 716:                     }
+}
+[e :U 1928 ]
+"717
+[; ;main.c: 717:                 }
+}
+[e :U 1920 ]
+"721
+[; ;main.c: 721:                 if(!PORTCbits.RC6 && taster1Flag)
+[e $ ! && ! != -> . . _PORTCbits 0 6 `i -> 0 `i != -> _taster1Flag `i -> 0 `i 1929  ]
+"722
+[; ;main.c: 722:                 {
+{
+"723
+[; ;main.c: 723:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"724
+[; ;main.c: 724:                     LATCbits.LATC7 = 1;
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+"725
+[; ;main.c: 725:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+[e ( _LED_WriteFull (4 , , , _redMode1 _greenMode1 _blueMode1 -> -> -> 300 `i `m `um ]
+"726
+[; ;main.c: 726:                     state = T1;
+[e = _state . `E13367 1 ]
+"727
+[; ;main.c: 727:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"728
+[; ;main.c: 728:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"729
+[; ;main.c: 729:                 }
+}
+[e :U 1929 ]
+"732
+[; ;main.c: 732:                 if(!PORTAbits.RA4 && taster2Flag)
+[e $ ! && ! != -> . . _PORTAbits 0 4 `i -> 0 `i != -> _taster2Flag `i -> 0 `i 1930  ]
+"733
+[; ;main.c: 733:                 {
+{
+"734
+[; ;main.c: 734:                     LATAbits.LATA5 = 0;
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+"735
+[; ;main.c: 735:                     LATCbits.LATC5 = 1;
+[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
+"736
+[; ;main.c: 736:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+[e ( _LED_WriteFull (4 , , , _redMode2 _greenMode2 _blueMode2 -> -> -> 300 `i `m `um ]
+"737
+[; ;main.c: 737:                     state = T2;
+[e = _state . `E13367 2 ]
+"738
+[; ;main.c: 738:                     DATAEE_WriteByte(36, state);
+[e ( _DATAEE_WriteByte (2 , -> -> 36 `i `us -> _state `uc ]
+"739
+[; ;main.c: 739:                     DATAEE_WriteByte(2, 69);
+[e ( _DATAEE_WriteByte (2 , -> -> 2 `i `us -> -> 69 `i `uc ]
+"740
+[; ;main.c: 740:                 }
+}
+[e :U 1930 ]
+"742
+[; ;main.c: 742:         }
+}
+[e $U 1851  ]
 [e :U 1852 ]
-[e $U 1853  ]
-[e :U 1854 ]
-"991
-[; ;main.c: 991: }
+[e [\ -> _state `ui , $ -> . `E13367 0 `ui 1853
+ , $ -> . `E13367 4 `ui 1868
+ , $ -> . `E13367 5 `ui 1871
+ , $ -> . `E13367 6 `ui 1874
+ , $ -> . `E13367 7 `ui 1877
+ , $ -> . `E13367 8 `ui 1880
+ , $ -> . `E13367 9 `ui 1883
+ , $ -> . `E13367 1 `ui 1886
+ , $ -> . `E13367 2 `ui 1901
+ , $ -> . `E13367 3 `ui 1916
+ 1851 ]
+[e :U 1851 ]
+"743
+[; ;main.c: 743:     }
+}
+[e :U 1848 ]
+[e $U 1849  ]
+[e :U 1850 ]
+"744
+[; ;main.c: 744: }
 [e :UE 1834 ]
 }

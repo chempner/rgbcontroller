@@ -91,7 +91,6 @@ typedef enum
     POT1 =  0x2,
     POT2 =  0x10,
     POT3 =  0x11,
-    POT4 =  0x12,
     channel_DAC2 =  0x3A,
     channel_VSS =  0x3B,
     channel_Temp =  0x3C,
