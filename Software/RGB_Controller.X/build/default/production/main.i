@@ -22377,9 +22377,9 @@ unsigned char __t3rd16on(void);
 # 1 "./mcc_generated_files/device_config.h" 1
 # 51 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 278 "./mcc_generated_files/pin_manager.h"
+# 318 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 290 "./mcc_generated_files/pin_manager.h"
+# 330 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 52 "./mcc_generated_files/mcc.h" 2
 
@@ -22538,26 +22538,6 @@ char *ctermid(char *);
 char *tempnam(const char *, const char *);
 # 7 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 2 3
 # 55 "./mcc_generated_files/mcc.h" 2
-# 1 "./mcc_generated_files/memory.h" 1
-# 81 "./mcc_generated_files/memory.h"
-uint8_t FLASH_ReadByte(uint32_t flashAddr);
-# 94 "./mcc_generated_files/memory.h"
-uint16_t FLASH_ReadWord(uint32_t flashAddr);
-# 116 "./mcc_generated_files/memory.h"
-void FLASH_ReadPage(uint32_t flashAddr);
-# 138 "./mcc_generated_files/memory.h"
-void FLASH_WritePage(uint32_t flashAddr);
-# 151 "./mcc_generated_files/memory.h"
-void FLASH_WriteWord(uint32_t flashAddr, uint16_t word);
-# 183 "./mcc_generated_files/memory.h"
-int8_t FLASH_WriteBlock(uint32_t flashAddr, uint16_t *flashWrBufPtr);
-# 195 "./mcc_generated_files/memory.h"
-void FLASH_EraseBlock(uint32_t flashAddr);
-# 212 "./mcc_generated_files/memory.h"
-void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
-# 225 "./mcc_generated_files/memory.h"
-uint8_t DATAEE_ReadByte(uint16_t bAdd);
-# 56 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/adcc.h" 1
 # 72 "./mcc_generated_files/adcc.h"
 typedef uint16_t adc_result_t;
@@ -22630,6 +22610,26 @@ _Bool ADCC_HasErrorCrossedUpperThreshold(void);
 _Bool ADCC_HasErrorCrossedLowerThreshold(void);
 # 831 "./mcc_generated_files/adcc.h"
 uint8_t ADCC_GetConversionStageStatus(void);
+# 56 "./mcc_generated_files/mcc.h" 2
+# 1 "./mcc_generated_files/memory.h" 1
+# 81 "./mcc_generated_files/memory.h"
+uint8_t FLASH_ReadByte(uint32_t flashAddr);
+# 94 "./mcc_generated_files/memory.h"
+uint16_t FLASH_ReadWord(uint32_t flashAddr);
+# 116 "./mcc_generated_files/memory.h"
+void FLASH_ReadPage(uint32_t flashAddr);
+# 138 "./mcc_generated_files/memory.h"
+void FLASH_WritePage(uint32_t flashAddr);
+# 151 "./mcc_generated_files/memory.h"
+void FLASH_WriteWord(uint32_t flashAddr, uint16_t word);
+# 183 "./mcc_generated_files/memory.h"
+int8_t FLASH_WriteBlock(uint32_t flashAddr, uint16_t *flashWrBufPtr);
+# 195 "./mcc_generated_files/memory.h"
+void FLASH_EraseBlock(uint32_t flashAddr);
+# 212 "./mcc_generated_files/memory.h"
+void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
+# 225 "./mcc_generated_files/memory.h"
+uint8_t DATAEE_ReadByte(uint16_t bAdd);
 # 57 "./mcc_generated_files/mcc.h" 2
 # 71 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
@@ -22704,12 +22704,13 @@ void main(void)
     LATCbits.LATC7 = 0;
     LATCbits.LATC5 = 0;
     LATAbits.LATA5 = 0;
+    LATCbits.LATC3 = 0;
 
 
     typedef enum
     {
-        MANUAL, T1, T2, T3, T1Dummy, T2Dummy, T3Dummy,
-        T1StateDummy, T2StateDummy, T3StateDummy,
+        MANUAL, T1, T2, T3, T4, T1Dummy, T2Dummy, T3Dummy, T4Dummy,
+        T1StateDummy, T2StateDummy, T3StateDummy, T4StateDummy
     }state_t;
 
     state_t state = MANUAL;
@@ -22738,6 +22739,14 @@ void main(void)
         greenMode3 = DATAEE_ReadByte(24);
         blueMode3 = DATAEE_ReadByte(25);
         whiteMode3 = DATAEE_ReadByte(27);
+    }
+
+    if(DATAEE_ReadByte(8) == 69)
+    {
+        redMode4 = DATAEE_ReadByte(30);
+        greenMode4 = DATAEE_ReadByte(31);
+        blueMode4 = DATAEE_ReadByte(32);
+        whiteMode4 = DATAEE_ReadByte(34);
     }
 
 
@@ -22775,6 +22784,16 @@ void main(void)
         {
             state = MANUAL;
         }
+
+        if(state == 4 && (DATAEE_ReadByte(8) == 69))
+        {
+            LATCbits.LATC3 = 1;
+            _delay((unsigned long)((50)*(64000000/4000000.0)));
+        }
+        else if(state == 4)
+        {
+            state = MANUAL;
+        }
     }
 
 
@@ -22786,6 +22805,7 @@ void main(void)
         taster1Flag = PORTCbits.RC6;
         taster2Flag = PORTAbits.RA4;
         taster3Flag = PORTCbits.RC4;
+        taster4Flag = PORTBbits.RB7;
 
         ADCC_DischargeSampleCapacitor();
         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
@@ -22822,6 +22842,10 @@ void main(void)
                 {
                     state = T3Dummy;
                 }
+                if(!PORTBbits.RB7 && taster4Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+                {
+                    state = T4Dummy ;
+                }
 
 
                 if((led1Blink || led2Blink || led3Blink || led4Blink) && (++timeout10s == 500))
@@ -22852,6 +22876,12 @@ void main(void)
                     LATAbits.LATA5 = !LATAbits.LATA5;
                 }
 
+                if(led4Blink && ++timeout500ms == 12)
+                {
+                    timeout500ms = 0;
+                    LATCbits.LATC3 = !LATCbits.LATC3;
+                }
+
                 if(!(led1Blink || led2Blink || led3Blink || led4Blink))
                 {
                     timeout500ms = 0;
@@ -22859,6 +22889,7 @@ void main(void)
                     LATCbits.LATC7 = 0;
                     LATCbits.LATC5 = 0;
                     LATAbits.LATA5 = 0;
+                    LATCbits.LATC3 = 0;
                 }
 
 
@@ -22905,6 +22936,20 @@ void main(void)
                     DATAEE_WriteByte(6, 69);
                 }
 
+                if(led4Blink && !PORTBbits.RB7 && taster4Flag)
+                {
+                    redMode4 = red;
+                    greenMode4 = green;
+                    blueMode4 = blue;
+                    whiteMode4 = white;
+                    led4Blink = 0;
+                    DATAEE_WriteByte(32, blueMode4);
+                    DATAEE_WriteByte(31, greenMode4);
+                    DATAEE_WriteByte(30, redMode4);
+                    DATAEE_WriteByte(34, whiteMode4);
+                    DATAEE_WriteByte(8, 69);
+                }
+
 
 
                 if(PORTCbits.RC6)
@@ -22920,6 +22965,11 @@ void main(void)
                 if(PORTCbits.RC4)
                 {
                     timeout5sPressed3 = 0;
+                }
+
+                if(PORTBbits.RB7)
+                {
+                    timeout5sPressed4 = 0;
                 }
 
                 break;
@@ -22993,6 +23043,30 @@ void main(void)
                 break;
 
 
+            case T4Dummy:
+
+                if(PORTBbits.RB7)
+                {
+                    LATCbits.LATC3 = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+                    state = T4;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
+                {
+                    timeout5sPressed4 = 0;
+                    led4Blink = 1;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                break;
+
+
+
             case T1StateDummy:
 
                 if(PORTCbits.RC6)
@@ -23050,6 +23124,27 @@ void main(void)
                     timeout5sPressed3 = 0;
                     led3StateBlink = 1;
                     state = T3;
+                }
+
+                break;
+
+
+
+            case T4StateDummy:
+
+                if(PORTBbits.RB7)
+                {
+                    LATCbits.LATC3 = 0;
+                    state = MANUAL;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
+                {
+                    timeout5sPressed4 = 0;
+                    led4StateBlink = 1;
+                    state = T4;
                 }
 
                 break;
@@ -23152,6 +23247,18 @@ void main(void)
                     DATAEE_WriteByte(36, state);
                     DATAEE_WriteByte(2, 69);
                 }
+
+                if(!PORTBbits.RB7 && taster4Flag)
+                {
+                    LATCbits.LATC7 = 0;
+                    LATCbits.LATC3 = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+                    state = T4 ;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+
 
                 break;
 
@@ -23256,6 +23363,17 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
+                if(!PORTBbits.RB7 && taster4Flag)
+                {
+                    LATCbits.LATC5 = 0;
+                    LATCbits.LATC3 = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+                    state = T4 ;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+
                 break;
 
 
@@ -23359,6 +23477,130 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
+
+                if(!PORTBbits.RB7 && taster4Flag)
+                {
+                    LATAbits.LATA5 = 0;
+                    LATCbits.LATC3 = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+                    state = T4 ;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+
+
+
+            case T4:
+
+                LED_WriteFull(redMode4,greenMode4,blueMode4, 300);
+
+
+
+                if(led4StateBlink && (++timeout250ms == 12))
+                {
+                    timeout250ms = 0;
+                    LATCbits.LATC3 = !LATCbits.LATC3;
+                }
+
+                if(!PORTBbits.RB7 && taster4Flag && !led4StateBlink)
+                {
+                    state = T4StateDummy;
+                }
+
+                if(!PORTBbits.RB7 && taster4Flag && led4StateBlink)
+                {
+                    LATCbits.LATC3 = 1;
+                    led4StateBlink = 0;
+                    redAdj = 0;
+                    greenAdj = 0;
+                    blueAdj = 0;
+                    whiteAdj = 0;
+                    DATAEE_WriteByte(32, blueMode1);
+                    DATAEE_WriteByte(31, greenMode1);
+                    DATAEE_WriteByte(30, redMode1);
+                    DATAEE_WriteByte(34, whiteMode1);
+                    DATAEE_WriteByte(8, 69);
+                }
+
+                if(led4StateBlink)
+                {
+                    if((red >= (redMode4 - 5) && red <= redMode4 + 5))
+                    {
+                        redAdj = 1;
+                    }
+
+                    if(redAdj)
+                    {
+                        redMode4 = red;
+                    }
+
+                    if((white >= (whiteMode4 - 5) && white <= whiteMode4 + 5))
+                    {
+                        whiteAdj = 1;
+                    }
+
+                    if(whiteAdj)
+                    {
+                        whiteMode4 = white;
+                    }
+
+                    if((green >= (greenMode4 - 5) && green <= greenMode4 + 5))
+                    {
+                       greenAdj = 1;
+                    }
+
+                    if(greenAdj)
+                    {
+                        greenMode4 = green;
+                    }
+
+                    if((blue >= (blueMode4 - 5) && blue <= blueMode4 + 5))
+                    {
+                        blueAdj = 1;
+                    }
+
+                    if(blueAdj)
+                    {
+                        blueMode4 = blue;
+                    }
+                }
+
+
+
+
+                if(!PORTCbits.RC6 && taster1Flag)
+                {
+                    LATCbits.LATC3 = 0;
+                    LATCbits.LATC7 = 1;
+                    state = T1;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+
+                if(!PORTAbits.RA4 && taster2Flag)
+                {
+                    LATCbits.LATC3 = 0;
+                    LATCbits.LATC5 = 1;
+                    LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+                    state = T2;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+
+                if(!PORTCbits.RC4 && taster3Flag)
+                {
+                    LATCbits.LATC3 = 0;
+                    LATAbits.LATA5 = 1;
+                    LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+                    state = T3 ;
+                    DATAEE_WriteByte(36, state);
+                    DATAEE_WriteByte(2, 69);
+                }
+
+                break;
         }
     }
 }

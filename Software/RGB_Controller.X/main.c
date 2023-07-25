@@ -84,12 +84,13 @@ void main(void)
     LED1_LAT = 0;
     LED2_LAT = 0;
     LED3_LAT = 0;
+    LED4_LAT = 0;
     
     /*Statemachine Init*/
     typedef enum
     {
-        MANUAL, T1, T2, T3, T1Dummy, T2Dummy, T3Dummy, 
-        T1StateDummy, T2StateDummy, T3StateDummy,
+        MANUAL, T1, T2, T3, T4, T1Dummy, T2Dummy, T3Dummy, T4Dummy, 
+        T1StateDummy, T2StateDummy, T3StateDummy, T4StateDummy
     }state_t;
     
     state_t state = MANUAL;    
@@ -119,6 +120,14 @@ void main(void)
         blueMode3 = DATAEE_ReadByte(EE_MODE3_BLUEADD);
         whiteMode3 = DATAEE_ReadByte(EE_MODE3_WHITEADD);
     }
+    
+    if(DATAEE_ReadByte(EE_MODE4CHECKBYTEADD) == EE_CHECKBYTEDATA)
+    {
+        redMode4 = DATAEE_ReadByte(EE_MODE4_REDADD);
+        greenMode4 = DATAEE_ReadByte(EE_MODE4_GREENADD);
+        blueMode4 = DATAEE_ReadByte(EE_MODE4_BLUEADD);
+        whiteMode4 = DATAEE_ReadByte(EE_MODE4_WHITEADD);
+    }        
     
     //================= Mode check ends & State check starts ==================//
     
@@ -154,6 +163,16 @@ void main(void)
         else if(state == 3)
         {
             state = MANUAL;
+        }        
+        
+        if(state == 4 && (DATAEE_ReadByte(EE_MODE4CHECKBYTEADD) == EE_CHECKBYTEDATA))
+        {
+            LED4_LAT = 1;
+            __delay_us(50);
+        }        
+        else if(state == 4)
+        {
+            state = MANUAL;
         }
     }
     //========================= Statecheck ending =============================//
@@ -163,10 +182,10 @@ void main(void)
     
     while (1)
     {
-        
         taster1Flag = T1_PORT;
         taster2Flag = T2_PORT;
         taster3Flag = T3_PORT;
+        taster4Flag = T4_PORT;
         
         ADCC_DischargeSampleCapacitor();
         red = map(ADCC_GetSingleConversion(POT1),0,4095,0,255);
@@ -202,7 +221,11 @@ void main(void)
                 if(!T3_PORT && taster3Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
                 {                    
                     state = T3Dummy;    
-                }
+                }                
+                if(!T4_PORT && taster4Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
+                {                    
+                    state = T4Dummy ;    
+                }                
                 
     //====================== Let those buttons flash for 10s ===================// 
                 if((led1Blink || led2Blink || led3Blink || led4Blink) && (++timeout10s == TIMEOUT10s))
@@ -232,6 +255,12 @@ void main(void)
                     timeout500ms = 0;
                     LED3_LAT = !LED3_LAT;
                 }
+                
+                if(led4Blink && ++timeout500ms == TIMEOUT250MS)
+                {
+                    timeout500ms = 0;
+                    LED4_LAT = !LED4_LAT;
+                }
     //Reset all LED's if not blinking                
                 if(!(led1Blink || led2Blink || led3Blink || led4Blink))
                 {
@@ -240,6 +269,7 @@ void main(void)
                     LED1_LAT = 0;
                     LED2_LAT = 0;
                     LED3_LAT = 0;
+                    LED4_LAT = 0; 
                 }
                 
     //======= Check if a button is pressed while it blinks (mode programming)===/
@@ -284,7 +314,21 @@ void main(void)
                     DATAEE_WriteByte(EE_MODE3_REDADD, redMode3);
                     DATAEE_WriteByte(EE_MODE3_WHITEADD, whiteMode3);
                     DATAEE_WriteByte(EE_MODE3CHECKBYTEADD, EE_CHECKBYTEDATA);                    
-                }   
+                }
+                
+                if(led4Blink && !T4_PORT && taster4Flag)
+                {
+                    redMode4 = red;
+                    greenMode4 = green;
+                    blueMode4 = blue;
+                    whiteMode4 = white;
+                    led4Blink = false;
+                    DATAEE_WriteByte(EE_MODE4_BLUEADD, blueMode4);
+                    DATAEE_WriteByte(EE_MODE4_GREENADD, greenMode4);
+                    DATAEE_WriteByte(EE_MODE4_REDADD, redMode4);
+                    DATAEE_WriteByte(EE_MODE4_WHITEADD, whiteMode4);
+                    DATAEE_WriteByte(EE_MODE4CHECKBYTEADD, EE_CHECKBYTEDATA);    
+                }                
                 
     //==========================================================================//
                 
@@ -301,6 +345,11 @@ void main(void)
                 if(T3_PORT)
                 {
                     timeout5sPressed3 = 0;
+                }                
+                               
+                if(T4_PORT)
+                {
+                    timeout5sPressed4 = 0;
                 }
                 
                 break;           
@@ -372,6 +421,30 @@ void main(void)
                 }                
                 
                 break;
+                
+    //========================== Case T4 Dummy =====================================//
+            case T4Dummy:
+                
+                if(T4_PORT)
+                {
+                    LED4_LAT = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, LEDCOUNT);
+                    state = T4;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                if(!T4_PORT && (++timeout5sPressed4 == TIMEOUT5S))
+                {
+                    timeout5sPressed4 = 0;
+                    led4Blink = true;
+                    state = MANUAL;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                break;
+    
     //======================= Case T1 State Dummy ============================//       
                 
             case T1StateDummy:
@@ -431,6 +504,27 @@ void main(void)
                     timeout5sPressed3 = 0;
                     led3StateBlink = true;
                     state = T3; 
+                }
+                
+                break;
+                
+    //======================= Case T4 State Dummy ============================//            
+                
+            case T4StateDummy:
+                
+                if(T4_PORT)
+                {
+                    LED4_LAT = 0;
+                    state = MANUAL;
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                if(!T4_PORT && (++timeout5sPressed4 == TIMEOUT5S))
+                {
+                    timeout5sPressed4 = 0;
+                    led4StateBlink = true;
+                    state = T4;
                 }
                 
                 break;
@@ -532,7 +626,19 @@ void main(void)
                     state = T3 ;    
                     DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
                     DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
-                }               
+                }
+                
+                if(!T4_PORT && taster4Flag)
+                {
+                    LED1_LAT = 0;
+                    LED4_LAT = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, LEDCOUNT);
+                    state = T4 ;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                
 
                 break;
                 
@@ -637,6 +743,17 @@ void main(void)
                     DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
                 }
                 
+                if(!T4_PORT && taster4Flag)
+                {
+                    LED2_LAT = 0;
+                    LED4_LAT = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, LEDCOUNT);
+                    state = T4 ;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                
                 break;
                 
     //========================== Case T3 =====================================//            
@@ -738,8 +855,132 @@ void main(void)
                     state = T2;    
                     DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
                     DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
-                }                
-    
-        }
+                }
+                
+                
+                if(!T4_PORT && taster4Flag)
+                {
+                    LED3_LAT = 0;
+                    LED4_LAT = 1;
+                    LED_WriteFull(redMode4, greenMode4, blueMode4, LEDCOUNT);
+                    state = T4 ;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                
+    //========================== Case T4 =====================================//    
+                
+            case T4:
+                
+                LED_WriteFull(redMode4,greenMode4,blueMode4, LEDCOUNT);
+                
+        //======================== T4 Adjusting ==============================//        
+                
+                if(led4StateBlink && (++timeout250ms == TIMEOUT250MS))
+                {
+                    timeout250ms = 0;
+                    LED4_LAT = !LED4_LAT;
+                }
+                
+                if(!T4_PORT && taster4Flag && !led4StateBlink)
+                {
+                    state = T4StateDummy;
+                }
+                
+                if(!T4_PORT && taster4Flag && led4StateBlink)
+                {
+                    LED4_LAT = 1;
+                    led4StateBlink = false;
+                    redAdj = false;
+                    greenAdj = false;
+                    blueAdj = false;
+                    whiteAdj = false;
+                    DATAEE_WriteByte(EE_MODE4_BLUEADD, blueMode1);
+                    DATAEE_WriteByte(EE_MODE4_GREENADD, greenMode1);
+                    DATAEE_WriteByte(EE_MODE4_REDADD, redMode1);
+                    DATAEE_WriteByte(EE_MODE4_WHITEADD, whiteMode1);
+                    DATAEE_WriteByte(EE_MODE4CHECKBYTEADD, EE_CHECKBYTEDATA);
+                }
+                
+                if(led4StateBlink)
+                {
+                    if((red >= (redMode4 - ADJ_THRESHOLD) && red <= redMode4 + ADJ_THRESHOLD))
+                    {
+                        redAdj = true;
+                    }
+                    
+                    if(redAdj)
+                    {
+                        redMode4 = red;
+                    }
+                    
+                    if((white >= (whiteMode4 - ADJ_THRESHOLD) && white <= whiteMode4 + ADJ_THRESHOLD))
+                    {
+                        whiteAdj = true;
+                    }
+                    
+                    if(whiteAdj)
+                    {
+                        whiteMode4 = white;
+                    }
+                    
+                    if((green >= (greenMode4 - ADJ_THRESHOLD) && green <= greenMode4 + ADJ_THRESHOLD))
+                    {
+                       greenAdj = true; 
+                    }
+                    
+                    if(greenAdj)
+                    {
+                        greenMode4 = green;
+                    }
+                    
+                    if((blue >= (blueMode4 - ADJ_THRESHOLD) && blue <= blueMode4 + ADJ_THRESHOLD))
+                    {
+                        blueAdj = true;
+                    }
+                    
+                    if(blueAdj)
+                    {
+                        blueMode4 = blue;
+                    }
+                }
+                
+        //======================== T4 Adjusting ends ==============================//
+                
+                
+                if(!T1_PORT && taster1Flag)
+                {
+                    LED4_LAT = 0;
+                    LED1_LAT = 1;
+                    state = T1;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                
+                if(!T2_PORT && taster2Flag)
+                {
+                    LED4_LAT = 0;
+                    LED2_LAT = 1;
+                    LED_WriteFull(redMode2, greenMode2, blueMode2, LEDCOUNT);
+                    state = T2;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                
+                if(!T3_PORT && taster3Flag)
+                {
+                    LED4_LAT = 0;
+                    LED3_LAT = 1;
+                    LED_WriteFull(redMode3, greenMode3, blueMode3, LEDCOUNT);
+                    state = T3 ;    
+                    DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
+                    DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
+                }
+                
+                break;
+        }               
     }
 }

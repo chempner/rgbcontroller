@@ -52,8 +52,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <conio.h>
-#include "memory.h"
 #include "adcc.h"
+#include "memory.h"
 
 
 
