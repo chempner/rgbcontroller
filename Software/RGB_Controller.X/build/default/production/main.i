@@ -22538,6 +22538,26 @@ char *ctermid(char *);
 char *tempnam(const char *, const char *);
 # 7 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 2 3
 # 55 "./mcc_generated_files/mcc.h" 2
+# 1 "./mcc_generated_files/memory.h" 1
+# 81 "./mcc_generated_files/memory.h"
+uint8_t FLASH_ReadByte(uint32_t flashAddr);
+# 94 "./mcc_generated_files/memory.h"
+uint16_t FLASH_ReadWord(uint32_t flashAddr);
+# 116 "./mcc_generated_files/memory.h"
+void FLASH_ReadPage(uint32_t flashAddr);
+# 138 "./mcc_generated_files/memory.h"
+void FLASH_WritePage(uint32_t flashAddr);
+# 151 "./mcc_generated_files/memory.h"
+void FLASH_WriteWord(uint32_t flashAddr, uint16_t word);
+# 183 "./mcc_generated_files/memory.h"
+int8_t FLASH_WriteBlock(uint32_t flashAddr, uint16_t *flashWrBufPtr);
+# 195 "./mcc_generated_files/memory.h"
+void FLASH_EraseBlock(uint32_t flashAddr);
+# 212 "./mcc_generated_files/memory.h"
+void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
+# 225 "./mcc_generated_files/memory.h"
+uint8_t DATAEE_ReadByte(uint16_t bAdd);
+# 56 "./mcc_generated_files/mcc.h" 2
 # 1 "./mcc_generated_files/adcc.h" 1
 # 72 "./mcc_generated_files/adcc.h"
 typedef uint16_t adc_result_t;
@@ -22610,26 +22630,6 @@ _Bool ADCC_HasErrorCrossedUpperThreshold(void);
 _Bool ADCC_HasErrorCrossedLowerThreshold(void);
 # 831 "./mcc_generated_files/adcc.h"
 uint8_t ADCC_GetConversionStageStatus(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-# 1 "./mcc_generated_files/memory.h" 1
-# 81 "./mcc_generated_files/memory.h"
-uint8_t FLASH_ReadByte(uint32_t flashAddr);
-# 94 "./mcc_generated_files/memory.h"
-uint16_t FLASH_ReadWord(uint32_t flashAddr);
-# 116 "./mcc_generated_files/memory.h"
-void FLASH_ReadPage(uint32_t flashAddr);
-# 138 "./mcc_generated_files/memory.h"
-void FLASH_WritePage(uint32_t flashAddr);
-# 151 "./mcc_generated_files/memory.h"
-void FLASH_WriteWord(uint32_t flashAddr, uint16_t word);
-# 183 "./mcc_generated_files/memory.h"
-int8_t FLASH_WriteBlock(uint32_t flashAddr, uint16_t *flashWrBufPtr);
-# 195 "./mcc_generated_files/memory.h"
-void FLASH_EraseBlock(uint32_t flashAddr);
-# 212 "./mcc_generated_files/memory.h"
-void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
-# 225 "./mcc_generated_files/memory.h"
-uint8_t DATAEE_ReadByte(uint16_t bAdd);
 # 57 "./mcc_generated_files/mcc.h" 2
 # 71 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
@@ -22824,7 +22824,7 @@ void main(void)
 
                 LED_WriteFull(red, green, blue, 300);
 
-                _delay((unsigned long)((50)*(64000000/4000000.0)));
+                _delay((unsigned long)((100)*(64000000/4000000.0)));
 
 
 
@@ -22842,6 +22842,7 @@ void main(void)
                 {
                     state = T3Dummy;
                 }
+
                 if(!PORTBbits.RB7 && taster4Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
                 {
                     state = T4Dummy ;
@@ -23373,7 +23374,6 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-
                 break;
 
 
@@ -23477,7 +23477,6 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-
                 if(!PORTBbits.RB7 && taster4Flag)
                 {
                     LATAbits.LATA5 = 0;
@@ -23487,6 +23486,8 @@ void main(void)
                     DATAEE_WriteByte(36, state);
                     DATAEE_WriteByte(2, 69);
                 }
+
+                break;
 
 
 

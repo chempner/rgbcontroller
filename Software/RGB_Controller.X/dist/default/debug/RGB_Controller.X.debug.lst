@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
-                                                                                               Sun Aug 06 14:11:16 2023
+                                                                                               Sun Aug 06 14:05:50 2023
 
 Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1 
      1                           	processor	18F16Q40
@@ -1282,7 +1282,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1260   00E598  6F93               	movwf	main@state& (0+255),b
   1261   00E59A                     l3012:
   1262                           
-  1263                           ;main.c: 226:                 if(!PORTBbits.RB7 && taster4Flag && !led1Blink && !led2Bli
+  1263                           ;main.c: 225:                 if(!PORTBbits.RB7 && taster4Flag && !led1Blink && !led2Bli
       +                          nk && !led3Blink && !led4Blink)
   1264   00E59A  BECF               	btfsc	207,7,c	;volatile
   1265   00E59C  EFD2  F072         	goto	u3161
@@ -1336,12 +1336,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1313   00E5FA                     u3210:
   1314   00E5FA                     
   1315                           ; BSR set to: 5
-  1316                           ;main.c: 227:                 {;main.c: 228:                     state = T4Dummy ;
+  1316                           ;main.c: 226:                 {;main.c: 227:                     state = T4Dummy ;
   1317   00E5FA  0E08               	movlw	8
   1318   00E5FC  6F93               	movwf	main@state& (0+255),b
   1319   00E5FE                     l378:
   1320                           
-  1321                           ;main.c: 232:                 if((led1Blink || led2Blink || led3Blink || led4Blink) && (
+  1321                           ;main.c: 231:                 if((led1Blink || led2Blink || led3Blink || led4Blink) && (
       +                          ++timeout10s == 500))
   1322   00E5FE  0105               	movlb	5	; () banked
   1323   00E600  5188               	movf	main@led1Blink& (0+255),w,b
@@ -1395,31 +1395,31 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1371   00E65A                     u3260:
   1372   00E65A                     
   1373                           ; BSR set to: 5
-  1374                           ;main.c: 233:                 {;main.c: 234:                     timeout10s = 0;
+  1374                           ;main.c: 232:                 {;main.c: 233:                     timeout10s = 0;
   1375   00E65A  0E00               	movlw	0
   1376   00E65C  6F64               	movwf	(main@timeout10s+1)& (0+255),b
   1377   00E65E  0E00               	movlw	0
   1378   00E660  6F63               	movwf	main@timeout10s& (0+255),b
   1379                           
-  1380                           ;main.c: 236:                     led1Blink = 0;
+  1380                           ;main.c: 235:                     led1Blink = 0;
   1381   00E662  0E00               	movlw	0
   1382   00E664  6F88               	movwf	main@led1Blink& (0+255),b
   1383                           
-  1384                           ;main.c: 237:                     led2Blink = 0;
+  1384                           ;main.c: 236:                     led2Blink = 0;
   1385   00E666  0E00               	movlw	0
   1386   00E668  6F89               	movwf	main@led2Blink& (0+255),b
   1387                           
-  1388                           ;main.c: 238:                     led3Blink = 0;
+  1388                           ;main.c: 237:                     led3Blink = 0;
   1389   00E66A  0E00               	movlw	0
   1390   00E66C  6F8A               	movwf	main@led3Blink& (0+255),b
   1391                           
-  1392                           ;main.c: 239:                     led4Blink = 0;
+  1392                           ;main.c: 238:                     led4Blink = 0;
   1393   00E66E  0E00               	movlw	0
   1394   00E670  6F8B               	movwf	main@led4Blink& (0+255),b
   1395   00E672                     l379:
   1396                           
   1397                           ; BSR set to: 5
-  1398                           ;main.c: 242:                 if(led1Blink && ++timeout500ms == 12)
+  1398                           ;main.c: 241:                 if(led1Blink && ++timeout500ms == 12)
   1399   00E672  5188               	movf	main@led1Blink& (0+255),w,b
   1400   00E674  B4D8               	btfsc	status,2,c
   1401   00E676  EF3F  F073         	goto	u3271
@@ -1440,12 +1440,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1416   00E696                     u3280:
   1417   00E696                     
   1418                           ; BSR set to: 5
-  1419                           ;main.c: 243:                 {;main.c: 244:                     timeout500ms = 0;
+  1419                           ;main.c: 242:                 {;main.c: 243:                     timeout500ms = 0;
   1420   00E696  0E00               	movlw	0
   1421   00E698  6F75               	movwf	main@timeout500ms& (0+255),b
   1422   00E69A                     
   1423                           ; BSR set to: 5
-  1424                           ;main.c: 245:                     LATCbits.LATC7 = !LATCbits.LATC7;
+  1424                           ;main.c: 244:                     LATCbits.LATC7 = !LATCbits.LATC7;
   1425   00E69A  AEC0               	btfss	192,7,c	;volatile
   1426   00E69C  EF52  F073         	goto	u3291
   1427   00E6A0  EF56  F073         	goto	u3290
@@ -1465,7 +1465,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1441   00E6BA  6EC0               	movwf	192,c	;volatile
   1442   00E6BC                     l3042:
   1443                           
-  1444                           ;main.c: 248:                 if(led2Blink && ++timeout500ms == 12)
+  1444                           ;main.c: 247:                 if(led2Blink && ++timeout500ms == 12)
   1445   00E6BC  0105               	movlb	5	; () banked
   1446   00E6BE  5189               	movf	main@led2Blink& (0+255),w,b
   1447   00E6C0  B4D8               	btfsc	status,2,c
@@ -1487,12 +1487,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1463   00E6E2                     u3320:
   1464   00E6E2                     
   1465                           ; BSR set to: 5
-  1466                           ;main.c: 249:                 {;main.c: 250:                     timeout500ms = 0;
+  1466                           ;main.c: 248:                 {;main.c: 249:                     timeout500ms = 0;
   1467   00E6E2  0E00               	movlw	0
   1468   00E6E4  6F75               	movwf	main@timeout500ms& (0+255),b
   1469   00E6E6                     
   1470                           ; BSR set to: 5
-  1471                           ;main.c: 251:                     LATCbits.LATC5 = !LATCbits.LATC5;
+  1471                           ;main.c: 250:                     LATCbits.LATC5 = !LATCbits.LATC5;
   1472   00E6E6  AAC0               	btfss	192,5,c	;volatile
   1473   00E6E8  EF78  F073         	goto	u3331
   1474   00E6EC  EF7C  F073         	goto	u3330
@@ -1512,7 +1512,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1488   00E706  6EC0               	movwf	192,c	;volatile
   1489   00E708                     l3050:
   1490                           
-  1491                           ;main.c: 254:                 if(led3Blink && ++timeout500ms == 12)
+  1491                           ;main.c: 253:                 if(led3Blink && ++timeout500ms == 12)
   1492   00E708  0105               	movlb	5	; () banked
   1493   00E70A  518A               	movf	main@led3Blink& (0+255),w,b
   1494   00E70C  B4D8               	btfsc	status,2,c
@@ -1534,12 +1534,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1510   00E72E                     u3360:
   1511   00E72E                     
   1512                           ; BSR set to: 5
-  1513                           ;main.c: 255:                 {;main.c: 256:                     timeout500ms = 0;
+  1513                           ;main.c: 254:                 {;main.c: 255:                     timeout500ms = 0;
   1514   00E72E  0E00               	movlw	0
   1515   00E730  6F75               	movwf	main@timeout500ms& (0+255),b
   1516   00E732                     
   1517                           ; BSR set to: 5
-  1518                           ;main.c: 257:                     LATAbits.LATA5 = !LATAbits.LATA5;
+  1518                           ;main.c: 256:                     LATAbits.LATA5 = !LATAbits.LATA5;
   1519   00E732  AABE               	btfss	190,5,c	;volatile
   1520   00E734  EF9E  F073         	goto	u3371
   1521   00E738  EFA2  F073         	goto	u3370
@@ -1559,7 +1559,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1535   00E752  6EBE               	movwf	190,c	;volatile
   1536   00E754                     l3058:
   1537                           
-  1538                           ;main.c: 260:                 if(led4Blink && ++timeout500ms == 12)
+  1538                           ;main.c: 259:                 if(led4Blink && ++timeout500ms == 12)
   1539   00E754  0105               	movlb	5	; () banked
   1540   00E756  518B               	movf	main@led4Blink& (0+255),w,b
   1541   00E758  B4D8               	btfsc	status,2,c
@@ -1581,12 +1581,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1557   00E77A                     u3400:
   1558   00E77A                     
   1559                           ; BSR set to: 5
-  1560                           ;main.c: 261:                 {;main.c: 262:                     timeout500ms = 0;
+  1560                           ;main.c: 260:                 {;main.c: 261:                     timeout500ms = 0;
   1561   00E77A  0E00               	movlw	0
   1562   00E77C  6F75               	movwf	main@timeout500ms& (0+255),b
   1563   00E77E                     
   1564                           ; BSR set to: 5
-  1565                           ;main.c: 263:                     LATCbits.LATC3 = !LATCbits.LATC3;
+  1565                           ;main.c: 262:                     LATCbits.LATC3 = !LATCbits.LATC3;
   1566   00E77E  A6C0               	btfss	192,3,c	;volatile
   1567   00E780  EFC4  F073         	goto	u3411
   1568   00E784  EFC8  F073         	goto	u3410
@@ -1607,7 +1607,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1583   00E7A0  6EC0               	movwf	192,c	;volatile
   1584   00E7A2                     l3066:
   1585                           
-  1586                           ;main.c: 266:                 if(!(led1Blink || led2Blink || led3Blink || led4Blink))
+  1586                           ;main.c: 265:                 if(!(led1Blink || led2Blink || led3Blink || led4Blink))
   1587   00E7A2  0105               	movlb	5	; () banked
   1588   00E7A4  5188               	movf	main@led1Blink& (0+255),w,b
   1589   00E7A6  A4D8               	btfss	status,2,c
@@ -1645,29 +1645,29 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1621   00E7E4                     u3460:
   1622   00E7E4                     
   1623                           ; BSR set to: 5
-  1624                           ;main.c: 267:                 {;main.c: 268:                     timeout500ms = 0;
+  1624                           ;main.c: 266:                 {;main.c: 267:                     timeout500ms = 0;
   1625   00E7E4  0E00               	movlw	0
   1626   00E7E6  6F75               	movwf	main@timeout500ms& (0+255),b
   1627   00E7E8                     
   1628                           ; BSR set to: 5
-  1629                           ;main.c: 270:                     LATCbits.LATC7 = 0;
+  1629                           ;main.c: 269:                     LATCbits.LATC7 = 0;
   1630   00E7E8  9EC0               	bcf	192,7,c	;volatile
   1631   00E7EA                     
   1632                           ; BSR set to: 5
-  1633                           ;main.c: 271:                     LATCbits.LATC5 = 0;
+  1633                           ;main.c: 270:                     LATCbits.LATC5 = 0;
   1634   00E7EA  9AC0               	bcf	192,5,c	;volatile
   1635   00E7EC                     
   1636                           ; BSR set to: 5
-  1637                           ;main.c: 272:                     LATAbits.LATA5 = 0;
+  1637                           ;main.c: 271:                     LATAbits.LATA5 = 0;
   1638   00E7EC  9ABE               	bcf	190,5,c	;volatile
   1639   00E7EE                     
   1640                           ; BSR set to: 5
-  1641                           ;main.c: 273:                     LATCbits.LATC3 = 0;
+  1641                           ;main.c: 272:                     LATCbits.LATC3 = 0;
   1642   00E7EE  96C0               	bcf	192,3,c	;volatile
   1643   00E7F0                     l386:
   1644                           
   1645                           ; BSR set to: 5
-  1646                           ;main.c: 278:                 if(led1Blink && !PORTCbits.RC6 && taster1Flag)
+  1646                           ;main.c: 277:                 if(led1Blink && !PORTCbits.RC6 && taster1Flag)
   1647   00E7F0  5188               	movf	main@led1Blink& (0+255),w,b
   1648   00E7F2  B4D8               	btfsc	status,2,c
   1649   00E7F4  EFFE  F073         	goto	u3471
@@ -1694,25 +1694,25 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1670   00E81E                     u3490:
   1671   00E81E                     
   1672                           ; BSR set to: 5
-  1673                           ;main.c: 279:                 {;main.c: 280:                     redMode1 = red;
+  1673                           ;main.c: 278:                 {;main.c: 279:                     redMode1 = red;
   1674   00E81E  C590  F58C         	movff	main@red,main@redMode1
   1675                           
-  1676                           ;main.c: 281:                     greenMode1 = green;
+  1676                           ;main.c: 280:                     greenMode1 = green;
   1677   00E822  C591  F58D         	movff	main@green,main@greenMode1
   1678                           
-  1679                           ;main.c: 282:                     blueMode1 = blue;
+  1679                           ;main.c: 281:                     blueMode1 = blue;
   1680   00E826  C592  F58E         	movff	main@blue,main@blueMode1
   1681                           
-  1682                           ;main.c: 283:                     whiteMode1 = white;
+  1682                           ;main.c: 282:                     whiteMode1 = white;
   1683   00E82A  C58F  F57E         	movff	main@white,main@whiteMode1
   1684   00E82E                     
   1685                           ; BSR set to: 5
-  1686                           ;main.c: 284:                     led1Blink = 0;
+  1686                           ;main.c: 283:                     led1Blink = 0;
   1687   00E82E  0E00               	movlw	0
   1688   00E830  6F88               	movwf	main@led1Blink& (0+255),b
   1689   00E832                     
   1690                           ; BSR set to: 5
-  1691                           ;main.c: 285:                     DATAEE_WriteByte(15, blueMode1);
+  1691                           ;main.c: 284:                     DATAEE_WriteByte(15, blueMode1);
   1692   00E832  0E00               	movlw	0
   1693   00E834  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1694   00E836  0E0F               	movlw	15
@@ -1720,7 +1720,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1696   00E83A  C58E  F503         	movff	main@blueMode1,DATAEE_WriteByte@bData
   1697   00E83E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1698   00E842                     
-  1699                           ;main.c: 286:                     DATAEE_WriteByte(12, greenMode1);
+  1699                           ;main.c: 285:                     DATAEE_WriteByte(12, greenMode1);
   1700   00E842  0E00               	movlw	0
   1701   00E844  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1702   00E846  0E0C               	movlw	12
@@ -1728,7 +1728,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1704   00E84A  C58D  F503         	movff	main@greenMode1,DATAEE_WriteByte@bData
   1705   00E84E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1706   00E852                     
-  1707                           ;main.c: 287:                     DATAEE_WriteByte(11, redMode1);
+  1707                           ;main.c: 286:                     DATAEE_WriteByte(11, redMode1);
   1708   00E852  0E00               	movlw	0
   1709   00E854  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1710   00E856  0E0B               	movlw	11
@@ -1736,7 +1736,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1712   00E85A  C58C  F503         	movff	main@redMode1,DATAEE_WriteByte@bData
   1713   00E85E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1714   00E862                     
-  1715                           ;main.c: 288:                     DATAEE_WriteByte(17, whiteMode1);
+  1715                           ;main.c: 287:                     DATAEE_WriteByte(17, whiteMode1);
   1716   00E862  0E00               	movlw	0
   1717   00E864  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1718   00E866  0E11               	movlw	17
@@ -1744,7 +1744,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1720   00E86A  C57E  F503         	movff	main@whiteMode1,DATAEE_WriteByte@bData
   1721   00E86E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1722   00E872                     
-  1723                           ;main.c: 289:                     DATAEE_WriteByte(3, 69);
+  1723                           ;main.c: 288:                     DATAEE_WriteByte(3, 69);
   1724   00E872  0E00               	movlw	0
   1725   00E874  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1726   00E876  0E03               	movlw	3
@@ -1754,7 +1754,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1730   00E87E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1731   00E882                     l3102:
   1732                           
-  1733                           ;main.c: 292:                 if(led2Blink && !PORTAbits.RA4 && taster2Flag)
+  1733                           ;main.c: 291:                 if(led2Blink && !PORTAbits.RA4 && taster2Flag)
   1734   00E882  0105               	movlb	5	; () banked
   1735   00E884  5189               	movf	main@led2Blink& (0+255),w,b
   1736   00E886  B4D8               	btfsc	status,2,c
@@ -1782,25 +1782,25 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1758   00E8B2                     u3520:
   1759   00E8B2                     
   1760                           ; BSR set to: 5
-  1761                           ;main.c: 293:                 {;main.c: 294:                     redMode2 = red;
+  1761                           ;main.c: 292:                 {;main.c: 293:                     redMode2 = red;
   1762   00E8B2  C590  F57F         	movff	main@red,main@redMode2
   1763                           
-  1764                           ;main.c: 295:                     greenMode2 = green;
+  1764                           ;main.c: 294:                     greenMode2 = green;
   1765   00E8B6  C591  F580         	movff	main@green,main@greenMode2
   1766                           
-  1767                           ;main.c: 296:                     blueMode2 = blue;
+  1767                           ;main.c: 295:                     blueMode2 = blue;
   1768   00E8BA  C592  F581         	movff	main@blue,main@blueMode2
   1769                           
-  1770                           ;main.c: 297:                     whiteMode2 = white;
+  1770                           ;main.c: 296:                     whiteMode2 = white;
   1771   00E8BE  C58F  F56D         	movff	main@white,main@whiteMode2
   1772   00E8C2                     
   1773                           ; BSR set to: 5
-  1774                           ;main.c: 298:                     led2Blink = 0;
+  1774                           ;main.c: 297:                     led2Blink = 0;
   1775   00E8C2  0E00               	movlw	0
   1776   00E8C4  6F89               	movwf	main@led2Blink& (0+255),b
   1777   00E8C6                     
   1778                           ; BSR set to: 5
-  1779                           ;main.c: 299:                     DATAEE_WriteByte(20, blueMode2);
+  1779                           ;main.c: 298:                     DATAEE_WriteByte(20, blueMode2);
   1780   00E8C6  0E00               	movlw	0
   1781   00E8C8  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1782   00E8CA  0E14               	movlw	20
@@ -1808,7 +1808,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1784   00E8CE  C581  F503         	movff	main@blueMode2,DATAEE_WriteByte@bData
   1785   00E8D2  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1786   00E8D6                     
-  1787                           ;main.c: 300:                     DATAEE_WriteByte(19, greenMode2);
+  1787                           ;main.c: 299:                     DATAEE_WriteByte(19, greenMode2);
   1788   00E8D6  0E00               	movlw	0
   1789   00E8D8  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1790   00E8DA  0E13               	movlw	19
@@ -1816,7 +1816,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1792   00E8DE  C580  F503         	movff	main@greenMode2,DATAEE_WriteByte@bData
   1793   00E8E2  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1794   00E8E6                     
-  1795                           ;main.c: 301:                     DATAEE_WriteByte(18, redMode2);
+  1795                           ;main.c: 300:                     DATAEE_WriteByte(18, redMode2);
   1796   00E8E6  0E00               	movlw	0
   1797   00E8E8  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1798   00E8EA  0E12               	movlw	18
@@ -1824,7 +1824,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1800   00E8EE  C57F  F503         	movff	main@redMode2,DATAEE_WriteByte@bData
   1801   00E8F2  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1802   00E8F6                     
-  1803                           ;main.c: 302:                     DATAEE_WriteByte(21, whiteMode2);
+  1803                           ;main.c: 301:                     DATAEE_WriteByte(21, whiteMode2);
   1804   00E8F6  0E00               	movlw	0
   1805   00E8F8  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1806   00E8FA  0E15               	movlw	21
@@ -1832,7 +1832,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1808   00E8FE  C56D  F503         	movff	main@whiteMode2,DATAEE_WriteByte@bData
   1809   00E902  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1810   00E906                     
-  1811                           ;main.c: 303:                     DATAEE_WriteByte(4, 69);
+  1811                           ;main.c: 302:                     DATAEE_WriteByte(4, 69);
   1812   00E906  0E00               	movlw	0
   1813   00E908  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1814   00E90A  0E04               	movlw	4
@@ -1842,7 +1842,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1818   00E912  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1819   00E916                     l3122:
   1820                           
-  1821                           ;main.c: 306:                 if(led3Blink && !PORTCbits.RC4 && taster3Flag)
+  1821                           ;main.c: 305:                 if(led3Blink && !PORTCbits.RC4 && taster3Flag)
   1822   00E916  0105               	movlb	5	; () banked
   1823   00E918  518A               	movf	main@led3Blink& (0+255),w,b
   1824   00E91A  B4D8               	btfsc	status,2,c
@@ -1870,25 +1870,25 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1846   00E946                     u3550:
   1847   00E946                     
   1848                           ; BSR set to: 5
-  1849                           ;main.c: 307:                 {;main.c: 308:                     redMode3 = red;
+  1849                           ;main.c: 306:                 {;main.c: 307:                     redMode3 = red;
   1850   00E946  C590  F582         	movff	main@red,main@redMode3
   1851                           
-  1852                           ;main.c: 309:                     greenMode3 = green;
+  1852                           ;main.c: 308:                     greenMode3 = green;
   1853   00E94A  C591  F583         	movff	main@green,main@greenMode3
   1854                           
-  1855                           ;main.c: 310:                     blueMode3 = blue;
+  1855                           ;main.c: 309:                     blueMode3 = blue;
   1856   00E94E  C592  F584         	movff	main@blue,main@blueMode3
   1857                           
-  1858                           ;main.c: 311:                     whiteMode3 = white;
+  1858                           ;main.c: 310:                     whiteMode3 = white;
   1859   00E952  C58F  F56E         	movff	main@white,main@whiteMode3
   1860   00E956                     
   1861                           ; BSR set to: 5
-  1862                           ;main.c: 312:                     led3Blink = 0;
+  1862                           ;main.c: 311:                     led3Blink = 0;
   1863   00E956  0E00               	movlw	0
   1864   00E958  6F8A               	movwf	main@led3Blink& (0+255),b
   1865   00E95A                     
   1866                           ; BSR set to: 5
-  1867                           ;main.c: 313:                     DATAEE_WriteByte(25, blueMode3);
+  1867                           ;main.c: 312:                     DATAEE_WriteByte(25, blueMode3);
   1868   00E95A  0E00               	movlw	0
   1869   00E95C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1870   00E95E  0E19               	movlw	25
@@ -1896,7 +1896,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1872   00E962  C584  F503         	movff	main@blueMode3,DATAEE_WriteByte@bData
   1873   00E966  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1874   00E96A                     
-  1875                           ;main.c: 314:                     DATAEE_WriteByte(24, greenMode3);
+  1875                           ;main.c: 313:                     DATAEE_WriteByte(24, greenMode3);
   1876   00E96A  0E00               	movlw	0
   1877   00E96C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1878   00E96E  0E18               	movlw	24
@@ -1904,7 +1904,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1880   00E972  C583  F503         	movff	main@greenMode3,DATAEE_WriteByte@bData
   1881   00E976  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1882   00E97A                     
-  1883                           ;main.c: 315:                     DATAEE_WriteByte(22, redMode3);
+  1883                           ;main.c: 314:                     DATAEE_WriteByte(22, redMode3);
   1884   00E97A  0E00               	movlw	0
   1885   00E97C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1886   00E97E  0E16               	movlw	22
@@ -1912,7 +1912,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1888   00E982  C582  F503         	movff	main@redMode3,DATAEE_WriteByte@bData
   1889   00E986  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1890   00E98A                     
-  1891                           ;main.c: 316:                     DATAEE_WriteByte(27, whiteMode3);
+  1891                           ;main.c: 315:                     DATAEE_WriteByte(27, whiteMode3);
   1892   00E98A  0E00               	movlw	0
   1893   00E98C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1894   00E98E  0E1B               	movlw	27
@@ -1920,7 +1920,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1896   00E992  C56E  F503         	movff	main@whiteMode3,DATAEE_WriteByte@bData
   1897   00E996  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1898   00E99A                     
-  1899                           ;main.c: 317:                     DATAEE_WriteByte(6, 69);
+  1899                           ;main.c: 316:                     DATAEE_WriteByte(6, 69);
   1900   00E99A  0E00               	movlw	0
   1901   00E99C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1902   00E99E  0E06               	movlw	6
@@ -1930,7 +1930,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1906   00E9A6  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1907   00E9AA                     l3142:
   1908                           
-  1909                           ;main.c: 320:                 if(led4Blink && !PORTBbits.RB7 && taster4Flag)
+  1909                           ;main.c: 319:                 if(led4Blink && !PORTBbits.RB7 && taster4Flag)
   1910   00E9AA  0105               	movlb	5	; () banked
   1911   00E9AC  518B               	movf	main@led4Blink& (0+255),w,b
   1912   00E9AE  B4D8               	btfsc	status,2,c
@@ -1958,25 +1958,25 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1934   00E9DA                     u3580:
   1935   00E9DA                     
   1936                           ; BSR set to: 5
-  1937                           ;main.c: 321:                 {;main.c: 322:                     redMode4 = red;
+  1937                           ;main.c: 320:                 {;main.c: 321:                     redMode4 = red;
   1938   00E9DA  C590  F585         	movff	main@red,main@redMode4
   1939                           
-  1940                           ;main.c: 323:                     greenMode4 = green;
+  1940                           ;main.c: 322:                     greenMode4 = green;
   1941   00E9DE  C591  F586         	movff	main@green,main@greenMode4
   1942                           
-  1943                           ;main.c: 324:                     blueMode4 = blue;
+  1943                           ;main.c: 323:                     blueMode4 = blue;
   1944   00E9E2  C592  F587         	movff	main@blue,main@blueMode4
   1945                           
-  1946                           ;main.c: 325:                     whiteMode4 = white;
+  1946                           ;main.c: 324:                     whiteMode4 = white;
   1947   00E9E6  C58F  F56F         	movff	main@white,main@whiteMode4
   1948   00E9EA                     
   1949                           ; BSR set to: 5
-  1950                           ;main.c: 326:                     led4Blink = 0;
+  1950                           ;main.c: 325:                     led4Blink = 0;
   1951   00E9EA  0E00               	movlw	0
   1952   00E9EC  6F8B               	movwf	main@led4Blink& (0+255),b
   1953   00E9EE                     
   1954                           ; BSR set to: 5
-  1955                           ;main.c: 327:                     DATAEE_WriteByte(32, blueMode4);
+  1955                           ;main.c: 326:                     DATAEE_WriteByte(32, blueMode4);
   1956   00E9EE  0E00               	movlw	0
   1957   00E9F0  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1958   00E9F2  0E20               	movlw	32
@@ -1984,7 +1984,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1960   00E9F6  C587  F503         	movff	main@blueMode4,DATAEE_WriteByte@bData
   1961   00E9FA  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1962   00E9FE                     
-  1963                           ;main.c: 328:                     DATAEE_WriteByte(31, greenMode4);
+  1963                           ;main.c: 327:                     DATAEE_WriteByte(31, greenMode4);
   1964   00E9FE  0E00               	movlw	0
   1965   00EA00  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1966   00EA02  0E1F               	movlw	31
@@ -1992,7 +1992,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1968   00EA06  C586  F503         	movff	main@greenMode4,DATAEE_WriteByte@bData
   1969   00EA0A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1970   00EA0E                     
-  1971                           ;main.c: 329:                     DATAEE_WriteByte(30, redMode4);
+  1971                           ;main.c: 328:                     DATAEE_WriteByte(30, redMode4);
   1972   00EA0E  0E00               	movlw	0
   1973   00EA10  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1974   00EA12  0E1E               	movlw	30
@@ -2000,7 +2000,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1976   00EA16  C585  F503         	movff	main@redMode4,DATAEE_WriteByte@bData
   1977   00EA1A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1978   00EA1E                     
-  1979                           ;main.c: 330:                     DATAEE_WriteByte(34, whiteMode4);
+  1979                           ;main.c: 329:                     DATAEE_WriteByte(34, whiteMode4);
   1980   00EA1E  0E00               	movlw	0
   1981   00EA20  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1982   00EA22  0E22               	movlw	34
@@ -2008,7 +2008,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1984   00EA26  C56F  F503         	movff	main@whiteMode4,DATAEE_WriteByte@bData
   1985   00EA2A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1986   00EA2E                     
-  1987                           ;main.c: 331:                     DATAEE_WriteByte(8, 69);
+  1987                           ;main.c: 330:                     DATAEE_WriteByte(8, 69);
   1988   00EA2E  0E00               	movlw	0
   1989   00EA30  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   1990   00EA32  0E08               	movlw	8
@@ -2018,7 +2018,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   1994   00EA3A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   1995   00EA3E                     l3162:
   1996                           
-  1997                           ;main.c: 336:                 if(PORTCbits.RC6)
+  1997                           ;main.c: 335:                 if(PORTCbits.RC6)
   1998   00EA3E  ACD0               	btfss	208,6,c	;volatile
   1999   00EA40  EF24  F075         	goto	u3591
   2000   00EA44  EF26  F075         	goto	u3590
@@ -2026,7 +2026,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2002   00EA48  EF2B  F075         	goto	l3166
   2003   00EA4C                     u3590:
   2004   00EA4C                     
-  2005                           ;main.c: 337:                 {;main.c: 338:                     timeout5sPressed1 = 0;
+  2005                           ;main.c: 336:                 {;main.c: 337:                     timeout5sPressed1 = 0;
   2006   00EA4C  0E00               	movlw	0
   2007   00EA4E  0105               	movlb	5	; () banked
   2008   00EA50  6F66               	movwf	(main@timeout5sPressed1+1)& (0+255),b
@@ -2034,7 +2034,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2010   00EA54  6F65               	movwf	main@timeout5sPressed1& (0+255),b
   2011   00EA56                     l3166:
   2012                           
-  2013                           ;main.c: 341:                 if(PORTAbits.RA4)
+  2013                           ;main.c: 340:                 if(PORTAbits.RA4)
   2014   00EA56  A8CE               	btfss	206,4,c	;volatile
   2015   00EA58  EF30  F075         	goto	u3601
   2016   00EA5C  EF32  F075         	goto	u3600
@@ -2042,7 +2042,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2018   00EA60  EF37  F075         	goto	l3170
   2019   00EA64                     u3600:
   2020   00EA64                     
-  2021                           ;main.c: 342:                 {;main.c: 343:                     timeout5sPressed2 = 0;
+  2021                           ;main.c: 341:                 {;main.c: 342:                     timeout5sPressed2 = 0;
   2022   00EA64  0E00               	movlw	0
   2023   00EA66  0105               	movlb	5	; () banked
   2024   00EA68  6F68               	movwf	(main@timeout5sPressed2+1)& (0+255),b
@@ -2050,7 +2050,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2026   00EA6C  6F67               	movwf	main@timeout5sPressed2& (0+255),b
   2027   00EA6E                     l3170:
   2028                           
-  2029                           ;main.c: 346:                 if(PORTCbits.RC4)
+  2029                           ;main.c: 345:                 if(PORTCbits.RC4)
   2030   00EA6E  A8D0               	btfss	208,4,c	;volatile
   2031   00EA70  EF3C  F075         	goto	u3611
   2032   00EA74  EF3E  F075         	goto	u3610
@@ -2058,7 +2058,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2034   00EA78  EF43  F075         	goto	l3174
   2035   00EA7C                     u3610:
   2036   00EA7C                     
-  2037                           ;main.c: 347:                 {;main.c: 348:                     timeout5sPressed3 = 0;
+  2037                           ;main.c: 346:                 {;main.c: 347:                     timeout5sPressed3 = 0;
   2038   00EA7C  0E00               	movlw	0
   2039   00EA7E  0105               	movlb	5	; () banked
   2040   00EA80  6F6A               	movwf	(main@timeout5sPressed3+1)& (0+255),b
@@ -2066,7 +2066,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2042   00EA84  6F69               	movwf	main@timeout5sPressed3& (0+255),b
   2043   00EA86                     l3174:
   2044                           
-  2045                           ;main.c: 351:                 if(PORTBbits.RB7)
+  2045                           ;main.c: 350:                 if(PORTBbits.RB7)
   2046   00EA86  AECF               	btfss	207,7,c	;volatile
   2047   00EA88  EF48  F075         	goto	u3621
   2048   00EA8C  EF4A  F075         	goto	u3620
@@ -2074,7 +2074,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2050   00EA90  EF78  F071         	goto	l2944
   2051   00EA94                     u3620:
   2052   00EA94                     
-  2053                           ;main.c: 352:                 {;main.c: 353:                     timeout5sPressed4 = 0;
+  2053                           ;main.c: 351:                 {;main.c: 352:                     timeout5sPressed4 = 0;
   2054   00EA94  0E00               	movlw	0
   2055   00EA96  0105               	movlb	5	; () banked
   2056   00EA98  6F6C               	movwf	(main@timeout5sPressed4+1)& (0+255),b
@@ -2084,7 +2084,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2060   00EAA2                     l396:
   2061                           
   2062                           ; BSR set to: 5
-  2063                           ;main.c: 361:                 if(PORTCbits.RC6)
+  2063                           ;main.c: 360:                 if(PORTCbits.RC6)
   2064   00EAA2  ACD0               	btfss	208,6,c	;volatile
   2065   00EAA4  EF56  F075         	goto	u3631
   2066   00EAA8  EF58  F075         	goto	u3630
@@ -2093,11 +2093,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2069   00EAB0                     u3630:
   2070   00EAB0                     
   2071                           ; BSR set to: 5
-  2072                           ;main.c: 362:                 {;main.c: 363:                     LATCbits.LATC7 = 1;
+  2072                           ;main.c: 361:                 {;main.c: 362:                     LATCbits.LATC7 = 1;
   2073   00EAB0  8EC0               	bsf	192,7,c	;volatile
   2074   00EAB2                     
   2075                           ; BSR set to: 5
-  2076                           ;main.c: 364:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+  2076                           ;main.c: 363:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
   2077   00EAB2  C58D  F50B         	movff	main@greenMode1,LED_WriteFull@green
   2078   00EAB6  C58E  F50C         	movff	main@blueMode1,LED_WriteFull@blue
   2079   00EABA  0E2C               	movlw	44
@@ -2109,13 +2109,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2085   00EAC6  518C               	movf	main@redMode1& (0+255),w,b
   2086   00EAC8  ECFF  F06D         	call	_LED_WriteFull
   2087   00EACC                     
-  2088                           ;main.c: 365:                     state = T1;
+  2088                           ;main.c: 364:                     state = T1;
   2089   00EACC  0E01               	movlw	1
   2090   00EACE  0105               	movlb	5	; () banked
   2091   00EAD0  6F93               	movwf	main@state& (0+255),b
   2092   00EAD2                     
   2093                           ; BSR set to: 5
-  2094                           ;main.c: 366:                     DATAEE_WriteByte(36, state);
+  2094                           ;main.c: 365:                     DATAEE_WriteByte(36, state);
   2095   00EAD2  0E00               	movlw	0
   2096   00EAD4  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2097   00EAD6  0E24               	movlw	36
@@ -2123,7 +2123,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2099   00EADA  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2100   00EADE  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2101   00EAE2                     
-  2102                           ;main.c: 367:                     DATAEE_WriteByte(2, 69);
+  2102                           ;main.c: 366:                     DATAEE_WriteByte(2, 69);
   2103   00EAE2  0E00               	movlw	0
   2104   00EAE4  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2105   00EAE6  0E02               	movlw	2
@@ -2133,7 +2133,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2109   00EAEE  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2110   00EAF2                     l3188:
   2111                           
-  2112                           ;main.c: 370:                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+  2112                           ;main.c: 369:                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
   2113   00EAF2  BCD0               	btfsc	208,6,c	;volatile
   2114   00EAF4  EF7E  F075         	goto	u3641
   2115   00EAF8  EF80  F075         	goto	u3640
@@ -2154,23 +2154,23 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2130   00EB1A                     u3650:
   2131   00EB1A                     
   2132                           ; BSR set to: 5
-  2133                           ;main.c: 371:                 {;main.c: 372:                     timeout5sPressed1 = 0;
+  2133                           ;main.c: 370:                 {;main.c: 371:                     timeout5sPressed1 = 0;
   2134   00EB1A  0E00               	movlw	0
   2135   00EB1C  6F66               	movwf	(main@timeout5sPressed1+1)& (0+255),b
   2136   00EB1E  0E00               	movlw	0
   2137   00EB20  6F65               	movwf	main@timeout5sPressed1& (0+255),b
   2138                           
-  2139                           ;main.c: 373:                     led1Blink = 1;
+  2139                           ;main.c: 372:                     led1Blink = 1;
   2140   00EB22  0E01               	movlw	1
   2141   00EB24  6F88               	movwf	main@led1Blink& (0+255),b
   2142                           
-  2143                           ;main.c: 374:                     state = MANUAL;
+  2143                           ;main.c: 373:                     state = MANUAL;
   2144   00EB26  0E00               	movlw	0
   2145   00EB28  6F93               	movwf	main@state& (0+255),b
   2146   00EB2A                     l3194:
   2147                           
   2148                           ; BSR set to: 5
-  2149                           ;main.c: 375:                     DATAEE_WriteByte(36, state);
+  2149                           ;main.c: 374:                     DATAEE_WriteByte(36, state);
   2150   00EB2A  0E00               	movlw	0
   2151   00EB2C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2152   00EB2E  0E24               	movlw	36
@@ -2178,7 +2178,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2154   00EB32  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2155   00EB36  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2156   00EB3A                     
-  2157                           ;main.c: 376:                     DATAEE_WriteByte(2, 69);
+  2157                           ;main.c: 375:                     DATAEE_WriteByte(2, 69);
   2158   00EB3A  0E00               	movlw	0
   2159   00EB3C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2160   00EB3E  0E02               	movlw	2
@@ -2190,7 +2190,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2166   00EB4E                     l399:
   2167                           
   2168                           ; BSR set to: 5
-  2169                           ;main.c: 384:                 if(PORTAbits.RA4)
+  2169                           ;main.c: 383:                 if(PORTAbits.RA4)
   2170   00EB4E  A8CE               	btfss	206,4,c	;volatile
   2171   00EB50  EFAC  F075         	goto	u3661
   2172   00EB54  EFAE  F075         	goto	u3660
@@ -2199,11 +2199,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2175   00EB5C                     u3660:
   2176   00EB5C                     
   2177                           ; BSR set to: 5
-  2178                           ;main.c: 385:                 {;main.c: 386:                     LATCbits.LATC5 = 1;
+  2178                           ;main.c: 384:                 {;main.c: 385:                     LATCbits.LATC5 = 1;
   2179   00EB5C  8AC0               	bsf	192,5,c	;volatile
   2180   00EB5E                     
   2181                           ; BSR set to: 5
-  2182                           ;main.c: 387:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+  2182                           ;main.c: 386:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
   2183   00EB5E  C580  F50B         	movff	main@greenMode2,LED_WriteFull@green
   2184   00EB62  C581  F50C         	movff	main@blueMode2,LED_WriteFull@blue
   2185   00EB66  0E2C               	movlw	44
@@ -2215,13 +2215,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2191   00EB72  517F               	movf	main@redMode2& (0+255),w,b
   2192   00EB74  ECFF  F06D         	call	_LED_WriteFull
   2193   00EB78                     
-  2194                           ;main.c: 388:                     state = T2;
+  2194                           ;main.c: 387:                     state = T2;
   2195   00EB78  0E02               	movlw	2
   2196   00EB7A  0105               	movlb	5	; () banked
   2197   00EB7C  6F93               	movwf	main@state& (0+255),b
   2198   00EB7E                     
   2199                           ; BSR set to: 5
-  2200                           ;main.c: 389:                     DATAEE_WriteByte(36, state);
+  2200                           ;main.c: 388:                     DATAEE_WriteByte(36, state);
   2201   00EB7E  0E00               	movlw	0
   2202   00EB80  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2203   00EB82  0E24               	movlw	36
@@ -2229,7 +2229,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2205   00EB86  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2206   00EB8A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2207   00EB8E                     
-  2208                           ;main.c: 390:                     DATAEE_WriteByte(2, 69);
+  2208                           ;main.c: 389:                     DATAEE_WriteByte(2, 69);
   2209   00EB8E  0E00               	movlw	0
   2210   00EB90  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2211   00EB92  0E02               	movlw	2
@@ -2239,7 +2239,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2215   00EB9A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2216   00EB9E                     l3208:
   2217                           
-  2218                           ;main.c: 393:                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+  2218                           ;main.c: 392:                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
   2219   00EB9E  B8CE               	btfsc	206,4,c	;volatile
   2220   00EBA0  EFD4  F075         	goto	u3671
   2221   00EBA4  EFD6  F075         	goto	u3670
@@ -2260,24 +2260,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2236   00EBC6                     u3680:
   2237   00EBC6                     
   2238                           ; BSR set to: 5
-  2239                           ;main.c: 394:                 {;main.c: 395:                     timeout5sPressed2 = 0;
+  2239                           ;main.c: 393:                 {;main.c: 394:                     timeout5sPressed2 = 0;
   2240   00EBC6  0E00               	movlw	0
   2241   00EBC8  6F68               	movwf	(main@timeout5sPressed2+1)& (0+255),b
   2242   00EBCA  0E00               	movlw	0
   2243   00EBCC  6F67               	movwf	main@timeout5sPressed2& (0+255),b
   2244                           
-  2245                           ;main.c: 396:                     led2Blink = 1;
+  2245                           ;main.c: 395:                     led2Blink = 1;
   2246   00EBCE  0E01               	movlw	1
   2247   00EBD0  6F89               	movwf	main@led2Blink& (0+255),b
   2248                           
-  2249                           ;main.c: 397:                     state = MANUAL;
+  2249                           ;main.c: 396:                     state = MANUAL;
   2250   00EBD2  0E00               	movlw	0
   2251   00EBD4  6F93               	movwf	main@state& (0+255),b
   2252   00EBD6  EF95  F075         	goto	l3194
   2253   00EBDA                     l402:
   2254                           
   2255                           ; BSR set to: 5
-  2256                           ;main.c: 406:                 if(PORTCbits.RC4)
+  2256                           ;main.c: 405:                 if(PORTCbits.RC4)
   2257   00EBDA  A8D0               	btfss	208,4,c	;volatile
   2258   00EBDC  EFF2  F075         	goto	u3691
   2259   00EBE0  EFF4  F075         	goto	u3690
@@ -2286,11 +2286,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2262   00EBE8                     u3690:
   2263   00EBE8                     
   2264                           ; BSR set to: 5
-  2265                           ;main.c: 407:                 {;main.c: 408:                     LATAbits.LATA5 = 1;
+  2265                           ;main.c: 406:                 {;main.c: 407:                     LATAbits.LATA5 = 1;
   2266   00EBE8  8ABE               	bsf	190,5,c	;volatile
   2267   00EBEA                     
   2268                           ; BSR set to: 5
-  2269                           ;main.c: 409:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+  2269                           ;main.c: 408:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
   2270   00EBEA  C583  F50B         	movff	main@greenMode3,LED_WriteFull@green
   2271   00EBEE  C584  F50C         	movff	main@blueMode3,LED_WriteFull@blue
   2272   00EBF2  0E2C               	movlw	44
@@ -2302,13 +2302,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2278   00EBFE  5182               	movf	main@redMode3& (0+255),w,b
   2279   00EC00  ECFF  F06D         	call	_LED_WriteFull
   2280   00EC04                     
-  2281                           ;main.c: 410:                     state = T3;
+  2281                           ;main.c: 409:                     state = T3;
   2282   00EC04  0E03               	movlw	3
   2283   00EC06  0105               	movlb	5	; () banked
   2284   00EC08  6F93               	movwf	main@state& (0+255),b
   2285   00EC0A                     
   2286                           ; BSR set to: 5
-  2287                           ;main.c: 411:                     DATAEE_WriteByte(36, state);
+  2287                           ;main.c: 410:                     DATAEE_WriteByte(36, state);
   2288   00EC0A  0E00               	movlw	0
   2289   00EC0C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2290   00EC0E  0E24               	movlw	36
@@ -2316,7 +2316,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2292   00EC12  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2293   00EC16  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2294   00EC1A                     
-  2295                           ;main.c: 412:                     DATAEE_WriteByte(2, 69);
+  2295                           ;main.c: 411:                     DATAEE_WriteByte(2, 69);
   2296   00EC1A  0E00               	movlw	0
   2297   00EC1C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2298   00EC1E  0E02               	movlw	2
@@ -2326,7 +2326,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2302   00EC26  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2303   00EC2A                     l3228:
   2304                           
-  2305                           ;main.c: 415:                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+  2305                           ;main.c: 414:                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
   2306   00EC2A  B8D0               	btfsc	208,4,c	;volatile
   2307   00EC2C  EF1A  F076         	goto	u3701
   2308   00EC30  EF1C  F076         	goto	u3700
@@ -2347,24 +2347,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2323   00EC52                     u3710:
   2324   00EC52                     
   2325                           ; BSR set to: 5
-  2326                           ;main.c: 416:                 {;main.c: 417:                     timeout5sPressed3 = 0;
+  2326                           ;main.c: 415:                 {;main.c: 416:                     timeout5sPressed3 = 0;
   2327   00EC52  0E00               	movlw	0
   2328   00EC54  6F6A               	movwf	(main@timeout5sPressed3+1)& (0+255),b
   2329   00EC56  0E00               	movlw	0
   2330   00EC58  6F69               	movwf	main@timeout5sPressed3& (0+255),b
   2331                           
-  2332                           ;main.c: 418:                     led3Blink = 1;
+  2332                           ;main.c: 417:                     led3Blink = 1;
   2333   00EC5A  0E01               	movlw	1
   2334   00EC5C  6F8A               	movwf	main@led3Blink& (0+255),b
   2335                           
-  2336                           ;main.c: 419:                     state = MANUAL;
+  2336                           ;main.c: 418:                     state = MANUAL;
   2337   00EC5E  0E00               	movlw	0
   2338   00EC60  6F93               	movwf	main@state& (0+255),b
   2339   00EC62  EF95  F075         	goto	l3194
   2340   00EC66                     l405:
   2341                           
   2342                           ; BSR set to: 5
-  2343                           ;main.c: 429:                 if(PORTBbits.RB7)
+  2343                           ;main.c: 428:                 if(PORTBbits.RB7)
   2344   00EC66  AECF               	btfss	207,7,c	;volatile
   2345   00EC68  EF38  F076         	goto	u3721
   2346   00EC6C  EF3A  F076         	goto	u3720
@@ -2373,11 +2373,11 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2349   00EC74                     u3720:
   2350   00EC74                     
   2351                           ; BSR set to: 5
-  2352                           ;main.c: 430:                 {;main.c: 431:                     LATCbits.LATC3 = 1;
+  2352                           ;main.c: 429:                 {;main.c: 430:                     LATCbits.LATC3 = 1;
   2353   00EC74  86C0               	bsf	192,3,c	;volatile
   2354   00EC76                     
   2355                           ; BSR set to: 5
-  2356                           ;main.c: 432:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+  2356                           ;main.c: 431:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
   2357   00EC76  C586  F50B         	movff	main@greenMode4,LED_WriteFull@green
   2358   00EC7A  C587  F50C         	movff	main@blueMode4,LED_WriteFull@blue
   2359   00EC7E  0E2C               	movlw	44
@@ -2389,13 +2389,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2365   00EC8A  5185               	movf	main@redMode4& (0+255),w,b
   2366   00EC8C  ECFF  F06D         	call	_LED_WriteFull
   2367   00EC90                     
-  2368                           ;main.c: 433:                     state = T4;
+  2368                           ;main.c: 432:                     state = T4;
   2369   00EC90  0E04               	movlw	4
   2370   00EC92  0105               	movlb	5	; () banked
   2371   00EC94  6F93               	movwf	main@state& (0+255),b
   2372   00EC96                     
   2373                           ; BSR set to: 5
-  2374                           ;main.c: 434:                     DATAEE_WriteByte(36, state);
+  2374                           ;main.c: 433:                     DATAEE_WriteByte(36, state);
   2375   00EC96  0E00               	movlw	0
   2376   00EC98  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2377   00EC9A  0E24               	movlw	36
@@ -2403,7 +2403,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2379   00EC9E  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2380   00ECA2  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2381   00ECA6                     
-  2382                           ;main.c: 435:                     DATAEE_WriteByte(2, 69);
+  2382                           ;main.c: 434:                     DATAEE_WriteByte(2, 69);
   2383   00ECA6  0E00               	movlw	0
   2384   00ECA8  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2385   00ECAA  0E02               	movlw	2
@@ -2413,7 +2413,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2389   00ECB2  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2390   00ECB6                     l3248:
   2391                           
-  2392                           ;main.c: 438:                 if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
+  2392                           ;main.c: 437:                 if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
   2393   00ECB6  BECF               	btfsc	207,7,c	;volatile
   2394   00ECB8  EF60  F076         	goto	u3731
   2395   00ECBC  EF62  F076         	goto	u3730
@@ -2434,24 +2434,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2410   00ECDE                     u3740:
   2411   00ECDE                     
   2412                           ; BSR set to: 5
-  2413                           ;main.c: 439:                 {;main.c: 440:                     timeout5sPressed4 = 0;
+  2413                           ;main.c: 438:                 {;main.c: 439:                     timeout5sPressed4 = 0;
   2414   00ECDE  0E00               	movlw	0
   2415   00ECE0  6F6C               	movwf	(main@timeout5sPressed4+1)& (0+255),b
   2416   00ECE2  0E00               	movlw	0
   2417   00ECE4  6F6B               	movwf	main@timeout5sPressed4& (0+255),b
   2418                           
-  2419                           ;main.c: 441:                     led4Blink = 1;
+  2419                           ;main.c: 440:                     led4Blink = 1;
   2420   00ECE6  0E01               	movlw	1
   2421   00ECE8  6F8B               	movwf	main@led4Blink& (0+255),b
   2422                           
-  2423                           ;main.c: 442:                     state = MANUAL;
+  2423                           ;main.c: 441:                     state = MANUAL;
   2424   00ECEA  0E00               	movlw	0
   2425   00ECEC  6F93               	movwf	main@state& (0+255),b
   2426   00ECEE  EF95  F075         	goto	l3194
   2427   00ECF2                     l408:
   2428                           
   2429                           ; BSR set to: 5
-  2430                           ;main.c: 453:                 if(PORTCbits.RC6)
+  2430                           ;main.c: 452:                 if(PORTCbits.RC6)
   2431   00ECF2  ACD0               	btfss	208,6,c	;volatile
   2432   00ECF4  EF7E  F076         	goto	u3751
   2433   00ECF8  EF80  F076         	goto	u3750
@@ -2460,16 +2460,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2436   00ED00                     u3750:
   2437   00ED00                     
   2438                           ; BSR set to: 5
-  2439                           ;main.c: 454:                 {;main.c: 455:                     LATCbits.LATC7 = 0;
+  2439                           ;main.c: 453:                 {;main.c: 454:                     LATCbits.LATC7 = 0;
   2440   00ED00  9EC0               	bcf	192,7,c	;volatile
   2441   00ED02                     
   2442                           ; BSR set to: 5
-  2443                           ;main.c: 456:                     state = MANUAL;
+  2443                           ;main.c: 455:                     state = MANUAL;
   2444   00ED02  0E00               	movlw	0
   2445   00ED04  6F93               	movwf	main@state& (0+255),b
   2446   00ED06                     
   2447                           ; BSR set to: 5
-  2448                           ;main.c: 457:                     DATAEE_WriteByte(36, state);
+  2448                           ;main.c: 456:                     DATAEE_WriteByte(36, state);
   2449   00ED06  0E00               	movlw	0
   2450   00ED08  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2451   00ED0A  0E24               	movlw	36
@@ -2477,7 +2477,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2453   00ED0E  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2454   00ED12  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2455   00ED16                     
-  2456                           ;main.c: 458:                     DATAEE_WriteByte(2, 69);
+  2456                           ;main.c: 457:                     DATAEE_WriteByte(2, 69);
   2457   00ED16  0E00               	movlw	0
   2458   00ED18  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2459   00ED1A  0E02               	movlw	2
@@ -2487,7 +2487,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2463   00ED22  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2464   00ED26                     l3266:
   2465                           
-  2466                           ;main.c: 461:                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+  2466                           ;main.c: 460:                 if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
   2467   00ED26  BCD0               	btfsc	208,6,c	;volatile
   2468   00ED28  EF98  F076         	goto	u3761
   2469   00ED2C  EF9A  F076         	goto	u3760
@@ -2508,24 +2508,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2484   00ED4E                     u3770:
   2485   00ED4E                     
   2486                           ; BSR set to: 5
-  2487                           ;main.c: 462:                 {;main.c: 463:                     timeout5sPressed1 = 0;
+  2487                           ;main.c: 461:                 {;main.c: 462:                     timeout5sPressed1 = 0;
   2488   00ED4E  0E00               	movlw	0
   2489   00ED50  6F66               	movwf	(main@timeout5sPressed1+1)& (0+255),b
   2490   00ED52  0E00               	movlw	0
   2491   00ED54  6F65               	movwf	main@timeout5sPressed1& (0+255),b
   2492                           
-  2493                           ;main.c: 464:                     led1StateBlink = 1;
+  2493                           ;main.c: 463:                     led1StateBlink = 1;
   2494   00ED56  0E01               	movlw	1
   2495   00ED58  6F70               	movwf	main@led1StateBlink& (0+255),b
   2496                           
-  2497                           ;main.c: 465:                     state = T1;
+  2497                           ;main.c: 464:                     state = T1;
   2498   00ED5A  0E01               	movlw	1
   2499   00ED5C  6F93               	movwf	main@state& (0+255),b
   2500   00ED5E  EF78  F071         	goto	l2944
   2501   00ED62                     l411:
   2502                           
   2503                           ; BSR set to: 5
-  2504                           ;main.c: 474:                 if(PORTAbits.RA4)
+  2504                           ;main.c: 473:                 if(PORTAbits.RA4)
   2505   00ED62  A8CE               	btfss	206,4,c	;volatile
   2506   00ED64  EFB6  F076         	goto	u3781
   2507   00ED68  EFB8  F076         	goto	u3780
@@ -2534,16 +2534,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2510   00ED70                     u3780:
   2511   00ED70                     
   2512                           ; BSR set to: 5
-  2513                           ;main.c: 475:                 {;main.c: 476:                     LATCbits.LATC5 = 0;
+  2513                           ;main.c: 474:                 {;main.c: 475:                     LATCbits.LATC5 = 0;
   2514   00ED70  9AC0               	bcf	192,5,c	;volatile
   2515   00ED72                     
   2516                           ; BSR set to: 5
-  2517                           ;main.c: 477:                     state = MANUAL;
+  2517                           ;main.c: 476:                     state = MANUAL;
   2518   00ED72  0E00               	movlw	0
   2519   00ED74  6F93               	movwf	main@state& (0+255),b
   2520   00ED76                     
   2521                           ; BSR set to: 5
-  2522                           ;main.c: 478:                     DATAEE_WriteByte(36, state);
+  2522                           ;main.c: 477:                     DATAEE_WriteByte(36, state);
   2523   00ED76  0E00               	movlw	0
   2524   00ED78  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2525   00ED7A  0E24               	movlw	36
@@ -2551,7 +2551,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2527   00ED7E  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2528   00ED82  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2529   00ED86                     
-  2530                           ;main.c: 479:                     DATAEE_WriteByte(2, 69);
+  2530                           ;main.c: 478:                     DATAEE_WriteByte(2, 69);
   2531   00ED86  0E00               	movlw	0
   2532   00ED88  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2533   00ED8A  0E02               	movlw	2
@@ -2561,7 +2561,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2537   00ED92  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2538   00ED96                     l3280:
   2539                           
-  2540                           ;main.c: 482:                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+  2540                           ;main.c: 481:                 if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
   2541   00ED96  B8CE               	btfsc	206,4,c	;volatile
   2542   00ED98  EFD0  F076         	goto	u3791
   2543   00ED9C  EFD2  F076         	goto	u3790
@@ -2582,24 +2582,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2558   00EDBE                     u3800:
   2559   00EDBE                     
   2560                           ; BSR set to: 5
-  2561                           ;main.c: 483:                 {;main.c: 484:                     timeout5sPressed2 = 0;
+  2561                           ;main.c: 482:                 {;main.c: 483:                     timeout5sPressed2 = 0;
   2562   00EDBE  0E00               	movlw	0
   2563   00EDC0  6F68               	movwf	(main@timeout5sPressed2+1)& (0+255),b
   2564   00EDC2  0E00               	movlw	0
   2565   00EDC4  6F67               	movwf	main@timeout5sPressed2& (0+255),b
   2566                           
-  2567                           ;main.c: 485:                     led2StateBlink = 1;
+  2567                           ;main.c: 484:                     led2StateBlink = 1;
   2568   00EDC6  0E01               	movlw	1
   2569   00EDC8  6F71               	movwf	main@led2StateBlink& (0+255),b
   2570                           
-  2571                           ;main.c: 486:                     state = T2;
+  2571                           ;main.c: 485:                     state = T2;
   2572   00EDCA  0E02               	movlw	2
   2573   00EDCC  6F93               	movwf	main@state& (0+255),b
   2574   00EDCE  EF78  F071         	goto	l2944
   2575   00EDD2                     l414:
   2576                           
   2577                           ; BSR set to: 5
-  2578                           ;main.c: 495:                 if(PORTCbits.RC4)
+  2578                           ;main.c: 494:                 if(PORTCbits.RC4)
   2579   00EDD2  A8D0               	btfss	208,4,c	;volatile
   2580   00EDD4  EFEE  F076         	goto	u3811
   2581   00EDD8  EFF0  F076         	goto	u3810
@@ -2608,16 +2608,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2584   00EDE0                     u3810:
   2585   00EDE0                     
   2586                           ; BSR set to: 5
-  2587                           ;main.c: 496:                 {;main.c: 497:                     LATAbits.LATA5 = 0;
+  2587                           ;main.c: 495:                 {;main.c: 496:                     LATAbits.LATA5 = 0;
   2588   00EDE0  9ABE               	bcf	190,5,c	;volatile
   2589   00EDE2                     
   2590                           ; BSR set to: 5
-  2591                           ;main.c: 498:                     state = MANUAL;
+  2591                           ;main.c: 497:                     state = MANUAL;
   2592   00EDE2  0E00               	movlw	0
   2593   00EDE4  6F93               	movwf	main@state& (0+255),b
   2594   00EDE6                     
   2595                           ; BSR set to: 5
-  2596                           ;main.c: 499:                     DATAEE_WriteByte(36, state);
+  2596                           ;main.c: 498:                     DATAEE_WriteByte(36, state);
   2597   00EDE6  0E00               	movlw	0
   2598   00EDE8  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2599   00EDEA  0E24               	movlw	36
@@ -2625,7 +2625,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2601   00EDEE  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2602   00EDF2  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2603   00EDF6                     
-  2604                           ;main.c: 500:                     DATAEE_WriteByte(2, 69);
+  2604                           ;main.c: 499:                     DATAEE_WriteByte(2, 69);
   2605   00EDF6  0E00               	movlw	0
   2606   00EDF8  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2607   00EDFA  0E02               	movlw	2
@@ -2635,7 +2635,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2611   00EE02  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2612   00EE06                     l3294:
   2613                           
-  2614                           ;main.c: 503:                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+  2614                           ;main.c: 502:                 if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
   2615   00EE06  B8D0               	btfsc	208,4,c	;volatile
   2616   00EE08  EF08  F077         	goto	u3821
   2617   00EE0C  EF0A  F077         	goto	u3820
@@ -2656,24 +2656,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2632   00EE2E                     u3830:
   2633   00EE2E                     
   2634                           ; BSR set to: 5
-  2635                           ;main.c: 504:                 {;main.c: 505:                     timeout5sPressed3 = 0;
+  2635                           ;main.c: 503:                 {;main.c: 504:                     timeout5sPressed3 = 0;
   2636   00EE2E  0E00               	movlw	0
   2637   00EE30  6F6A               	movwf	(main@timeout5sPressed3+1)& (0+255),b
   2638   00EE32  0E00               	movlw	0
   2639   00EE34  6F69               	movwf	main@timeout5sPressed3& (0+255),b
   2640                           
-  2641                           ;main.c: 506:                     led3StateBlink = 1;
+  2641                           ;main.c: 505:                     led3StateBlink = 1;
   2642   00EE36  0E01               	movlw	1
   2643   00EE38  6F72               	movwf	main@led3StateBlink& (0+255),b
   2644                           
-  2645                           ;main.c: 507:                     state = T3;
+  2645                           ;main.c: 506:                     state = T3;
   2646   00EE3A  0E03               	movlw	3
   2647   00EE3C  6F93               	movwf	main@state& (0+255),b
   2648   00EE3E  EF78  F071         	goto	l2944
   2649   00EE42                     l417:
   2650                           
   2651                           ; BSR set to: 5
-  2652                           ;main.c: 516:                 if(PORTBbits.RB7)
+  2652                           ;main.c: 515:                 if(PORTBbits.RB7)
   2653   00EE42  AECF               	btfss	207,7,c	;volatile
   2654   00EE44  EF26  F077         	goto	u3841
   2655   00EE48  EF28  F077         	goto	u3840
@@ -2682,16 +2682,16 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2658   00EE50                     u3840:
   2659   00EE50                     
   2660                           ; BSR set to: 5
-  2661                           ;main.c: 517:                 {;main.c: 518:                     LATCbits.LATC3 = 0;
+  2661                           ;main.c: 516:                 {;main.c: 517:                     LATCbits.LATC3 = 0;
   2662   00EE50  96C0               	bcf	192,3,c	;volatile
   2663   00EE52                     
   2664                           ; BSR set to: 5
-  2665                           ;main.c: 519:                     state = MANUAL;
+  2665                           ;main.c: 518:                     state = MANUAL;
   2666   00EE52  0E00               	movlw	0
   2667   00EE54  6F93               	movwf	main@state& (0+255),b
   2668   00EE56                     
   2669                           ; BSR set to: 5
-  2670                           ;main.c: 520:                     DATAEE_WriteByte(36, state);
+  2670                           ;main.c: 519:                     DATAEE_WriteByte(36, state);
   2671   00EE56  0E00               	movlw	0
   2672   00EE58  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2673   00EE5A  0E24               	movlw	36
@@ -2699,7 +2699,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2675   00EE5E  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   2676   00EE62  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2677   00EE66                     
-  2678                           ;main.c: 521:                     DATAEE_WriteByte(2, 69);
+  2678                           ;main.c: 520:                     DATAEE_WriteByte(2, 69);
   2679   00EE66  0E00               	movlw	0
   2680   00EE68  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2681   00EE6A  0E02               	movlw	2
@@ -2709,7 +2709,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2685   00EE72  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2686   00EE76                     l3308:
   2687                           
-  2688                           ;main.c: 524:                 if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
+  2688                           ;main.c: 523:                 if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
   2689   00EE76  BECF               	btfsc	207,7,c	;volatile
   2690   00EE78  EF40  F077         	goto	u3851
   2691   00EE7C  EF42  F077         	goto	u3850
@@ -2730,24 +2730,24 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2706   00EE9E                     u3860:
   2707   00EE9E                     
   2708                           ; BSR set to: 5
-  2709                           ;main.c: 525:                 {;main.c: 526:                     timeout5sPressed4 = 0;
+  2709                           ;main.c: 524:                 {;main.c: 525:                     timeout5sPressed4 = 0;
   2710   00EE9E  0E00               	movlw	0
   2711   00EEA0  6F6C               	movwf	(main@timeout5sPressed4+1)& (0+255),b
   2712   00EEA2  0E00               	movlw	0
   2713   00EEA4  6F6B               	movwf	main@timeout5sPressed4& (0+255),b
   2714                           
-  2715                           ;main.c: 527:                     led4StateBlink = 1;
+  2715                           ;main.c: 526:                     led4StateBlink = 1;
   2716   00EEA6  0E01               	movlw	1
   2717   00EEA8  6F73               	movwf	main@led4StateBlink& (0+255),b
   2718                           
-  2719                           ;main.c: 528:                     state = T4;
+  2719                           ;main.c: 527:                     state = T4;
   2720   00EEAA  0E04               	movlw	4
   2721   00EEAC  6F93               	movwf	main@state& (0+255),b
   2722   00EEAE  EF78  F071         	goto	l2944
   2723   00EEB2                     l3314:
   2724                           
   2725                           ; BSR set to: 5
-  2726                           ;main.c: 537:                 LED_WriteFull(redMode1,greenMode1,blueMode1, 300);
+  2726                           ;main.c: 536:                 LED_WriteFull(redMode1,greenMode1,blueMode1, 300);
   2727   00EEB2  C58D  F50B         	movff	main@greenMode1,LED_WriteFull@green
   2728   00EEB6  C58E  F50C         	movff	main@blueMode1,LED_WriteFull@blue
   2729   00EEBA  0E2C               	movlw	44
@@ -2759,7 +2759,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2735   00EEC6  518C               	movf	main@redMode1& (0+255),w,b
   2736   00EEC8  ECFF  F06D         	call	_LED_WriteFull
   2737   00EECC                     
-  2738                           ;main.c: 541:                 if(led1StateBlink && (++timeout250ms == 12))
+  2738                           ;main.c: 540:                 if(led1StateBlink && (++timeout250ms == 12))
   2739   00EECC  0105               	movlb	5	; () banked
   2740   00EECE  5170               	movf	main@led1StateBlink& (0+255),w,b
   2741   00EED0  B4D8               	btfsc	status,2,c
@@ -2781,12 +2781,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2757   00EEF2                     u3880:
   2758   00EEF2                     
   2759                           ; BSR set to: 5
-  2760                           ;main.c: 542:                 {;main.c: 543:                     timeout250ms = 0;
+  2760                           ;main.c: 541:                 {;main.c: 542:                     timeout250ms = 0;
   2761   00EEF2  0E00               	movlw	0
   2762   00EEF4  6F74               	movwf	main@timeout250ms& (0+255),b
   2763   00EEF6                     
   2764                           ; BSR set to: 5
-  2765                           ;main.c: 544:                     LATCbits.LATC7 = !LATCbits.LATC7;
+  2765                           ;main.c: 543:                     LATCbits.LATC7 = !LATCbits.LATC7;
   2766   00EEF6  AEC0               	btfss	192,7,c	;volatile
   2767   00EEF8  EF80  F077         	goto	u3891
   2768   00EEFC  EF84  F077         	goto	u3890
@@ -2806,7 +2806,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2782   00EF16  6EC0               	movwf	192,c	;volatile
   2783   00EF18                     l3324:
   2784                           
-  2785                           ;main.c: 547:                 if(!PORTCbits.RC6 && taster1Flag && !led1StateBlink)
+  2785                           ;main.c: 546:                 if(!PORTCbits.RC6 && taster1Flag && !led1StateBlink)
   2786   00EF18  BCD0               	btfsc	208,6,c	;volatile
   2787   00EF1A  EF91  F077         	goto	u3911
   2788   00EF1E  EF93  F077         	goto	u3910
@@ -2832,12 +2832,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2808   00EF48                     u3930:
   2809   00EF48                     
   2810                           ; BSR set to: 5
-  2811                           ;main.c: 548:                 {;main.c: 549:                     state = T1StateDummy;
+  2811                           ;main.c: 547:                 {;main.c: 548:                     state = T1StateDummy;
   2812   00EF48  0E09               	movlw	9
   2813   00EF4A  6F93               	movwf	main@state& (0+255),b
   2814   00EF4C                     l3332:
   2815                           
-  2816                           ;main.c: 552:                 if(!PORTCbits.RC6 && taster1Flag && led1StateBlink)
+  2816                           ;main.c: 551:                 if(!PORTCbits.RC6 && taster1Flag && led1StateBlink)
   2817   00EF4C  BCD0               	btfsc	208,6,c	;volatile
   2818   00EF4E  EFAB  F077         	goto	u3941
   2819   00EF52  EFAD  F077         	goto	u3940
@@ -2863,32 +2863,32 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2839   00EF7C                     u3960:
   2840   00EF7C                     
   2841                           ; BSR set to: 5
-  2842                           ;main.c: 553:                 {;main.c: 554:                     LATCbits.LATC7 = 1;
+  2842                           ;main.c: 552:                 {;main.c: 553:                     LATCbits.LATC7 = 1;
   2843   00EF7C  8EC0               	bsf	192,7,c	;volatile
   2844   00EF7E                     
   2845                           ; BSR set to: 5
-  2846                           ;main.c: 555:                     led1StateBlink = 0;
+  2846                           ;main.c: 554:                     led1StateBlink = 0;
   2847   00EF7E  0E00               	movlw	0
   2848   00EF80  6F70               	movwf	main@led1StateBlink& (0+255),b
   2849                           
-  2850                           ;main.c: 556:                     redAdj = 0;
+  2850                           ;main.c: 555:                     redAdj = 0;
   2851   00EF82  0E00               	movlw	0
   2852   00EF84  6F76               	movwf	main@redAdj& (0+255),b
   2853                           
-  2854                           ;main.c: 557:                     greenAdj = 0;
+  2854                           ;main.c: 556:                     greenAdj = 0;
   2855   00EF86  0E00               	movlw	0
   2856   00EF88  6F77               	movwf	main@greenAdj& (0+255),b
   2857                           
-  2858                           ;main.c: 558:                     blueAdj = 0;
+  2858                           ;main.c: 557:                     blueAdj = 0;
   2859   00EF8A  0E00               	movlw	0
   2860   00EF8C  6F78               	movwf	main@blueAdj& (0+255),b
   2861                           
-  2862                           ;main.c: 559:                     whiteAdj = 0;
+  2862                           ;main.c: 558:                     whiteAdj = 0;
   2863   00EF8E  0E00               	movlw	0
   2864   00EF90  6F79               	movwf	main@whiteAdj& (0+255),b
   2865   00EF92                     
   2866                           ; BSR set to: 5
-  2867                           ;main.c: 560:                     DATAEE_WriteByte(15, blueMode1);
+  2867                           ;main.c: 559:                     DATAEE_WriteByte(15, blueMode1);
   2868   00EF92  0E00               	movlw	0
   2869   00EF94  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2870   00EF96  0E0F               	movlw	15
@@ -2896,7 +2896,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2872   00EF9A  C58E  F503         	movff	main@blueMode1,DATAEE_WriteByte@bData
   2873   00EF9E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2874   00EFA2                     
-  2875                           ;main.c: 561:                     DATAEE_WriteByte(12, greenMode1);
+  2875                           ;main.c: 560:                     DATAEE_WriteByte(12, greenMode1);
   2876   00EFA2  0E00               	movlw	0
   2877   00EFA4  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2878   00EFA6  0E0C               	movlw	12
@@ -2904,7 +2904,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2880   00EFAA  C58D  F503         	movff	main@greenMode1,DATAEE_WriteByte@bData
   2881   00EFAE  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2882   00EFB2                     
-  2883                           ;main.c: 562:                     DATAEE_WriteByte(11, redMode1);
+  2883                           ;main.c: 561:                     DATAEE_WriteByte(11, redMode1);
   2884   00EFB2  0E00               	movlw	0
   2885   00EFB4  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2886   00EFB6  0E0B               	movlw	11
@@ -2912,7 +2912,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2888   00EFBA  C58C  F503         	movff	main@redMode1,DATAEE_WriteByte@bData
   2889   00EFBE  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2890   00EFC2                     
-  2891                           ;main.c: 563:                     DATAEE_WriteByte(17, whiteMode1);
+  2891                           ;main.c: 562:                     DATAEE_WriteByte(17, whiteMode1);
   2892   00EFC2  0E00               	movlw	0
   2893   00EFC4  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2894   00EFC6  0E11               	movlw	17
@@ -2920,7 +2920,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2896   00EFCA  C57E  F503         	movff	main@whiteMode1,DATAEE_WriteByte@bData
   2897   00EFCE  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2898   00EFD2                     
-  2899                           ;main.c: 564:                     DATAEE_WriteByte(3, 69);
+  2899                           ;main.c: 563:                     DATAEE_WriteByte(3, 69);
   2900   00EFD2  0E00               	movlw	0
   2901   00EFD4  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   2902   00EFD6  0E03               	movlw	3
@@ -2930,7 +2930,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2906   00EFDE  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   2907   00EFE2                     l3352:
   2908                           
-  2909                           ;main.c: 567:                 if(led1StateBlink)
+  2909                           ;main.c: 566:                 if(led1StateBlink)
   2910   00EFE2  0105               	movlb	5	; () banked
   2911   00EFE4  5170               	movf	main@led1StateBlink& (0+255),w,b
   2912   00EFE6  B4D8               	btfsc	status,2,c
@@ -2941,7 +2941,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2917   00EFF4                     u3970:
   2918   00EFF4                     
   2919                           ; BSR set to: 5
-  2920                           ;main.c: 568:                 {;main.c: 569:                     if((red >= (redMode1 - 
+  2920                           ;main.c: 567:                 {;main.c: 568:                     if((red >= (redMode1 - 
       +                          5) && red <= redMode1 + 5))
   2921   00EFF4  0EFB               	movlw	251
   2922   00EFF6  258C               	addwf	main@redMode1& (0+255),w,b
@@ -2994,13 +2994,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2969   00F056                     u3990:
   2970   00F056                     
   2971                           ; BSR set to: 5
-  2972                           ;main.c: 570:                     {;main.c: 571:                         redAdj = 1;
+  2972                           ;main.c: 569:                     {;main.c: 570:                         redAdj = 1;
   2973   00F056  0E01               	movlw	1
   2974   00F058  6F76               	movwf	main@redAdj& (0+255),b
   2975   00F05A                     l425:
   2976                           
   2977                           ; BSR set to: 5
-  2978                           ;main.c: 574:                     if(redAdj)
+  2978                           ;main.c: 573:                     if(redAdj)
   2979   00F05A  5176               	movf	main@redAdj& (0+255),w,b
   2980   00F05C  B4D8               	btfsc	status,2,c
   2981   00F05E  EF33  F078         	goto	u4001
@@ -3010,12 +3010,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   2985   00F06A                     u4000:
   2986   00F06A                     
   2987                           ; BSR set to: 5
-  2988                           ;main.c: 575:                     {;main.c: 576:                         redMode1 = red;
+  2988                           ;main.c: 574:                     {;main.c: 575:                         redMode1 = red;
   2989   00F06A  C590  F58C         	movff	main@red,main@redMode1
   2990   00F06E                     l3362:
   2991                           
   2992                           ; BSR set to: 5
-  2993                           ;main.c: 579:                     if((white >= (whiteMode1 - 5) && white <= whiteMode1 +
+  2993                           ;main.c: 578:                     if((white >= (whiteMode1 - 5) && white <= whiteMode1 +
       +                           5))
   2994   00F06E  0EFB               	movlw	251
   2995   00F070  257E               	addwf	main@whiteMode1& (0+255),w,b
@@ -3068,13 +3068,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3042   00F0D0                     u4020:
   3043   00F0D0                     
   3044                           ; BSR set to: 5
-  3045                           ;main.c: 580:                     {;main.c: 581:                         whiteAdj = 1;
+  3045                           ;main.c: 579:                     {;main.c: 580:                         whiteAdj = 1;
   3046   00F0D0  0E01               	movlw	1
   3047   00F0D2  6F79               	movwf	main@whiteAdj& (0+255),b
   3048   00F0D4                     l427:
   3049                           
   3050                           ; BSR set to: 5
-  3051                           ;main.c: 584:                     if(whiteAdj)
+  3051                           ;main.c: 583:                     if(whiteAdj)
   3052   00F0D4  5179               	movf	main@whiteAdj& (0+255),w,b
   3053   00F0D6  B4D8               	btfsc	status,2,c
   3054   00F0D8  EF70  F078         	goto	u4031
@@ -3084,13 +3084,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3058   00F0E4                     u4030:
   3059   00F0E4                     
   3060                           ; BSR set to: 5
-  3061                           ;main.c: 585:                     {;main.c: 586:                         whiteMode1 = wh
+  3061                           ;main.c: 584:                     {;main.c: 585:                         whiteMode1 = wh
       +                          ite;
   3062   00F0E4  C58F  F57E         	movff	main@white,main@whiteMode1
   3063   00F0E8                     l3370:
   3064                           
   3065                           ; BSR set to: 5
-  3066                           ;main.c: 589:                     if((green >= (greenMode1 - 5) && green <= greenMode1 +
+  3066                           ;main.c: 588:                     if((green >= (greenMode1 - 5) && green <= greenMode1 +
       +                           5))
   3067   00F0E8  0EFB               	movlw	251
   3068   00F0EA  258D               	addwf	main@greenMode1& (0+255),w,b
@@ -3143,13 +3143,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3115   00F14A                     u4050:
   3116   00F14A                     
   3117                           ; BSR set to: 5
-  3118                           ;main.c: 590:                     {;main.c: 591:                        greenAdj = 1;
+  3118                           ;main.c: 589:                     {;main.c: 590:                        greenAdj = 1;
   3119   00F14A  0E01               	movlw	1
   3120   00F14C  6F77               	movwf	main@greenAdj& (0+255),b
   3121   00F14E                     l429:
   3122                           
   3123                           ; BSR set to: 5
-  3124                           ;main.c: 594:                     if(greenAdj)
+  3124                           ;main.c: 593:                     if(greenAdj)
   3125   00F14E  5177               	movf	main@greenAdj& (0+255),w,b
   3126   00F150  B4D8               	btfsc	status,2,c
   3127   00F152  EFAD  F078         	goto	u4061
@@ -3159,13 +3159,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3131   00F15E                     u4060:
   3132   00F15E                     
   3133                           ; BSR set to: 5
-  3134                           ;main.c: 595:                     {;main.c: 596:                         greenMode1 = gr
+  3134                           ;main.c: 594:                     {;main.c: 595:                         greenMode1 = gr
       +                          een;
   3135   00F15E  C591  F58D         	movff	main@green,main@greenMode1
   3136   00F162                     l3378:
   3137                           
   3138                           ; BSR set to: 5
-  3139                           ;main.c: 599:                     if((blue >= (blueMode1 - 5) && blue <= blueMode1 + 5))
+  3139                           ;main.c: 598:                     if((blue >= (blueMode1 - 5) && blue <= blueMode1 + 5))
   3140   00F162  0EFB               	movlw	251
   3141   00F164  258E               	addwf	main@blueMode1& (0+255),w,b
   3142   00F166  6E2F               	movwf	??_main^(0+1280),c
@@ -3217,13 +3217,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3188   00F1C4                     u4080:
   3189   00F1C4                     
   3190                           ; BSR set to: 5
-  3191                           ;main.c: 600:                     {;main.c: 601:                         blueAdj = 1;
+  3191                           ;main.c: 599:                     {;main.c: 600:                         blueAdj = 1;
   3192   00F1C4  0E01               	movlw	1
   3193   00F1C6  6F78               	movwf	main@blueAdj& (0+255),b
   3194   00F1C8                     l431:
   3195                           
   3196                           ; BSR set to: 5
-  3197                           ;main.c: 604:                     if(blueAdj)
+  3197                           ;main.c: 603:                     if(blueAdj)
   3198   00F1C8  5178               	movf	main@blueAdj& (0+255),w,b
   3199   00F1CA  B4D8               	btfsc	status,2,c
   3200   00F1CC  EFEA  F078         	goto	u4091
@@ -3233,13 +3233,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3204   00F1D8                     u4090:
   3205   00F1D8                     
   3206                           ; BSR set to: 5
-  3207                           ;main.c: 605:                     {;main.c: 606:                         blueMode1 = blu
+  3207                           ;main.c: 604:                     {;main.c: 605:                         blueMode1 = blu
       +                          e;
   3208   00F1D8  C592  F58E         	movff	main@blue,main@blueMode1
   3209   00F1DC                     l424:
   3210                           
   3211                           ; BSR set to: 5
-  3212                           ;main.c: 612:                 if(!PORTAbits.RA4 && taster2Flag)
+  3212                           ;main.c: 611:                 if(!PORTAbits.RA4 && taster2Flag)
   3213   00F1DC  B8CE               	btfsc	206,4,c	;volatile
   3214   00F1DE  EFF3  F078         	goto	u4101
   3215   00F1E2  EFF5  F078         	goto	u4100
@@ -3257,14 +3257,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3227   00F1FA                     u4110:
   3228   00F1FA                     
   3229                           ; BSR set to: 5
-  3230                           ;main.c: 613:                 {;main.c: 614:                     LATCbits.LATC7 = 0;
+  3230                           ;main.c: 612:                 {;main.c: 613:                     LATCbits.LATC7 = 0;
   3231   00F1FA  9EC0               	bcf	192,7,c	;volatile
   3232                           
-  3233                           ;main.c: 615:                     LATCbits.LATC5 = 1;
+  3233                           ;main.c: 614:                     LATCbits.LATC5 = 1;
   3234   00F1FC  8AC0               	bsf	192,5,c	;volatile
   3235   00F1FE                     
   3236                           ; BSR set to: 5
-  3237                           ;main.c: 616:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+  3237                           ;main.c: 615:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
   3238   00F1FE  C580  F50B         	movff	main@greenMode2,LED_WriteFull@green
   3239   00F202  C581  F50C         	movff	main@blueMode2,LED_WriteFull@blue
   3240   00F206  0E2C               	movlw	44
@@ -3276,13 +3276,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3246   00F212  517F               	movf	main@redMode2& (0+255),w,b
   3247   00F214  ECFF  F06D         	call	_LED_WriteFull
   3248   00F218                     
-  3249                           ;main.c: 617:                     state = T2;
+  3249                           ;main.c: 616:                     state = T2;
   3250   00F218  0E02               	movlw	2
   3251   00F21A  0105               	movlb	5	; () banked
   3252   00F21C  6F93               	movwf	main@state& (0+255),b
   3253   00F21E                     
   3254                           ; BSR set to: 5
-  3255                           ;main.c: 618:                     DATAEE_WriteByte(36, state);
+  3255                           ;main.c: 617:                     DATAEE_WriteByte(36, state);
   3256   00F21E  0E00               	movlw	0
   3257   00F220  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3258   00F222  0E24               	movlw	36
@@ -3290,7 +3290,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3260   00F226  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   3261   00F22A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3262   00F22E                     
-  3263                           ;main.c: 619:                     DATAEE_WriteByte(2, 69);
+  3263                           ;main.c: 618:                     DATAEE_WriteByte(2, 69);
   3264   00F22E  0E00               	movlw	0
   3265   00F230  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3266   00F232  0E02               	movlw	2
@@ -3300,7 +3300,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3270   00F23A  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3271   00F23E                     l3398:
   3272                           
-  3273                           ;main.c: 622:                 if(!PORTCbits.RC4 && taster3Flag)
+  3273                           ;main.c: 621:                 if(!PORTCbits.RC4 && taster3Flag)
   3274   00F23E  B8D0               	btfsc	208,4,c	;volatile
   3275   00F240  EF24  F079         	goto	u4121
   3276   00F244  EF26  F079         	goto	u4120
@@ -3317,14 +3317,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3287   00F25E                     u4130:
   3288   00F25E                     
   3289                           ; BSR set to: 5
-  3290                           ;main.c: 623:                 {;main.c: 624:                     LATCbits.LATC7 = 0;
+  3290                           ;main.c: 622:                 {;main.c: 623:                     LATCbits.LATC7 = 0;
   3291   00F25E  9EC0               	bcf	192,7,c	;volatile
   3292                           
-  3293                           ;main.c: 625:                     LATAbits.LATA5 = 1;
+  3293                           ;main.c: 624:                     LATAbits.LATA5 = 1;
   3294   00F260  8ABE               	bsf	190,5,c	;volatile
   3295   00F262                     
   3296                           ; BSR set to: 5
-  3297                           ;main.c: 626:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+  3297                           ;main.c: 625:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
   3298   00F262  C583  F50B         	movff	main@greenMode3,LED_WriteFull@green
   3299   00F266  C584  F50C         	movff	main@blueMode3,LED_WriteFull@blue
   3300   00F26A  0E2C               	movlw	44
@@ -3336,13 +3336,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3306   00F276  5182               	movf	main@redMode3& (0+255),w,b
   3307   00F278  ECFF  F06D         	call	_LED_WriteFull
   3308   00F27C                     
-  3309                           ;main.c: 627:                     state = T3 ;
+  3309                           ;main.c: 626:                     state = T3 ;
   3310   00F27C  0E03               	movlw	3
   3311   00F27E  0105               	movlb	5	; () banked
   3312   00F280  6F93               	movwf	main@state& (0+255),b
   3313   00F282                     
   3314                           ; BSR set to: 5
-  3315                           ;main.c: 628:                     DATAEE_WriteByte(36, state);
+  3315                           ;main.c: 627:                     DATAEE_WriteByte(36, state);
   3316   00F282  0E00               	movlw	0
   3317   00F284  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3318   00F286  0E24               	movlw	36
@@ -3350,7 +3350,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3320   00F28A  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   3321   00F28E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3322   00F292                     
-  3323                           ;main.c: 629:                     DATAEE_WriteByte(2, 69);
+  3323                           ;main.c: 628:                     DATAEE_WriteByte(2, 69);
   3324   00F292  0E00               	movlw	0
   3325   00F294  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3326   00F296  0E02               	movlw	2
@@ -3360,7 +3360,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3330   00F29E  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3331   00F2A2                     l3412:
   3332                           
-  3333                           ;main.c: 632:                 if(!PORTBbits.RB7 && taster4Flag)
+  3333                           ;main.c: 631:                 if(!PORTBbits.RB7 && taster4Flag)
   3334   00F2A2  BECF               	btfsc	207,7,c	;volatile
   3335   00F2A4  EF56  F079         	goto	u4141
   3336   00F2A8  EF58  F079         	goto	u4140
@@ -3377,14 +3377,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3347   00F2C2                     u4150:
   3348   00F2C2                     
   3349                           ; BSR set to: 5
-  3350                           ;main.c: 633:                 {;main.c: 634:                     LATCbits.LATC7 = 0;
+  3350                           ;main.c: 632:                 {;main.c: 633:                     LATCbits.LATC7 = 0;
   3351   00F2C2  9EC0               	bcf	192,7,c	;volatile
   3352                           
-  3353                           ;main.c: 635:                     LATCbits.LATC3 = 1;
+  3353                           ;main.c: 634:                     LATCbits.LATC3 = 1;
   3354   00F2C4  86C0               	bsf	192,3,c	;volatile
   3355   00F2C6                     
   3356                           ; BSR set to: 5
-  3357                           ;main.c: 636:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+  3357                           ;main.c: 635:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
   3358   00F2C6  C586  F50B         	movff	main@greenMode4,LED_WriteFull@green
   3359   00F2CA  C587  F50C         	movff	main@blueMode4,LED_WriteFull@blue
   3360   00F2CE  0E2C               	movlw	44
@@ -3397,7 +3397,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3367   00F2DC  ECFF  F06D         	call	_LED_WriteFull
   3368   00F2E0                     l3420:
   3369                           
-  3370                           ;main.c: 637:                     state = T4 ;
+  3370                           ;main.c: 636:                     state = T4 ;
   3371   00F2E0  0E04               	movlw	4
   3372   00F2E2  0105               	movlb	5	; () banked
   3373   00F2E4  6F93               	movwf	main@state& (0+255),b
@@ -3405,7 +3405,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3375   00F2EA                     l3426:
   3376                           
   3377                           ; BSR set to: 5
-  3378                           ;main.c: 650:                 LED_WriteFull(redMode2,greenMode2,blueMode2, 300);
+  3378                           ;main.c: 649:                 LED_WriteFull(redMode2,greenMode2,blueMode2, 300);
   3379   00F2EA  C580  F50B         	movff	main@greenMode2,LED_WriteFull@green
   3380   00F2EE  C581  F50C         	movff	main@blueMode2,LED_WriteFull@blue
   3381   00F2F2  0E2C               	movlw	44
@@ -3417,7 +3417,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3387   00F2FE  517F               	movf	main@redMode2& (0+255),w,b
   3388   00F300  ECFF  F06D         	call	_LED_WriteFull
   3389   00F304                     
-  3390                           ;main.c: 654:                 if(led2StateBlink && (++timeout250ms == 12))
+  3390                           ;main.c: 653:                 if(led2StateBlink && (++timeout250ms == 12))
   3391   00F304  0105               	movlb	5	; () banked
   3392   00F306  5171               	movf	main@led2StateBlink& (0+255),w,b
   3393   00F308  B4D8               	btfsc	status,2,c
@@ -3439,12 +3439,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3409   00F32A                     u4170:
   3410   00F32A                     
   3411                           ; BSR set to: 5
-  3412                           ;main.c: 655:                 {;main.c: 656:                     timeout250ms = 0;
+  3412                           ;main.c: 654:                 {;main.c: 655:                     timeout250ms = 0;
   3413   00F32A  0E00               	movlw	0
   3414   00F32C  6F74               	movwf	main@timeout250ms& (0+255),b
   3415   00F32E                     
   3416                           ; BSR set to: 5
-  3417                           ;main.c: 657:                     LATCbits.LATC5 = !LATCbits.LATC5;
+  3417                           ;main.c: 656:                     LATCbits.LATC5 = !LATCbits.LATC5;
   3418   00F32E  AAC0               	btfss	192,5,c	;volatile
   3419   00F330  EF9C  F079         	goto	u4181
   3420   00F334  EFA0  F079         	goto	u4180
@@ -3464,7 +3464,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3434   00F34E  6EC0               	movwf	192,c	;volatile
   3435   00F350                     l3436:
   3436                           
-  3437                           ;main.c: 660:                 if(!PORTAbits.RA4 && taster2Flag && !led2StateBlink)
+  3437                           ;main.c: 659:                 if(!PORTAbits.RA4 && taster2Flag && !led2StateBlink)
   3438   00F350  B8CE               	btfsc	206,4,c	;volatile
   3439   00F352  EFAD  F079         	goto	u4201
   3440   00F356  EFAF  F079         	goto	u4200
@@ -3490,12 +3490,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3460   00F380                     u4220:
   3461   00F380                     
   3462                           ; BSR set to: 5
-  3463                           ;main.c: 661:                 {;main.c: 662:                     state = T2StateDummy;
+  3463                           ;main.c: 660:                 {;main.c: 661:                     state = T2StateDummy;
   3464   00F380  0E0A               	movlw	10
   3465   00F382  6F93               	movwf	main@state& (0+255),b
   3466   00F384                     l3444:
   3467                           
-  3468                           ;main.c: 665:                 if(!PORTAbits.RA4 && taster2Flag && led2StateBlink)
+  3468                           ;main.c: 664:                 if(!PORTAbits.RA4 && taster2Flag && led2StateBlink)
   3469   00F384  B8CE               	btfsc	206,4,c	;volatile
   3470   00F386  EFC7  F079         	goto	u4231
   3471   00F38A  EFC9  F079         	goto	u4230
@@ -3521,32 +3521,32 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3491   00F3B4                     u4250:
   3492   00F3B4                     
   3493                           ; BSR set to: 5
-  3494                           ;main.c: 666:                 {;main.c: 667:                     LATCbits.LATC5 = 1;
+  3494                           ;main.c: 665:                 {;main.c: 666:                     LATCbits.LATC5 = 1;
   3495   00F3B4  8AC0               	bsf	192,5,c	;volatile
   3496   00F3B6                     
   3497                           ; BSR set to: 5
-  3498                           ;main.c: 668:                     led2StateBlink = 0;
+  3498                           ;main.c: 667:                     led2StateBlink = 0;
   3499   00F3B6  0E00               	movlw	0
   3500   00F3B8  6F71               	movwf	main@led2StateBlink& (0+255),b
   3501                           
-  3502                           ;main.c: 669:                     redAdj = 0;
+  3502                           ;main.c: 668:                     redAdj = 0;
   3503   00F3BA  0E00               	movlw	0
   3504   00F3BC  6F76               	movwf	main@redAdj& (0+255),b
   3505                           
-  3506                           ;main.c: 670:                     greenAdj = 0;
+  3506                           ;main.c: 669:                     greenAdj = 0;
   3507   00F3BE  0E00               	movlw	0
   3508   00F3C0  6F77               	movwf	main@greenAdj& (0+255),b
   3509                           
-  3510                           ;main.c: 671:                     blueAdj = 0;
+  3510                           ;main.c: 670:                     blueAdj = 0;
   3511   00F3C2  0E00               	movlw	0
   3512   00F3C4  6F78               	movwf	main@blueAdj& (0+255),b
   3513                           
-  3514                           ;main.c: 672:                     whiteAdj = 0;
+  3514                           ;main.c: 671:                     whiteAdj = 0;
   3515   00F3C6  0E00               	movlw	0
   3516   00F3C8  6F79               	movwf	main@whiteAdj& (0+255),b
   3517   00F3CA                     
   3518                           ; BSR set to: 5
-  3519                           ;main.c: 673:                     DATAEE_WriteByte(20, blueMode1);
+  3519                           ;main.c: 672:                     DATAEE_WriteByte(20, blueMode1);
   3520   00F3CA  0E00               	movlw	0
   3521   00F3CC  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3522   00F3CE  0E14               	movlw	20
@@ -3554,7 +3554,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3524   00F3D2  C58E  F503         	movff	main@blueMode1,DATAEE_WriteByte@bData
   3525   00F3D6  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3526   00F3DA                     
-  3527                           ;main.c: 674:                     DATAEE_WriteByte(19, greenMode1);
+  3527                           ;main.c: 673:                     DATAEE_WriteByte(19, greenMode1);
   3528   00F3DA  0E00               	movlw	0
   3529   00F3DC  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3530   00F3DE  0E13               	movlw	19
@@ -3562,7 +3562,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3532   00F3E2  C58D  F503         	movff	main@greenMode1,DATAEE_WriteByte@bData
   3533   00F3E6  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3534   00F3EA                     
-  3535                           ;main.c: 675:                     DATAEE_WriteByte(18, redMode1);
+  3535                           ;main.c: 674:                     DATAEE_WriteByte(18, redMode1);
   3536   00F3EA  0E00               	movlw	0
   3537   00F3EC  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3538   00F3EE  0E12               	movlw	18
@@ -3570,7 +3570,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3540   00F3F2  C58C  F503         	movff	main@redMode1,DATAEE_WriteByte@bData
   3541   00F3F6  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3542   00F3FA                     
-  3543                           ;main.c: 676:                     DATAEE_WriteByte(21, whiteMode1);
+  3543                           ;main.c: 675:                     DATAEE_WriteByte(21, whiteMode1);
   3544   00F3FA  0E00               	movlw	0
   3545   00F3FC  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3546   00F3FE  0E15               	movlw	21
@@ -3578,7 +3578,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3548   00F402  C57E  F503         	movff	main@whiteMode1,DATAEE_WriteByte@bData
   3549   00F406  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3550   00F40A                     
-  3551                           ;main.c: 677:                     DATAEE_WriteByte(4, 69);
+  3551                           ;main.c: 676:                     DATAEE_WriteByte(4, 69);
   3552   00F40A  0E00               	movlw	0
   3553   00F40C  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3554   00F40E  0E04               	movlw	4
@@ -3588,7 +3588,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3558   00F416  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3559   00F41A                     l3464:
   3560                           
-  3561                           ;main.c: 680:                 if(led2StateBlink)
+  3561                           ;main.c: 679:                 if(led2StateBlink)
   3562   00F41A  0105               	movlb	5	; () banked
   3563   00F41C  5171               	movf	main@led2StateBlink& (0+255),w,b
   3564   00F41E  B4D8               	btfsc	status,2,c
@@ -3599,7 +3599,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3569   00F42C                     u4260:
   3570   00F42C                     
   3571                           ; BSR set to: 5
-  3572                           ;main.c: 681:                 {;main.c: 682:                     if((red >= (redMode2 - 
+  3572                           ;main.c: 680:                 {;main.c: 681:                     if((red >= (redMode2 - 
       +                          5) && red <= redMode2 + 5))
   3573   00F42C  0EFB               	movlw	251
   3574   00F42E  257F               	addwf	main@redMode2& (0+255),w,b
@@ -3652,13 +3652,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3621   00F48E                     u4280:
   3622   00F48E                     
   3623                           ; BSR set to: 5
-  3624                           ;main.c: 683:                     {;main.c: 684:                         redAdj = 1;
+  3624                           ;main.c: 682:                     {;main.c: 683:                         redAdj = 1;
   3625   00F48E  0E01               	movlw	1
   3626   00F490  6F76               	movwf	main@redAdj& (0+255),b
   3627   00F492                     l441:
   3628                           
   3629                           ; BSR set to: 5
-  3630                           ;main.c: 687:                     if(redAdj)
+  3630                           ;main.c: 686:                     if(redAdj)
   3631   00F492  5176               	movf	main@redAdj& (0+255),w,b
   3632   00F494  B4D8               	btfsc	status,2,c
   3633   00F496  EF4F  F07A         	goto	u4291
@@ -3668,12 +3668,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3637   00F4A2                     u4290:
   3638   00F4A2                     
   3639                           ; BSR set to: 5
-  3640                           ;main.c: 688:                     {;main.c: 689:                         redMode2 = red;
+  3640                           ;main.c: 687:                     {;main.c: 688:                         redMode2 = red;
   3641   00F4A2  C590  F57F         	movff	main@red,main@redMode2
   3642   00F4A6                     l3474:
   3643                           
   3644                           ; BSR set to: 5
-  3645                           ;main.c: 692:                     if((white >= (whiteMode2 - 5) && white <= whiteMode2 +
+  3645                           ;main.c: 691:                     if((white >= (whiteMode2 - 5) && white <= whiteMode2 +
       +                           5))
   3646   00F4A6  0EFB               	movlw	251
   3647   00F4A8  256D               	addwf	main@whiteMode2& (0+255),w,b
@@ -3726,13 +3726,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3694   00F508                     u4310:
   3695   00F508                     
   3696                           ; BSR set to: 5
-  3697                           ;main.c: 693:                     {;main.c: 694:                         whiteAdj = 1;
+  3697                           ;main.c: 692:                     {;main.c: 693:                         whiteAdj = 1;
   3698   00F508  0E01               	movlw	1
   3699   00F50A  6F79               	movwf	main@whiteAdj& (0+255),b
   3700   00F50C                     l443:
   3701                           
   3702                           ; BSR set to: 5
-  3703                           ;main.c: 697:                     if(whiteAdj)
+  3703                           ;main.c: 696:                     if(whiteAdj)
   3704   00F50C  5179               	movf	main@whiteAdj& (0+255),w,b
   3705   00F50E  B4D8               	btfsc	status,2,c
   3706   00F510  EF8C  F07A         	goto	u4321
@@ -3742,13 +3742,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3710   00F51C                     u4320:
   3711   00F51C                     
   3712                           ; BSR set to: 5
-  3713                           ;main.c: 698:                     {;main.c: 699:                         whiteMode2 = wh
+  3713                           ;main.c: 697:                     {;main.c: 698:                         whiteMode2 = wh
       +                          ite;
   3714   00F51C  C58F  F56D         	movff	main@white,main@whiteMode2
   3715   00F520                     l3482:
   3716                           
   3717                           ; BSR set to: 5
-  3718                           ;main.c: 702:                     if((green >= (greenMode2 - 5) && green <= greenMode2 +
+  3718                           ;main.c: 701:                     if((green >= (greenMode2 - 5) && green <= greenMode2 +
       +                           5))
   3719   00F520  0EFB               	movlw	251
   3720   00F522  2580               	addwf	main@greenMode2& (0+255),w,b
@@ -3801,13 +3801,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3767   00F582                     u4340:
   3768   00F582                     
   3769                           ; BSR set to: 5
-  3770                           ;main.c: 703:                     {;main.c: 704:                        greenAdj = 1;
+  3770                           ;main.c: 702:                     {;main.c: 703:                        greenAdj = 1;
   3771   00F582  0E01               	movlw	1
   3772   00F584  6F77               	movwf	main@greenAdj& (0+255),b
   3773   00F586                     l445:
   3774                           
   3775                           ; BSR set to: 5
-  3776                           ;main.c: 707:                     if(greenAdj)
+  3776                           ;main.c: 706:                     if(greenAdj)
   3777   00F586  5177               	movf	main@greenAdj& (0+255),w,b
   3778   00F588  B4D8               	btfsc	status,2,c
   3779   00F58A  EFC9  F07A         	goto	u4351
@@ -3817,13 +3817,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3783   00F596                     u4350:
   3784   00F596                     
   3785                           ; BSR set to: 5
-  3786                           ;main.c: 708:                     {;main.c: 709:                         greenMode2 = gr
+  3786                           ;main.c: 707:                     {;main.c: 708:                         greenMode2 = gr
       +                          een;
   3787   00F596  C591  F580         	movff	main@green,main@greenMode2
   3788   00F59A                     l3490:
   3789                           
   3790                           ; BSR set to: 5
-  3791                           ;main.c: 712:                     if((blue >= (blueMode2 - 5) && blue <= blueMode2 + 5))
+  3791                           ;main.c: 711:                     if((blue >= (blueMode2 - 5) && blue <= blueMode2 + 5))
   3792   00F59A  0EFB               	movlw	251
   3793   00F59C  2581               	addwf	main@blueMode2& (0+255),w,b
   3794   00F59E  6E2F               	movwf	??_main^(0+1280),c
@@ -3875,13 +3875,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3840   00F5FC                     u4370:
   3841   00F5FC                     
   3842                           ; BSR set to: 5
-  3843                           ;main.c: 713:                     {;main.c: 714:                         blueAdj = 1;
+  3843                           ;main.c: 712:                     {;main.c: 713:                         blueAdj = 1;
   3844   00F5FC  0E01               	movlw	1
   3845   00F5FE  6F78               	movwf	main@blueAdj& (0+255),b
   3846   00F600                     l447:
   3847                           
   3848                           ; BSR set to: 5
-  3849                           ;main.c: 717:                     if(blueAdj)
+  3849                           ;main.c: 716:                     if(blueAdj)
   3850   00F600  5178               	movf	main@blueAdj& (0+255),w,b
   3851   00F602  B4D8               	btfsc	status,2,c
   3852   00F604  EF06  F07B         	goto	u4381
@@ -3891,13 +3891,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3856   00F610                     u4380:
   3857   00F610                     
   3858                           ; BSR set to: 5
-  3859                           ;main.c: 718:                     {;main.c: 719:                         blueMode2 = blu
+  3859                           ;main.c: 717:                     {;main.c: 718:                         blueMode2 = blu
       +                          e;
   3860   00F610  C592  F581         	movff	main@blue,main@blueMode2
   3861   00F614                     l440:
   3862                           
   3863                           ; BSR set to: 5
-  3864                           ;main.c: 726:                 if(!PORTCbits.RC6 && taster1Flag)
+  3864                           ;main.c: 725:                 if(!PORTCbits.RC6 && taster1Flag)
   3865   00F614  BCD0               	btfsc	208,6,c	;volatile
   3866   00F616  EF0F  F07B         	goto	u4391
   3867   00F61A  EF11  F07B         	goto	u4390
@@ -3915,14 +3915,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3879   00F632                     u4400:
   3880   00F632                     
   3881                           ; BSR set to: 5
-  3882                           ;main.c: 727:                 {;main.c: 728:                     LATCbits.LATC5 = 0;
+  3882                           ;main.c: 726:                 {;main.c: 727:                     LATCbits.LATC5 = 0;
   3883   00F632  9AC0               	bcf	192,5,c	;volatile
   3884                           
-  3885                           ;main.c: 729:                     LATCbits.LATC7 = 1;
+  3885                           ;main.c: 728:                     LATCbits.LATC7 = 1;
   3886   00F634  8EC0               	bsf	192,7,c	;volatile
   3887   00F636                     
   3888                           ; BSR set to: 5
-  3889                           ;main.c: 730:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+  3889                           ;main.c: 729:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
   3890   00F636  C58D  F50B         	movff	main@greenMode1,LED_WriteFull@green
   3891   00F63A  C58E  F50C         	movff	main@blueMode1,LED_WriteFull@blue
   3892   00F63E  0E2C               	movlw	44
@@ -3934,13 +3934,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3898   00F64A  518C               	movf	main@redMode1& (0+255),w,b
   3899   00F64C  ECFF  F06D         	call	_LED_WriteFull
   3900   00F650                     
-  3901                           ;main.c: 731:                     state = T1;
+  3901                           ;main.c: 730:                     state = T1;
   3902   00F650  0E01               	movlw	1
   3903   00F652  0105               	movlb	5	; () banked
   3904   00F654  6F93               	movwf	main@state& (0+255),b
   3905   00F656                     
   3906                           ; BSR set to: 5
-  3907                           ;main.c: 732:                     DATAEE_WriteByte(36, state);
+  3907                           ;main.c: 731:                     DATAEE_WriteByte(36, state);
   3908   00F656  0E00               	movlw	0
   3909   00F658  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3910   00F65A  0E24               	movlw	36
@@ -3948,7 +3948,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3912   00F65E  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   3913   00F662  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3914   00F666                     
-  3915                           ;main.c: 733:                     DATAEE_WriteByte(2, 69);
+  3915                           ;main.c: 732:                     DATAEE_WriteByte(2, 69);
   3916   00F666  0E00               	movlw	0
   3917   00F668  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3918   00F66A  0E02               	movlw	2
@@ -3958,7 +3958,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3922   00F672  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3923   00F676                     l3510:
   3924                           
-  3925                           ;main.c: 737:                 if(!PORTCbits.RC4 && taster3Flag)
+  3925                           ;main.c: 736:                 if(!PORTCbits.RC4 && taster3Flag)
   3926   00F676  B8D0               	btfsc	208,4,c	;volatile
   3927   00F678  EF40  F07B         	goto	u4411
   3928   00F67C  EF42  F07B         	goto	u4410
@@ -3975,14 +3975,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3939   00F696                     u4420:
   3940   00F696                     
   3941                           ; BSR set to: 5
-  3942                           ;main.c: 738:                 {;main.c: 739:                     LATCbits.LATC5 = 0;
+  3942                           ;main.c: 737:                 {;main.c: 738:                     LATCbits.LATC5 = 0;
   3943   00F696  9AC0               	bcf	192,5,c	;volatile
   3944                           
-  3945                           ;main.c: 740:                     LATAbits.LATA5 = 1;
+  3945                           ;main.c: 739:                     LATAbits.LATA5 = 1;
   3946   00F698  8ABE               	bsf	190,5,c	;volatile
   3947   00F69A                     
   3948                           ; BSR set to: 5
-  3949                           ;main.c: 741:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+  3949                           ;main.c: 740:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
   3950   00F69A  C583  F50B         	movff	main@greenMode3,LED_WriteFull@green
   3951   00F69E  C584  F50C         	movff	main@blueMode3,LED_WriteFull@blue
   3952   00F6A2  0E2C               	movlw	44
@@ -3994,13 +3994,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3958   00F6AE  5182               	movf	main@redMode3& (0+255),w,b
   3959   00F6B0  ECFF  F06D         	call	_LED_WriteFull
   3960   00F6B4                     
-  3961                           ;main.c: 742:                     state = T3 ;
+  3961                           ;main.c: 741:                     state = T3 ;
   3962   00F6B4  0E03               	movlw	3
   3963   00F6B6  0105               	movlb	5	; () banked
   3964   00F6B8  6F93               	movwf	main@state& (0+255),b
   3965   00F6BA                     
   3966                           ; BSR set to: 5
-  3967                           ;main.c: 743:                     DATAEE_WriteByte(36, state);
+  3967                           ;main.c: 742:                     DATAEE_WriteByte(36, state);
   3968   00F6BA  0E00               	movlw	0
   3969   00F6BC  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3970   00F6BE  0E24               	movlw	36
@@ -4008,7 +4008,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3972   00F6C2  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   3973   00F6C6  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3974   00F6CA                     
-  3975                           ;main.c: 744:                     DATAEE_WriteByte(2, 69);
+  3975                           ;main.c: 743:                     DATAEE_WriteByte(2, 69);
   3976   00F6CA  0E00               	movlw	0
   3977   00F6CC  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   3978   00F6CE  0E02               	movlw	2
@@ -4018,7 +4018,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3982   00F6D6  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   3983   00F6DA                     l3524:
   3984                           
-  3985                           ;main.c: 747:                 if(!PORTBbits.RB7 && taster4Flag)
+  3985                           ;main.c: 746:                 if(!PORTBbits.RB7 && taster4Flag)
   3986   00F6DA  BECF               	btfsc	207,7,c	;volatile
   3987   00F6DC  EF72  F07B         	goto	u4431
   3988   00F6E0  EF74  F07B         	goto	u4430
@@ -4035,14 +4035,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3999   00F6FA                     u4440:
   4000   00F6FA                     
   4001                           ; BSR set to: 5
-  4002                           ;main.c: 748:                 {;main.c: 749:                     LATCbits.LATC5 = 0;
+  4002                           ;main.c: 747:                 {;main.c: 748:                     LATCbits.LATC5 = 0;
   4003   00F6FA  9AC0               	bcf	192,5,c	;volatile
   4004                           
-  4005                           ;main.c: 750:                     LATCbits.LATC3 = 1;
+  4005                           ;main.c: 749:                     LATCbits.LATC3 = 1;
   4006   00F6FC  86C0               	bsf	192,3,c	;volatile
   4007   00F6FE                     
   4008                           ; BSR set to: 5
-  4009                           ;main.c: 751:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+  4009                           ;main.c: 750:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
   4010   00F6FE  C586  F50B         	movff	main@greenMode4,LED_WriteFull@green
   4011   00F702  C587  F50C         	movff	main@blueMode4,LED_WriteFull@blue
   4012   00F706  0E2C               	movlw	44
@@ -4057,7 +4057,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4021   00F71C                     l3538:
   4022                           
   4023                           ; BSR set to: 5
-  4024                           ;main.c: 763:                 LED_WriteFull(redMode3,greenMode3,blueMode3, 300);
+  4024                           ;main.c: 762:                 LED_WriteFull(redMode3,greenMode3,blueMode3, 300);
   4025   00F71C  C583  F50B         	movff	main@greenMode3,LED_WriteFull@green
   4026   00F720  C584  F50C         	movff	main@blueMode3,LED_WriteFull@blue
   4027   00F724  0E2C               	movlw	44
@@ -4069,7 +4069,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4033   00F730  5182               	movf	main@redMode3& (0+255),w,b
   4034   00F732  ECFF  F06D         	call	_LED_WriteFull
   4035   00F736                     
-  4036                           ;main.c: 767:                 if(led3StateBlink && (++timeout250ms == 12))
+  4036                           ;main.c: 766:                 if(led3StateBlink && (++timeout250ms == 12))
   4037   00F736  0105               	movlb	5	; () banked
   4038   00F738  5172               	movf	main@led3StateBlink& (0+255),w,b
   4039   00F73A  B4D8               	btfsc	status,2,c
@@ -4091,12 +4091,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4055   00F75C                     u4460:
   4056   00F75C                     
   4057                           ; BSR set to: 5
-  4058                           ;main.c: 768:                 {;main.c: 769:                     timeout250ms = 0;
+  4058                           ;main.c: 767:                 {;main.c: 768:                     timeout250ms = 0;
   4059   00F75C  0E00               	movlw	0
   4060   00F75E  6F74               	movwf	main@timeout250ms& (0+255),b
   4061   00F760                     
   4062                           ; BSR set to: 5
-  4063                           ;main.c: 770:                     LATAbits.LATA5 = !LATAbits.LATA5;
+  4063                           ;main.c: 769:                     LATAbits.LATA5 = !LATAbits.LATA5;
   4064   00F760  AABE               	btfss	190,5,c	;volatile
   4065   00F762  EFB5  F07B         	goto	u4471
   4066   00F766  EFB9  F07B         	goto	u4470
@@ -4116,7 +4116,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4080   00F780  6EBE               	movwf	190,c	;volatile
   4081   00F782                     l3548:
   4082                           
-  4083                           ;main.c: 773:                 if(!PORTCbits.RC4 && taster3Flag && !led3StateBlink)
+  4083                           ;main.c: 772:                 if(!PORTCbits.RC4 && taster3Flag && !led3StateBlink)
   4084   00F782  B8D0               	btfsc	208,4,c	;volatile
   4085   00F784  EFC6  F07B         	goto	u4491
   4086   00F788  EFC8  F07B         	goto	u4490
@@ -4142,12 +4142,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4106   00F7B2                     u4510:
   4107   00F7B2                     
   4108                           ; BSR set to: 5
-  4109                           ;main.c: 774:                 {;main.c: 775:                     state = T3StateDummy;
+  4109                           ;main.c: 773:                 {;main.c: 774:                     state = T3StateDummy;
   4110   00F7B2  0E0B               	movlw	11
   4111   00F7B4  6F93               	movwf	main@state& (0+255),b
   4112   00F7B6                     l3556:
   4113                           
-  4114                           ;main.c: 778:                 if(!PORTCbits.RC4 && taster3Flag && led3StateBlink)
+  4114                           ;main.c: 777:                 if(!PORTCbits.RC4 && taster3Flag && led3StateBlink)
   4115   00F7B6  B8D0               	btfsc	208,4,c	;volatile
   4116   00F7B8  EFE0  F07B         	goto	u4521
   4117   00F7BC  EFE2  F07B         	goto	u4520
@@ -4173,32 +4173,32 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4137   00F7E6                     u4540:
   4138   00F7E6                     
   4139                           ; BSR set to: 5
-  4140                           ;main.c: 779:                 {;main.c: 780:                     LATAbits.LATA5 = 1;
+  4140                           ;main.c: 778:                 {;main.c: 779:                     LATAbits.LATA5 = 1;
   4141   00F7E6  8ABE               	bsf	190,5,c	;volatile
   4142   00F7E8                     
   4143                           ; BSR set to: 5
-  4144                           ;main.c: 781:                     led3StateBlink = 0;
+  4144                           ;main.c: 780:                     led3StateBlink = 0;
   4145   00F7E8  0E00               	movlw	0
   4146   00F7EA  6F72               	movwf	main@led3StateBlink& (0+255),b
   4147                           
-  4148                           ;main.c: 782:                     redAdj = 0;
+  4148                           ;main.c: 781:                     redAdj = 0;
   4149   00F7EC  0E00               	movlw	0
   4150   00F7EE  6F76               	movwf	main@redAdj& (0+255),b
   4151                           
-  4152                           ;main.c: 783:                     greenAdj = 0;
+  4152                           ;main.c: 782:                     greenAdj = 0;
   4153   00F7F0  0E00               	movlw	0
   4154   00F7F2  6F77               	movwf	main@greenAdj& (0+255),b
   4155                           
-  4156                           ;main.c: 784:                     blueAdj = 0;
+  4156                           ;main.c: 783:                     blueAdj = 0;
   4157   00F7F4  0E00               	movlw	0
   4158   00F7F6  6F78               	movwf	main@blueAdj& (0+255),b
   4159                           
-  4160                           ;main.c: 785:                     whiteAdj = 0;
+  4160                           ;main.c: 784:                     whiteAdj = 0;
   4161   00F7F8  0E00               	movlw	0
   4162   00F7FA  6F79               	movwf	main@whiteAdj& (0+255),b
   4163   00F7FC                     
   4164                           ; BSR set to: 5
-  4165                           ;main.c: 786:                     DATAEE_WriteByte(25, blueMode1);
+  4165                           ;main.c: 785:                     DATAEE_WriteByte(25, blueMode1);
   4166   00F7FC  0E00               	movlw	0
   4167   00F7FE  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4168   00F800  0E19               	movlw	25
@@ -4206,7 +4206,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4170   00F804  C58E  F503         	movff	main@blueMode1,DATAEE_WriteByte@bData
   4171   00F808  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4172   00F80C                     
-  4173                           ;main.c: 787:                     DATAEE_WriteByte(24, greenMode1);
+  4173                           ;main.c: 786:                     DATAEE_WriteByte(24, greenMode1);
   4174   00F80C  0E00               	movlw	0
   4175   00F80E  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4176   00F810  0E18               	movlw	24
@@ -4214,7 +4214,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4178   00F814  C58D  F503         	movff	main@greenMode1,DATAEE_WriteByte@bData
   4179   00F818  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4180   00F81C                     
-  4181                           ;main.c: 788:                     DATAEE_WriteByte(22, redMode1);
+  4181                           ;main.c: 787:                     DATAEE_WriteByte(22, redMode1);
   4182   00F81C  0E00               	movlw	0
   4183   00F81E  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4184   00F820  0E16               	movlw	22
@@ -4222,7 +4222,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4186   00F824  C58C  F503         	movff	main@redMode1,DATAEE_WriteByte@bData
   4187   00F828  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4188   00F82C                     
-  4189                           ;main.c: 789:                     DATAEE_WriteByte(27, whiteMode1);
+  4189                           ;main.c: 788:                     DATAEE_WriteByte(27, whiteMode1);
   4190   00F82C  0E00               	movlw	0
   4191   00F82E  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4192   00F830  0E1B               	movlw	27
@@ -4230,7 +4230,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4194   00F834  C57E  F503         	movff	main@whiteMode1,DATAEE_WriteByte@bData
   4195   00F838  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4196   00F83C                     
-  4197                           ;main.c: 790:                     DATAEE_WriteByte(6, 69);
+  4197                           ;main.c: 789:                     DATAEE_WriteByte(6, 69);
   4198   00F83C  0E00               	movlw	0
   4199   00F83E  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4200   00F840  0E06               	movlw	6
@@ -4240,7 +4240,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4204   00F848  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4205   00F84C                     l3576:
   4206                           
-  4207                           ;main.c: 792:                 taster3Flag = PORTCbits.RC4;
+  4207                           ;main.c: 791:                 taster3Flag = PORTCbits.RC4;
   4208   00F84C  0E00               	movlw	0
   4209   00F84E  B8D0               	btfsc	208,4,c	;volatile
   4210   00F850  0E01               	movlw	1
@@ -4248,7 +4248,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4212   00F854  6F7D               	movwf	main@taster3Flag& (0+255),b
   4213   00F856                     
   4214                           ; BSR set to: 5
-  4215                           ;main.c: 794:                 if(led3StateBlink)
+  4215                           ;main.c: 793:                 if(led3StateBlink)
   4216   00F856  5172               	movf	main@led3StateBlink& (0+255),w,b
   4217   00F858  B4D8               	btfsc	status,2,c
   4218   00F85A  EF31  F07C         	goto	u4551
@@ -4258,7 +4258,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4222   00F866                     u4550:
   4223   00F866                     
   4224                           ; BSR set to: 5
-  4225                           ;main.c: 795:                 {;main.c: 796:                     if((red >= (redMode3 - 
+  4225                           ;main.c: 794:                 {;main.c: 795:                     if((red >= (redMode3 - 
       +                          5) && red <= redMode3 + 5))
   4226   00F866  0EFB               	movlw	251
   4227   00F868  2582               	addwf	main@redMode3& (0+255),w,b
@@ -4311,13 +4311,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4274   00F8C8                     u4570:
   4275   00F8C8                     
   4276                           ; BSR set to: 5
-  4277                           ;main.c: 797:                     {;main.c: 798:                         redAdj = 1;
+  4277                           ;main.c: 796:                     {;main.c: 797:                         redAdj = 1;
   4278   00F8C8  0E01               	movlw	1
   4279   00F8CA  6F76               	movwf	main@redAdj& (0+255),b
   4280   00F8CC                     l457:
   4281                           
   4282                           ; BSR set to: 5
-  4283                           ;main.c: 801:                     if(redAdj)
+  4283                           ;main.c: 800:                     if(redAdj)
   4284   00F8CC  5176               	movf	main@redAdj& (0+255),w,b
   4285   00F8CE  B4D8               	btfsc	status,2,c
   4286   00F8D0  EF6C  F07C         	goto	u4581
@@ -4327,12 +4327,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4290   00F8DC                     u4580:
   4291   00F8DC                     
   4292                           ; BSR set to: 5
-  4293                           ;main.c: 802:                     {;main.c: 803:                         redMode3 = red;
+  4293                           ;main.c: 801:                     {;main.c: 802:                         redMode3 = red;
   4294   00F8DC  C590  F582         	movff	main@red,main@redMode3
   4295   00F8E0                     l3588:
   4296                           
   4297                           ; BSR set to: 5
-  4298                           ;main.c: 806:                     if((white >= (whiteMode3 - 5) && white <= whiteMode3 +
+  4298                           ;main.c: 805:                     if((white >= (whiteMode3 - 5) && white <= whiteMode3 +
       +                           5))
   4299   00F8E0  0EFB               	movlw	251
   4300   00F8E2  256E               	addwf	main@whiteMode3& (0+255),w,b
@@ -4385,13 +4385,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4347   00F942                     u4600:
   4348   00F942                     
   4349                           ; BSR set to: 5
-  4350                           ;main.c: 807:                     {;main.c: 808:                         whiteAdj = 1;
+  4350                           ;main.c: 806:                     {;main.c: 807:                         whiteAdj = 1;
   4351   00F942  0E01               	movlw	1
   4352   00F944  6F79               	movwf	main@whiteAdj& (0+255),b
   4353   00F946                     l459:
   4354                           
   4355                           ; BSR set to: 5
-  4356                           ;main.c: 811:                     if(whiteAdj)
+  4356                           ;main.c: 810:                     if(whiteAdj)
   4357   00F946  5179               	movf	main@whiteAdj& (0+255),w,b
   4358   00F948  B4D8               	btfsc	status,2,c
   4359   00F94A  EFA9  F07C         	goto	u4611
@@ -4401,13 +4401,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4363   00F956                     u4610:
   4364   00F956                     
   4365                           ; BSR set to: 5
-  4366                           ;main.c: 812:                     {;main.c: 813:                         whiteMode3 = wh
+  4366                           ;main.c: 811:                     {;main.c: 812:                         whiteMode3 = wh
       +                          ite;
   4367   00F956  C58F  F56E         	movff	main@white,main@whiteMode3
   4368   00F95A                     l3596:
   4369                           
   4370                           ; BSR set to: 5
-  4371                           ;main.c: 816:                     if((green >= (greenMode3 - 5) && green <= greenMode3 +
+  4371                           ;main.c: 815:                     if((green >= (greenMode3 - 5) && green <= greenMode3 +
       +                           5))
   4372   00F95A  0EFB               	movlw	251
   4373   00F95C  2583               	addwf	main@greenMode3& (0+255),w,b
@@ -4460,13 +4460,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4420   00F9BC                     u4630:
   4421   00F9BC                     
   4422                           ; BSR set to: 5
-  4423                           ;main.c: 817:                     {;main.c: 818:                        greenAdj = 1;
+  4423                           ;main.c: 816:                     {;main.c: 817:                        greenAdj = 1;
   4424   00F9BC  0E01               	movlw	1
   4425   00F9BE  6F77               	movwf	main@greenAdj& (0+255),b
   4426   00F9C0                     l461:
   4427                           
   4428                           ; BSR set to: 5
-  4429                           ;main.c: 821:                     if(greenAdj)
+  4429                           ;main.c: 820:                     if(greenAdj)
   4430   00F9C0  5177               	movf	main@greenAdj& (0+255),w,b
   4431   00F9C2  B4D8               	btfsc	status,2,c
   4432   00F9C4  EFE6  F07C         	goto	u4641
@@ -4476,13 +4476,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4436   00F9D0                     u4640:
   4437   00F9D0                     
   4438                           ; BSR set to: 5
-  4439                           ;main.c: 822:                     {;main.c: 823:                         greenMode3 = gr
+  4439                           ;main.c: 821:                     {;main.c: 822:                         greenMode3 = gr
       +                          een;
   4440   00F9D0  C591  F583         	movff	main@green,main@greenMode3
   4441   00F9D4                     l3604:
   4442                           
   4443                           ; BSR set to: 5
-  4444                           ;main.c: 826:                     if((blue >= (blueMode3 - 5) && blue <= blueMode3 + 5))
+  4444                           ;main.c: 825:                     if((blue >= (blueMode3 - 5) && blue <= blueMode3 + 5))
   4445   00F9D4  0EFB               	movlw	251
   4446   00F9D6  2584               	addwf	main@blueMode3& (0+255),w,b
   4447   00F9D8  6E2F               	movwf	??_main^(0+1280),c
@@ -4534,13 +4534,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4493   00FA36                     u4660:
   4494   00FA36                     
   4495                           ; BSR set to: 5
-  4496                           ;main.c: 827:                     {;main.c: 828:                         blueAdj = 1;
+  4496                           ;main.c: 826:                     {;main.c: 827:                         blueAdj = 1;
   4497   00FA36  0E01               	movlw	1
   4498   00FA38  6F78               	movwf	main@blueAdj& (0+255),b
   4499   00FA3A                     l463:
   4500                           
   4501                           ; BSR set to: 5
-  4502                           ;main.c: 831:                     if(blueAdj)
+  4502                           ;main.c: 830:                     if(blueAdj)
   4503   00FA3A  5178               	movf	main@blueAdj& (0+255),w,b
   4504   00FA3C  B4D8               	btfsc	status,2,c
   4505   00FA3E  EF23  F07D         	goto	u4671
@@ -4550,13 +4550,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4509   00FA4A                     u4670:
   4510   00FA4A                     
   4511                           ; BSR set to: 5
-  4512                           ;main.c: 832:                     {;main.c: 833:                         blueMode3 = blu
+  4512                           ;main.c: 831:                     {;main.c: 832:                         blueMode3 = blu
       +                          e;
   4513   00FA4A  C592  F584         	movff	main@blue,main@blueMode3
   4514   00FA4E                     l456:
   4515                           
   4516                           ; BSR set to: 5
-  4517                           ;main.c: 839:                 if(!PORTCbits.RC6 && taster1Flag)
+  4517                           ;main.c: 838:                 if(!PORTCbits.RC6 && taster1Flag)
   4518   00FA4E  BCD0               	btfsc	208,6,c	;volatile
   4519   00FA50  EF2C  F07D         	goto	u4681
   4520   00FA54  EF2E  F07D         	goto	u4680
@@ -4574,14 +4574,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4532   00FA6C                     u4690:
   4533   00FA6C                     
   4534                           ; BSR set to: 5
-  4535                           ;main.c: 840:                 {;main.c: 841:                     LATAbits.LATA5 = 0;
+  4535                           ;main.c: 839:                 {;main.c: 840:                     LATAbits.LATA5 = 0;
   4536   00FA6C  9ABE               	bcf	190,5,c	;volatile
   4537                           
-  4538                           ;main.c: 842:                     LATCbits.LATC7 = 1;
+  4538                           ;main.c: 841:                     LATCbits.LATC7 = 1;
   4539   00FA6E  8EC0               	bsf	192,7,c	;volatile
   4540   00FA70                     
   4541                           ; BSR set to: 5
-  4542                           ;main.c: 843:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
+  4542                           ;main.c: 842:                     LED_WriteFull(redMode1, greenMode1, blueMode1, 300);
   4543   00FA70  C58D  F50B         	movff	main@greenMode1,LED_WriteFull@green
   4544   00FA74  C58E  F50C         	movff	main@blueMode1,LED_WriteFull@blue
   4545   00FA78  0E2C               	movlw	44
@@ -4593,13 +4593,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4551   00FA84  518C               	movf	main@redMode1& (0+255),w,b
   4552   00FA86  ECFF  F06D         	call	_LED_WriteFull
   4553   00FA8A                     
-  4554                           ;main.c: 844:                     state = T1;
+  4554                           ;main.c: 843:                     state = T1;
   4555   00FA8A  0E01               	movlw	1
   4556   00FA8C  0105               	movlb	5	; () banked
   4557   00FA8E  6F93               	movwf	main@state& (0+255),b
   4558   00FA90                     
   4559                           ; BSR set to: 5
-  4560                           ;main.c: 845:                     DATAEE_WriteByte(36, state);
+  4560                           ;main.c: 844:                     DATAEE_WriteByte(36, state);
   4561   00FA90  0E00               	movlw	0
   4562   00FA92  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4563   00FA94  0E24               	movlw	36
@@ -4607,7 +4607,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4565   00FA98  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   4566   00FA9C  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4567   00FAA0                     
-  4568                           ;main.c: 846:                     DATAEE_WriteByte(2, 69);
+  4568                           ;main.c: 845:                     DATAEE_WriteByte(2, 69);
   4569   00FAA0  0E00               	movlw	0
   4570   00FAA2  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4571   00FAA4  0E02               	movlw	2
@@ -4617,7 +4617,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4575   00FAAC  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4576   00FAB0                     l3624:
   4577                           
-  4578                           ;main.c: 850:                 if(!PORTAbits.RA4 && taster2Flag)
+  4578                           ;main.c: 849:                 if(!PORTAbits.RA4 && taster2Flag)
   4579   00FAB0  B8CE               	btfsc	206,4,c	;volatile
   4580   00FAB2  EF5D  F07D         	goto	u4701
   4581   00FAB6  EF5F  F07D         	goto	u4700
@@ -4634,14 +4634,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4592   00FAD0                     u4710:
   4593   00FAD0                     
   4594                           ; BSR set to: 5
-  4595                           ;main.c: 851:                 {;main.c: 852:                     LATAbits.LATA5 = 0;
+  4595                           ;main.c: 850:                 {;main.c: 851:                     LATAbits.LATA5 = 0;
   4596   00FAD0  9ABE               	bcf	190,5,c	;volatile
   4597                           
-  4598                           ;main.c: 853:                     LATCbits.LATC5 = 1;
+  4598                           ;main.c: 852:                     LATCbits.LATC5 = 1;
   4599   00FAD2  8AC0               	bsf	192,5,c	;volatile
   4600   00FAD4                     
   4601                           ; BSR set to: 5
-  4602                           ;main.c: 854:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+  4602                           ;main.c: 853:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
   4603   00FAD4  C580  F50B         	movff	main@greenMode2,LED_WriteFull@green
   4604   00FAD8  C581  F50C         	movff	main@blueMode2,LED_WriteFull@blue
   4605   00FADC  0E2C               	movlw	44
@@ -4653,13 +4653,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4611   00FAE8  517F               	movf	main@redMode2& (0+255),w,b
   4612   00FAEA  ECFF  F06D         	call	_LED_WriteFull
   4613   00FAEE                     
-  4614                           ;main.c: 855:                     state = T2;
+  4614                           ;main.c: 854:                     state = T2;
   4615   00FAEE  0E02               	movlw	2
   4616   00FAF0  0105               	movlb	5	; () banked
   4617   00FAF2  6F93               	movwf	main@state& (0+255),b
   4618   00FAF4                     
   4619                           ; BSR set to: 5
-  4620                           ;main.c: 856:                     DATAEE_WriteByte(36, state);
+  4620                           ;main.c: 855:                     DATAEE_WriteByte(36, state);
   4621   00FAF4  0E00               	movlw	0
   4622   00FAF6  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4623   00FAF8  0E24               	movlw	36
@@ -4667,7 +4667,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4625   00FAFC  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   4626   00FB00  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4627   00FB04                     
-  4628                           ;main.c: 857:                     DATAEE_WriteByte(2, 69);
+  4628                           ;main.c: 856:                     DATAEE_WriteByte(2, 69);
   4629   00FB04  0E00               	movlw	0
   4630   00FB06  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4631   00FB08  0E02               	movlw	2
@@ -4677,7 +4677,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4635   00FB10  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4636   00FB14                     l3638:
   4637                           
-  4638                           ;main.c: 860:                 if(!PORTBbits.RB7 && taster4Flag)
+  4638                           ;main.c: 859:                 if(!PORTBbits.RB7 && taster4Flag)
   4639   00FB14  BECF               	btfsc	207,7,c	;volatile
   4640   00FB16  EF8F  F07D         	goto	u4721
   4641   00FB1A  EF91  F07D         	goto	u4720
@@ -4694,14 +4694,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4652   00FB34                     u4730:
   4653   00FB34                     
   4654                           ; BSR set to: 5
-  4655                           ;main.c: 861:                 {;main.c: 862:                     LATAbits.LATA5 = 0;
+  4655                           ;main.c: 860:                 {;main.c: 861:                     LATAbits.LATA5 = 0;
   4656   00FB34  9ABE               	bcf	190,5,c	;volatile
   4657                           
-  4658                           ;main.c: 863:                     LATCbits.LATC3 = 1;
+  4658                           ;main.c: 862:                     LATCbits.LATC3 = 1;
   4659   00FB36  86C0               	bsf	192,3,c	;volatile
   4660   00FB38                     
   4661                           ; BSR set to: 5
-  4662                           ;main.c: 864:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
+  4662                           ;main.c: 863:                     LED_WriteFull(redMode4, greenMode4, blueMode4, 300);
   4663   00FB38  C586  F50B         	movff	main@greenMode4,LED_WriteFull@green
   4664   00FB3C  C587  F50C         	movff	main@blueMode4,LED_WriteFull@blue
   4665   00FB40  0E2C               	movlw	44
@@ -4716,7 +4716,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4674   00FB56                     l3652:
   4675                           
   4676                           ; BSR set to: 5
-  4677                           ;main.c: 877:                 LED_WriteFull(redMode4,greenMode4,blueMode4, 300);
+  4677                           ;main.c: 876:                 LED_WriteFull(redMode4,greenMode4,blueMode4, 300);
   4678   00FB56  C586  F50B         	movff	main@greenMode4,LED_WriteFull@green
   4679   00FB5A  C587  F50C         	movff	main@blueMode4,LED_WriteFull@blue
   4680   00FB5E  0E2C               	movlw	44
@@ -4728,7 +4728,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4686   00FB6A  5185               	movf	main@redMode4& (0+255),w,b
   4687   00FB6C  ECFF  F06D         	call	_LED_WriteFull
   4688   00FB70                     
-  4689                           ;main.c: 881:                 if(led4StateBlink && (++timeout250ms == 12))
+  4689                           ;main.c: 880:                 if(led4StateBlink && (++timeout250ms == 12))
   4690   00FB70  0105               	movlb	5	; () banked
   4691   00FB72  5173               	movf	main@led4StateBlink& (0+255),w,b
   4692   00FB74  B4D8               	btfsc	status,2,c
@@ -4750,12 +4750,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4708   00FB96                     u4750:
   4709   00FB96                     
   4710                           ; BSR set to: 5
-  4711                           ;main.c: 882:                 {;main.c: 883:                     timeout250ms = 0;
+  4711                           ;main.c: 881:                 {;main.c: 882:                     timeout250ms = 0;
   4712   00FB96  0E00               	movlw	0
   4713   00FB98  6F74               	movwf	main@timeout250ms& (0+255),b
   4714   00FB9A                     
   4715                           ; BSR set to: 5
-  4716                           ;main.c: 884:                     LATCbits.LATC3 = !LATCbits.LATC3;
+  4716                           ;main.c: 883:                     LATCbits.LATC3 = !LATCbits.LATC3;
   4717   00FB9A  A6C0               	btfss	192,3,c	;volatile
   4718   00FB9C  EFD2  F07D         	goto	u4761
   4719   00FBA0  EFD6  F07D         	goto	u4760
@@ -4776,7 +4776,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4734   00FBBC  6EC0               	movwf	192,c	;volatile
   4735   00FBBE                     l3662:
   4736                           
-  4737                           ;main.c: 887:                 if(!PORTBbits.RB7 && taster4Flag && !led4StateBlink)
+  4737                           ;main.c: 886:                 if(!PORTBbits.RB7 && taster4Flag && !led4StateBlink)
   4738   00FBBE  BECF               	btfsc	207,7,c	;volatile
   4739   00FBC0  EFE4  F07D         	goto	u4781
   4740   00FBC4  EFE6  F07D         	goto	u4780
@@ -4802,12 +4802,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4760   00FBEE                     u4800:
   4761   00FBEE                     
   4762                           ; BSR set to: 5
-  4763                           ;main.c: 888:                 {;main.c: 889:                     state = T4StateDummy;
+  4763                           ;main.c: 887:                 {;main.c: 888:                     state = T4StateDummy;
   4764   00FBEE  0E0C               	movlw	12
   4765   00FBF0  6F93               	movwf	main@state& (0+255),b
   4766   00FBF2                     l3670:
   4767                           
-  4768                           ;main.c: 892:                 if(!PORTBbits.RB7 && taster4Flag && led4StateBlink)
+  4768                           ;main.c: 891:                 if(!PORTBbits.RB7 && taster4Flag && led4StateBlink)
   4769   00FBF2  BECF               	btfsc	207,7,c	;volatile
   4770   00FBF4  EFFE  F07D         	goto	u4811
   4771   00FBF8  EF00  F07E         	goto	u4810
@@ -4833,32 +4833,32 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4791   00FC22                     u4830:
   4792   00FC22                     
   4793                           ; BSR set to: 5
-  4794                           ;main.c: 893:                 {;main.c: 894:                     LATCbits.LATC3 = 1;
+  4794                           ;main.c: 892:                 {;main.c: 893:                     LATCbits.LATC3 = 1;
   4795   00FC22  86C0               	bsf	192,3,c	;volatile
   4796   00FC24                     
   4797                           ; BSR set to: 5
-  4798                           ;main.c: 895:                     led4StateBlink = 0;
+  4798                           ;main.c: 894:                     led4StateBlink = 0;
   4799   00FC24  0E00               	movlw	0
   4800   00FC26  6F73               	movwf	main@led4StateBlink& (0+255),b
   4801                           
-  4802                           ;main.c: 896:                     redAdj = 0;
+  4802                           ;main.c: 895:                     redAdj = 0;
   4803   00FC28  0E00               	movlw	0
   4804   00FC2A  6F76               	movwf	main@redAdj& (0+255),b
   4805                           
-  4806                           ;main.c: 897:                     greenAdj = 0;
+  4806                           ;main.c: 896:                     greenAdj = 0;
   4807   00FC2C  0E00               	movlw	0
   4808   00FC2E  6F77               	movwf	main@greenAdj& (0+255),b
   4809                           
-  4810                           ;main.c: 898:                     blueAdj = 0;
+  4810                           ;main.c: 897:                     blueAdj = 0;
   4811   00FC30  0E00               	movlw	0
   4812   00FC32  6F78               	movwf	main@blueAdj& (0+255),b
   4813                           
-  4814                           ;main.c: 899:                     whiteAdj = 0;
+  4814                           ;main.c: 898:                     whiteAdj = 0;
   4815   00FC34  0E00               	movlw	0
   4816   00FC36  6F79               	movwf	main@whiteAdj& (0+255),b
   4817   00FC38                     
   4818                           ; BSR set to: 5
-  4819                           ;main.c: 900:                     DATAEE_WriteByte(32, blueMode1);
+  4819                           ;main.c: 899:                     DATAEE_WriteByte(32, blueMode1);
   4820   00FC38  0E00               	movlw	0
   4821   00FC3A  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4822   00FC3C  0E20               	movlw	32
@@ -4866,7 +4866,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4824   00FC40  C58E  F503         	movff	main@blueMode1,DATAEE_WriteByte@bData
   4825   00FC44  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4826   00FC48                     
-  4827                           ;main.c: 901:                     DATAEE_WriteByte(31, greenMode1);
+  4827                           ;main.c: 900:                     DATAEE_WriteByte(31, greenMode1);
   4828   00FC48  0E00               	movlw	0
   4829   00FC4A  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4830   00FC4C  0E1F               	movlw	31
@@ -4874,7 +4874,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4832   00FC50  C58D  F503         	movff	main@greenMode1,DATAEE_WriteByte@bData
   4833   00FC54  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4834   00FC58                     
-  4835                           ;main.c: 902:                     DATAEE_WriteByte(30, redMode1);
+  4835                           ;main.c: 901:                     DATAEE_WriteByte(30, redMode1);
   4836   00FC58  0E00               	movlw	0
   4837   00FC5A  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4838   00FC5C  0E1E               	movlw	30
@@ -4882,7 +4882,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4840   00FC60  C58C  F503         	movff	main@redMode1,DATAEE_WriteByte@bData
   4841   00FC64  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4842   00FC68                     
-  4843                           ;main.c: 903:                     DATAEE_WriteByte(34, whiteMode1);
+  4843                           ;main.c: 902:                     DATAEE_WriteByte(34, whiteMode1);
   4844   00FC68  0E00               	movlw	0
   4845   00FC6A  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4846   00FC6C  0E22               	movlw	34
@@ -4890,7 +4890,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4848   00FC70  C57E  F503         	movff	main@whiteMode1,DATAEE_WriteByte@bData
   4849   00FC74  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4850   00FC78                     
-  4851                           ;main.c: 904:                     DATAEE_WriteByte(8, 69);
+  4851                           ;main.c: 903:                     DATAEE_WriteByte(8, 69);
   4852   00FC78  0E00               	movlw	0
   4853   00FC7A  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   4854   00FC7C  0E08               	movlw	8
@@ -4900,7 +4900,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4858   00FC84  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   4859   00FC88                     l3690:
   4860                           
-  4861                           ;main.c: 907:                 if(led4StateBlink)
+  4861                           ;main.c: 906:                 if(led4StateBlink)
   4862   00FC88  0105               	movlb	5	; () banked
   4863   00FC8A  5173               	movf	main@led4StateBlink& (0+255),w,b
   4864   00FC8C  B4D8               	btfsc	status,2,c
@@ -4911,7 +4911,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4869   00FC9A                     u4840:
   4870   00FC9A                     
   4871                           ; BSR set to: 5
-  4872                           ;main.c: 908:                 {;main.c: 909:                     if((red >= (redMode4 - 
+  4872                           ;main.c: 907:                 {;main.c: 908:                     if((red >= (redMode4 - 
       +                          5) && red <= redMode4 + 5))
   4873   00FC9A  0EFB               	movlw	251
   4874   00FC9C  2585               	addwf	main@redMode4& (0+255),w,b
@@ -4964,13 +4964,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4921   00FCFC                     u4860:
   4922   00FCFC                     
   4923                           ; BSR set to: 5
-  4924                           ;main.c: 910:                     {;main.c: 911:                         redAdj = 1;
+  4924                           ;main.c: 909:                     {;main.c: 910:                         redAdj = 1;
   4925   00FCFC  0E01               	movlw	1
   4926   00FCFE  6F76               	movwf	main@redAdj& (0+255),b
   4927   00FD00                     l473:
   4928                           
   4929                           ; BSR set to: 5
-  4930                           ;main.c: 914:                     if(redAdj)
+  4930                           ;main.c: 913:                     if(redAdj)
   4931   00FD00  5176               	movf	main@redAdj& (0+255),w,b
   4932   00FD02  B4D8               	btfsc	status,2,c
   4933   00FD04  EF86  F07E         	goto	u4871
@@ -4980,12 +4980,12 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4937   00FD10                     u4870:
   4938   00FD10                     
   4939                           ; BSR set to: 5
-  4940                           ;main.c: 915:                     {;main.c: 916:                         redMode4 = red;
+  4940                           ;main.c: 914:                     {;main.c: 915:                         redMode4 = red;
   4941   00FD10  C590  F585         	movff	main@red,main@redMode4
   4942   00FD14                     l3700:
   4943                           
   4944                           ; BSR set to: 5
-  4945                           ;main.c: 919:                     if((white >= (whiteMode4 - 5) && white <= whiteMode4 +
+  4945                           ;main.c: 918:                     if((white >= (whiteMode4 - 5) && white <= whiteMode4 +
       +                           5))
   4946   00FD14  0EFB               	movlw	251
   4947   00FD16  256F               	addwf	main@whiteMode4& (0+255),w,b
@@ -5038,13 +5038,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   4994   00FD76                     u4890:
   4995   00FD76                     
   4996                           ; BSR set to: 5
-  4997                           ;main.c: 920:                     {;main.c: 921:                         whiteAdj = 1;
+  4997                           ;main.c: 919:                     {;main.c: 920:                         whiteAdj = 1;
   4998   00FD76  0E01               	movlw	1
   4999   00FD78  6F79               	movwf	main@whiteAdj& (0+255),b
   5000   00FD7A                     l475:
   5001                           
   5002                           ; BSR set to: 5
-  5003                           ;main.c: 924:                     if(whiteAdj)
+  5003                           ;main.c: 923:                     if(whiteAdj)
   5004   00FD7A  5179               	movf	main@whiteAdj& (0+255),w,b
   5005   00FD7C  B4D8               	btfsc	status,2,c
   5006   00FD7E  EFC3  F07E         	goto	u4901
@@ -5054,13 +5054,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5010   00FD8A                     u4900:
   5011   00FD8A                     
   5012                           ; BSR set to: 5
-  5013                           ;main.c: 925:                     {;main.c: 926:                         whiteMode4 = wh
+  5013                           ;main.c: 924:                     {;main.c: 925:                         whiteMode4 = wh
       +                          ite;
   5014   00FD8A  C58F  F56F         	movff	main@white,main@whiteMode4
   5015   00FD8E                     l3708:
   5016                           
   5017                           ; BSR set to: 5
-  5018                           ;main.c: 929:                     if((green >= (greenMode4 - 5) && green <= greenMode4 +
+  5018                           ;main.c: 928:                     if((green >= (greenMode4 - 5) && green <= greenMode4 +
       +                           5))
   5019   00FD8E  0EFB               	movlw	251
   5020   00FD90  2586               	addwf	main@greenMode4& (0+255),w,b
@@ -5113,13 +5113,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5067   00FDF0                     u4920:
   5068   00FDF0                     
   5069                           ; BSR set to: 5
-  5070                           ;main.c: 930:                     {;main.c: 931:                        greenAdj = 1;
+  5070                           ;main.c: 929:                     {;main.c: 930:                        greenAdj = 1;
   5071   00FDF0  0E01               	movlw	1
   5072   00FDF2  6F77               	movwf	main@greenAdj& (0+255),b
   5073   00FDF4                     l477:
   5074                           
   5075                           ; BSR set to: 5
-  5076                           ;main.c: 934:                     if(greenAdj)
+  5076                           ;main.c: 933:                     if(greenAdj)
   5077   00FDF4  5177               	movf	main@greenAdj& (0+255),w,b
   5078   00FDF6  B4D8               	btfsc	status,2,c
   5079   00FDF8  EF00  F07F         	goto	u4931
@@ -5129,13 +5129,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5083   00FE04                     u4930:
   5084   00FE04                     
   5085                           ; BSR set to: 5
-  5086                           ;main.c: 935:                     {;main.c: 936:                         greenMode4 = gr
+  5086                           ;main.c: 934:                     {;main.c: 935:                         greenMode4 = gr
       +                          een;
   5087   00FE04  C591  F586         	movff	main@green,main@greenMode4
   5088   00FE08                     l3716:
   5089                           
   5090                           ; BSR set to: 5
-  5091                           ;main.c: 939:                     if((blue >= (blueMode4 - 5) && blue <= blueMode4 + 5))
+  5091                           ;main.c: 938:                     if((blue >= (blueMode4 - 5) && blue <= blueMode4 + 5))
   5092   00FE08  0EFB               	movlw	251
   5093   00FE0A  2587               	addwf	main@blueMode4& (0+255),w,b
   5094   00FE0C  6E2F               	movwf	??_main^(0+1280),c
@@ -5187,13 +5187,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5140   00FE6A                     u4950:
   5141   00FE6A                     
   5142                           ; BSR set to: 5
-  5143                           ;main.c: 940:                     {;main.c: 941:                         blueAdj = 1;
+  5143                           ;main.c: 939:                     {;main.c: 940:                         blueAdj = 1;
   5144   00FE6A  0E01               	movlw	1
   5145   00FE6C  6F78               	movwf	main@blueAdj& (0+255),b
   5146   00FE6E                     l479:
   5147                           
   5148                           ; BSR set to: 5
-  5149                           ;main.c: 944:                     if(blueAdj)
+  5149                           ;main.c: 943:                     if(blueAdj)
   5150   00FE6E  5178               	movf	main@blueAdj& (0+255),w,b
   5151   00FE70  B4D8               	btfsc	status,2,c
   5152   00FE72  EF3D  F07F         	goto	u4961
@@ -5203,13 +5203,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5156   00FE7E                     u4960:
   5157   00FE7E                     
   5158                           ; BSR set to: 5
-  5159                           ;main.c: 945:                     {;main.c: 946:                         blueMode4 = blu
+  5159                           ;main.c: 944:                     {;main.c: 945:                         blueMode4 = blu
       +                          e;
   5160   00FE7E  C592  F587         	movff	main@blue,main@blueMode4
   5161   00FE82                     l472:
   5162                           
   5163                           ; BSR set to: 5
-  5164                           ;main.c: 953:                 if(!PORTCbits.RC6 && taster1Flag)
+  5164                           ;main.c: 952:                 if(!PORTCbits.RC6 && taster1Flag)
   5165   00FE82  BCD0               	btfsc	208,6,c	;volatile
   5166   00FE84  EF46  F07F         	goto	u4971
   5167   00FE88  EF48  F07F         	goto	u4970
@@ -5227,19 +5227,19 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5179   00FEA0                     u4980:
   5180   00FEA0                     
   5181                           ; BSR set to: 5
-  5182                           ;main.c: 954:                 {;main.c: 955:                     LATCbits.LATC3 = 0;
+  5182                           ;main.c: 953:                 {;main.c: 954:                     LATCbits.LATC3 = 0;
   5183   00FEA0  96C0               	bcf	192,3,c	;volatile
   5184                           
-  5185                           ;main.c: 956:                     LATCbits.LATC7 = 1;
+  5185                           ;main.c: 955:                     LATCbits.LATC7 = 1;
   5186   00FEA2  8EC0               	bsf	192,7,c	;volatile
   5187   00FEA4                     
   5188                           ; BSR set to: 5
-  5189                           ;main.c: 957:                     state = T1;
+  5189                           ;main.c: 956:                     state = T1;
   5190   00FEA4  0E01               	movlw	1
   5191   00FEA6  6F93               	movwf	main@state& (0+255),b
   5192   00FEA8                     
   5193                           ; BSR set to: 5
-  5194                           ;main.c: 958:                     DATAEE_WriteByte(36, state);
+  5194                           ;main.c: 957:                     DATAEE_WriteByte(36, state);
   5195   00FEA8  0E00               	movlw	0
   5196   00FEAA  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   5197   00FEAC  0E24               	movlw	36
@@ -5247,7 +5247,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5199   00FEB0  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   5200   00FEB4  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   5201   00FEB8                     
-  5202                           ;main.c: 959:                     DATAEE_WriteByte(2, 69);
+  5202                           ;main.c: 958:                     DATAEE_WriteByte(2, 69);
   5203   00FEB8  0E00               	movlw	0
   5204   00FEBA  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   5205   00FEBC  0E02               	movlw	2
@@ -5257,7 +5257,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5209   00FEC4  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   5210   00FEC8                     l3734:
   5211                           
-  5212                           ;main.c: 963:                 if(!PORTAbits.RA4 && taster2Flag)
+  5212                           ;main.c: 962:                 if(!PORTAbits.RA4 && taster2Flag)
   5213   00FEC8  B8CE               	btfsc	206,4,c	;volatile
   5214   00FECA  EF69  F07F         	goto	u4991
   5215   00FECE  EF6B  F07F         	goto	u4990
@@ -5274,14 +5274,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5226   00FEE8                     u5000:
   5227   00FEE8                     
   5228                           ; BSR set to: 5
-  5229                           ;main.c: 964:                 {;main.c: 965:                     LATCbits.LATC3 = 0;
+  5229                           ;main.c: 963:                 {;main.c: 964:                     LATCbits.LATC3 = 0;
   5230   00FEE8  96C0               	bcf	192,3,c	;volatile
   5231                           
-  5232                           ;main.c: 966:                     LATCbits.LATC5 = 1;
+  5232                           ;main.c: 965:                     LATCbits.LATC5 = 1;
   5233   00FEEA  8AC0               	bsf	192,5,c	;volatile
   5234   00FEEC                     
   5235                           ; BSR set to: 5
-  5236                           ;main.c: 967:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
+  5236                           ;main.c: 966:                     LED_WriteFull(redMode2, greenMode2, blueMode2, 300);
   5237   00FEEC  C580  F50B         	movff	main@greenMode2,LED_WriteFull@green
   5238   00FEF0  C581  F50C         	movff	main@blueMode2,LED_WriteFull@blue
   5239   00FEF4  0E2C               	movlw	44
@@ -5293,13 +5293,13 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5245   00FF00  517F               	movf	main@redMode2& (0+255),w,b
   5246   00FF02  ECFF  F06D         	call	_LED_WriteFull
   5247   00FF06                     
-  5248                           ;main.c: 968:                     state = T2;
+  5248                           ;main.c: 967:                     state = T2;
   5249   00FF06  0E02               	movlw	2
   5250   00FF08  0105               	movlb	5	; () banked
   5251   00FF0A  6F93               	movwf	main@state& (0+255),b
   5252   00FF0C                     
   5253                           ; BSR set to: 5
-  5254                           ;main.c: 969:                     DATAEE_WriteByte(36, state);
+  5254                           ;main.c: 968:                     DATAEE_WriteByte(36, state);
   5255   00FF0C  0E00               	movlw	0
   5256   00FF0E  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   5257   00FF10  0E24               	movlw	36
@@ -5307,7 +5307,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5259   00FF14  C593  F503         	movff	main@state,DATAEE_WriteByte@bData
   5260   00FF18  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   5261   00FF1C                     
-  5262                           ;main.c: 970:                     DATAEE_WriteByte(2, 69);
+  5262                           ;main.c: 969:                     DATAEE_WriteByte(2, 69);
   5263   00FF1C  0E00               	movlw	0
   5264   00FF1E  6E02               	movwf	(DATAEE_WriteByte@bAdd+1)^(0+1280),c
   5265   00FF20  0E02               	movlw	2
@@ -5317,7 +5317,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5269   00FF28  EC4B  F06D         	call	_DATAEE_WriteByte	;wreg free
   5270   00FF2C                     l3748:
   5271                           
-  5272                           ;main.c: 974:                 if(!PORTCbits.RC4 && taster3Flag)
+  5272                           ;main.c: 973:                 if(!PORTCbits.RC4 && taster3Flag)
   5273   00FF2C  B8D0               	btfsc	208,4,c	;volatile
   5274   00FF2E  EF9B  F07F         	goto	u5011
   5275   00FF32  EF9D  F07F         	goto	u5010
@@ -5334,14 +5334,14 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5286   00FF4C                     u5020:
   5287   00FF4C                     
   5288                           ; BSR set to: 5
-  5289                           ;main.c: 975:                 {;main.c: 976:                     LATCbits.LATC3 = 0;
+  5289                           ;main.c: 974:                 {;main.c: 975:                     LATCbits.LATC3 = 0;
   5290   00FF4C  96C0               	bcf	192,3,c	;volatile
   5291                           
-  5292                           ;main.c: 977:                     LATAbits.LATA5 = 1;
+  5292                           ;main.c: 976:                     LATAbits.LATA5 = 1;
   5293   00FF4E  8ABE               	bsf	190,5,c	;volatile
   5294   00FF50                     
   5295                           ; BSR set to: 5
-  5296                           ;main.c: 978:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
+  5296                           ;main.c: 977:                     LED_WriteFull(redMode3, greenMode3, blueMode3, 300);
   5297   00FF50  C583  F50B         	movff	main@greenMode3,LED_WriteFull@green
   5298   00FF54  C584  F50C         	movff	main@blueMode3,LED_WriteFull@blue
   5299   00FF58  0E2C               	movlw	44
@@ -5353,7 +5353,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   5305   00FF64  5182               	movf	main@redMode3& (0+255),w,b
   5306   00FF66  ECFF  F06D         	call	_LED_WriteFull
   5307   00FF6A                     
-  5308                           ;main.c: 979:                     state = T3 ;
+  5308                           ;main.c: 978:                     state = T3 ;
   5309   00FF6A  0E03               	movlw	3
   5310   00FF6C  0105               	movlb	5	; () banked
   5311   00FF6E  6F93               	movwf	main@state& (0+255),b
@@ -8129,7 +8129,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.40 build 20220703182018 
-Symbol Table                                                                                   Sun Aug 06 14:11:16 2023
+Symbol Table                                                                                   Sun Aug 06 14:05:50 2023
 
                                    l45 DB36                                    l142 DA94  
                                   l151 D9B2                                    l127 DB92  

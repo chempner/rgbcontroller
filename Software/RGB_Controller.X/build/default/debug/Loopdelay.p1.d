@@ -1,6 +1,6 @@
-build/default/production/DivFunctions.p1:  \
-DivFunctions.c  \
-DivFunctions.h  \
+build/default/debug/Loopdelay.p1:  \
+Loopdelay.c  \
+Loopdelay.h  \
 mcc_generated_files/mcc.h  \
 mcc_generated_files/device_config.h  \
 mcc_generated_files/pin_manager.h  \

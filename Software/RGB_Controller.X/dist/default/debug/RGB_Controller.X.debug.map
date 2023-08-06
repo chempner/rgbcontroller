@@ -4,12 +4,11 @@ Linker command line:
 
 -W-3 \
   --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
-  -cn -h+dist/default/production\RGB_Controller.X.production.sym \
-  --cmf=dist/default/production\RGB_Controller.X.production.cmf -z \
-  -Q18F16Q40 -oC:\Users\Noe\AppData\Local\Temp\xcAs5og.4 \
-  --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
-  -Mdist/default/production/RGB_Controller.X.production.map \
-  --md=C:\Users\Noe\AppData\Local\Temp\xcAs5og.dat -E1 -ver=XC8 Compiler \
+  -cn -h+dist/default/debug\RGB_Controller.X.debug.sym \
+  --cmf=dist/default/debug\RGB_Controller.X.debug.cmf -z -Q18F16Q40 \
+  -oC:\Users\Noe\AppData\Local\Temp\xcAs5o8.4 --defsym=__MPLAB_BUILD=1 \
+  --fixupoverflow=error -Mdist/default/debug/RGB_Controller.X.debug.map \
+  --md=C:\Users\Noe\AppData\Local\Temp\xcAs5o8.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh \
   -ASMALLCONST=01600h-016FFhx234 -AMEDIUMCONST=01600h-0FFFFh \
   -ACOMRAM=0501h-055Fh -AABS1=0500h-015FFh -ABIGRAM=0501h-015FFh \
@@ -28,8 +27,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Noe\AppData\Local\Temp\xcAs5og.o \
-  dist/default/production\RGB_Controller.X.production.o 
+  C:\Users\Noe\AppData\Local\Temp\xcAs5o8.o \
+  dist/default/debug\RGB_Controller.X.debug.o 
 
 Object code version is 3.11
 
@@ -38,12 +37,12 @@ Machine type is 18F16Q40
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Noe\AppData\Local\Temp\xcAs5og.o
+C:\Users\Noe\AppData\Local\Temp\xcAs5o8.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 init                               FFFC     FFFC        4     7FFE       0
-                reset_vec                             0        0        4        0       0
-dist/default/production\RGB_Controller.X.production.o
+                reset_vec                             0        0        6        0       0
+dist/default/debug\RGB_Controller.X.debug.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000        A        0       4
                 text18                             D9AC     D9AC        8     6CD6       0
@@ -73,7 +72,7 @@ dist/default/production\RGB_Controller.X.production.o
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
                 init                               FFFC     FFFC        4         0
-                reset_vec                             0        0        4         0
+                reset_vec                             0        0        6         0
                 text18                             D9AC     D9AC        8         0
                 text17                             DA66     DA66       30         0
                 text16                             D9FA     D9FA       18         0
@@ -169,7 +168,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                reset_vec                      000000  000004  000004         0       0  CODE    
+                reset_vec                      000000  000006  000006         0       0  CODE    
                 cstackCOMRAM                   000501  000037  000538       501       1  COMRAM  
                 cstackBANK5                    000560  000034  000594       560       1  BANK5   
                 text18                         00D9AC  000008  00D9B4      6CD6       0  CODE    
@@ -219,10 +218,10 @@ UNUSED ADDRESS RANGES
                          000594-0014FF              F6C
                          001502-0015FF               FE
         BIGSFR           000000-0004FF              500
-        CODE             000004-00D9AB             D9A8
+        CODE             000006-00D9AB             D9A6
         COMRAM           000538-00055F               28
         CONFIG           30000A-300011                8
-        CONST            000004-00D9AB             D9A8
+        CONST            000006-00D9AB             D9A6
         EEDATA           380000-3803FF              400
         MEDIUMCONST      001600-00D9AB             C3AC
         RAM              000594-0014FF              100
@@ -407,7 +406,7 @@ __Hramtop                              ramtop       001600
 __Hrbit                                rbit         000000
 __Hrbss                                rbss         000000
 __Hrdata                               rdata        000000
-__Hreset_vec                           reset_vec    000004
+__Hreset_vec                           reset_vec    000006
 __Hrparam                              rparam       000000
 __Hsfr                                 sfr          000000
 __Hsmallconst                          smallconst   000000

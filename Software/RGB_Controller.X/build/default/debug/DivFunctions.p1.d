@@ -1,4 +1,4 @@
-build/default/production/DivFunctions.p1:  \
+build/default/debug/DivFunctions.p1:  \
 DivFunctions.c  \
 DivFunctions.h  \
 mcc_generated_files/mcc.h  \

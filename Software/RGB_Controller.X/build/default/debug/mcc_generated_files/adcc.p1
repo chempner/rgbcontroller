@@ -1,21 +1,218 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"34 ./DivFunctions.h
-[; ;./DivFunctions.h: 34: void ws_send_byte(uint8_t K);
-[v _ws_send_byte `(v ~T0 @X0 0 ef1`uc ]
-"35990 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
-[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 35990:     struct {
-[s S1715 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1715 . . LATB4 LATB5 LATB6 LATB7 ]
-"35989
-[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 35989: typedef union {
-[u S1714 `S1715 1 ]
-[n S1714 . . ]
-"35998
-[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 35998: extern volatile LATBbits_t LATBbits __attribute__((address(0x4BF)));
-[v _LATBbits `VS1714 ~T0 @X0 0 e@1215 ]
-"8 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\builtins.h
-[v ___nop `(v ~T0 @X0 0 ef ]
-[p i ___nop ]
+"26822 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 26822: extern volatile unsigned char ADLTHL __attribute__((address(0x3D9)));
+[v _ADLTHL `Vuc ~T0 @X0 0 e@985 ]
+"26950
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 26950: extern volatile unsigned char ADLTHH __attribute__((address(0x3DA)));
+[v _ADLTHH `Vuc ~T0 @X0 0 e@986 ]
+"27085
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 27085: extern volatile unsigned char ADUTHL __attribute__((address(0x3DB)));
+[v _ADUTHL `Vuc ~T0 @X0 0 e@987 ]
+"27213
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 27213: extern volatile unsigned char ADUTHH __attribute__((address(0x3DC)));
+[v _ADUTHH `Vuc ~T0 @X0 0 e@988 ]
+"27611
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 27611: extern volatile unsigned char ADSTPTL __attribute__((address(0x3DF)));
+[v _ADSTPTL `Vuc ~T0 @X0 0 e@991 ]
+"27739
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 27739: extern volatile unsigned char ADSTPTH __attribute__((address(0x3E0)));
+[v _ADSTPTH `Vuc ~T0 @X0 0 e@992 ]
+"28395
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28395: extern volatile unsigned char ADACCU __attribute__((address(0x3E5)));
+[v _ADACCU `Vuc ~T0 @X0 0 e@997 ]
+"28651
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28651: extern volatile unsigned char ADRPT __attribute__((address(0x3E7)));
+[v _ADRPT `Vuc ~T0 @X0 0 e@999 ]
+"29297
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29297: extern volatile unsigned char ADPCH __attribute__((address(0x3EC)));
+[v _ADPCH `Vuc ~T0 @X0 0 e@1004 ]
+"29362
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29362: extern volatile unsigned char ADACQL __attribute__((address(0x3EE)));
+[v _ADACQL `Vuc ~T0 @X0 0 e@1006 ]
+"29490
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29490: extern volatile unsigned char ADACQH __attribute__((address(0x3EF)));
+[v _ADACQH `Vuc ~T0 @X0 0 e@1007 ]
+"29582
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29582: extern volatile unsigned char ADCAP __attribute__((address(0x3F0)));
+[v _ADCAP `Vuc ~T0 @X0 0 e@1008 ]
+"29641
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29641: extern volatile unsigned char ADPREL __attribute__((address(0x3F1)));
+[v _ADPREL `Vuc ~T0 @X0 0 e@1009 ]
+"29769
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29769: extern volatile unsigned char ADPREH __attribute__((address(0x3F2)));
+[v _ADPREH `Vuc ~T0 @X0 0 e@1010 ]
+"29991
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29991: extern volatile unsigned char ADCON1 __attribute__((address(0x3F4)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@1012 ]
+"30057
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30057: extern volatile unsigned char ADCON2 __attribute__((address(0x3F5)));
+[v _ADCON2 `Vuc ~T0 @X0 0 e@1013 ]
+"30199
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30199: extern volatile unsigned char ADCON3 __attribute__((address(0x3F6)));
+[v _ADCON3 `Vuc ~T0 @X0 0 e@1014 ]
+"30329
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30329: extern volatile unsigned char ADSTAT __attribute__((address(0x3F7)));
+[v _ADSTAT `Vuc ~T0 @X0 0 e@1015 ]
+"30461
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30461: extern volatile unsigned char ADREF __attribute__((address(0x3F8)));
+[v _ADREF `Vuc ~T0 @X0 0 e@1016 ]
+"30601
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30601: extern volatile unsigned char ADACT __attribute__((address(0x3F9)));
+[v _ADACT `Vuc ~T0 @X0 0 e@1017 ]
+"30693
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30693: extern volatile unsigned char ADCLK __attribute__((address(0x3FA)));
+[v _ADCLK `Vuc ~T0 @X0 0 e@1018 ]
+"29861
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29861: extern volatile unsigned char ADCON0 __attribute__((address(0x3F3)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@1011 ]
+"113 mcc_generated_files/adcc.c
+[; ;mcc_generated_files/adcc.c: 113: void ADCC_StartConversion(adcc_channel_t channel)
+[c E12907 2 16 17 58 59 60 61 62 63 .. ]
+[n E12907 . POT1 POT2 POT3 channel_DAC2 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"29867 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29867:     struct {
+[s S1427 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1427 . GO . FM CS . CONT ON ]
+"29876
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29876:     struct {
+[s S1428 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1428 . ADGO . ADFM ADCS . ADCONT ADON ]
+"29885
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29885:     struct {
+[s S1429 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1429 . DONE . FM0 FM1 ]
+"29891
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29891:     struct {
+[s S1430 :1 `uc 1 ]
+[n S1430 . GO_NOT_DONE ]
+"29894
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29894:     struct {
+[s S1431 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1431 . GO_nDONE . ADFM0 ADFM1 ]
+"29866
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29866: typedef union {
+[u S1426 `S1427 1 `S1428 1 `S1429 1 `S1430 1 `S1431 1 ]
+[n S1426 . . . . . . ]
+"29901
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29901: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x3F3)));
+[v _ADCON0bits `VS1426 ~T0 @X0 0 e@1011 ]
+"29177
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29177: extern volatile unsigned char ADRESH __attribute__((address(0x3EB)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@1003 ]
+"29049
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29049: extern volatile unsigned char ADRESL __attribute__((address(0x3EA)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@1002 ]
+"30205
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30205:     struct {
+[s S1441 :3 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S1441 . TMD SOI CALC ]
+"30210
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30210:     struct {
+[s S1442 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1442 . ADTMD0 ADTMD1 ADTMD2 ADSOI ADCALC0 ADCALC1 ADCALC2 ]
+"30219
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30219:     struct {
+[s S1443 :3 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S1443 . ADTMD . ADCALC ]
+"30224
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30224:     struct {
+[s S1444 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1444 . TMD0 TMD1 TMD2 . CALC0 CALC1 CALC2 ]
+"30204
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30204: typedef union {
+[u S1440 `S1441 1 `S1442 1 `S1443 1 `S1444 1 ]
+[n S1440 . . . . . ]
+"30234
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30234: extern volatile ADCON3bits_t ADCON3bits __attribute__((address(0x3F6)));
+[v _ADCON3bits `VS1440 ~T0 @X0 0 e@1014 ]
+"28523
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28523: extern volatile unsigned char ADCNT __attribute__((address(0x3E6)));
+[v _ADCNT `Vuc ~T0 @X0 0 e@998 ]
+"30063
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30063:     struct {
+[s S1436 :3 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S1436 . MD ACLR CRS PSIS ]
+"30069
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30069:     struct {
+[s S1437 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1437 . ADMD0 ADMD1 ADMD2 ADACLR ADCRS0 ADCRS1 ADCRS2 ADPSIS ]
+"30079
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30079:     struct {
+[s S1438 :3 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S1438 . ADMD . ADCRS ]
+"30084
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30084:     struct {
+[s S1439 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1439 . MD0 MD1 MD2 . CRS0 CRS1 CRS2 ]
+"30062
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30062: typedef union {
+[u S1435 `S1436 1 `S1437 1 `S1438 1 `S1439 1 ]
+[n S1435 . . . . . ]
+"30094
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30094: extern volatile ADCON2bits_t ADCON2bits __attribute__((address(0x3F5)));
+[v _ADCON2bits `VS1435 ~T0 @X0 0 e@1013 ]
+"28267
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28267: extern volatile unsigned char ADACCH __attribute__((address(0x3E4)));
+[v _ADACCH `Vuc ~T0 @X0 0 e@996 ]
+"28139
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28139: extern volatile unsigned char ADACCL __attribute__((address(0x3E3)));
+[v _ADACCL `Vuc ~T0 @X0 0 e@995 ]
+"30335
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30335:     struct {
+[s S1446 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1446 . STAT . MATH LTHR UTHR AOV ]
+"30343
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30343:     struct {
+[s S1447 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1447 . ADSTAT0 ADSTAT1 ADSTAT2 . ADMATH ADLTHR ADUTHR ADAOV ]
+"30353
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30353:     struct {
+[s S1448 :3 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S1448 . ADSTAT . ADOV ]
+"30358
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30358:     struct {
+[s S1449 :1 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S1449 . STAT0 STAT1 STAT2 . OV ]
+"30334
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30334: typedef union {
+[u S1445 `S1446 1 `S1447 1 `S1448 1 `S1449 1 ]
+[n S1445 . . . . . ]
+"30366
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30366: extern volatile ADSTATbits_t ADSTATbits __attribute__((address(0x3F7)));
+[v _ADSTATbits `VS1445 ~T0 @X0 0 e@1015 ]
+"28002
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28002: extern volatile unsigned char ADFLTRH __attribute__((address(0x3E2)));
+[v _ADFLTRH `Vuc ~T0 @X0 0 e@994 ]
+"27874
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 27874: extern volatile unsigned char ADFLTRL __attribute__((address(0x3E1)));
+[v _ADFLTRL `Vuc ~T0 @X0 0 e@993 ]
+"28914
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28914: extern volatile unsigned char ADPREVH __attribute__((address(0x3E9)));
+[v _ADPREVH `Vuc ~T0 @X0 0 e@1001 ]
+"28786
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 28786: extern volatile unsigned char ADPREVL __attribute__((address(0x3E8)));
+[v _ADPREVL `Vuc ~T0 @X0 0 e@1000 ]
+"27476
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 27476: extern volatile unsigned char ADERRH __attribute__((address(0x3DE)));
+[v _ADERRH `Vuc ~T0 @X0 0 e@990 ]
+"27348
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 27348: extern volatile unsigned char ADERRL __attribute__((address(0x3DD)));
+[v _ADERRL `Vuc ~T0 @X0 0 e@989 ]
+"29997
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29997:     struct {
+[s S1433 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1433 . DSEN . GPOL IPEN PPOL ]
+"30004
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30004:     struct {
+[s S1434 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1434 . ADDSEN . ADGPOL ADIPEN ADPPOL ]
+"29996
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 29996: typedef union {
+[u S1432 `S1433 1 `S1434 1 ]
+[n S1432 . . . ]
+"30012
+[; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 30012: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x3F4)));
+[v _ADCON1bits `VS1432 ~T0 @X0 0 e@1012 ]
 "270 C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h
 [; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 270: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2023,316 +2220,571 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37716
 [; ;C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f16q40.h: 37716: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"3 DivFunctions.c
-[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B)
-[v _WS2812B_Write `(v ~T0 @X0 1 ef3`uc`uc`uc ]
-"4
-[; ;DivFunctions.c: 4: {
+"62 mcc_generated_files/adcc.c
+[; ;mcc_generated_files/adcc.c: 62: void ADCC_Initialize(void)
+[v _ADCC_Initialize `(v ~T0 @X0 1 ef ]
+"63
+[; ;mcc_generated_files/adcc.c: 63: {
 {
-[e :U _WS2812B_Write ]
-"3
-[; ;DivFunctions.c: 3: void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B)
-[v _R `uc ~T0 @X0 1 r1 ]
-[v _G `uc ~T0 @X0 1 r2 ]
-[v _B `uc ~T0 @X0 1 r3 ]
-"4
-[; ;DivFunctions.c: 4: {
+[e :U _ADCC_Initialize ]
 [f ]
-"5
-[; ;DivFunctions.c: 5:     ws_send_byte(G);
-[e ( _ws_send_byte (1 _G ]
-"6
-[; ;DivFunctions.c: 6:     ws_send_byte(R);
-[e ( _ws_send_byte (1 _R ]
-"7
-[; ;DivFunctions.c: 7:     ws_send_byte(B);
-[e ( _ws_send_byte (1 _B ]
-"8
-[; ;DivFunctions.c: 8: }
+"66
+[; ;mcc_generated_files/adcc.c: 66:     ADLTHL = 0x00;
+[e = _ADLTHL -> -> 0 `i `uc ]
+"68
+[; ;mcc_generated_files/adcc.c: 68:     ADLTHH = 0x00;
+[e = _ADLTHH -> -> 0 `i `uc ]
+"70
+[; ;mcc_generated_files/adcc.c: 70:     ADUTHL = 0x00;
+[e = _ADUTHL -> -> 0 `i `uc ]
+"72
+[; ;mcc_generated_files/adcc.c: 72:     ADUTHH = 0x00;
+[e = _ADUTHH -> -> 0 `i `uc ]
+"74
+[; ;mcc_generated_files/adcc.c: 74:     ADSTPTL = 0x00;
+[e = _ADSTPTL -> -> 0 `i `uc ]
+"76
+[; ;mcc_generated_files/adcc.c: 76:     ADSTPTH = 0x00;
+[e = _ADSTPTH -> -> 0 `i `uc ]
+"78
+[; ;mcc_generated_files/adcc.c: 78:     ADACCU = 0x00;
+[e = _ADACCU -> -> 0 `i `uc ]
+"80
+[; ;mcc_generated_files/adcc.c: 80:     ADRPT = 0x00;
+[e = _ADRPT -> -> 0 `i `uc ]
+"82
+[; ;mcc_generated_files/adcc.c: 82:     ADPCH = 0x00;
+[e = _ADPCH -> -> 0 `i `uc ]
+"84
+[; ;mcc_generated_files/adcc.c: 84:     ADACQL = 0x00;
+[e = _ADACQL -> -> 0 `i `uc ]
+"86
+[; ;mcc_generated_files/adcc.c: 86:     ADACQH = 0x00;
+[e = _ADACQH -> -> 0 `i `uc ]
+"88
+[; ;mcc_generated_files/adcc.c: 88:     ADCAP = 0x00;
+[e = _ADCAP -> -> 0 `i `uc ]
+"90
+[; ;mcc_generated_files/adcc.c: 90:     ADPREL = 0x00;
+[e = _ADPREL -> -> 0 `i `uc ]
+"92
+[; ;mcc_generated_files/adcc.c: 92:     ADPREH = 0x00;
+[e = _ADPREH -> -> 0 `i `uc ]
+"94
+[; ;mcc_generated_files/adcc.c: 94:     ADCON1 = 0x00;
+[e = _ADCON1 -> -> 0 `i `uc ]
+"96
+[; ;mcc_generated_files/adcc.c: 96:     ADCON2 = 0x10;
+[e = _ADCON2 -> -> 16 `i `uc ]
+"98
+[; ;mcc_generated_files/adcc.c: 98:     ADCON3 = 0x00;
+[e = _ADCON3 -> -> 0 `i `uc ]
+"100
+[; ;mcc_generated_files/adcc.c: 100:     ADSTAT = 0x00;
+[e = _ADSTAT -> -> 0 `i `uc ]
+"102
+[; ;mcc_generated_files/adcc.c: 102:     ADREF = 0x00;
+[e = _ADREF -> -> 0 `i `uc ]
+"104
+[; ;mcc_generated_files/adcc.c: 104:     ADACT = 0x00;
+[e = _ADACT -> -> 0 `i `uc ]
+"106
+[; ;mcc_generated_files/adcc.c: 106:     ADCLK = 0x1F;
+[e = _ADCLK -> -> 31 `i `uc ]
+"108
+[; ;mcc_generated_files/adcc.c: 108:     ADCON0 = 0x84;
+[e = _ADCON0 -> -> 132 `i `uc ]
+"111
+[; ;mcc_generated_files/adcc.c: 111: }
+[e :UE 1832 ]
+}
+"113
+[; ;mcc_generated_files/adcc.c: 113: void ADCC_StartConversion(adcc_channel_t channel)
+[v _ADCC_StartConversion `(v ~T0 @X0 1 ef1`E12907 ]
+"114
+[; ;mcc_generated_files/adcc.c: 114: {
+{
+[e :U _ADCC_StartConversion ]
+"113
+[; ;mcc_generated_files/adcc.c: 113: void ADCC_StartConversion(adcc_channel_t channel)
+[v _channel `E12907 ~T0 @X0 1 r1 ]
+"114
+[; ;mcc_generated_files/adcc.c: 114: {
+[f ]
+"116
+[; ;mcc_generated_files/adcc.c: 116:     ADPCH = channel;
+[e = _ADPCH -> _channel `uc ]
+"119
+[; ;mcc_generated_files/adcc.c: 119:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
+"122
+[; ;mcc_generated_files/adcc.c: 122:     ADCON0bits.ADGO = 1;
+[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+"123
+[; ;mcc_generated_files/adcc.c: 123: }
+[e :UE 1833 ]
+}
+"125
+[; ;mcc_generated_files/adcc.c: 125: _Bool ADCC_IsConversionDone(void)
+[v _ADCC_IsConversionDone `(a ~T0 @X0 1 ef ]
+"126
+[; ;mcc_generated_files/adcc.c: 126: {
+{
+[e :U _ADCC_IsConversionDone ]
+[f ]
+"128
+[; ;mcc_generated_files/adcc.c: 128:     return ((unsigned char)(!ADCON0bits.ADGO));
+[e ) -> -> -> ! != -> . . _ADCON0bits 1 0 `i -> 0 `i `i `uc `a ]
+[e $UE 1834  ]
+"129
+[; ;mcc_generated_files/adcc.c: 129: }
 [e :UE 1834 ]
 }
-"10
-[; ;DivFunctions.c: 10: long map(long x, long in_min, long in_max, long out_min, long out_max) {
-[v _map `(l ~T0 @X0 1 ef5`l`l`l`l`l ]
+"131
+[; ;mcc_generated_files/adcc.c: 131: adc_result_t ADCC_GetConversionResult(void)
+[v _ADCC_GetConversionResult `(us ~T0 @X0 1 ef ]
+"132
+[; ;mcc_generated_files/adcc.c: 132: {
 {
-[e :U _map ]
-[v _x `l ~T0 @X0 1 r1 ]
-[v _in_min `l ~T0 @X0 1 r2 ]
-[v _in_max `l ~T0 @X0 1 r3 ]
-[v _out_min `l ~T0 @X0 1 r4 ]
-[v _out_max `l ~T0 @X0 1 r5 ]
+[e :U _ADCC_GetConversionResult ]
 [f ]
-"11
-[; ;DivFunctions.c: 11:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
+"134
+[; ;mcc_generated_files/adcc.c: 134:     return ((adc_result_t)((ADRESH << 8) + ADRESL));
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
 [e $UE 1835  ]
-"12
-[; ;DivFunctions.c: 12: }
+"135
+[; ;mcc_generated_files/adcc.c: 135: }
 [e :UE 1835 ]
 }
-"14
-[; ;DivFunctions.c: 14: void onePulse(void)
-[v _onePulse `(v ~T0 @X0 1 ef ]
-"15
-[; ;DivFunctions.c: 15: {
+"137
+[; ;mcc_generated_files/adcc.c: 137: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel)
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 1 ef1`E12907 ]
+"138
+[; ;mcc_generated_files/adcc.c: 138: {
 {
-[e :U _onePulse ]
+[e :U _ADCC_GetSingleConversion ]
+"137
+[; ;mcc_generated_files/adcc.c: 137: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel)
+[v _channel `E12907 ~T0 @X0 1 r1 ]
+"138
+[; ;mcc_generated_files/adcc.c: 138: {
 [f ]
-"16
-[; ;DivFunctions.c: 16:     LATBbits.LATB4 = 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"17
-[; ;DivFunctions.c: 17:     __nop();
-[e ( ___nop ..  ]
-"18
-[; ;DivFunctions.c: 18:     __nop();
-[e ( ___nop ..  ]
-"19
-[; ;DivFunctions.c: 19:     __nop();
-[e ( ___nop ..  ]
-"20
-[; ;DivFunctions.c: 20:     __nop();
-[e ( ___nop ..  ]
-"21
-[; ;DivFunctions.c: 21:     __nop();
-[e ( ___nop ..  ]
-"22
-[; ;DivFunctions.c: 22:     __nop();
-[e ( ___nop ..  ]
-"23
-[; ;DivFunctions.c: 23:     __nop();
-[e ( ___nop ..  ]
-"24
-[; ;DivFunctions.c: 24:     __nop();
-[e ( ___nop ..  ]
-"25
-[; ;DivFunctions.c: 25:     __nop();
-[e ( ___nop ..  ]
-"26
-[; ;DivFunctions.c: 26:     __nop();
-[e ( ___nop ..  ]
-"27
-[; ;DivFunctions.c: 27:     __nop();
-[e ( ___nop ..  ]
-"28
-[; ;DivFunctions.c: 28:     LATBbits.LATB4 = 0;
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-"29
-[; ;DivFunctions.c: 29: }
+"140
+[; ;mcc_generated_files/adcc.c: 140:     ADPCH = channel;
+[e = _ADPCH -> _channel `uc ]
+"143
+[; ;mcc_generated_files/adcc.c: 143:     ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
+"146
+[; ;mcc_generated_files/adcc.c: 146:     ADCON0bits.ADCONT = 0;
+[e = . . _ADCON0bits 1 5 -> -> 0 `i `uc ]
+"149
+[; ;mcc_generated_files/adcc.c: 149:     ADCON0bits.ADGO = 1;
+[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+"153
+[; ;mcc_generated_files/adcc.c: 153:     while (ADCON0bits.ADGO)
+[e $U 1837  ]
+[e :U 1838 ]
+"154
+[; ;mcc_generated_files/adcc.c: 154:     {
+{
+"155
+[; ;mcc_generated_files/adcc.c: 155:     }
+}
+[e :U 1837 ]
+"153
+[; ;mcc_generated_files/adcc.c: 153:     while (ADCON0bits.ADGO)
+[e $ != -> . . _ADCON0bits 1 0 `i -> 0 `i 1838  ]
+[e :U 1839 ]
+"159
+[; ;mcc_generated_files/adcc.c: 159:     return ((adc_result_t)((ADRESH << 8) + ADRESL));
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
+[e $UE 1836  ]
+"160
+[; ;mcc_generated_files/adcc.c: 160: }
 [e :UE 1836 ]
 }
-"31
-[; ;DivFunctions.c: 31: void zeroPulse(void)
-[v _zeroPulse `(v ~T0 @X0 1 ef ]
-"32
-[; ;DivFunctions.c: 32: {
+"162
+[; ;mcc_generated_files/adcc.c: 162: void ADCC_StopConversion(void)
+[v _ADCC_StopConversion `(v ~T0 @X0 1 ef ]
+"163
+[; ;mcc_generated_files/adcc.c: 163: {
 {
-[e :U _zeroPulse ]
+[e :U _ADCC_StopConversion ]
 [f ]
-"33
-[; ;DivFunctions.c: 33:     LATBbits.LATB4 = 1;
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"34
-[; ;DivFunctions.c: 34:     __nop();
-[e ( ___nop ..  ]
-"35
-[; ;DivFunctions.c: 35:     __nop();
-[e ( ___nop ..  ]
-"36
-[; ;DivFunctions.c: 36:     __nop();
-[e ( ___nop ..  ]
-"37
-[; ;DivFunctions.c: 37:     LATBbits.LATB4 = 0;
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-"48
-[; ;DivFunctions.c: 48: }
-[e :UE 1837 ]
+"165
+[; ;mcc_generated_files/adcc.c: 165:     ADCON0bits.ADGO = 0;
+[e = . . _ADCON0bits 1 0 -> -> 0 `i `uc ]
+"166
+[; ;mcc_generated_files/adcc.c: 166: }
+[e :UE 1840 ]
 }
-"49
-[; ;DivFunctions.c: 49: void ws_send_byte(uint8_t K)
-[v _ws_send_byte `(v ~T0 @X0 1 ef1`uc ]
-"50
-[; ;DivFunctions.c: 50: {
+"168
+[; ;mcc_generated_files/adcc.c: 168: void ADCC_SetStopOnInterrupt(void)
+[v _ADCC_SetStopOnInterrupt `(v ~T0 @X0 1 ef ]
+"169
+[; ;mcc_generated_files/adcc.c: 169: {
 {
-[e :U _ws_send_byte ]
-"49
-[; ;DivFunctions.c: 49: void ws_send_byte(uint8_t K)
-[v _K `uc ~T0 @X0 1 r1 ]
-"50
-[; ;DivFunctions.c: 50: {
+[e :U _ADCC_SetStopOnInterrupt ]
 [f ]
-"51
-[; ;DivFunctions.c: 51:     if(K & 0b10000000) {onePulse();}
-[e $ ! != & -> _K `i -> 128 `i -> 0 `i 1839  ]
-{
-[e ( _onePulse ..  ]
+"171
+[; ;mcc_generated_files/adcc.c: 171:     ADCON3bits.ADSOI = 1;
+[e = . . _ADCON3bits 1 3 -> -> 1 `i `uc ]
+"172
+[; ;mcc_generated_files/adcc.c: 172: }
+[e :UE 1841 ]
 }
-[e $U 1840  ]
-"52
-[; ;DivFunctions.c: 52:     else {zeroPulse();}
-[e :U 1839 ]
+"174
+[; ;mcc_generated_files/adcc.c: 174: void ADCC_DischargeSampleCapacitor(void)
+[v _ADCC_DischargeSampleCapacitor `(v ~T0 @X0 1 ef ]
+"175
+[; ;mcc_generated_files/adcc.c: 175: {
 {
-[e ( _zeroPulse ..  ]
-}
-[e :U 1840 ]
-"54
-[; ;DivFunctions.c: 54:     if(K & 0b01000000) {onePulse();}
-[e $ ! != & -> _K `i -> 64 `i -> 0 `i 1841  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1842  ]
-"55
-[; ;DivFunctions.c: 55:     else {zeroPulse();}
-[e :U 1841 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1842 ]
-"57
-[; ;DivFunctions.c: 57:     if(K & 0b00100000) {onePulse();}
-[e $ ! != & -> _K `i -> 32 `i -> 0 `i 1843  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1844  ]
-"58
-[; ;DivFunctions.c: 58:     else {zeroPulse();}
-[e :U 1843 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1844 ]
-"60
-[; ;DivFunctions.c: 60:     if(K & 0b00010000) {onePulse();}
-[e $ ! != & -> _K `i -> 16 `i -> 0 `i 1845  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1846  ]
-"61
-[; ;DivFunctions.c: 61:     else {zeroPulse();}
-[e :U 1845 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1846 ]
-"63
-[; ;DivFunctions.c: 63:     if(K & 0b00001000) {onePulse();}
-[e $ ! != & -> _K `i -> 8 `i -> 0 `i 1847  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1848  ]
-"64
-[; ;DivFunctions.c: 64:     else {zeroPulse();}
-[e :U 1847 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1848 ]
-"66
-[; ;DivFunctions.c: 66:     if(K & 0b00000100) {onePulse();}
-[e $ ! != & -> _K `i -> 4 `i -> 0 `i 1849  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1850  ]
-"67
-[; ;DivFunctions.c: 67:     else {zeroPulse();}
-[e :U 1849 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1850 ]
-"69
-[; ;DivFunctions.c: 69:     if(K & 0b00000010) {onePulse();}
-[e $ ! != & -> _K `i -> 2 `i -> 0 `i 1851  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1852  ]
-"70
-[; ;DivFunctions.c: 70:     else {zeroPulse();}
-[e :U 1851 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1852 ]
-"72
-[; ;DivFunctions.c: 72:     if(K & 0b00000001) {onePulse();}
-[e $ ! != & -> _K `i -> 1 `i -> 0 `i 1853  ]
-{
-[e ( _onePulse ..  ]
-}
-[e $U 1854  ]
-"73
-[; ;DivFunctions.c: 73:     else {zeroPulse();}
-[e :U 1853 ]
-{
-[e ( _zeroPulse ..  ]
-}
-[e :U 1854 ]
-"74
-[; ;DivFunctions.c: 74: }
-[e :UE 1838 ]
-}
-"76
-[; ;DivFunctions.c: 76: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint24_t ledcount)
-[v _LED_WriteFull `(v ~T0 @X0 1 ef4`uc`uc`uc`um ]
-"77
-[; ;DivFunctions.c: 77: {
-{
-[e :U _LED_WriteFull ]
-"76
-[; ;DivFunctions.c: 76: void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint24_t ledcount)
-[v _red `uc ~T0 @X0 1 r1 ]
-[v _green `uc ~T0 @X0 1 r2 ]
-[v _blue `uc ~T0 @X0 1 r3 ]
-[v _ledcount `um ~T0 @X0 1 r4 ]
-"77
-[; ;DivFunctions.c: 77: {
+[e :U _ADCC_DischargeSampleCapacitor ]
 [f ]
-"78
-[; ;DivFunctions.c: 78:     for(uint24_t x = 0; x <= (ledcount/20); x++)
-{
-[v _x `um ~T0 @X0 1 a ]
-[e = _x -> -> -> 0 `i `m `um ]
-[e $U 1859  ]
-[e :U 1856 ]
-"79
-[; ;DivFunctions.c: 79:     {
-{
-"80
-[; ;DivFunctions.c: 80:         for(uint8_t i=0; i <= 20; i++)
-{
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-[e $ <= -> _i `i -> 20 `i 1860  ]
-[e $U 1861  ]
-[e :U 1860 ]
-"81
-[; ;DivFunctions.c: 81:         {
-{
-"82
-[; ;DivFunctions.c: 82:             WS2812B_Write(red, green, blue);
-[e ( _WS2812B_Write (3 , , _red _green _blue ]
-"83
-[; ;DivFunctions.c: 83:         }
+"177
+[; ;mcc_generated_files/adcc.c: 177:     ADPCH = 0x3b;
+[e = _ADPCH -> -> 59 `i `uc ]
+"178
+[; ;mcc_generated_files/adcc.c: 178: }
+[e :UE 1842 ]
 }
-[e ++ _i -> -> 1 `i `uc ]
-[e $ <= -> _i `i -> 20 `i 1860  ]
-[e :U 1861 ]
+"180
+[; ;mcc_generated_files/adcc.c: 180: void ADCC_LoadAcquisitionRegister(uint16_t acquisitionValue)
+[v _ADCC_LoadAcquisitionRegister `(v ~T0 @X0 1 ef1`us ]
+"181
+[; ;mcc_generated_files/adcc.c: 181: {
+{
+[e :U _ADCC_LoadAcquisitionRegister ]
+"180
+[; ;mcc_generated_files/adcc.c: 180: void ADCC_LoadAcquisitionRegister(uint16_t acquisitionValue)
+[v _acquisitionValue `us ~T0 @X0 1 r1 ]
+"181
+[; ;mcc_generated_files/adcc.c: 181: {
+[f ]
+"183
+[; ;mcc_generated_files/adcc.c: 183:     ADACQH = (uint8_t) (acquisitionValue >> 8);
+[e = _ADACQH -> >> -> _acquisitionValue `ui -> 8 `i `uc ]
+"184
+[; ;mcc_generated_files/adcc.c: 184:     ADACQL = (uint8_t) acquisitionValue;
+[e = _ADACQL -> _acquisitionValue `uc ]
+"185
+[; ;mcc_generated_files/adcc.c: 185: }
+[e :UE 1843 ]
 }
-"85
-[; ;DivFunctions.c: 85:     }
+"187
+[; ;mcc_generated_files/adcc.c: 187: void ADCC_SetPrechargeTime(uint16_t prechargeTime)
+[v _ADCC_SetPrechargeTime `(v ~T0 @X0 1 ef1`us ]
+"188
+[; ;mcc_generated_files/adcc.c: 188: {
+{
+[e :U _ADCC_SetPrechargeTime ]
+"187
+[; ;mcc_generated_files/adcc.c: 187: void ADCC_SetPrechargeTime(uint16_t prechargeTime)
+[v _prechargeTime `us ~T0 @X0 1 r1 ]
+"188
+[; ;mcc_generated_files/adcc.c: 188: {
+[f ]
+"190
+[; ;mcc_generated_files/adcc.c: 190:     ADPREH = (uint8_t) (prechargeTime >> 8);
+[e = _ADPREH -> >> -> _prechargeTime `ui -> 8 `i `uc ]
+"191
+[; ;mcc_generated_files/adcc.c: 191:     ADPREL = (uint8_t) prechargeTime;
+[e = _ADPREL -> _prechargeTime `uc ]
+"192
+[; ;mcc_generated_files/adcc.c: 192: }
+[e :UE 1844 ]
 }
-[e ++ _x -> -> -> 1 `i `m `um ]
-[e :U 1859 ]
-[e $ <= _x / _ledcount -> -> -> 20 `i `m `um 1856  ]
-[e :U 1857 ]
+"194
+[; ;mcc_generated_files/adcc.c: 194: void ADCC_SetRepeatCount(uint8_t repeatCount)
+[v _ADCC_SetRepeatCount `(v ~T0 @X0 1 ef1`uc ]
+"195
+[; ;mcc_generated_files/adcc.c: 195: {
+{
+[e :U _ADCC_SetRepeatCount ]
+"194
+[; ;mcc_generated_files/adcc.c: 194: void ADCC_SetRepeatCount(uint8_t repeatCount)
+[v _repeatCount `uc ~T0 @X0 1 r1 ]
+"195
+[; ;mcc_generated_files/adcc.c: 195: {
+[f ]
+"197
+[; ;mcc_generated_files/adcc.c: 197:     ADRPT = repeatCount;
+[e = _ADRPT _repeatCount ]
+"198
+[; ;mcc_generated_files/adcc.c: 198: }
+[e :UE 1845 ]
 }
-"87
-[; ;DivFunctions.c: 87: }
+"200
+[; ;mcc_generated_files/adcc.c: 200: uint8_t ADCC_GetCurrentCountofConversions(void)
+[v _ADCC_GetCurrentCountofConversions `(uc ~T0 @X0 1 ef ]
+"201
+[; ;mcc_generated_files/adcc.c: 201: {
+{
+[e :U _ADCC_GetCurrentCountofConversions ]
+[f ]
+"203
+[; ;mcc_generated_files/adcc.c: 203:     return ADCNT;
+[e ) _ADCNT ]
+[e $UE 1846  ]
+"204
+[; ;mcc_generated_files/adcc.c: 204: }
+[e :UE 1846 ]
+}
+"206
+[; ;mcc_generated_files/adcc.c: 206: void ADCC_ClearAccumulator(void)
+[v _ADCC_ClearAccumulator `(v ~T0 @X0 1 ef ]
+"207
+[; ;mcc_generated_files/adcc.c: 207: {
+{
+[e :U _ADCC_ClearAccumulator ]
+[f ]
+"209
+[; ;mcc_generated_files/adcc.c: 209:     ADCON2bits.ADACLR = 1;
+[e = . . _ADCON2bits 1 3 -> -> 1 `i `uc ]
+"210
+[; ;mcc_generated_files/adcc.c: 210: }
+[e :UE 1847 ]
+}
+"212
+[; ;mcc_generated_files/adcc.c: 212: uint24_t ADCC_GetAccumulatorValue(void)
+[v _ADCC_GetAccumulatorValue `(um ~T0 @X0 1 ef ]
+"213
+[; ;mcc_generated_files/adcc.c: 213: {
+{
+[e :U _ADCC_GetAccumulatorValue ]
+[f ]
+"215
+[; ;mcc_generated_files/adcc.c: 215:     return (((uint24_t)ADACCU << 16)+((uint24_t)ADACCH << 8) + ADACCL);
+[e ) + + << -> _ADACCU `um -> 16 `i << -> _ADACCH `um -> 8 `i -> _ADACCL `um ]
+[e $UE 1848  ]
+"216
+[; ;mcc_generated_files/adcc.c: 216: }
+[e :UE 1848 ]
+}
+"218
+[; ;mcc_generated_files/adcc.c: 218: _Bool ADCC_HasAccumulatorOverflowed(void)
+[v _ADCC_HasAccumulatorOverflowed `(a ~T0 @X0 1 ef ]
+"219
+[; ;mcc_generated_files/adcc.c: 219: {
+{
+[e :U _ADCC_HasAccumulatorOverflowed ]
+[f ]
+"221
+[; ;mcc_generated_files/adcc.c: 221:     return ADSTATbits.ADAOV;
+[e ) -> . . _ADSTATbits 1 7 `a ]
+[e $UE 1849  ]
+"222
+[; ;mcc_generated_files/adcc.c: 222: }
+[e :UE 1849 ]
+}
+"224
+[; ;mcc_generated_files/adcc.c: 224: uint16_t ADCC_GetFilterValue(void)
+[v _ADCC_GetFilterValue `(us ~T0 @X0 1 ef ]
+"225
+[; ;mcc_generated_files/adcc.c: 225: {
+{
+[e :U _ADCC_GetFilterValue ]
+[f ]
+"227
+[; ;mcc_generated_files/adcc.c: 227:     return ((uint16_t)((ADFLTRH << 8) + ADFLTRL));
+[e ) -> + << -> _ADFLTRH `i -> 8 `i -> _ADFLTRL `i `us ]
+[e $UE 1850  ]
+"228
+[; ;mcc_generated_files/adcc.c: 228: }
+[e :UE 1850 ]
+}
+"230
+[; ;mcc_generated_files/adcc.c: 230: uint16_t ADCC_GetPreviousResult(void)
+[v _ADCC_GetPreviousResult `(us ~T0 @X0 1 ef ]
+"231
+[; ;mcc_generated_files/adcc.c: 231: {
+{
+[e :U _ADCC_GetPreviousResult ]
+[f ]
+"233
+[; ;mcc_generated_files/adcc.c: 233:     return ((uint16_t)((ADPREVH << 8) + ADPREVL));
+[e ) -> + << -> _ADPREVH `i -> 8 `i -> _ADPREVL `i `us ]
+[e $UE 1851  ]
+"234
+[; ;mcc_generated_files/adcc.c: 234: }
+[e :UE 1851 ]
+}
+"236
+[; ;mcc_generated_files/adcc.c: 236: void ADCC_DefineSetPoint(uint16_t setPoint)
+[v _ADCC_DefineSetPoint `(v ~T0 @X0 1 ef1`us ]
+"237
+[; ;mcc_generated_files/adcc.c: 237: {
+{
+[e :U _ADCC_DefineSetPoint ]
+"236
+[; ;mcc_generated_files/adcc.c: 236: void ADCC_DefineSetPoint(uint16_t setPoint)
+[v _setPoint `us ~T0 @X0 1 r1 ]
+"237
+[; ;mcc_generated_files/adcc.c: 237: {
+[f ]
+"239
+[; ;mcc_generated_files/adcc.c: 239:     ADSTPTH = (uint8_t) (setPoint >> 8);
+[e = _ADSTPTH -> >> -> _setPoint `ui -> 8 `i `uc ]
+"240
+[; ;mcc_generated_files/adcc.c: 240:     ADSTPTL = (uint8_t) setPoint;
+[e = _ADSTPTL -> _setPoint `uc ]
+"241
+[; ;mcc_generated_files/adcc.c: 241: }
+[e :UE 1852 ]
+}
+"243
+[; ;mcc_generated_files/adcc.c: 243: void ADCC_SetUpperThreshold(uint16_t upperThreshold)
+[v _ADCC_SetUpperThreshold `(v ~T0 @X0 1 ef1`us ]
+"244
+[; ;mcc_generated_files/adcc.c: 244: {
+{
+[e :U _ADCC_SetUpperThreshold ]
+"243
+[; ;mcc_generated_files/adcc.c: 243: void ADCC_SetUpperThreshold(uint16_t upperThreshold)
+[v _upperThreshold `us ~T0 @X0 1 r1 ]
+"244
+[; ;mcc_generated_files/adcc.c: 244: {
+[f ]
+"246
+[; ;mcc_generated_files/adcc.c: 246:     ADUTHH = (uint8_t) (upperThreshold >> 8);
+[e = _ADUTHH -> >> -> _upperThreshold `ui -> 8 `i `uc ]
+"247
+[; ;mcc_generated_files/adcc.c: 247:     ADUTHL = (uint8_t) (upperThreshold);
+[e = _ADUTHL -> _upperThreshold `uc ]
+"248
+[; ;mcc_generated_files/adcc.c: 248: }
+[e :UE 1853 ]
+}
+"250
+[; ;mcc_generated_files/adcc.c: 250: void ADCC_SetLowerThreshold(uint16_t lowerThreshold)
+[v _ADCC_SetLowerThreshold `(v ~T0 @X0 1 ef1`us ]
+"251
+[; ;mcc_generated_files/adcc.c: 251: {
+{
+[e :U _ADCC_SetLowerThreshold ]
+"250
+[; ;mcc_generated_files/adcc.c: 250: void ADCC_SetLowerThreshold(uint16_t lowerThreshold)
+[v _lowerThreshold `us ~T0 @X0 1 r1 ]
+"251
+[; ;mcc_generated_files/adcc.c: 251: {
+[f ]
+"253
+[; ;mcc_generated_files/adcc.c: 253:     ADLTHH = (uint8_t) (lowerThreshold >> 8);
+[e = _ADLTHH -> >> -> _lowerThreshold `ui -> 8 `i `uc ]
+"254
+[; ;mcc_generated_files/adcc.c: 254:     ADLTHL = (uint8_t) lowerThreshold;
+[e = _ADLTHL -> _lowerThreshold `uc ]
+"255
+[; ;mcc_generated_files/adcc.c: 255: }
+[e :UE 1854 ]
+}
+"257
+[; ;mcc_generated_files/adcc.c: 257: uint16_t ADCC_GetErrorCalculation(void)
+[v _ADCC_GetErrorCalculation `(us ~T0 @X0 1 ef ]
+"258
+[; ;mcc_generated_files/adcc.c: 258: {
+{
+[e :U _ADCC_GetErrorCalculation ]
+[f ]
+"260
+[; ;mcc_generated_files/adcc.c: 260:  return ((uint16_t)((ADERRH << 8) + ADERRL));
+[e ) -> + << -> _ADERRH `i -> 8 `i -> _ADERRL `i `us ]
+[e $UE 1855  ]
+"261
+[; ;mcc_generated_files/adcc.c: 261: }
 [e :UE 1855 ]
+}
+"263
+[; ;mcc_generated_files/adcc.c: 263: void ADCC_EnableDoubleSampling(void)
+[v _ADCC_EnableDoubleSampling `(v ~T0 @X0 1 ef ]
+"264
+[; ;mcc_generated_files/adcc.c: 264: {
+{
+[e :U _ADCC_EnableDoubleSampling ]
+[f ]
+"266
+[; ;mcc_generated_files/adcc.c: 266:     ADCON1bits.ADDSEN = 1;
+[e = . . _ADCON1bits 1 0 -> -> 1 `i `uc ]
+"267
+[; ;mcc_generated_files/adcc.c: 267: }
+[e :UE 1856 ]
+}
+"269
+[; ;mcc_generated_files/adcc.c: 269: void ADCC_EnableContinuousConversion(void)
+[v _ADCC_EnableContinuousConversion `(v ~T0 @X0 1 ef ]
+"270
+[; ;mcc_generated_files/adcc.c: 270: {
+{
+[e :U _ADCC_EnableContinuousConversion ]
+[f ]
+"272
+[; ;mcc_generated_files/adcc.c: 272:     ADCON0bits.ADCONT = 1;
+[e = . . _ADCON0bits 1 5 -> -> 1 `i `uc ]
+"273
+[; ;mcc_generated_files/adcc.c: 273: }
+[e :UE 1857 ]
+}
+"275
+[; ;mcc_generated_files/adcc.c: 275: void ADCC_DisableContinuousConversion(void)
+[v _ADCC_DisableContinuousConversion `(v ~T0 @X0 1 ef ]
+"276
+[; ;mcc_generated_files/adcc.c: 276: {
+{
+[e :U _ADCC_DisableContinuousConversion ]
+[f ]
+"278
+[; ;mcc_generated_files/adcc.c: 278:     ADCON0bits.ADCONT = 0;
+[e = . . _ADCON0bits 1 5 -> -> 0 `i `uc ]
+"279
+[; ;mcc_generated_files/adcc.c: 279: }
+[e :UE 1858 ]
+}
+"281
+[; ;mcc_generated_files/adcc.c: 281: _Bool ADCC_HasErrorCrossedUpperThreshold(void)
+[v _ADCC_HasErrorCrossedUpperThreshold `(a ~T0 @X0 1 ef ]
+"282
+[; ;mcc_generated_files/adcc.c: 282: {
+{
+[e :U _ADCC_HasErrorCrossedUpperThreshold ]
+[f ]
+"284
+[; ;mcc_generated_files/adcc.c: 284:     return ADSTATbits.ADUTHR;
+[e ) -> . . _ADSTATbits 1 6 `a ]
+[e $UE 1859  ]
+"285
+[; ;mcc_generated_files/adcc.c: 285: }
+[e :UE 1859 ]
+}
+"287
+[; ;mcc_generated_files/adcc.c: 287: _Bool ADCC_HasErrorCrossedLowerThreshold(void)
+[v _ADCC_HasErrorCrossedLowerThreshold `(a ~T0 @X0 1 ef ]
+"288
+[; ;mcc_generated_files/adcc.c: 288: {
+{
+[e :U _ADCC_HasErrorCrossedLowerThreshold ]
+[f ]
+"290
+[; ;mcc_generated_files/adcc.c: 290:     return ADSTATbits.ADLTHR;
+[e ) -> . . _ADSTATbits 1 5 `a ]
+[e $UE 1860  ]
+"291
+[; ;mcc_generated_files/adcc.c: 291: }
+[e :UE 1860 ]
+}
+"293
+[; ;mcc_generated_files/adcc.c: 293: uint8_t ADCC_GetConversionStageStatus(void)
+[v _ADCC_GetConversionStageStatus `(uc ~T0 @X0 1 ef ]
+"294
+[; ;mcc_generated_files/adcc.c: 294: {
+{
+[e :U _ADCC_GetConversionStageStatus ]
+[f ]
+"296
+[; ;mcc_generated_files/adcc.c: 296:     return ADSTATbits.ADSTAT;
+[e ) . . _ADSTATbits 2 0 ]
+[e $UE 1861  ]
+"297
+[; ;mcc_generated_files/adcc.c: 297: }
+[e :UE 1861 ]
 }

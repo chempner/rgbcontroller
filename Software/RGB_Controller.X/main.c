@@ -204,7 +204,7 @@ void main(void)
                               
                 LED_WriteFull(red, green, blue, LEDCOUNT);
                 
-                __delay_us(50);
+                __delay_us(100);
                 
     //=========================== Check for Keypress ===========================//
                 
@@ -221,7 +221,8 @@ void main(void)
                 if(!T3_PORT && taster3Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
                 {                    
                     state = T3Dummy;    
-                }                
+                }              
+                
                 if(!T4_PORT && taster4Flag && !led1Blink && !led2Blink && !led3Blink && !led4Blink)
                 {                    
                     state = T4Dummy ;    
@@ -524,7 +525,7 @@ void main(void)
                 {
                     timeout5sPressed4 = 0;
                     led4StateBlink = true;
-                    state = T4;
+                    state = T4; v b
                 }
                 
                 break;
@@ -751,8 +752,7 @@ void main(void)
                     state = T4 ;    
                     DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
                     DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
-                }
-                
+                }                
                 
                 break;
                 
@@ -855,8 +855,7 @@ void main(void)
                     state = T2;    
                     DATAEE_WriteByte(EE_STATEBYTEADD, state);                       //Update EEPROM
                     DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
-                }
-                
+                }                
                 
                 if(!T4_PORT && taster4Flag)
                 {
@@ -868,8 +867,10 @@ void main(void)
                     DATAEE_WriteByte(EE_STATECHECKBYTEADD, EE_CHECKBYTEDATA);       //Update EEPROM checkbyte
                 }
                 
+                break;
                 
-    //========================== Case T4 =====================================//    
+                
+    //========================== Case T4 old=====================================//    
                 
             case T4:
                 

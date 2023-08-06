@@ -25,7 +25,6 @@ void onePulse(void)
     NOP();
     NOP();
     NOP();
-    NOP();
     IO_RB4_LAT = 0;    
 }
 
@@ -36,18 +35,16 @@ void zeroPulse(void)
     NOP();
     NOP();
     IO_RB4_LAT = 0;
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
-    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
+//    NOP();
 }
 void ws_send_byte(uint8_t K)
 {
