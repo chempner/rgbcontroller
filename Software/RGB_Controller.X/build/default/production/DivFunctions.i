@@ -22685,6 +22685,9 @@ void onePulse(void)
     __nop();
     __nop();
     LATBbits.LATB4 = 0;
+    __nop();
+    __nop();
+    __nop();
 }
 
 void zeroPulse(void)
@@ -22694,7 +22697,7 @@ void zeroPulse(void)
     __nop();
     __nop();
     LATBbits.LATB4 = 0;
-# 48 "DivFunctions.c"
+# 51 "DivFunctions.c"
 }
 void ws_send_byte(uint8_t K)
 {
@@ -22725,7 +22728,7 @@ void ws_send_byte(uint8_t K)
 
 void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint24_t ledcount)
 {
-    for(uint24_t x = 0; x <= (ledcount/20); x++)
+    for(uint24_t x = 0; x <= (15); x++)
     {
         for(uint8_t i=0; i <= 20; i++)
         {

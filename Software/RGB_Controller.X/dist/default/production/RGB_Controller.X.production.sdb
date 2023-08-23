@@ -15,7 +15,7 @@ channel_DAC1 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"96 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\main.c
+"97 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\main.c
 [e E13367 . `uc
 MANUAL 0
 T1 1
@@ -31,7 +31,7 @@ T2StateDummy 10
 T3StateDummy 11
 T4StateDummy 12
 ]
-"191
+"192
 [e E13248 . `uc
 POT1 2
 POT2 16
@@ -57,8 +57,6 @@ channel_FVR_Buffer2 63
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ltdiv.c
-[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -77,13 +75,13 @@ channel_FVR_Buffer2 63
 [v _map map `(l  1 e 4 0 ]
 "14
 [v _onePulse onePulse `(v  1 e 1 0 ]
-"31
+"34
 [v _zeroPulse zeroPulse `(v  1 e 1 0 ]
-"49
+"52
 [v _ws_send_byte ws_send_byte `(v  1 e 1 0 ]
-"76
+"79
 [v _LED_WriteFull LED_WriteFull `(v  1 e 1 0 ]
-"42 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\main.c
+"43 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
@@ -521,91 +519,91 @@ channel_FVR_Buffer2 63
 [v _loopTimeMS loopTimeMS `us  1 s 2 loopTimeMS ]
 "58 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
 [v _bufferRAM bufferRAM `us  1 e 2 @5376 ]
-"42 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\main.c
+"43 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"79
-[v main@timeout5sPressed4 timeout5sPressed4 `us  1 a 2 11 ]
-"78
-[v main@timeout5sPressed3 timeout5sPressed3 `us  1 a 2 9 ]
-"77
-[v main@timeout5sPressed2 timeout5sPressed2 `us  1 a 2 7 ]
-"76
-[v main@timeout5sPressed1 timeout5sPressed1 `us  1 a 2 5 ]
 "80
+[v main@timeout5sPressed4 timeout5sPressed4 `us  1 a 2 11 ]
+"79
+[v main@timeout5sPressed3 timeout5sPressed3 `us  1 a 2 9 ]
+"78
+[v main@timeout5sPressed2 timeout5sPressed2 `us  1 a 2 7 ]
+"77
+[v main@timeout5sPressed1 timeout5sPressed1 `us  1 a 2 5 ]
+"81
 [v main@timeout10s timeout10s `us  1 a 2 3 ]
-"75
+"76
 [v main@timeout5s timeout5s `us  1 a 2 0 ]
-"96
+"97
 [v main@state state `E13367  1 a 1 51 ]
-"47
+"48
 [v main@blue blue `uc  1 a 1 50 ]
 [v main@green green `uc  1 a 1 49 ]
 [v main@red red `uc  1 a 1 48 ]
 [v main@white white `uc  1 a 1 47 ]
-"48
+"49
 [v main@blueMode1 blueMode1 `uc  1 a 1 46 ]
 [v main@greenMode1 greenMode1 `uc  1 a 1 45 ]
 [v main@redMode1 redMode1 `uc  1 a 1 44 ]
-"61
+"62
 [v main@led4Blink led4Blink `a  1 a 1 43 ]
-"60
+"61
 [v main@led3Blink led3Blink `a  1 a 1 42 ]
-"59
+"60
 [v main@led2Blink led2Blink `a  1 a 1 41 ]
-"58
+"59
 [v main@led1Blink led1Blink `a  1 a 1 40 ]
-"51
+"52
 [v main@blueMode4 blueMode4 `uc  1 a 1 39 ]
 [v main@greenMode4 greenMode4 `uc  1 a 1 38 ]
 [v main@redMode4 redMode4 `uc  1 a 1 37 ]
-"50
+"51
 [v main@blueMode3 blueMode3 `uc  1 a 1 36 ]
 [v main@greenMode3 greenMode3 `uc  1 a 1 35 ]
 [v main@redMode3 redMode3 `uc  1 a 1 34 ]
-"49
+"50
 [v main@blueMode2 blueMode2 `uc  1 a 1 33 ]
 [v main@greenMode2 greenMode2 `uc  1 a 1 32 ]
 [v main@redMode2 redMode2 `uc  1 a 1 31 ]
-"48
-[v main@whiteMode1 whiteMode1 `uc  1 a 1 30 ]
-"54
-[v main@taster3Flag taster3Flag `uc  1 a 1 29 ]
-"55
-[v main@taster4Flag taster4Flag `uc  1 a 1 28 ]
-"53
-[v main@taster2Flag taster2Flag `uc  1 a 1 27 ]
-"52
-[v main@taster1Flag taster1Flag `uc  1 a 1 26 ]
-"72
-[v main@whiteAdj whiteAdj `a  1 a 1 25 ]
-"71
-[v main@blueAdj blueAdj `a  1 a 1 24 ]
-"70
-[v main@greenAdj greenAdj `a  1 a 1 23 ]
-"69
-[v main@redAdj redAdj `a  1 a 1 22 ]
-"81
-[v main@timeout500ms timeout500ms `uc  1 a 1 21 ]
-"82
-[v main@timeout250ms timeout250ms `uc  1 a 1 20 ]
-"67
-[v main@led4StateBlink led4StateBlink `a  1 a 1 19 ]
-"66
-[v main@led3StateBlink led3StateBlink `a  1 a 1 18 ]
-"65
-[v main@led2StateBlink led2StateBlink `a  1 a 1 17 ]
-"64
-[v main@led1StateBlink led1StateBlink `a  1 a 1 16 ]
-"51
-[v main@whiteMode4 whiteMode4 `uc  1 a 1 15 ]
-"50
-[v main@whiteMode3 whiteMode3 `uc  1 a 1 14 ]
 "49
+[v main@whiteMode1 whiteMode1 `uc  1 a 1 30 ]
+"55
+[v main@taster3Flag taster3Flag `uc  1 a 1 29 ]
+"56
+[v main@taster4Flag taster4Flag `uc  1 a 1 28 ]
+"54
+[v main@taster2Flag taster2Flag `uc  1 a 1 27 ]
+"53
+[v main@taster1Flag taster1Flag `uc  1 a 1 26 ]
+"73
+[v main@whiteAdj whiteAdj `a  1 a 1 25 ]
+"72
+[v main@blueAdj blueAdj `a  1 a 1 24 ]
+"71
+[v main@greenAdj greenAdj `a  1 a 1 23 ]
+"70
+[v main@redAdj redAdj `a  1 a 1 22 ]
+"82
+[v main@timeout500ms timeout500ms `uc  1 a 1 21 ]
+"83
+[v main@timeout250ms timeout250ms `uc  1 a 1 20 ]
+"68
+[v main@led4StateBlink led4StateBlink `a  1 a 1 19 ]
+"67
+[v main@led3StateBlink led3StateBlink `a  1 a 1 18 ]
+"66
+[v main@led2StateBlink led2StateBlink `a  1 a 1 17 ]
+"65
+[v main@led1StateBlink led1StateBlink `a  1 a 1 16 ]
+"52
+[v main@whiteMode4 whiteMode4 `uc  1 a 1 15 ]
+"51
+[v main@whiteMode3 whiteMode3 `uc  1 a 1 14 ]
+"50
 [v main@whiteMode2 whiteMode2 `uc  1 a 1 13 ]
-"74
+"75
 [v main@timeout100ms timeout100ms `uc  1 a 1 2 ]
-"987
+"988
 } 0
 "10 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
 [v _map map `(l  1 e 4 0 ]
@@ -665,36 +663,24 @@ channel_FVR_Buffer2 63
 {
 "111
 } 0
-"76 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+"79 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
 [v _LED_WriteFull LED_WriteFull `(v  1 e 1 0 ]
 {
 [v LED_WriteFull@red red `uc  1 a 1 wreg ]
-"80
-[v LED_WriteFull@i i `uc  1 a 1 19 ]
-"78
-[v LED_WriteFull@x x `um  1 a 3 16 ]
-"76
+"83
+[v LED_WriteFull@i i `uc  1 a 1 13 ]
+"81
+[v LED_WriteFull@x x `um  1 a 3 10 ]
+"79
 [v LED_WriteFull@red red `uc  1 a 1 wreg ]
-[v LED_WriteFull@green green `uc  1 p 1 10 ]
-[v LED_WriteFull@blue blue `uc  1 p 1 11 ]
-[v LED_WriteFull@ledcount ledcount `um  1 p 3 12 ]
-"78
-[v LED_WriteFull@red red `uc  1 a 1 15 ]
-"87
+[v LED_WriteFull@green green `uc  1 p 1 4 ]
+[v LED_WriteFull@blue blue `uc  1 p 1 5 ]
+[v LED_WriteFull@ledcount ledcount `um  1 p 3 6 ]
+"81
+[v LED_WriteFull@red red `uc  1 a 1 9 ]
+"90
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ltdiv.c
-[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
-{
-"10
-[v ___ltdiv@quotient quotient `um  1 a 3 6 ]
-"11
-[v ___ltdiv@counter counter `uc  1 a 1 9 ]
-"7
-[v ___ltdiv@dividend dividend `um  1 p 3 0 ]
-[v ___ltdiv@divisor divisor `um  1 p 3 3 ]
-"30
-} 0
-"3 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\DivFunctions.c
+"3
 [v _WS2812B_Write WS2812B_Write `(v  1 e 1 0 ]
 {
 [v WS2812B_Write@R R `uc  1 a 1 wreg ]
@@ -705,24 +691,24 @@ channel_FVR_Buffer2 63
 [v WS2812B_Write@R R `uc  1 a 1 3 ]
 "8
 } 0
-"49
+"52
 [v _ws_send_byte ws_send_byte `(v  1 e 1 0 ]
 {
 [v ws_send_byte@K K `uc  1 a 1 wreg ]
 [v ws_send_byte@K K `uc  1 a 1 wreg ]
-"51
+"54
 [v ws_send_byte@K K `uc  1 a 1 0 ]
-"74
+"77
 } 0
-"31
+"34
 [v _zeroPulse zeroPulse `(v  1 e 1 0 ]
 {
-"48
+"51
 } 0
 "14
 [v _onePulse onePulse `(v  1 e 1 0 ]
 {
-"29
+"32
 } 0
 "231 C:\Users\Noe\Documents\GitHub\rgbcontroller\Software\RGB_Controller.X\mcc_generated_files/memory.c
 [v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]

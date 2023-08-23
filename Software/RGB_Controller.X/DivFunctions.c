@@ -26,6 +26,9 @@ void onePulse(void)
     NOP();
     NOP();
     IO_RB4_LAT = 0;    
+    NOP();
+    NOP();
+    NOP();
 }
 
 void zeroPulse(void)
@@ -75,7 +78,7 @@ void ws_send_byte(uint8_t K)
 
 void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint24_t ledcount)
 {
-    for(uint24_t x = 0; x <= (ledcount/20); x++)
+    for(uint24_t x = 0; x <= (15); x++)
     {
         for(uint8_t i=0; i <= 20; i++)
         {

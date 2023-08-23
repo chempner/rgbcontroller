@@ -7,6 +7,7 @@
 # 1 "C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
+
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "C:/Users/Noe/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\\pic\\include\\xc.h" 1 3
@@ -22637,7 +22638,7 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 97 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
-# 2 "main.c" 2
+# 3 "main.c" 2
 # 1 "./DivFunctions.h" 1
 # 26 "./DivFunctions.h"
 void WS2812B_Write(uint8_t R, uint8_t G, uint8_t B);
@@ -22651,14 +22652,14 @@ void zeroPulse(void);
 void ws_send_byte(uint8_t K);
 
 void LED_WriteFull(uint8_t red, uint8_t green, uint8_t blue, uint24_t ledcount);
-# 3 "main.c" 2
+# 4 "main.c" 2
 # 1 "./Loopdelay.h" 1
 # 14 "./Loopdelay.h"
 void LOOPDELAY_TimerISR(void);
 void LOOPDELAY_Wait(void);
 void LOOPDELAY_Init(uint16_t newLoopTimeMS);
-# 4 "main.c" 2
-# 42 "main.c"
+# 5 "main.c" 2
+# 43 "main.c"
 void main(void)
 {
 
@@ -22816,7 +22817,7 @@ void main(void)
 
 
 
-        _delay((unsigned long)((5)*(64000000/4000.0)));
+        _delay((unsigned long)((40)*(64000000/4000.0)));
 
         switch(state)
         {
@@ -22849,7 +22850,7 @@ void main(void)
                 }
 
 
-                if((led1Blink || led2Blink || led3Blink || led4Blink) && (++timeout10s == 500))
+                if((led1Blink || led2Blink || led3Blink || led4Blink) && (++timeout10s == 250))
                 {
                     timeout10s = 0;
 
@@ -22859,25 +22860,25 @@ void main(void)
                     led4Blink = 0;
                 }
 
-                if(led1Blink && ++timeout500ms == 12)
+                if(led1Blink && ++timeout500ms == 6)
                 {
                     timeout500ms = 0;
                     LATCbits.LATC7 = !LATCbits.LATC7;
                 }
 
-                if(led2Blink && ++timeout500ms == 12)
+                if(led2Blink && ++timeout500ms == 6)
                 {
                     timeout500ms = 0;
                     LATCbits.LATC5 = !LATCbits.LATC5;
                 }
 
-                if(led3Blink && ++timeout500ms == 12)
+                if(led3Blink && ++timeout500ms == 6)
                 {
                     timeout500ms = 0;
                     LATAbits.LATA5 = !LATAbits.LATA5;
                 }
 
-                if(led4Blink && ++timeout500ms == 12)
+                if(led4Blink && ++timeout500ms == 6)
                 {
                     timeout500ms = 0;
                     LATCbits.LATC3 = !LATCbits.LATC3;
@@ -22987,7 +22988,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+                if(!PORTCbits.RC6 && (++timeout5sPressed1 == 125))
                 {
                     timeout5sPressed1 = 0;
                     led1Blink = 1;
@@ -23010,7 +23011,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+                if(!PORTAbits.RA4 && (++timeout5sPressed2 == 125))
                 {
                     timeout5sPressed2 = 0;
                     led2Blink = 1;
@@ -23032,7 +23033,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+                if(!PORTCbits.RC4 && (++timeout5sPressed3 == 125))
                 {
                     timeout5sPressed3 = 0;
                     led3Blink = 1;
@@ -23055,7 +23056,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
+                if(!PORTBbits.RB7 && (++timeout5sPressed4 == 125))
                 {
                     timeout5sPressed4 = 0;
                     led4Blink = 1;
@@ -23078,7 +23079,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTCbits.RC6 && (++timeout5sPressed1 == 250))
+                if(!PORTCbits.RC6 && (++timeout5sPressed1 == 125))
                 {
                     timeout5sPressed1 = 0;
                     led1StateBlink = 1;
@@ -23099,7 +23100,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTAbits.RA4 && (++timeout5sPressed2 == 250))
+                if(!PORTAbits.RA4 && (++timeout5sPressed2 == 125))
                 {
                     timeout5sPressed2 = 0;
                     led2StateBlink = 1;
@@ -23120,7 +23121,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTCbits.RC4 && (++timeout5sPressed3 == 250))
+                if(!PORTCbits.RC4 && (++timeout5sPressed3 == 125))
                 {
                     timeout5sPressed3 = 0;
                     led3StateBlink = 1;
@@ -23141,7 +23142,7 @@ void main(void)
                     DATAEE_WriteByte(2, 69);
                 }
 
-                if(!PORTBbits.RB7 && (++timeout5sPressed4 == 250))
+                if(!PORTBbits.RB7 && (++timeout5sPressed4 == 125))
                 {
                     timeout5sPressed4 = 0;
                     led4StateBlink = 1;
@@ -23158,7 +23159,7 @@ void main(void)
 
 
 
-                if(led1StateBlink && (++timeout250ms == 12))
+                if(led1StateBlink && (++timeout250ms == 6))
                 {
                     timeout250ms = 0;
                     LATCbits.LATC7 = !LATCbits.LATC7;
@@ -23271,7 +23272,7 @@ void main(void)
 
 
 
-                if(led2StateBlink && (++timeout250ms == 12))
+                if(led2StateBlink && (++timeout250ms == 6))
                 {
                     timeout250ms = 0;
                     LATCbits.LATC5 = !LATCbits.LATC5;
@@ -23384,7 +23385,7 @@ void main(void)
 
 
 
-                if(led3StateBlink && (++timeout250ms == 12))
+                if(led3StateBlink && (++timeout250ms == 6))
                 {
                     timeout250ms = 0;
                     LATAbits.LATA5 = !LATAbits.LATA5;
@@ -23498,7 +23499,7 @@ void main(void)
 
 
 
-                if(led4StateBlink && (++timeout250ms == 12))
+                if(led4StateBlink && (++timeout250ms == 6))
                 {
                     timeout250ms = 0;
                     LATCbits.LATC3 = !LATCbits.LATC3;

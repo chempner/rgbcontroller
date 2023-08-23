@@ -1,4 +1,5 @@
- #include "mcc_generated_files/mcc.h"
+
+#include "mcc_generated_files/mcc.h"
 #include "DivFunctions.h"
 #include "Loopdelay.h"
 
@@ -33,11 +34,11 @@
 
 #define ADJ_THRESHOLD   5
 
-#define TIMEOUT1S       50
-#define TIMEOUT5S       250
-#define TIMEOUT10s      500
-#define TIMEOUT100MS    20
-#define TIMEOUT250MS    12
+#define TIMEOUT1S       25
+#define TIMEOUT5S       125
+#define TIMEOUT10s      250
+#define TIMEOUT100MS    3
+#define TIMEOUT250MS    6
 
 void main(void)
 {
@@ -196,7 +197,7 @@ void main(void)
         
 //        LOOPDELAY_Wait();
         
-        __delay_ms(5);
+        __delay_ms(40);
         
         switch(state)
         {
@@ -525,7 +526,7 @@ void main(void)
                 {
                     timeout5sPressed4 = 0;
                     led4StateBlink = true;
-                    state = T4; v b
+                    state = T4;
                 }
                 
                 break;
